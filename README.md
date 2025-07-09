@@ -30,6 +30,7 @@ The website includes:
 
 ## 📬 Contact us
 
-Dawson M. White – dawson.white@gmail.com
+J. Antonio Guzmán Q. (Antguz)
+Dawson M. White (Erythroxylum)
 
-Or open an issue on GitHub
+Or open an issue on GitHub!
