@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "IHerbSpec"
@@ -15,6 +16,7 @@ website:
   page-footer:
     center: |
       © 2025 IHerbSpec
+
 format:
   html:
     theme: cosmo
