@@ -1,20 +1,20 @@
 ---
-title: "IHerbSpec Protocol"
+title: "The IHerbSpec Protocol"
 ---
 
-The **IHerbSpec Protocol** defines standardized procedures for spectral measurement and metadata collection of herbarium specimens.
+The **IHerbSpec Protocol** defines a standardized procedure for spectral measurement of herbarium specimens—alongside detailed guidance, metadata standards, and supporting rationale to facilitate broad implementation across institutions.
 
 This page provides direct access to the current protocol files and metadata templates.
 
-### 📥 Download IHerbSpec Protocol Files
+### 📥 Download IHerbSpec Protocol v1.0 Files
 
 - [Protocol v1.0 (PDF)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpec%20Protocol%20v1.0.pdf)
 - [Protocol v1.0 (DOCX)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpec%20Protocol%20v1.0.docx)
-- [Metadata Template (CSV)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpec_metadata.csv)
-- [Example Metadata (CSV)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpec_metadata-examples.csv)
+- [Metadata Template (CSV)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/refs/heads/main/IHerbSpec_metadata.csv) *(Right-click and choose “Save Link As…” to download)*
+- [Example Metadata (CSV)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/refs/heads/main/IHerbSpec_metadata-examples.csv) *(Right-click and choose “Save Link As…” to download)*
 - [Table A1 Scoring Examples (CSV)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpecProtocol_TableA1.csv)
 
-> 🧾 **The protocol is archived and version controlled at: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15849668.svg)](https://doi.org/10.5281/zenodo.15849668)
+**The protocol is archived and version controlled at:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15849668.svg)](https://doi.org/10.5281/zenodo.15849668)
 
 🔧 Visit the development repository on GitHub: [IHerbSpec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol)
 

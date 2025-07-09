@@ -16,9 +16,9 @@
   {
     "objectID": "protocol.html",
     "href": "protocol.html",
-    "title": "IHerbSpec Protocol",
+    "title": "The IHerbSpec Protocol",
     "section": "",
-    "text": "The IHerbSpec Protocol defines standardized procedures for spectral measurement and metadata collection of herbarium specimens.\nThis page provides direct access to the current protocol files and metadata templates.\n\n📥 Download IHerbSpec Protocol Files\n\nProtocol v1.0 (PDF)\nProtocol v1.0 (DOCX)\nMetadata Template (CSV)\nExample Metadata (CSV)\nTable A1 Scoring Examples (CSV)\n\n\n🧾 **The protocol is archived and version controlled at: \n\n🔧 Visit the development repository on GitHub: IHerbSpec-protocol"
+    "text": "The IHerbSpec Protocol defines a standardized procedure for spectral measurement of herbarium specimens—alongside detailed guidance, metadata standards, and supporting rationale to facilitate broad implementation across institutions.\nThis page provides direct access to the current protocol files and metadata templates.\n\n📥 Download IHerbSpec Protocol v1.0 Files\n\nProtocol v1.0 (PDF)\nProtocol v1.0 (DOCX)\nMetadata Template (CSV) (Right-click and choose “Save Link As…” to download)\nExample Metadata (CSV) (Right-click and choose “Save Link As…” to download)\nTable A1 Scoring Examples (CSV)\n\nThe protocol is archived and version controlled at: \n🔧 Visit the development repository on GitHub: IHerbSpec-protocol"
   },
   {
     "objectID": "publications.html",
