@@ -30,7 +30,12 @@ The website includes:
 
 ## 📬 Contact us
 
+For questions, feedback, or collaboration inquiries, please contact:
+
 J. Antonio Guzmán Q. (Antguz)
+
 Dawson M. White (Erythroxylum)
 
-Or open an issue on GitHub!
+Or open an issue on GitHub
+
+We welcome participation from researchers, collections professionals, and institutions interested in spectral digitization and herbarium-based research.
