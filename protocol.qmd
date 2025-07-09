@@ -1,0 +1,18 @@
+---
+title: "IHerbSpec Protocol"
+---
+
+The **IHerbSpec Protocol** defines standardized procedures for spectral measurement and metadata collection of herbarium specimens.
+
+This page provides direct access to the current protocol files and metadata templates.
+
+### 📥 Download IHerbSpec Protocol
+
+- [Protocol (PDF)](https://zenodo.org/record/15850109/files/IHerbSpec%20Protocol%20v1.0.pdf)
+- [Protocol (DOCX)](https://zenodo.org/record/15850109/files/IHerbSpec%20Protocol%20v1.0.docx)
+- [Metadata Template (CSV)](https://zenodo.org/record/15850109/files/IHerbSpec_metadata.csv)
+- [Example Metadata (CSV)](https://zenodo.org/record/15850109/files/IHerbSpec_metadata-examples.csv)
+- [Table A1 Scoring Examples (CSV)](https://zenodo.org/record/15850109/files/IHerbSpecProtocol_TableA1.csv)
+
+> 🧾 **The protocol is archived and version controlled at DOI:** [10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
+

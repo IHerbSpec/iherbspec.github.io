@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "IHerbSpec"
+  site-url: https://iherbspec.github.io
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: IHerbSpec Protocol
+        href: protocol.qmd
+      - text: Publications
+        href: publications.qmd
+  page-footer:
+    center: |
+      © 2025 IHerbSpec
+format:
+  html:
+    theme: cosmo
+    toc: true
+
+
