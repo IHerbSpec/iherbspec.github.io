@@ -18,13 +18,13 @@
     "href": "protocol.html",
     "title": "IHerbSpec Protocol",
     "section": "",
-    "text": "The IHerbSpec Protocol defines standardized procedures for spectral measurement and metadata collection of herbarium specimens.\nThis page provides direct access to the current protocol files and metadata templates.\n\n📥 Download IHerbSpec Protocol\n\nProtocol (PDF)\nProtocol (DOCX)\nMetadata Template (CSV)\nExample Metadata (CSV)\nTable A1 Scoring Examples (CSV)\n\n\n🧾 The protocol is archived and version controlled at DOI: 10.5281/zenodo.15849668"
+    "text": "The IHerbSpec Protocol defines standardized procedures for spectral measurement and metadata collection of herbarium specimens.\nThis page provides direct access to the current protocol files and metadata templates.\n\n📥 Download IHerbSpec Protocol Files\n\nProtocol v1.0 (PDF)\nProtocol v1.0 (DOCX)\nMetadata Template (CSV)\nExample Metadata (CSV)\nTable A1 Scoring Examples (CSV)\n\n\n🧾 **The protocol is archived and version controlled at:"
   },
   {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Selected Publications and Preprints\n\nCavender-Bares J, White DM, et al. (2025). Next-generation specimen digitization: The international herbarium community goes spectral! New Phytologist\nWhite DM, Cavender-Bares J, et al. (2025). Seeing herbaria in a new light: Leaf reflectance spectroscopy unlocks trait and classification modeling. New Phytologist\nNeto-Bradley BM, et al. (2025). Using reflectance spectra and Pl@ntNet to identify herbarium specimens. New Phytologist\n\nMore coming soon."
+    "text": "Selected Publications and Preprints\n\nCavender-Bares J, White DM, et al. (In Review). Next-generation specimen digitization: The international herbarium community goes spectral! EcoEvoRxiv\nWhite DM, Cavender-Bares J, et al. (2025). Seeing herbaria in a new light: Leaf reflectance spectroscopy unlocks trait and classification modeling. New Phytologist\nNeto-Bradley BM, et al. (2025). Using reflectance spectra and Pl@ntNet to identify herbarium specimens. New Phytologist\n\nMore coming soon."
   }
 ]
