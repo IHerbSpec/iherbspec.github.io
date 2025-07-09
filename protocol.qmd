@@ -8,11 +8,13 @@ This page provides direct access to the current protocol files and metadata temp
 
 ### 📥 Download IHerbSpec Protocol Files
 
-- [Protocol v1.0 (PDF)](https://raw.githubusercontent.com/IHerbSpec/IHerbSpec-protocol/main/IHerbSpec%20Protocol%20v1.0.pdf)
-- [Protocol v1.0 (DOCX)](https://raw.githubusercontent.com/IHerbSpec/IHerbSpec-protocol/main/IHerbSpec%20Protocol%20v1.0.docx)
-- [Metadata Template (CSV)](https://raw.githubusercontent.com/IHerbSpec/IHerbSpec-protocol/main/IHerbSpec_metadata.csv)
-- [Example Metadata (CSV)](https://raw.githubusercontent.com/IHerbSpec/IHerbSpec-protocol/main/IHerbSpec_metadata-examples.csv)
-- [Table A1 Scoring Examples (CSV)](https://raw.githubusercontent.com/IHerbSpec/IHerbSpec-protocol/main/IHerbSpecProtocol_TableA1.csv)
+- [Protocol v1.0 (PDF)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpec%20Protocol%20v1.0.pdf)
+- [Protocol v1.0 (DOCX)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpec%20Protocol%20v1.0.docx)
+- [Metadata Template (CSV)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpec_metadata.csv)
+- [Example Metadata (CSV)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpec_metadata-examples.csv)
+- [Table A1 Scoring Examples (CSV)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpecProtocol_TableA1.csv)
 
 > 🧾 **The protocol is archived and version controlled at: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15849668.svg)](https://doi.org/10.5281/zenodo.15849668)
+
+🔧 Visit the development repository on GitHub: [IHerbSpec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol)
 
