@@ -4,7 +4,7 @@ title: "Publications"
 
 ### Selected Publications and Preprints
 
-- Cavender-Bares J, White DM, et al. (2025). *Next-generation specimen digitization: The international herbarium community goes spectral!* [New Phytologist](https://doi.org/10.32942/X2V927)
+- Cavender-Bares J, White DM, et al. (*In Review*). *Next-generation specimen digitization: The international herbarium community goes spectral!* [EcoEvoRxiv](https://doi.org/10.32942/X2V927)
 - White DM, Cavender-Bares J, et al. (2025). *Seeing herbaria in a new light: Leaf reflectance spectroscopy unlocks trait and classification modeling.* [New Phytologist](https://doi.org/10.1111/nph.70357)
 - Neto-Bradley BM, et al. (2025). *Using reflectance spectra and Pl@ntNet to identify herbarium specimens.* [New Phytologist](https://doi.org/10.1111/nph.70258)
 
