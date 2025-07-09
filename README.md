@@ -28,14 +28,13 @@ The website includes:
 
 ---
 
-## 📬 Contact us
+## 📬 Contact Us
 
 For questions, feedback, or collaboration inquiries, please contact:
 
-J. Antonio Guzmán Q. (Antguz)
+- **J. Antonio Guzmán Q.** ([Antguz](https://github.com/Antguz))
+- **Dawson M. White** ([Erythroxylum](https://github.com/Erythroxylum))  
 
-Dawson M. White (Erythroxylum)
-
-Or open an issue on GitHub
+Or open an [issue on GitHub](https://github.com/IHerbSpec/iherbspec.github.io/issues)
 
 We welcome participation from researchers, collections professionals, and institutions interested in spectral digitization and herbarium-based research.
