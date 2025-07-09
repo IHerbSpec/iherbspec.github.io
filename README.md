@@ -1,1 +1,1 @@
-# IHerbSpec-website
+# iherbspec.github.io
