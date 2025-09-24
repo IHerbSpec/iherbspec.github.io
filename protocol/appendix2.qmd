@@ -22,8 +22,6 @@ The specimens and metadata examples in [Table A1](#tbl-a-1) have been selected t
 
 This table provides example metadata records for herbarium specimens, illustrating how to score key fields related to tissue condition and contamination. The fields developmentalStage, hasGlue, hasNonGlueContamination, and measurementFlags refer specifically to the measurement area. Broader observations about the specimen or other tissues can be recorded in tissueNotes (see [Table 4.3](part4-metadata.qmd#tbl-4-3)). Linked specimen images are included, though they do not indicate the precise measurement area corresponding to each metadata record. This table can be downloaded on the [Protocol home page](../protocol.qmd).
 
-### Table A1. Select Metadata Fields and Scoring for Representative Specimens {#tbl-a1}
-
 herbariumCode_specimenID | `developmentalStage` | `hasGlue` | `hasNonGlueContamination` | `measurementFlags` | `tissueNotes`
 ---------- | ---------- | ---------- | ---------- | ---------- | ----------
 [A_00631088](https://kiki.huh.harvard.edu/databases/specimen_search.php?mode=details&id=794136) | `mature` | `TRUE` | `FALSE` | `MediumPreservation` | discolored
