@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Part 4 – Metadata and Databasing – IHerbSpec</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a14e3238c51140e99ccc48519b6ed9ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">IHerbSpec</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iherbspec-protocol" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">IHerbSpec Protocol</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-iherbspec-protocol">    
+        <li>
+    <a class="dropdown-item" href="../protocol.html">
+ <span class="dropdown-text">Home - IHerbSpec Protocol</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/preface.html">
+ <span class="dropdown-text">Preface</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/part1-overview.html">
+ <span class="dropdown-text">Part 1 – Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/part2-workflow.html">
+ <span class="dropdown-text">Part 2 – Workflow</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/part3-filenames.html">
+ <span class="dropdown-text">Part 3 – Filenames</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/part4-metadata.html">
+ <span class="dropdown-text">Part 4 – Metadata</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/part5-instrumentation.html">
+ <span class="dropdown-text">Part 5 – Instrumentation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/part6-guidelines.html">
+ <span class="dropdown-text">Part 6 – Tissue Selection</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/references.html">
+ <span class="dropdown-text">References</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/appendix1.html">
+ <span class="dropdown-text">Appendix I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/appendix2.html">
+ <span class="dropdown-text">Appendix II</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contact.html"> 
+<span class="menu-text">Contact Us</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#metadata-tables" id="toc-metadata-tables" class="nav-link active" data-scroll-target="#metadata-tables">4.1 Metadata Tables</a>
+  <ul class="collapse">
+  <li><a href="#tbl-4-1" id="toc-tbl-4-1" class="nav-link" data-scroll-target="#tbl-4-1">Table 4.1: Session Metadata</a></li>
+  <li><a href="#tbl-4-2" id="toc-tbl-4-2" class="nav-link" data-scroll-target="#tbl-4-2">Table 4.2: Specimen Metadata</a></li>
+  <li><a href="#tbl-4-3" id="toc-tbl-4-3" class="nav-link" data-scroll-target="#tbl-4-3">Table 4.3: Tissue Metadata</a></li>
+  </ul></li>
+  <li><a href="#controlled-vocabularies" id="toc-controlled-vocabularies" class="nav-link" data-scroll-target="#controlled-vocabularies">4.2 Controlled Vocabularies</a>
+  <ul class="collapse">
+  <li><a href="#tbl-4-4" id="toc-tbl-4-4" class="nav-link" data-scroll-target="#tbl-4-4">Table 4.4: Developmental Stage Class Codes</a></li>
+  <li><a href="#tbl-4-5" id="toc-tbl-4-5" class="nav-link" data-scroll-target="#tbl-4-5">Table 4.5: Target Class Codes.</a></li>
+  <li><a href="#tbl-4-6" id="toc-tbl-4-6" class="nav-link" data-scroll-target="#tbl-4-6">Table 4.6: Tissue Descriptor Codes</a></li>
+  <li><a href="#tbl-4-7" id="toc-tbl-4-7" class="nav-link" data-scroll-target="#tbl-4-7">Table 4.7: Background and White Reference Class Codes</a></li>
+  </ul></li>
+  <li><a href="#guidelines-for-data-archiving-and-sharing" id="toc-guidelines-for-data-archiving-and-sharing" class="nav-link" data-scroll-target="#guidelines-for-data-archiving-and-sharing">4.3 Guidelines for Data Archiving and Sharing</a></li>
+  <li><a href="#navigate-the-protocol" id="toc-navigate-the-protocol" class="nav-link" data-scroll-target="#navigate-the-protocol">Navigate the protocol</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Part 4 – Metadata and Databasing</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This section defines the metadata fields used to describe spectral reflectance measurements of herbarium specimens. This standardization supports interoperability, cross-project data aggregation, and future integration into biodiversity informatics platforms.</p>
+<p>Projects can download the <strong>IHerbSpec Metadata Spreadsheet</strong> (available at <a href="https://iherbspec.github.io/protocol">https://iherbspec.github.io/protocol</a>) as a foundation for organizing their metadata. This spreadsheet includes all <strong>required</strong> and optional but <strong>recommended</strong> fields defined the tables in <a href="#tbl-4-1">Section 4.1</a>. The controlled vocabularies necessary for enumerating certain fields are provided in <a href="../protocol/part4-metadata.html#controlled-vocabularies">Section 4.2</a>. Finally, <a href="../protocol/part4-metadata.html#guidelines-for-data-archiving-and-sharing">Section 4.3</a> provides general guidelines for data and metadata storage and dissemination.</p>
+<p>While metadata are expected to be disseminated in a flat file format, such as the <a href="../protocol.html#download-iherbspec-protocol-files">IHerbSpec Metadata Spreadsheet</a>, fields are presented here in logical groups—project, specimen, and tissue—to support conceptual understanding and integration with local databases.</p>
+<hr>
+<section id="metadata-tables" class="level1">
+<h1>4.1 Metadata Tables</h1>
+<section id="tbl-4-1" class="level3">
+<h3 class="anchored" data-anchor-id="tbl-4-1">Table 4.1: Session Metadata</h3>
+<p>Session metadata are those metadata usually associated globally with a continuous digitization project. These metadata can usually be captured once per project and automatically populated for each measurement instance.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Metadata Field</th>
+<th>Filename Code (<a href="../protocol/part3-filenames.html#tbl-3-2">Table 3.2</a>)</th>
+<th>Status</th>
+<th>Field Description</th>
+<th>Data Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>projectId</code></td>
+<td><code>PI</code></td>
+<td>Required</td>
+<td>Unique identifier for the spectral measurement project. Example: <code>HUHERYspec1</code>.</td>
+<td>TEXT</td>
+</tr>
+<tr class="even">
+<td><code>sessionId</code></td>
+<td><code>SN</code></td>
+<td>Required</td>
+<td>Unique identifier for a measurement session, generated as <code>YYYYMMDDHHMM</code>. Example: <code>20240617132251</code>.</td>
+<td>TEXT</td>
+</tr>
+<tr class="odd">
+<td><code>instrumentModel</code></td>
+<td>-</td>
+<td>Required</td>
+<td>Spectroradiometer model name. Example: <code>SVC HR-1024i</code>.</td>
+<td>TEXT</td>
+</tr>
+<tr class="even">
+<td><code>opticalSetupDescription</code></td>
+<td>-</td>
+<td>Required</td>
+<td>Description of optical probe setup. Example: <code>LC-RP contact probe with leaf clip removed</code>.</td>
+<td>TEXT</td>
+</tr>
+<tr class="odd">
+<td><code>measurementSettings</code></td>
+<td>-</td>
+<td>Required</td>
+<td>Instrument settings for measurements. Example: <code>2 seconds, high light setting</code>.</td>
+<td>TEXT</td>
+</tr>
+<tr class="even">
+<td><code>whiteReferenceDescription</code></td>
+<td>-</td>
+<td>Required</td>
+<td>Material of the white reference. Example: <code>Spectralon SL Standard 99%</code>.</td>
+<td>TEXT</td>
+</tr>
+<tr class="odd">
+<td><code>operator</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Name(s) of person(s) conducting measurements.</td>
+<td>TEXT</td>
+</tr>
+<tr class="even">
+<td><code>lightSourceType</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Light source for optical setup. Example: <code>tungsten halogen</code>.</td>
+<td>TEXT</td>
+</tr>
+<tr class="odd">
+<td><code>distanceTargetToSensor</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Distance (mm) between target tissue and sensor face. Example: <code>12</code>.</td>
+<td>NUMERIC</td>
+</tr>
+<tr class="even">
+<td><code>lensFieldOfView</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Angle (degrees) of sensor field of view. Example: <code>22.5</code>.</td>
+<td>NUMERIC</td>
+</tr>
+<tr class="odd">
+<td><code>angleLightToSensor</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Angle (degrees) of light source to sensor. Example: <code>10</code>.</td>
+<td>NUMERIC</td>
+</tr>
+<tr class="even">
+<td><code>measurementAreaDiameter</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Diameter (mm) of illuminated tissue area. Example: <code>6</code>.</td>
+<td>NUMERIC</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<div id="fig-4-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-4-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/fig4.1-optical_geometry_fig.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-4-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+&nbsp;1: <strong>Fig. 4.1.</strong> Schematic of Session Metadata fields related to optical setup (see <a href="#tbl-4-1">Table 4.1</a>). <code>distanceTargetToSensor</code>, <code>fieldOfView</code>, <code>angleLightToSensor</code>, <code>measurementAreaDiameter</code>
+</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="tbl-4-2" class="level3">
+<h3 class="anchored" data-anchor-id="tbl-4-2">Table 4.2: Specimen Metadata</h3>
+<p>Specimen metadata include identifiers and information about the physical specimen, with priority given to <strong>required</strong> fields needed to link spectral measurements to existing digital records (e.g., <code>specimenId</code>). Optional fields related to taxonomic determination and specimen storage environment are included to support integrative research, quality control, and downstream analysis.</p>
+<p>Users should <strong>avoid duplicating metadata that are already digitized, maintained, and available in herbarium or institutional platforms</strong>, as these sources are better suited for future updates. Instead, users are encouraged to reference those records and supplement only missing required or recommended fields. Due to variation in the metadata recorded on institutional platforms, users should apply caution in the interpretation of presence or absence of determination information or any other recommended but optional fields.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Metadata Field</th>
+<th>Filename Code (<a href="../protocol/part3-filenames.html#tbl-3-2">Table 3.2</a>)</th>
+<th>Status</th>
+<th>Field Description</th>
+<th>Data Type</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>herbariumCode</code></td>
+<td><code>HC</code></td>
+<td>Required</td>
+<td>Acronym for herbarium or collection (Index Herbariorum code). Examples: <code>GH</code>, <code>P</code>, <code>US-Botany</code>.</td>
+<td>TEXT</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>specimenId</code></td>
+<td><code>SI</code></td>
+<td>Required</td>
+<td>Identifier for specimen or record (catalog no., barcode, GUID, or collector+number). Examples: <code>00238762</code>, <code>Thorne24070a</code>.</td>
+<td>TEXT</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>scientificName</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Full scientific name at lowest confident rank. Examples: <em>Quercus bicolor</em>, <em>Erythroxylum coca ipadu</em>.</td>
+<td>TEXT</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>identificationQualifier</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Uncertainty in taxonomic ID (Darwin Core). Examples: <code>cf.</code>, <code>aff.</code></td>
+<td>TEXT</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>identifiedBy</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>-</td>
+<td>Person/group who made the identification. Example: <code>T. Plowman</code>.</td>
+<td>TEXT</td>
+</tr>
+<tr class="even">
+<td><code>dateIdentified</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Date of identification. Examples: <code>1999</code>, <code>2004-12-30</code>.</td>
+<td>TEXT</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>isTempControlled</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Whether storage has active temperature control.</td>
+<td>BOOLEAN</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>annualTempMin</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Minimum annual storage temperature (°C). Example: <code>18</code>.</td>
+<td>TEXT</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>annualTempMax</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Maximum annual storage temperature (°C). Example: <code>26</code>.</td>
+<td>TEXT</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>isHumidityControlled</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Whether storage has active humidity control.</td>
+<td>BOOLEAN</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>annualHumidityMin</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Minimum annual storage relative humidity (%). Example: <code>20</code>.</td>
+<td>TEXT</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>annualHumidityMax</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Maximum annual storage relative humidity (%). Example: <code>60</code>.</td>
+<td>TEXT</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="tbl-4-3" class="level3">
+<h3 class="anchored" data-anchor-id="tbl-4-3">Table 4.3: Tissue Metadata</h3>
+<p>Fields describing the type, condition, and position of the tissue measured. Includes <strong>required</strong> and <strong>recommended</strong> metadata for linking spectral measurements to individual tissue units. Note that timestamps for tissue measurement files are often captured within the file.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Metadata Field</th>
+<th>Filename Code (<a href="../protocol/part3-filenames.html#tbl-3-2">Table 3.2</a>)</th>
+<th>Status</th>
+<th>Field Description</th>
+<th>Data Type</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>backgroundClass</code></td>
+<td><code>BG</code></td>
+<td>Required</td>
+<td>EEnumerated abbreviated code from Background Class Codes Table 4.7 describing the type of background used behind target tissue. Both abbreviated codes and descriptive codes are accepted. Examples: <code>BGW</code>, <code>BGB</code>, <code>BGP</code>.</td>
+<td>ENUM <a href="#tbl-4-7">Table 4.7</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>hasLowReflectanceBackground</code></td>
+<td>-</td>
+<td>Required</td>
+<td>True or False statement that the background (black or paper) has low reflectance as defined as less than 4% reflectance across the spectral range of the instrument. For a paper background, this would be scored <code>false</code>.</td>
+<td>BOOLEAN</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>backgroundDescription</code></td>
+<td>-</td>
+<td>Cond. Req.</td>
+<td>Description of the black or other background material, including manufacturer and product information when available. Not required for paper backgrounds. Required field when tissue has black or other type (not paper) of background. Example: <code>Musou IR Flock</code></td>
+<td>TEXT</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>targetClass</code></td>
+<td><code>TC</code></td>
+<td>Required</td>
+<td>Free text or enumerated code from Target Class Codes (Table 4.5) describing type of tissue or background being measured. Both abbreviated codes and full codes can be used. Examples: <code>AD</code>, <code>perigynium</code>.</td>
+<td>TEXT or ENUM (Table 4.5)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>targetTissueId</code></td>
+<td><code>TN</code></td>
+<td>Optional</td>
+<td>Character index tracking the measured tissue units when multiple tissues are measured from a single specimen (e.g., <code>loose1</code>, <code>1</code>, <code>2</code>). For compound or more complex structures, projects are encouraged to develop their own consistent naming convention. Examples: <code>loose1</code>, <code>leaflet1</code>, <code>petal1</code>.</td>
+<td>TEXT</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>tissueDevelopmentalStage</code></td>
+<td>-</td>
+<td>Required</td>
+<td>Tissue developmental stage as coded in Developmental Stage Class Codes <a href="#tbl-4-4">Table 4.4</a>. Examples: <code>Mature</code>, <code>Uncertain</code>.</td>
+<td>ENUM <a href="#tbl-4-4">Table 4.4</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>hasBackgroundInMeasurement</code></td>
+<td>-</td>
+<td>Required</td>
+<td>True or false values indicating that the target tissue does not cover the full measurement area and the background is part of the measurement.</td>
+<td>BOOLEAN</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>percentBackgroundInMeasurement</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Numeric estimate for the percentage of the measurement area that is not covered by the target tissue and is background material (black background or herbarium paper). It is recommended to describe the estimation method in the comment field. Example: <code>25</code>.</td>
+<td>INTEGER</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>hasGlue</code></td>
+<td>-</td>
+<td>Required</td>
+<td>True/False/Uncertain: glue present in measurement area.</td>
+<td>ENUM (true/false/uncertain)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>hasNonGlueContamination</code></td>
+<td>-</td>
+<td>Required</td>
+<td>True, false, or uncertain values indicating a contaminant other than glue is present in the measurement area. This includes foreign biotic or abiotic agents on the target tissue, such as fungus or preservatives.</td>
+<td>ENUM (true/false/uncertain)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>measurementFlags</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>SStandardized categorical descriptors of the condition of the tissue within the measurement area. Values are selected from the predefined Tissue Descriptor Codes <a href="#tbl-4-6">Table 4.6</a>. Multiple descriptors should be separated with a pipe character (<code>|</code>). Example: <code>GoodPreservation|PathogenPresent</code>.</td>
+<td>ENUM (Table 4.6)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>tissueNotes</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Free-text field used to record additional observations on the condition of the specimen that may aid interpretation of spectral data. It can be used to clarify or elaborate on descriptors already included in measurementFlags, such as the conditions evidencing the quality of preservation (e.g., a MediumPreservation flag could be explained with the note, ‘measurement area discolored and wrinkled’). Notes should specify whether the information applies to the measurement area, the tissue unit, or the specimen as a whole. Examples: <code>mold in measurement area</code>, <code>formaldehyde preserved</code>.</td>
+<td>TEXT</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>tissueLocation</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>The location of the target tissue on the herbarium sheet. For mounted tissues, record as an <code>X,Y</code> coordinate in centimeters, with <strong><code>0,0</code> at the top-left corner of the sheet</strong> (e.g., <code>17,29</code>; see Fig. 4.2). If the sheet has non-square angles, align it flush with the left-side ruler. For unmounted tissues, provide a descriptive note indicating location. Examples: <code>17,29</code>, <code>envelope TCAD_TN1</code>.</td>
+<td>TEXT (coordinates preferred)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>comment</code></td>
+<td>-</td>
+<td>Optional</td>
+<td>Free-text field for recording any additional notes relevant to the measurement, including observations about the instrument, session, specimen, tissue, or data quality that are not captured elsewhere in the metadata. Example: <code>Amazing specimen.</code></td>
+<td>TEXT</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>measurementIndex</code></td>
+<td><code>IDX</code></td>
+<td>Required</td>
+<td>The measurement number index appended to the base filename (Part 3, Table 3.2: IDX) to properly associate each row of metadata with its single, corresponding measurement file. Example: <code>0001</code>.</td>
+<td>TEXT</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<div id="fig-4-2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-4-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig4.2-coordinatesWh.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-4-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+&nbsp;2: <strong>Fig. 4.2</strong>: Diagram of coordinate system for scoring <code>tissueLocation</code> in <a href="#tbl-4.3">Tissue Metadata</a>. Herbarium sheet is placed on top of the benchtop black background with centimeter rulers at top and left sides for ‘<code>x,y</code>’ notation of measurement area (white dashed circles) in centimeters with <code>0,0</code> at the top left. Black background cards are placed under unglued portions of leaves. From left to right, tissue <code>TCAB_TN3</code> has the location <code>10,26</code>, tissue <code>TCAD_TN2</code> has location <code>17,16</code> and tissue <code>TCAD_TN1</code> is stored with a label in a glassine envelope inside the packet with location <code>envelope TCAD_TN1</code>. For reference, specimen NEBC_00651639 metadata fields are proposed in <a href="../protocol/appendix2.html">Appendix II</a>. Specimen courtesy of the New England Botanical Society.
+</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+</section>
+<section id="controlled-vocabularies" class="level1">
+<h1>4.2 Controlled Vocabularies</h1>
+<section id="tbl-4-4" class="level3">
+<h3 class="anchored" data-anchor-id="tbl-4-4">Table 4.4: Developmental Stage Class Codes</h3>
+<p>Available codes for enumerating the required <code>tissueDevelopmentalStage</code> metadata <a href="#tbl-4-3">Table 4.3</a>. Codes follow ‘CamelCase’ format with capitalized initial letters.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>Young</code></td>
+<td>Actively developing tissue that is not yet fully expanded; may appear thinner, lighter in color, or more pliable than mature tissue.</td>
+</tr>
+<tr class="even">
+<td><code>Mature</code></td>
+<td>Fully developed and expanded tissue showing typical structural and color characteristics for the taxon; not visibly senescent.</td>
+</tr>
+<tr class="odd">
+<td><code>Old</code></td>
+<td>Senescent tissue showing visible signs of aging or decline, such as yellowing, darkening, curling, or drying.</td>
+</tr>
+<tr class="even">
+<td><code>Uncertain</code></td>
+<td>The development stage has been assessed but cannot be confidently determined due to intermediate features, damage, or insufficient visual cues.</td>
+</tr>
+<tr class="odd">
+<td><code>NotScored</code></td>
+<td>Developmental stage was not assessed or recorded for this tissue.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="tbl-4-5" class="level3">
+<h3 class="anchored" data-anchor-id="tbl-4-5">Table 4.5: Target Class Codes.</h3>
+<p>Available codes for enumerating the required <code>targetClass</code> metadata <a href="#tbl-4-3">Table 4.3</a>. Either the abbreviated code or the full CamelCase-formatted code (with an initial capital letter) may be used.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 25%">
+<col style="width: 69%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Full code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>W</code></td>
+<td><code>WhiteReference</code></td>
+<td>White reference.</td>
+</tr>
+<tr class="even">
+<td><code>WC</code></td>
+<td><code>WhiteCalibratedReference</code></td>
+<td>White calibrated reflectance standard (see Section 5.3).</td>
+</tr>
+<tr class="odd">
+<td><code>B</code></td>
+<td><code>BlackBackground</code></td>
+<td>Black background material, recorded when used as background for other target tissue measurements.</td>
+</tr>
+<tr class="even">
+<td><code>BC</code></td>
+<td><code>BlackCalibratedReference</code></td>
+<td>Black calibrated reflectance standard (see Section 5.3).</td>
+</tr>
+<tr class="odd">
+<td><code>P</code></td>
+<td><code>Paper</code></td>
+<td>Herbarium sheet paper, recorded when used as background for other target tissue measurements.</td>
+</tr>
+<tr class="even">
+<td><code>AB</code></td>
+<td><code>LeafAbaxial</code></td>
+<td>Abaxial leaf surface.</td>
+</tr>
+<tr class="odd">
+<td><code>AD</code></td>
+<td><code>LeafAdaxial</code></td>
+<td>Adaxial leaf surface.</td>
+</tr>
+<tr class="even">
+<td><code>LF</code></td>
+<td><code>Leaf</code></td>
+<td>Leaf surface. Applied when the abaxial and adaxial side cannot be differentiated or when leaves are terete or otherwise not bifacial (e.g.&nbsp;<em>Senecio rowleyanus</em>).</td>
+</tr>
+<tr class="odd">
+<td><code>PT</code></td>
+<td><code>Petal</code></td>
+<td>Petal.</td>
+</tr>
+<tr class="even">
+<td><code>IF</code></td>
+<td><code>Inflorescence</code></td>
+<td>Inflorescence.</td>
+</tr>
+<tr class="odd">
+<td><code>BR</code></td>
+<td><code>Bract</code></td>
+<td>Bract.</td>
+</tr>
+<tr class="even">
+<td><code>FR</code></td>
+<td><code>Fruit</code></td>
+<td>Fruit. The specific tissue (e.g., exocarp, mesocarp) can be described in tissueNotes.</td>
+</tr>
+<tr class="odd">
+<td><code>PSS</code></td>
+<td><code>Photosynthetic-SucculentStem</code></td>
+<td>Photosynthetic stem as in succulents like Cactus.</td>
+</tr>
+<tr class="even">
+<td><code>OB</code></td>
+<td><code>OuterBark</code></td>
+<td>Outer bark, rhytidome. Woody branch outer bark as in Hadlich et al.&nbsp;(2018).</td>
+</tr>
+<tr class="odd">
+<td><code>IB</code></td>
+<td><code>InnerBark</code></td>
+<td>Phloem. Woody branch inner bark as in Hadlich et al.&nbsp;(2018).</td>
+</tr>
+<tr class="even">
+<td><code>HS</code></td>
+<td><code>HerbaceousStem</code></td>
+<td>Herbaceous stem; can be photosynthetic as in PSS.</td>
+</tr>
+<tr class="odd">
+<td><code>WD</code></td>
+<td><code>Wood</code></td>
+<td>Wood.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="tbl-4-6" class="level3">
+<h3 class="anchored" data-anchor-id="tbl-4-6">Table 4.6: Tissue Descriptor Codes</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>GoodPreservation</code></td>
+<td>Tissue in the measurement area appears well preserved in color, structure, and texture (including original features from disease or herbivory) and shows minimal signs of degradation or breakage from pressing, drying, or storage. Tissues that are simply discolored may still be considered well preserved if other aspects of integrity are maintained.</td>
+</tr>
+<tr class="even">
+<td><code>MediumPreservation</code></td>
+<td>Tissue in the measurement area shows moderate degradation, such as partial discoloration, wilting, or deformation. Some structural loss may be present, though not severe. Evidence of degradation from other parts of the specimen (e.g., mold elsewhere on the tissue) may support assigning this level of preservation, but such observations should be recorded in tissueNotes if not present within the measurement area. This is expected to be the most common preservation condition for herbarium specimens used in spectral measurement.</td>
+</tr>
+<tr class="odd">
+<td><code>PoorPreservation</code></td>
+<td>Tissue in the measurement area shows clear signs of degradation, including severe discoloration, wrinkling, deformation, or breakage. Mold, insect damage, or other signs of poor preservation may also be present. As with other flags, evidence of degradation outside the measurement area (e.g., mold elsewhere on the tissue) may support the assigned flag but should be recorded in tissueNotes if not directly observed in the measurement area. Note that natural discoloration tendencies of certain taxa should be considered when applying this flag (see Appendix II).</td>
+</tr>
+<tr class="even">
+<td><code>MidveinPresent</code></td>
+<td>Target measurement area contains midvein or similarly prominent secondary venation.</td>
+</tr>
+<tr class="odd">
+<td><code>OrganismPresent</code></td>
+<td>Indicates that a visible organism (e.g., bryophyte, lichen, fungal structure) is present on or within the measurement area. This includes epiphyllous, endophytic, or other leaf-associated organisms, regardless of their ecological role (e.g., mutualistic, parasitic, or incidental). This flag serves as a general indicator and can be used in conjunction with more specific organism flags below.</td>
+</tr>
+<tr class="even">
+<td><code>BryophytePresent</code></td>
+<td>Indicates that a visible bryophyte (e.g., moss, liverwort, or hornwort) is present on or within the measurement area.</td>
+</tr>
+<tr class="odd">
+<td><code>LichenPresent</code></td>
+<td>Indicates that a visible lichen thallus or fragment is present on or within the measurement area.</td>
+</tr>
+<tr class="even">
+<td><code>FungusPresent</code></td>
+<td>Indicates that fungal structures are visible in the measurement area (e.g., hyphae, mycelium, fruiting body) and are presumed to be pre-mortem associates, such as endophytes or pathogens active while the plant was alive. This flag can overlap with PathogenPresent or MoldPresent.</td>
+</tr>
+<tr class="odd">
+<td><code>PathogenPresent</code></td>
+<td>Target measurement area contains necrotic tissue or other signs of pathogenic infection. Can be used with FungusPresent when fungal pathogens are suspected or known. This flag is based on visible tissue symptoms, not molecular confirmation.</td>
+</tr>
+<tr class="even">
+<td><code>MoldPresent</code></td>
+<td>Indicates that the measurement area shows signs of post-mortem fungal growth (e.g., surface mold, fuzz, bloom), likely resulting from poor drying or storage conditions. In practice, mold may be difficult to distinguish from other fungal growth without microscopic or culture analysis. Use judgment and note uncertainty in tissueNotes if needed.</td>
+</tr>
+<tr class="odd">
+<td><code>HerbivoryPresent</code></td>
+<td>Target measurement area contains herbivory.</td>
+</tr>
+<tr class="even">
+<td><code>AlcoholPresent</code></td>
+<td>Target measurement area was preserved with ethanol or other alcohol.</td>
+</tr>
+<tr class="odd">
+<td><code>PreservativePresent</code></td>
+<td>Target measurement area contains chemical preservative contamination excluding alcohol preservatives (e.g., diatoms, formaldehyde).</td>
+</tr>
+<tr class="even">
+<td><code>BurnPresent</code></td>
+<td>Target measurement area contains burned tissue.</td>
+</tr>
+<tr class="odd">
+<td><code>DebrisPresent</code></td>
+<td>Target measurement area contains non-specific material not described in other codes (e.g., dust, soil particles, insect parts, fibers, etc.) that may interfere with clean measurements. Can be elaborated in the tissueNotes field.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="tbl-4-7" class="level3">
+<h3 class="anchored" data-anchor-id="tbl-4-7">Table 4.7: Background and White Reference Class Codes</h3>
+<p>Available codes for enumerating the required <code>tissueBackgroundClass</code> metadata <a href="#tbl-4-3">Table 4.3</a>. Either the abbreviated code or the full CamelCase with initial capital letter jformatted code may be used.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 36%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Full code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>W</code></td>
+<td><code>WhiteReference</code></td>
+<td>White reference.</td>
+</tr>
+<tr class="even">
+<td><code>B</code></td>
+<td><code>BlackBackground</code></td>
+<td>Black background (&lt;4% reflectance).</td>
+</tr>
+<tr class="odd">
+<td><code>P</code></td>
+<td><code>PaperBackground</code></td>
+<td>Herbarium sheet paper.</td>
+</tr>
+<tr class="even">
+<td><code>O</code></td>
+<td><code>OtherBackground</code></td>
+<td>Other background material (must be described in metadata).</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="guidelines-for-data-archiving-and-sharing" class="level1">
+<h1>4.3 Guidelines for Data Archiving and Sharing</h1>
+<ul>
+<li><p>For each specimen, a copy of <strong>all unprocessed spectral files and metadata should be archived</strong> in the digital repository of the herbarium or institution that owns the specimen, or otherwise in accordance with their data storage practices. This ensures that the data remain co-located with the physical specimen and integrated with institutional capabilities for managing specimen metadata.</p></li>
+<li><p>In addition, projects should <strong>upload unprocessed, original format data files and metadata to a persistent, open-access repository</strong> that issues DOIs and supports versioning, such as Dryad, Zenodo, or Harvard Dataverse. These platforms are preferred over tools like EcoSIS, which have shown reduced reliability and uncertain long-term support.</p></li>
+<li><p>To facilitate reuse, users may also choose to also share tabular data files (e.g., .csv) with samples in rows and columns for metadata fields and spectral band values. If processed spectra are included (e.g., interpolated, splice/jump-corrected, or continuum- removed), the applied processing steps should be clearly documented.</p></li>
+<li><p>See example of data and metadata sharing here: <a href="https://doi.org/10.7910/DVN/LXPHBC">https://doi.org/10.7910/DVN/LXPHBC</a></p></li>
+</ul>
+<hr>
+</section>
+<section id="navigate-the-protocol" class="level1">
+<h1>Navigate the protocol</h1>
+<ul>
+<li>Proceed to <a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a></li>
+</ul>
+<p>Browse additional parts and appendices:</p>
+<ul>
+<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Overview<br>
+</li>
+<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow<br>
+</li>
+<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats<br>
+</li>
+<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing<br>
+</li>
+<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines<br>
+</li>
+<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement<br>
+</li>
+<li><a href="../protocol/references.html"><strong>References</strong></a></li>
+<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue<br>
+</li>
+<li><a href="../protocol/appendix2.html"><strong>Appendix II</strong></a> – Tissue Metadata for Quality Control</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/iherbspec\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<div style="text-align:center; padding-bottom:2em;">
+  CC BY 4.0 — <em>IHerbSpec Protocol</em>.
+  DOI: <a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>
+</div>
+
+
+
+
+</body></html>

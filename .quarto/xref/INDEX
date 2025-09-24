@@ -1,0 +1,92 @@
+{
+  "protocol.qmd": {
+    "protocol.html": "287a4c78",
+    "protocol.tex": "a19b0e04",
+    "protocol.embed.ipynb": "a43ac25d",
+    "protocol.out.ipynb": "ca6dc58b",
+    "protocol-preview.html": "d03b432b"
+  },
+  "index.qmd": {
+    "index.html": "86a1a913"
+  },
+  "publications.qmd": {
+    "publications.html": "8fd34a1a"
+  },
+  "about.qmd": {
+    "about.html": "b97dff92"
+  },
+  "index-old.qmd": {
+    "index-old.html": "b0316650"
+  },
+  "contact.qmd": {
+    "contact.html": "b5e6307f"
+  },
+  "protocol/part1-overview.qmd": {
+    "part1-overview.html": "639b0946",
+    "part1-overview.embed.ipynb": "737dd62b",
+    "part1-overview.out.ipynb": "90e6768b",
+    "part1-overview-preview.html": "1527df27"
+  },
+  "protocol/preface.qmd": {
+    "preface.html": "fe14ffcd",
+    "preface.embed.ipynb": "67fd5b85",
+    "preface.out.ipynb": "ba27da69",
+    "preface-preview.html": "b267c623"
+  },
+  "protocol/part2-workflow.qmd": {
+    "part2-workflow.html": "de780017",
+    "part2-workflow.embed.ipynb": "4c10a14c",
+    "part2-workflow.out.ipynb": "a9b7899f",
+    "part2-workflow-preview.html": "fb01cb98"
+  },
+  "protocol/part3-filenames.qmd": {
+    "part3-filenames.html": "500cef3d",
+    "part3-filenames.embed.ipynb": "eea2f30b",
+    "part3-filenames.out.ipynb": "5fb015f6",
+    "part3-filenames-preview.html": "9484414a"
+  },
+  "protocol/part3-filenames-pythonTable.qmd": {
+    "part3-filenames-pythonTable.html": "db9cc9a9"
+  },
+  "protocol/part4-metadata.qmd": {
+    "part4-metadata.html": "f36b7044",
+    "part4-metadata.embed.ipynb": "d8eabc81",
+    "part4-metadata.out.ipynb": "816acdee",
+    "part4-metadata-preview.html": "c396013e"
+  },
+  "protocol/part5-instrumentation.qmd": {
+    "part5-instrumentation.html": "e67bf266",
+    "part5-instrumentation.embed.ipynb": "477ac1e5",
+    "part5-instrumentation.out.ipynb": "4baf9176",
+    "part5-instrumentation-preview.html": "fac0410c"
+  },
+  "protocol/references.qmd": {
+    "references.html": "626eaed9",
+    "references.embed.ipynb": "38bcbd6d",
+    "references.out.ipynb": "aab23e26",
+    "references-preview.html": "7b31c1ae"
+  },
+  "protocol/part6-guidelines.qmd": {
+    "part6-guidelines.html": "c3d5cdd6",
+    "part6-guidelines.embed.ipynb": "d795878a",
+    "part6-guidelines.out.ipynb": "25fe3663",
+    "part6-guidelines-preview.html": "864cfeb1"
+  },
+  "protocol/appendix1.qmd": {
+    "appendix1.html": "e39aa199",
+    "appendix1.embed.ipynb": "ccee1cb6",
+    "appendix1.out.ipynb": "989308e4",
+    "appendix1-preview.html": "421b1c94"
+  },
+  "protocol/appendix2.qmd": {
+    "appendix2.html": "0bfd6645",
+    "appendix2.embed.ipynb": "827910ac",
+    "appendix2.out.ipynb": "5cea8cf6",
+    "appendix2-preview.html": "eaa29c1f"
+  },
+  "protocol/index.qmd": {
+    "index.embed.ipynb": "55c00c22",
+    "index.out.ipynb": "ba1e763c",
+    "index-preview.html": "2526e24a"
+  }
+}
