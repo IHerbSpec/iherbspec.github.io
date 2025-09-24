@@ -1,19 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://iherbspec.github.io/about.html</loc>
-    <lastmod>2025-07-09T17:21:00.608Z</lastmod>
+    <loc>https://iherbspec.github.io/protocol/part6-guidelines.html</loc>
+    <lastmod>2025-09-24T16:34:46.558Z</lastmod>
   </url>
   <url>
-    <loc>https://iherbspec.github.io/index.html</loc>
-    <lastmod>2025-07-10T14:32:24.654Z</lastmod>
+    <loc>https://iherbspec.github.io/protocol/references.html</loc>
+    <lastmod>2025-09-24T16:33:50.368Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iherbspec.github.io/protocol/part5-instrumentation.html</loc>
+    <lastmod>2025-09-24T16:34:41.890Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iherbspec.github.io/protocol/appendix2.html</loc>
+    <lastmod>2025-09-24T16:33:23.156Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iherbspec.github.io/protocol/appendix1.html</loc>
+    <lastmod>2025-09-24T16:48:58.110Z</lastmod>
   </url>
   <url>
     <loc>https://iherbspec.github.io/protocol.html</loc>
-    <lastmod>2025-07-09T18:35:20.022Z</lastmod>
+    <lastmod>2025-09-24T18:58:24.854Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iherbspec.github.io/protocol/part3-filenames.html</loc>
+    <lastmod>2025-09-24T19:20:28.818Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iherbspec.github.io/protocol/part1-overview.html</loc>
+    <lastmod>2025-09-24T16:34:24.704Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iherbspec.github.io/protocol/part2-workflow.html</loc>
+    <lastmod>2025-09-24T17:07:29.451Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iherbspec.github.io/protocol/preface.html</loc>
+    <lastmod>2025-09-24T18:41:48.277Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iherbspec.github.io/protocol/part4-metadata.html</loc>
+    <lastmod>2025-09-24T19:16:15.225Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iherbspec.github.io/about.html</loc>
+    <lastmod>2025-09-19T14:37:50.821Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iherbspec.github.io/contact.html</loc>
+    <lastmod>2025-09-19T16:58:43.893Z</lastmod>
   </url>
   <url>
     <loc>https://iherbspec.github.io/publications.html</loc>
-    <lastmod>2025-07-10T15:08:17.031Z</lastmod>
+    <lastmod>2025-09-24T16:38:05.231Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iherbspec.github.io/index.html</loc>
+    <lastmod>2025-09-24T16:35:08.022Z</lastmod>
   </url>
 </urlset>

@@ -1,0 +1,95 @@
+---
+title: "Part 3 – Filename Conventions and Formats"
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      CC BY 4.0 — <em>IHerbSpec Protocol</em>. 
+      DOI: <a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>
+    </div>
+---
+
+<!-- Page-only styles -->
+<style>
+  .table-narrow {
+    max-width: 150ch;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    overflow-x: auto;   /* allow scroll if still too wide */
+  }
+</style>
+
+
+The full and simple filename conventions specified in [Table 3.1](#tbl-3-1) provide a consistent format for encoding key metadata into filenames, supporting traceability, metadata parsing, and long-term interoperability.  
+
+Each filename follows a defined format, built from metadata-coded segments with standardized prefixes (see [Table 3.2](#tbl-3-2)). These are **recommended filename standards** designed for reliable parsing regardless of segment order, **corresponding to required metadata fields** described in [Part 4](part4-metadata.qmd). The spectrometer software will automatically append a measurement index (`IDX`) to the end of each filename—no additional text should be added after the `IDX`.  
+
+Filename formats differ slightly depending on the type of target material (i.e., `targetClass`; see [Table 4.5](#tbl-4-5)). For white and black-background targets, the `projectId` (`PI`) and `sessionId` (`SI`) are key segments for traceability and the `SI` is also critical for linking to all associated tissue measurements via the tissue full filename. For tissues, the full filename convention also includes the minimum session-level, specimen-level, and tissue-level metadata needed for confident data aggregation.  
+
+A simplified filename convention may be used during measurement sessions to streamline data collection. However, projects should convert all filenames to the full format before archiving or sharing. When using the simplified format for local files, projects should maintain consistent file organization and take precautions to prevent ambiguity.  
+
+---
+
+## Recommended Filename Conventions
+
+<div class="table-narrow">
+
+### Table 3.1: Full and Simple Filename Conventions with Different Measurement Target Classes {#tbl-3-1}
+
+| Target (`targetClass`) | Convention Type | Filename format and example |
+|---------------------------|-----------------|-----------------------------|
+| White target (`TCW`) | Full | `PI<projectId>_SN<sessionId>_TC<targetClass>_<IDX>`<br>Example: `PIERYspec1_SN202406180932_TCW_0001` |
+| Black background target (`TCB`) | Full | `PI<projectId>_SN<sessionId>_TC<targetClass>_<IDX>`<br>Example: `PIERYspec1_SN202406180932_TCB_0001` |
+| White calibrated reflectance standard (`TCWC`) | Full | `PI<projectId>_SN<sessionId>_TC<targetClass><serialNumber>_<IDX>`<br>Example: `PIFagaceae_SN202506171532_TCWC7254_0000` |
+| Black calibrated reflectance standard (`TCBC`) | Full | `PI<projectId>_SN<sessionId>_TC<targetClass><serialNumber>_<IDX>`<br>Example: `PIFagaceae_SN202506171532_TCBC7210_0000` |
+| Tissue target on black background (`BGB` + `TCAD`/`TCAB`) | Full | `PI<projectId>_SN<sessionId>_BG<backgroundClass>_HC<herbariumCode>_SI<specimenId>_TC<targetClass>_TN<targetTissueId>_<IDX>`<br>Example: `PIERYspec1_SN202406180932_BGB_HCGH_SI02022418_TCAD_TN1_001` |
+| Tissue target on black background (`BGB` + `TCAD`/`TCAB`) | Simple | `SI<specimenId>_TC<targetClass>_TN<targetTissueId>_<IDX>`<br>Example: `SI02022418_TCAD_TN1_0001` |
+| Tissue target on paper (`BGP` + `TCAD`/`TCAB`) | Full | `PI<projectId>_SN<sessionId>_BG<backgroundClass>_HC<herbariumCode>_SI<specimenId>_TC<targetClass>_TN<targetTissueId>_<IDX>`<br>Example: `PIERYspec1_SN202406180932_BGP_HCNEBC_SI00746092_TCAD_TN1_001` |
+| Tissue target on paper (`BGP` + `TCAD`/`TCAB`) | Simple | `SI<specimenId>_TC<targetClass>_TN<targetTissueId>_<IDX>`<br>Example: `SI00746092_TCAD_TN1_0001` |
+| Paper target (`BGB` + `TCP`) | Full | `PI<projectId>_SN<sessionId>_BG<backgroundClass>_HC<herbariumCode>_SI<specimenId>_TC<targetClass>_TN<targetTissueId>_<IDX>`<br>Example: `PIERYspec1_SN202406180932_BGB_HCNEBC_SI00746092_TCP_TN1_001` |
+| Paper target (`BGB` + `TCP`) | Simple | `SI<specimenId>_TC<targetClass>_TN<targetTissueId>_<IDX>`<br>Example: `SI00746092_TCP_TN1_0001` |
+
+</div>
+
+
+---
+
+## Filename Components
+
+[Table 3.2](#tbl-3-2), below, defines the components of filenames and their direct links to metadata fields. Each segment of the filename follows a specific format, with a standardized prefix that links directly to a **required** metadata field (see [Part 4](part4-metadata.qmd). These components form the structured **conventions** shown in [Table 3.1](#tbl-3-1) and enable automatic parsing and alignment between spectral files and metadata records. 
+
+<div class="table-narrow">
+
+### Table 3.2: Filename Components and Corresponding Metadata Fields.{#tbl-3-2}
+
+Cross-reference [Table 4.3](part4-metadata.qmd#tbl-4-3) for further descriptions of metadata fields.
+
+| Code | Metadata field | Description | Example |
+|------|-----------|-------------|---------|
+| `PI`   | `projectId` | Unique identifier for the spectral measurement project ([Table 4.1](part4-metadata.qmd#tbl-4-1)). | `PIHUHcoca`, `PIFagales1` |
+| `SN`   | `sessionId` | A unique identifier generated from date/time when the session begins (`SNYYYYMMDDHHMM`;  ([Table 4.1](part4-metadata.qmd#tbl-4-1)). | `SN202406180932` |
+| `BG`   | `backgroundClass` | Enumerated code from Background Class Codes ([Table 4.3](part4-metadata.qmd#tbl-4-3)). | `BGB`, `BGP`, `BGO` |
+| `HC`   | `herbariumCode` | Herbarium acronym or collection identifier ([Table 4.2](part4-metadata.qmd#tbl-4-2)). | `HCGH`, `HCINPA` |
+| `SI`   | `specimenId` | Specimen ID (GUID, barcode, accession no., collector name + number; [Table 4.2](part4-metadata.qmd#tbl-4-2)). | `SI03774853`, `SIThorne24070` |
+| `TC`   | `targetClass` | Enumerated code from Target Class Codes ([Table 4.3](part4-metadata.qmd#tbl-4-3)). | `TCAD`, `TCAB`, `TCW`, `TCP`, `TCB` |
+| `TN`   | `targetTissueId` | Index tracking measured tissue units (e.g., 1, 2, …; [Table 4.3](part4-metadata.qmd#tbl-4-3)). | `TN1`, `TN2` |
+| `IDX`  | `measurementIndex` | Auto-appended by spectrometer software ([Table 4.3](part4-metadata.qmd#tbl-4-3)). | `0001`, `0002` |
+
+</div>
+
+
+# Navigate the protocol
+- Proceed to [**Part 4**](part4-metadata.qmd)
+
+Browse additional parts and appendices:
+
+- [**Part 1**](part1-overview.qmd) – Overview  
+- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow  
+- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats  
+- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing  
+- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
+- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement  
+- [**References**](references.qmd)
+- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue  
+- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control  

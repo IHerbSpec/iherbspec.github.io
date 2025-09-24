@@ -10,16 +10,39 @@ website:
       - text: Home
         href: index.qmd
       - text: IHerbSpec Protocol
-        href: protocol.qmd
+        menu:
+          - text: Home - IHerbSpec Protocol
+            href: protocol.qmd
+          - text: Preface
+            href: protocol/preface.qmd
+          - text: Part 1 – Overview
+            href: protocol/part1-overview.qmd
+          - text: Part 2 – Workflow
+            href: protocol/part2-workflow.qmd
+          - text: Part 3 – Filenames
+            href: protocol/part3-filenames.qmd
+          - text: Part 4 – Metadata
+            href: protocol/part4-metadata.qmd
+          - text: Part 5 – Instrumentation
+            href: protocol/part5-instrumentation.qmd
+          - text: Part 6 – Tissue Selection
+            href: protocol/part6-guidelines.qmd
+          - text: References
+            href: protocol/references.qmd
+          - text: Appendix I
+            href: protocol/appendix1.qmd
+          - text: Appendix II
+            href: protocol/appendix2.qmd
       - text: Publications
         href: publications.qmd
-  page-footer:
-    center: |
-      © 2025 IHerbSpec
+      - text: Contact Us
+        href: contact.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: default
     toc: true
+    css: styles.css
 
-
+crossref:
+  fig-title: ""

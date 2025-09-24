@@ -1,0 +1,95 @@
+---
+title: "Part 6 – Selecting Tissues for Spectral Measurement"
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      CC BY 4.0 — <em>IHerbSpec Protocol</em>. 
+      DOI: <a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>
+    </div>
+---
+
+# 6.1 Sources of Variation in Herbarium Plant Tissues
+
+Spectral data from herbarium specimens are influenced by two major sources of variation.  
+
+The first is the natural **biological variation** of phenotypes constructed through genotype-by-environment interactions that biologists seek to understand. This includes differences in developmental stage (e.g., young, mature, senescent), within-individual morphological variation (e.g., sun vs. shade leaves), and biotic influences such as herbivory or pathogens.  
+
+The second source is **herborization-related variation**—herborization being defined as the process of preserving plant tissues in an herbarium, from the time of collection through long-term storage. This includes collection, pressing, drying, application of preservatives, and subsequent storage conditions. Each of these steps will affect the spectral data to some extent.  
+
+For example, differences in technique (e.g., bagged vs. immediately pressed specimens; use of ethanol) and environmental factors during drying and storage can lead to discoloration, dehydration, tissue distortion, and contamination from biotic or abiotic agents such as fungus, glue, or insecticides. Among these, the drying protocol might be particularly influential: specimens not dried efficiently—especially in warm, humid conditions—are prone to rot and degradation, which significantly affects spectral quality. Over time, temperature and humidity fluctuations may accelerate tissue degradation.  
+
+As a result, herbarium specimens exhibit a wide range of tissue conditions, reflecting both the biology of the living organism and the varied preservation environments they experience. **Documenting these sources of variation as metadata is essential**, as they can be correlated with model accuracy (Kühn et al. 2024, White et al. 2025) and can be leveraged to improve the performance of predictive models.  
+
+When available, contextual details from specimen labels—such as the use of ethanol or other treatments—should be captured in metadata. As it is rare to see such details, botanists should be encouraged to include preservation protocols on specimen labels.  
+
+The metadata fields `hasGlue`, `hasNonGlueContamination`, `measurementFlags`, and `tissueNotes` ([Table 4.3](part4-metadata.qmd#tbl-4-3)), are designed to record the condition of the tissue within the target measurement area at the time of measurement. These fields are essential for downstream filtering and analysis of spectra.  
+
+Examples of specimen tissue metadata records are provided in [Appendix II](appendix2.qmd).  
+
+---
+
+# 6.2 General Guidelines for Tissue Selection
+
+*Note: Much of this text is tailored to measuring leaf tissues, but can generally be applied to other tissues.*  
+
+1. **Quality over quantity.**  
+   - Under the goal of broad digitization of herbarium tissues, spectral data quality could be considered more important than specimen quantity. Targeting higher quality, less degraded specimens will yield more informative spectral data.  
+   - If the majority of tissues on a specimen are degraded, damaged, or contaminated, that specimen should generally not be measured unless it holds particular research value.  
+
+2. **Select specimens based on their general tissue condition:**  
+   - For digitization projects focused on broad taxonomic coverage, specimens should be evaluated as whole units when determining suitability for spectral measurement. Next, technicians should prioritize tissues that are both suitable for measurement and representative of the overall condition of the specimen, rather than selecting isolated tissues that are in unusually good condition. This approach helps ensure alignment between the general specimen condition and the resulting spectral data, and could avoid biases based on assumptions of exceptional tissue conditions. If the majority of tissues on a specimen are degraded, damaged, or contaminated, that specimen should generally not be measured unless it holds particular research value. Conversely, if the specimen consists mostly of clean, mature, fully expanded tissues, it is appropriate to proceed with measurement—while also considering additional measurements, when feasible, to capture variation such as developmental stage or damage from herbivory and scoring the appropriate metadata for these additional measurements.  
+   - *Caveat:* while the overall condition of the specimen informs whether it should be measured, metadata on developmental stage, contamination, and tissue condition should always record the characteristics of the specific measurement area of the tissue—not the specimen as a whole. This ensures metadata accuracy and supports high-resolution filtering and analysis. Information about the specimen can be recorded in the `tissueNotes` field ([Table 4.3](part4-metadata.qmd#tbl-4-3)).  
+
+3. **Score metadata with care.**  
+   - Metadata collection is a critical component for understanding factors affecting spectral data quality and will provide confidence during data aggregation.  
+   - Herbaria and research teams should train technicians in specimen selection strategies and scoring metadata to reduce subjectivity.  
+
+4. **Prioritize:**  
+   - Tissue measurements on black backgrounds.  
+     1. Detached tissues of appropriate size in fragment packets allow full assessment of the presence of glue and access to both leaf surfaces.  
+     2. For mounted specimens, taped or sewn tissues can have black backing inserted beneath (technicians should look for evidence of old glue).  
+   - Specimens with mature tissues (e.g., fully expanded leaves) that are clean of biotic or abiotic contaminants.  
+   - Tissues that fill the probe measurement area, even if midvein is measured.  
+   - Leaves with flat, complete surfaces and intact laminae.  
+
+5. **Avoid:**  
+   - Tissues with glue.  
+   - Tissues attached to herbarium paper such that no black background can be inserted beneath the tissue.  
+   - Tissues that are not pressed flat (e.g., deformed, folded, crumpled, or abnormal leaves).  
+   - Tissues contaminated by biotic or abiotic agents (e.g., algae, lichen, fungus, chemical preservatives, glue).  
+   - Damaged tissues (e.g., by herbivory, pathogens, herborization phenomena).  
+   - Midribs and major venation in the leaves, or other types of vasculature or intrusions in target tissue.  
+   - If larger tissues are available, avoid smaller tissues that don’t cover the entire optical probe measurement area.  
+
+6. **Measuring small tissues:**  
+   Measuring taxa with naturally small tissues presents unique challenges, but several strategies can help obtain representative spectral measurements with minimal error.  
+   - Center the probe on multiple areas of the small tissue and collect several measurements, then average the values to represent the tissue’s spectral profile.  
+   - Create a mosaic by arranging multiple small tissue units side by side to fill the measurement area. Avoid overlapping tissues, as stacking can alter light scattering and distort reflectance values ([Fig. A1](appendix1.qmd#fig-a1)).  
+   - Consider optical setup with small measurement area: For projects in the instrument selection phase, Spectral Evolution offers a custom optical probe with a 2-mm measurement area compatible with their NaturaSpec and PSR spectroradiometers.  
+   - Avoid using narrow angle lenses as these might distort the spectrum ([Fig. A1](appendix1.qmd#fig-a1)).  
+
+7. **Multiple individual plants within one herbarium sheet:**  
+   - Each individual plant on a sheet should be demarcated with a unique `specimenId` (see [Table 3.3](part3-filenames.qmd#tbl-3-3)).  
+
+---
+
+# 6.3 Decision tree for tissue selection
+
+![**Fig. 6.1.** Decision tree diagram for target tissue selection.](images/Fig6.1-decisionTree_v1.png){#fig-6-1 fig-align="center" width="800px"}
+
+---
+
+# Navigate the protocol
+
+Browse additional parts and appendices:
+
+- [**Part 1**](part1-overview.qmd) – Overview  
+- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow  
+- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats  
+- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing  
+- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
+- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement  
+- [**References**](references.qmd)
+- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue  
+- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control  
+

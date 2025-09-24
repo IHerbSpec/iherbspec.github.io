@@ -1,0 +1,92 @@
+---
+title: "Part 5 – Instrumentation and Materials Guidelines"
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      CC BY 4.0 — <em>IHerbSpec Protocol</em>. 
+      DOI: <a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>
+    </div>
+---
+
+# 5.1 Precautions
+
+1. **Carefully handle backgrounds and white references (e.g., Spectralon®):**  
+   - Use laboratory gloves to handle black backgrounds and white references and tweezers to handle herbarium tissues.  
+   - Avoid touching and dirtying the reflective surfaces.  
+   - Avoid blowing or cleaning backgrounds and reference standards with canned air, which can cause chemical contamination (other options, such as O2 Hurricane, avoid this contamination).  
+
+2. **Avoid burning target tissues:**  
+   - High light intensities in optical probes can burn tissues, especially thin leaves! Use low light intensity and minimum measurement duration based on manufacturer’s guidance to avoid this.  
+   - Avoid measuring tissues with glue on them, whenever possible.  
+   - Place a black background under the leaf or target tissue to avoid spectral contamination from the herbarium mounting paper whenever possible. Background surfaces, except for non-reflective black, will influence reflectance spectra (see [Fig. 1.1](part1-overview.qmd#fig-1-1)).  
+
+---
+
+# 5.2 Spectra Data Files
+
+1. **Output unprocessed percent reflectance data to files, if possible.**  
+   - Percent reflectance should be present in the file at the wavelengths directly measured by the instrument.  
+   - If instruments and software output transformed data by default (e.g., Spectral Evolution PSR+ output is interpolated at 1 nm resolution), refer to user manuals to change settings to output percent reflectance values at measured wavelengths instead.  
+
+2. **File formats differ among spectroradiometer manufacturers, models, and softwares.**  
+   - Make sure that files include percent reflectance values.  
+
+---
+
+# 5.3 Instrumentation and Materials Quality Control
+
+1. **Instrument maintenance:**  
+   - Follow manufacturer SOP for spectroradiometer maintenance. If possible, send the instrument to the manufacturer at regular intervals for maintenance (e.g., every two years).  
+   - Have fiber optic cables checked by the manufacturer annually and replace damaged fiber optic cables.  
+
+2. **For background and white reference measurement requirements, see [Section 1.2](part1-overview.qmd).**  
+   - White reference scans are typically not saved as a separate file, but the white reference digital numbers (raw sensor values) should be included in each target spectrum file (e.g., `.sig` format). These values are used by the instrument software to calculate reflectance from raw radiance.  
+   - Black background materials are required to have less than 4% reflectance across all wavelengths (see [Fig. 1.1](part1-overview.qmd#fig-1-1); e.g., IR Flock Sheet from [Musou Black USA](https://musoublackusa.com/products/ir-flock-sheet)).  
+   - If measuring leaves on herbarium paper on a benchtop, place a black mat under the herbarium sheets to prevent contaminating reflectance from the benchtop (see [Fig. 4.2](part4-metadata.qmd#fig-4-2)). Black felt (3–5 mm thick) is a practical and cost-effective choice for this purpose.  
+
+3. **Target measurements of background material (black or paper) must be linked to tissue measurements using filename conventions ([Part 3](part3-filenames.qmd)).**  
+   - This supports quality control of background conditions and enables development of spectral unmixing approaches to isolate tissue reflectance.  
+
+4. **Wear gloves and carefully handle all tissues, white reference, black backgrounds, and calibrated reflectance standards to keep them clean (see [5.1 Precautions](#51-precautions)).**  
+
+5. **Calibrated reflectance standards:**  
+   - Institutions should consider purchasing calibrated reflectance standards, such as Spectralon® Calibrated (SL Standard) Diffuse Reflectance Standards. These should be kept clean and separate from ‘working’ white references, and used for long-term assessment of instrument performance, optical drift, and the condition of reference materials (e.g., white references and black backgrounds).  
+   - These are supplied with a calibration certificate and serial number that verifies reflectance values across wavelengths.  
+   - Reflectance standards are white (e.g., Spectralon® 99%) and black (e.g., Spectralon® 2%) at a minimum, and can also include gradations of gray.  
+   - It is recommended that standards be measured at regular intervals depending on the level of activity (e.g., once per session; consult spectroradiometer manufacturer), and archived with the filename conventions provided in [Table 3.1](part3-filenames.qmd#tbl-3-1).  
+
+---
+
+# 5.4 Specimen and Tissue Annotation
+
+1. **Metadata recommendation:**  
+   - IHerbSpec recommends recording the `tissueLocation` metadata field (see [Table 4.3](part4-metadata.qmd#tbl-4-3)) to document the position of measured tissues on the specimen.  
+
+2. **Consult with herbarium collections managers** to define a suitable specimen annotation protocol that aligns with institutional policies.  
+
+3. **Recommended specimen annotation practices:**  
+   - Attach a project annotation label to the herbarium sheet (e.g., "Leaf spectral reflectance; DM White (2025)").  
+   - Use archival-quality materials for labels and annotations, such as acid-free paper.  
+   - Use pencil for direct annotation of measured tissues on sheets.  
+   - For loose tissues (from packets or envelopes):  
+     1. Place the measured tissue in a glassine envelope, which is archival and thin.  
+     2. Include a label inside the envelope indicating the `targetTissueClass` and `targetTissueId` (see [Table 4.3](part4-metadata.qmd#tbl-4-3); e.g., “Tissue TN1”).  
+     3. Store the envelope in the specimen packet or attach it to the herbarium sheet (see [Fig. 4.2](part4-metadata.qmd#fig-4-2)).  
+
+---
+
+# Navigate the protocol
+
+- Proceed to [**Part 6**](part6-guidelines.qmd)
+
+Browse additional parts and appendices:
+
+- [**Part 1**](part1-overview.qmd) – Overview  
+- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow  
+- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats  
+- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing  
+- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
+- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement  
+- [**References**](references.qmd)
+- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue  
+- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control  

@@ -1,0 +1,62 @@
+---
+title: "Contact Us"
+---
+
+<!-- Page-only styles -->
+<style>
+  .contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  .contact-form input, 
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+  }
+  .contact-form button {
+    padding: 0.75rem 1.25rem;
+    background: #2c7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+</style>
+
+::: {.column-page-inset}
+<div class="content-narrow">
+
+We welcome comments, suggestions, and revisions to improve the protocol, and encourage more members of the herbarium community to join the **IHerbSpec Working Group**.  
+
+To get in touch, please use the form below. Your message will be delivered securely to the working group coordinators.  
+
+If you prefer, you can also reach out via the contact details on our [GitHub repository](https://github.com/IHerbSpec/iherbspec.github.io).
+
+</div>
+:::
+
+<div class="contact-form">
+
+<form action="https://formspree.io/f/mqadrbwo" method="POST">
+  <label>
+    Your Name:
+    <input type="text" name="name" required>
+  </label>
+
+  <label>
+    Your Email:
+    <input type="email" name="_replyto" required>
+  </label>
+
+  <label>
+    Message:
+    <textarea name="message" rows="6" required></textarea>
+  </label>
+
+  <button type="submit">Send</button>
+</form>
+
+</div>
+

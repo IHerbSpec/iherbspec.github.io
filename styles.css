@@ -1,1 +1,27 @@
 /* css styles */
+
+.full-width {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1em auto;
+}
+
+.content-narrow {
+  max-width: 70ch;   /* ~70 characters per line */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.125rem;  /* keep it nicely readable */
+  line-height: 1.6;
+}
+
+/* Quarto figure captions (covers both render paths) */
+.quarto-figure figcaption,
+.quarto-figure-caption,
+.figure .figure-caption {
+  font-size: 0.9rem;       /* bigger */
+  font-weight: 400;      /* clearer */
+  color: #333;           /* darker */
+  text-align: fill;    /*  */
+  margin-top: 0.1em;
+}

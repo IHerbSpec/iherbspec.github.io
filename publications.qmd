@@ -1,5 +1,6 @@
 ---
-title: "Selected Publications"
+title: ""
+page-layout: full
 ---
 
 ### Working Group Contributions to Herbarium-based Spectral Research  
@@ -16,5 +17,3 @@ Neto-Bradley, B.M., P. Bonnet, H. Goëau, A. Joly, J. Cavender-Bares, D.A. Coome
 
 White, D.M., J. Cavender-Bares, C.C. Davis, J.A. Guzmán Q., S. Kothari, J.M. Robles, J.E. Meireles. 2025. *Seeing herbaria in a new light: Leaf reflectance spectroscopy unlocks trait and classification modeling in plant biodiversity collections.* **New Phytologist**.  
 [https://doi.org/10.1111/nph.70357](https://doi.org/10.1111/nph.70357)
-
----

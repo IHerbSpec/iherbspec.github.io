@@ -1,13 +1,55 @@
 ---
 title: "Welcome to IHerbSpec"
+page-layout: full
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      © 2025 IHerbSpec
+    </div>
 ---
 
-The International Herbarium Spectral Digitization Working Group (IHerbSpec) is a global consortium advancing standardized methods for collecting and using reflectance spectra from herbarium specimens.
+![](images/NaturaSpec-IMG_4840.png){.full-width}
+
+<!-- Page-only styles (won’t affect other pages) -->
+<style>
+  /* Center the big page title */
+  #title-block-header .title { text-align: center; }
+
+  /* Make homepage body text larger */
+  main#quarto-document-content { font-size: 1.125rem; line-height: 1.7; }
+
+  /* Center figure captions */
+  .quarto-figure figcaption { text-align: center; }
+  
+  /* new: limit the descriptive text width */
+  .content-narrow {
+    max-width: 70ch;       /* ~70 characters per line (ideal) */
+    margin-left: auto;
+    margin-right: auto;    /* centers the block */
+  }
+</style>
+
+
+::: {.column-page-inset}
+<div class="content-narrow">
+
+The International Herbarium Spectral Digitization Working Group (IHerbSpec) is a global consortium advancing standardized methods for collecting and and using reflectance spectra from herbarium specimens.
+
 
 Our goal is to support integrative plant biodiversity research by harmonizing measurement workflows, metadata standards, and data-sharing practices.
 
+</div>
+:::
+
+---
 
 **Explore:**
 
 - [IHerbSpec Protocol](protocol.qmd)
+
 - [Selected Publications](publications.qmd)
+
+---
+
+![Participants in the inaugural IHerbSpec workshop, Harvard University Herbaria, May 2024.](images/IHerbSpec.jpeg){fig-align="center" width="800px"}
+
