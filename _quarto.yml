@@ -45,6 +45,16 @@ format:
     theme: default
     toc: true
     css: styles.css
+    include-in-header: meta.html 
 
+metadata:
+  og:image: images/NaturaSpec-IMG_4840.png
+  og:title: "IHerbSpec"
+  og:description: "International Herbarium Spectral Scanning Protocol"
+  twitter:card: 
+  twitter:image: images/NaturaSpec-IMG_4840.png
+  twitter:title: "IHerbSpec"
+  twitter:description: "International Herbarium Spectral Scanning Protocol"
+  
 crossref:
   fig-title: ""
