@@ -3,8 +3,10 @@ title: "Part 6 – Selecting Tissues for Spectral Measurement"
 include-after-body:
   text: |
     <div style="text-align:center; padding-bottom:2em;">
-      CC BY 4.0 — <em>IHerbSpec Protocol</em>. 
-      DOI: <a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>
+      <img src="images/cc-by.svg"
+           alt="CC BY 4.0" 
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
     </div>
 ---
 
@@ -69,7 +71,7 @@ Examples of specimen tissue metadata records are provided in [Appendix II](appen
    - Avoid using narrow angle lenses as these might distort the spectrum ([Fig. A1](appendix1.qmd#fig-a1)).  
 
 7. **Multiple individual plants within one herbarium sheet:**  
-   - Each individual plant on a sheet should be demarcated with a unique `specimenId` (see [Table 3.3](part3-filenames.qmd#tbl-3-3)).  
+   - Each individual plant on a sheet should be demarcated with a unique `specimenId` ( [Table 4.2](part4-metadata.qmd#tbl-4-2)).  
 
 ---
 

@@ -246,7 +246,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="step-3.-start-session-and-score-session-metadata" class="level1">
 <h1>Step 3. Start Session and Score Session Metadata</h1>
 <ol type="1">
-<li>Score Session Metadata (see <a href="#tbl-4-1">Table 4.1</a>):
+<li>Score Session Metadata (see <a href="../protocol/part4-metadata.html#tbl-4-1">Table 4.1</a>):
 <ul>
 <li>Record <code>sessionId</code> datetime in the format <code>YYYYMMDDHHMM</code> (e.g., <code>202507011351</code>).<br>
 </li>
@@ -264,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li>Take a white reference.<br>
 </li>
-<li>Set simple filename for white target (see <a href="#tbl-3-1">Table 3.1</a>):
+<li>Set simple filename for white target (see <a href="../protocol/part3-filenames.html#tbl-3-1">Table 3.1</a>):
 <ul>
 <li><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_TCW</code>
 <ul>
@@ -284,7 +284,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li>Take one black target measurement.<br>
 </li>
-<li>Optionally, take target measurements of each calibrated reflectance standard (see <a href="../protocol/part5-instrumentation.html#instrumentation-and-materials-quality-control">Section 5.3</a>) using filename conventions (<a href="#tbl-3-1">Table 3.1</a>):
+<li>Optionally, take target measurements of each calibrated reflectance standard (see <a href="../protocol/part5-instrumentation.html#instrumentation-and-materials-quality-control">Section 5.3</a>) using filename conventions (<a href="../protocol/part3-filenames.html#tbl-3-1">Table 3.1</a>):
 <ul>
 <li><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_TC&lt;targetClass&gt;&lt;serial number&gt;</code>
 <ul>
@@ -297,7 +297,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="step-5.-tissue-measurement-sequence" class="level1">
 <h1>Step 5. Tissue Measurement Sequence</h1>
 <ol type="1">
-<li>Take white reference at regular intervals (e.g., every 20 min.; see <a href="../protocol/part1-overview.html#measurement-and-metadata-overview">Section 1.2</a>).<br>
+<li>Take white reference at regular intervals (e.g., every 20 min.; see <a href="../protocol/part1-overview.html#white-reference-and-background-measurements">Section 1.2.2</a>).<br>
 </li>
 <li>Determine if tissue is suitable for measurement (see <a href="../protocol/part6-guidelines.html">Part 6</a>). If not, skip to the next specimen.<br>
 </li>
@@ -337,7 +337,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><em>Additional tissues (optional)</em>:
 <ul>
-<li>Select other tissue units with new <code>targetTissueIds</code> (recommended) and/or additional <code>targetClass</code> values (see <a href="#tbl-4-5">Table 4.5</a>).<br>
+<li>Select other tissue units with new <code>targetTissueIds</code> (recommended) and/or additional <code>targetClass</code> values (see <a href="../protocol/part4-metadata.html#tbl-4-5">Table 4.5</a>).<br>
 </li>
 <li>Repeat tissue measurement steps.</li>
 </ul></li>
@@ -360,14 +360,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="step-7.-score-specimen-and-tissue-metadata" class="level1">
 <h1>Step 7. Score Specimen and Tissue Metadata</h1>
 <ol type="1">
-<li>Score <strong>Specimen Metadata</strong> for every measurement (see <a href="#tbl-4-2">Table 4.2</a>):
+<li>Score <strong>Specimen Metadata</strong> for every measurement (see <a href="../protocol/part4-metadata.html#tbl-4-2">Table 4.2</a>):
 <ul>
 <li>Required: <code>herbariumCode</code>, <code>specimenId</code><br>
 </li>
 <li>Recommended: <code>scientificName</code>, <code>identificationQualifier</code>, <code>identifiedBy</code>, <code>dateIdentified</code>, <code>isTempControlled</code>, <code>annualTempMin</code>, <code>annualTempMax</code>, <code>isHumidityControlled</code>, <code>annualHumidityMin</code>, <code>annualHumidityMax</code><br>
 </li>
 </ul></li>
-<li>Score <strong>Tissue Metadata</strong> for every measurement (see <a href="#tbl-4-3">Table 4.3</a>):
+<li>Score <strong>Tissue Metadata</strong> for every measurement (see [Table 4.3]part4-metadata.qmd(#tbl-4-3)):
 <ul>
 <li>Required: <code>backgroundClass</code>, <code>hasLowReflectanceBackground</code>, <code>targetClass</code>, <code>tissueDevelopmentalStage</code>, <code>hasBackgroundInMeasurement</code>, <code>hasGlue</code>, <code>hasNonGlueContamination</code>, <code>measurementIndex</code><br>
 </li>
@@ -833,8 +833,8 @@ ul.task-list li input[type="checkbox"] {
   </script>
 </div> <!-- /content -->
 <div style="text-align:center; padding-bottom:2em;">
-  CC BY 4.0 — <em>IHerbSpec Protocol</em>.
-  DOI: <a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>
+  <img src="images/cc-by.svg" alt="CC BY 4.0" style="height:20px; vertical-align:middle; margin-right:6px;">
+  IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
 </div>
 
 

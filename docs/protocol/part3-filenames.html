@@ -215,7 +215,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 <p>The full and simple filename conventions specified in <a href="#tbl-3-1">Table 3.1</a> provide a consistent format for encoding key metadata into filenames, supporting traceability, metadata parsing, and long-term interoperability.</p>
 <p>Each filename follows a defined format, built from metadata-coded segments with standardized prefixes (see <a href="#tbl-3-2">Table 3.2</a>). These are <strong>recommended filename standards</strong> designed for reliable parsing regardless of segment order, <strong>corresponding to required metadata fields</strong> described in <a href="../protocol/part4-metadata.html">Part 4</a>. The spectrometer software will automatically append a measurement index (<code>IDX</code>) to the end of each filename—no additional text should be added after the <code>IDX</code>.</p>
-<p>Filename formats differ slightly depending on the type of target material (i.e., <code>targetClass</code>; see <a href="#tbl-4-5">Table 4.5</a>). For white and black-background targets, the <code>projectId</code> (<code>PI</code>) and <code>sessionId</code> (<code>SI</code>) are key segments for traceability and the <code>SI</code> is also critical for linking to all associated tissue measurements via the tissue full filename. For tissues, the full filename convention also includes the minimum session-level, specimen-level, and tissue-level metadata needed for confident data aggregation.</p>
+<p>Filename formats differ slightly depending on the type of target material (i.e., <code>targetClass</code>; see <a href="../protocol/part4-metadata.html#tbl-4-5">Table 4.5</a>). For white and black-background targets, the <code>projectId</code> (<code>PI</code>) and <code>sessionId</code> (<code>SI</code>) are key segments for traceability and the <code>SI</code> is also critical for linking to all associated tissue measurements via the tissue full filename. For tissues, the full filename convention also includes the minimum session-level, specimen-level, and tissue-level metadata needed for confident data aggregation.</p>
 <p>A simplified filename convention may be used during measurement sessions to streamline data collection. However, projects should convert all filenames to the full format before archiving or sharing. When using the simplified format for local files, projects should maintain consistent file organization and take precautions to prevent ambiguity.</p>
 <hr>
 <section id="recommended-filename-conventions" class="level2">
@@ -296,7 +296,6 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="#tbl-3-2">Table 3.2</a>, below, defines the components of filenames and their direct links to metadata fields. Each segment of the filename follows a specific format, with a standardized prefix that links directly to a <strong>required</strong> metadata field (see <a href="../protocol/part4-metadata.html">Part 4</a>. These components form the structured <strong>conventions</strong> shown in <a href="#tbl-3-1">Table 3.1</a> and enable automatic parsing and alignment between spectral files and metadata records.</p>
 <section id="tbl-3-2" class="level3 table-narrow">
 <h3 class="anchored" data-anchor-id="tbl-3-2">Table 3.2: Filename Components and Corresponding Metadata Fields.</h3>
-<p>Cross-reference <a href="../protocol/part4-metadata.html#tbl-4-3">Table 4.3</a> for further descriptions of metadata fields.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -789,8 +788,8 @@ ul.task-list li input[type="checkbox"] {
   </script>
 </div> <!-- /content -->
 <div style="text-align:center; padding-bottom:2em;">
-  CC BY 4.0 — <em>IHerbSpec Protocol</em>.
-  DOI: <a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>
+  <img src="images/cc-by.svg" alt="CC BY 4.0" style="height:20px; vertical-align:middle; margin-right:6px;">
+  IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
 </div>
 
 

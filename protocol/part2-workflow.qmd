@@ -3,8 +3,10 @@ title: "Part 2 – Measurement and Metadata Workflow"
 include-after-body:
   text: |
     <div style="text-align:center; padding-bottom:2em;">
-      CC BY 4.0 — <em>IHerbSpec Protocol</em>. 
-      DOI: <a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>
+      <img src="images/cc-by.svg"
+           alt="CC BY 4.0" 
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
     </div>
 ---
 
@@ -32,7 +34,7 @@ metadata entry. Steps include references to protocol sections providing further 
 ---
 
 # Step 3. Start Session and Score Session Metadata
-1. Score Session Metadata (see [Table 4.1](#tbl-4-1)):  
+1. Score Session Metadata (see [Table 4.1](part4-metadata.qmd#tbl-4-1)):  
    - Record `sessionId` datetime in the format `YYYYMMDDHHMM` (e.g., `202507011351`).  
    - Score **required fields**: `projectID`, `sessionId`, `instrumentModel`, `opticalSetupDescription`, `measurementSettings`, `whiteReferenceDescription`.  
    - Score **recommended fields**: `operator`, `lightSourceType`, `distanceTargetToSensor`, `lensFieldOfView`, `angleLightToSensor`, `measurementAreaDiameter`.  
@@ -42,7 +44,7 @@ metadata entry. Steps include references to protocol sections providing further 
 
 # Step 4. Collect White and Black Session Measurements
 1. Take a white reference.  
-2. Set simple filename for white target (see [Table 3.1](#tbl-3-1)):  
+2. Set simple filename for white target (see [Table 3.1](part3-filenames.qmd#tbl-3-1)):  
    - `PI<projectId>_SN<sessionId>_TCW`  
    	  - Example: `PIHUHcoca_SN202507011351_TCW`  
 3. Take one white target measurement.  
@@ -50,14 +52,14 @@ metadata entry. Steps include references to protocol sections providing further 
    - `PI<projectId>_SN<sessionId>_TCB`  
       - Example: `PIHUHcoca_SN202507011351_TCB`  
 5. Take one black target measurement.  
-6. Optionally, take target measurements of each calibrated reflectance standard (see [Section 5.3](part5-instrumentation.qmd#instrumentation-and-materials-quality-control)) using filename conventions ([Table 3.1](#tbl-3-1)):  
+6. Optionally, take target measurements of each calibrated reflectance standard (see [Section 5.3](part5-instrumentation.qmd#instrumentation-and-materials-quality-control)) using filename conventions ([Table 3.1](part3-filenames.qmd#tbl-3-1)):  
    - `PI<projectId>_SN<sessionId>_TC<targetClass><serial number>`
       - Example: `PIHUHcoca_SN202507011351_TCCW379902`  
 
 ---
 
 # Step 5. Tissue Measurement Sequence
-1. Take white reference at regular intervals (e.g., every 20 min.; see [Section 1.2](part1-overview.qmd#measurement-and-metadata-overview)).  
+1. Take white reference at regular intervals (e.g., every 20 min.; see [Section 1.2.2](part1-overview.qmd#white-reference-and-background-measurements)).  
 2. Determine if tissue is suitable for measurement (see [Part 6](part6-guidelines.qmd)). If not, skip to the next specimen.  
 3. Place specimen on benchtop black background with a ruler grid (recommended; see [Fig. 4.2](part4-metadata.qmd#fig-4-2)).  
 4. Place black background behind target tissue (required whenever possible; see [Fig. 2.2](part2-workflow.qmd#fig-2-2)).  
@@ -74,7 +76,7 @@ metadata entry. Steps include references to protocol sections providing further 
       - Example: `SI00746092_TCP_TN1`  
    - Take 1 paper measurement.  
 8. *Additional tissues (optional)*:  
-   - Select other tissue units with new `targetTissueIds` (recommended) and/or additional `targetClass` values (see [Table 4.5](#tbl-4-5)).  
+   - Select other tissue units with new `targetTissueIds` (recommended) and/or additional `targetClass` values (see [Table 4.5](part4-metadata.qmd#tbl-4-5)).  
    - Repeat tissue measurement steps.  
 
 ---
@@ -89,10 +91,10 @@ metadata entry. Steps include references to protocol sections providing further 
 
 
 # Step 7. Score Specimen and Tissue Metadata
-1. Score **Specimen Metadata** for every measurement (see [Table 4.2](#tbl-4-2)):  
+1. Score **Specimen Metadata** for every measurement (see [Table 4.2](part4-metadata.qmd#tbl-4-2)):  
    - Required: `herbariumCode`, `specimenId`  
    - Recommended: `scientificName`, `identificationQualifier`, `identifiedBy`, `dateIdentified`, `isTempControlled`, `annualTempMin`, `annualTempMax`, `isHumidityControlled`, `annualHumidityMin`, `annualHumidityMax`  
-2. Score **Tissue Metadata** for every measurement (see [Table 4.3](#tbl-4-3)):  
+2. Score **Tissue Metadata** for every measurement (see [Table 4.3]part4-metadata.qmd(#tbl-4-3)):  
    - Required: `backgroundClass`, `hasLowReflectanceBackground`, `targetClass`, `tissueDevelopmentalStage`, `hasBackgroundInMeasurement`, `hasGlue`, `hasNonGlueContamination`, `measurementIndex`  
    - Recommended: `backgroundDescription`, `targetTissueId`, `percentBackgroundInMeasurement`, `measurementFlags`, `tissueNotes`, `tissueLocation`, `comment`  
 

@@ -1,12 +1,15 @@
 ---
 title: "."
 page-layout: full
+image: images/NaturaSpec-IMG_4840.png
 title-block-banner: "images/spectroscopy-setup.png"
 include-after-body:
   text: |
     <div style="text-align:center; padding-bottom:2em;">
-      CC BY 4.0 — <em>IHerbSpec Protocol</em>. 
-      DOI: <a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>
+      <img src="protocol/images/cc-by.svg"
+           alt="CC BY 4.0" 
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
     </div>
 ---
 
@@ -47,7 +50,7 @@ You can browse the protocol section by section online, or download the protocol 
 
 ### Sections
 
-- [Preface](protocol/preface.qmd)  
+- [Preface](protocol/preface.html)  
   *Introduces the motivation, development history, and community collaboration behind the protocol, as well as author information and acknowledgements.*  
 
 - [Part 1: Overview](protocol/part1-overview.qmd)  
@@ -76,6 +79,19 @@ You can browse the protocol section by section online, or download the protocol 
   
 - [References](protocol/references.qmd)  
 
+--- 
+
+::: {.column-page-inset}
+<div class="content-narrow">
+
+We welcome questions, comments, and suggestions to improve the protocol, and encourage more members of the herbarium community to join IHerbSpec.  
+ 
+Please communicate about the protocol via [github.com/iherbspec/iherbspec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol) 
+
+or [Contact Us](contact.qmd) to get involved!
+
+</div>
+:::
 
 ---
 
@@ -98,17 +114,7 @@ White DM, NI Ahlstrand, MW Austin, D Bastianelli, S Bazan, K Boughalmi, W Cardin
 
 ---
 
-🔧 Visit the development repository: [github.com/IHerbSpec/IHerbSpec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol)
-
-::: {.column-page-inset}
-<div class="content-narrow">
-
-We welcome comments, suggestions, and revisions to improve the protocol, and encourage more members of the herbarium community to join the IHerbSpec Working Group.  
- 
-To get involved, please reach out via the contact information provided on the GitHub repository, or use the [Contact Us](contact.qmd) page on this site.
-
-</div>
-:::
+## 🔧 Visit the development repository: [github.com/IHerbSpec/IHerbSpec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol)
 
 ---
 
@@ -120,17 +126,17 @@ Users are free to share and adapt the material, provided attribution is given to
 ---
 
 # Navigate the protocol
-- Proceed to [**Preface**](preface.qmd)
+- Proceed to [**Preface**](protocol/preface.qmd)
 
 Browse additional parts and appendices:
 
-- [**Part 1**](part1-overview.qmd) – Overview  
-- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow  
-- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats  
-- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing  
-- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
-- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement  
-- [**References**](references.qmd)
-- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue  
-- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control  
+- [**Part 1**](protocol/part1-overview.qmd) – Overview  
+- [**Part 2**](protocol/part2-workflow.qmd) – Measurement and Metadata Workflow  
+- [**Part 3**](protocol/part3-filenames.qmd) – Filename Conventions and Formats  
+- [**Part 4**](protocol/part4-metadata.qmd) – Metadata and Databasing  
+- [**Part 5**](protocol/part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
+- [**Part 6**](protocol/part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement  
+- [**References**](protocol/references.qmd)
+- [**Appendix I**](protocol/appendix1.qmd) – Number of Measurements per Tissue  
+- [**Appendix II**](protocol/appendix2.qmd) – Tissue Metadata for Quality Control  
 

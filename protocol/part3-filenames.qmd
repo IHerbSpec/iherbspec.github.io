@@ -3,8 +3,10 @@ title: "Part 3 – Filename Conventions and Formats"
 include-after-body:
   text: |
     <div style="text-align:center; padding-bottom:2em;">
-      CC BY 4.0 — <em>IHerbSpec Protocol</em>. 
-      DOI: <a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>
+      <img src="images/cc-by.svg"
+           alt="CC BY 4.0" 
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
     </div>
 ---
 
@@ -25,7 +27,7 @@ The full and simple filename conventions specified in [Table 3.1](#tbl-3-1) prov
 
 Each filename follows a defined format, built from metadata-coded segments with standardized prefixes (see [Table 3.2](#tbl-3-2)). These are **recommended filename standards** designed for reliable parsing regardless of segment order, **corresponding to required metadata fields** described in [Part 4](part4-metadata.qmd). The spectrometer software will automatically append a measurement index (`IDX`) to the end of each filename—no additional text should be added after the `IDX`.  
 
-Filename formats differ slightly depending on the type of target material (i.e., `targetClass`; see [Table 4.5](#tbl-4-5)). For white and black-background targets, the `projectId` (`PI`) and `sessionId` (`SI`) are key segments for traceability and the `SI` is also critical for linking to all associated tissue measurements via the tissue full filename. For tissues, the full filename convention also includes the minimum session-level, specimen-level, and tissue-level metadata needed for confident data aggregation.  
+Filename formats differ slightly depending on the type of target material (i.e., `targetClass`; see [Table 4.5](part4-metadata.qmd#tbl-4-5)). For white and black-background targets, the `projectId` (`PI`) and `sessionId` (`SI`) are key segments for traceability and the `SI` is also critical for linking to all associated tissue measurements via the tissue full filename. For tissues, the full filename convention also includes the minimum session-level, specimen-level, and tissue-level metadata needed for confident data aggregation.  
 
 A simplified filename convention may be used during measurement sessions to streamline data collection. However, projects should convert all filenames to the full format before archiving or sharing. When using the simplified format for local files, projects should maintain consistent file organization and take precautions to prevent ambiguity.  
 
@@ -62,8 +64,6 @@ A simplified filename convention may be used during measurement sessions to stre
 <div class="table-narrow">
 
 ### Table 3.2: Filename Components and Corresponding Metadata Fields.{#tbl-3-2}
-
-Cross-reference [Table 4.3](part4-metadata.qmd#tbl-4-3) for further descriptions of metadata fields.
 
 | Code | Metadata field | Description | Example |
 |------|-----------|-------------|---------|

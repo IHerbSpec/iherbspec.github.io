@@ -3,8 +3,10 @@ title: "Preface"
 include-after-body:
   text: |
     <div style="text-align:center; padding-bottom:2em;">
-      CC BY 4.0 — <em>IHerbSpec Protocol</em>. 
-      DOI: <a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>
+      <img src="images/cc-by.svg"
+           alt="CC BY 4.0" 
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
     </div>
 ---
 
@@ -35,8 +37,8 @@ The group actively collaborates to identify common challenges, facilitate collab
 
 This protocol is the outcome of IHerbSpec’s initial collaborative phase. From December 2024 to June 2025, members convened virtually to share project-specific workflows and align measurement strategies. The effort culminated in an in-person workshop at the Harvard University Herbaria (May 1–3, 2025), where members reached consensus on key elements of the protocol, including:
 
-1. The minimum and recommended number of measurements for leaf tissues (see [Section 1.2: Strategy and number of tissue measurements](part1-overview.qmd#strategy-and-number-of-tissue-measurements)).  
-2. Tissue condition and contamination metadata (see [Section 1.2: Scoring metadata pertaining to tissue condition and contamination](part1-overview.qmd#scoring-metadata-pertaining-to-tissue-condition-and-contamination)).  
+1. The minimum and recommended number of measurements for leaf tissues (see [Section 1.2.3: Strategy and number of tissue measurements](part1-overview.qmd#strategy-and-number-of-tissue-measurements)).  
+2. Tissue condition and contamination metadata (see [Section 1.2.6: Scoring metadata pertaining to tissue condition and contamination](part1-overview.qmd#scoring-metadata-pertaining-to-tissue-condition-and-contamination)).  
 3. Tissue development stage metadata (see [Table 4.4](part4-metadata.qmd#tbl-4-4)).
 
 IHerbSpec will continue to refine and expand this protocol and welcomes inquiries from interested researchers or institutions wishing to ask questions, provide feedback, or explore opportunities for participation.
@@ -98,7 +100,7 @@ Additional support:
 
 # Author Contributions
 
-All authors contributed intellectually to the development of the protocol, including reviewing, editing, and approving the final version. DMW organized and led protocol development and the writing process.  
+All authors contributed intellectually to the development of the protocol, including reviewing, editing, and approving the final version. DMW organized and led protocol development, writing, and website management.  
 
 - Intellectual leadership: Led by JCB with contributions from MWA, FD, JAK, JEM, JAGQ, MS, and DMW.  
 - Draft writing: NIA, MWA, JCB, ELB, TLPC, FD, OMG, JAGQ, JAK, SK, DS, NLQC, DMW  
@@ -111,7 +113,7 @@ All authors contributed intellectually to the development of the protocol, inclu
 
 # Suggested Citation
 
-White DM, NI Ahlstrand, MW Austin, D Bastianelli, S Bazan, K Boughalmi, W Cardinal-McTeague, TLP Couvreur, F Durgante, OM Grace, JA Guzmán Q, K Hansen, M Hopkins, R Jackson, JA Kennedy, S Kothari, AK Lee, É Léveillé-Bourret, JE Meireles, BM Neto-Bradley, CO Nichodemus, NL Quinteros Casaverde, C Rodrigues-Vaz, M Schmull, PS Soltis, D Spalink, CC Vasconcelos, JL Viana, H Tuomisto, T Wells, J Cavender-Bares. 2025. *IHerbSpec Protocol v.1.XX*. [https://doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
+White DM, NI Ahlstrand, MW Austin, D Bastianelli, S Bazan, K Boughalmi, W Cardinal-McTeague, TLP Couvreur, F Durgante, OM Grace, JA Guzmán Q, K Hansen, M Hopkins, R Jackson, JA Kennedy, S Kothari, AK Lee, É Léveillé-Bourret, JE Meireles, BM Neto-Bradley, CO Nichodemus, NL Quinteros Casaverde, C Rodrigues-Vaz, M Schmull, PS Soltis, D Spalink, CC Vasconcelos, JL Viana, H Tuomisto, T Wells, J Cavender-Bares. 2025. *IHerbSpec Protocol v.1.01*. [https://doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
 
 ---
 
