@@ -5,6 +5,8 @@ project:
 website:
   title: "IHerbSpec"
   site-url: https://iherbspec.github.io
+  favicon: images/NaturaSpec-IMG_4840.png
+  image: images/NaturaSpec-IMG_4840.png
   navbar:
     left:
       - text: Home
