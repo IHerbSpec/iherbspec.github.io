@@ -36,8 +36,7 @@ include-after-body:
 
 The International Herbarium Spectral Digitization Working Group (IHerbSpec) is a global consortium advancing the collection and use of reflectance spectra from herbarium specimens.
 
-
-Our goal is to strengthen integrative plant biodiversity science by harmonizing spectral measurement workflows, metadata standards, and data-sharing practices.
+Our goal is to harmonize spectral measurement workflows, metadata standards, and data-sharing practices to support and advance integrative plant biodiversity science.
 
 </div>
 :::

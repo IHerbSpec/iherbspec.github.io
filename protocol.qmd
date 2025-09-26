@@ -37,8 +37,8 @@ include-after-body:
 # The IHerbSpec Protocol
 
 
-Herbarium specimens are an unparalleled record of plant diversity that we can leverage via reflectance spectrometry to illuminate plant structure and function across time, space, and taxa. Yet variation in instrumentation and measurement procedures, along with variable preservation of tissues and sources of contamination such as paper and glue, pose significant challenges to global data harmonization.
- 
+Herbarium specimens are an unparalleled record of plant diversity that we can leverage via reflectance spectroscopy to illuminate plant biology across time, space, and taxa. 
+
 The **IHerbSpec Protocol** was developed to provide clear, community-driven standards for spectral measurement and metadata documentation—establishing best practices to minimize technical errors, maximize data quality, and promote transparency in accordance with the Findable, Accessible, Interoperable, and Reusable ([FAIR](https://doi.org/10.1038/sdata.2016.18)) principles.
 
 By following this protocol, researchers and collections can generate reproducible, interoperable data that support confident aggregation across institutions and unlock new insights in ecology, evolution, and biodiversity sciences.
@@ -51,7 +51,7 @@ You can browse the protocol section by section online, or download the protocol 
 ### Sections
 
 - [Preface](protocol/preface.html)  
-  *Introduces the motivation, development history, and community collaboration behind the protocol, as well as author information and acknowledgements.*  
+  *Frontmatter introducing the motivation, development history, and community collaboration behind the protocol, as well as author information and acknowledgements.*  
 
 - [Part 1: Overview](protocol/part1-overview.qmd)  
   *Defines the purpose, structure, and guiding principles of the protocol, including minimum requirements and recommended practices.*  
@@ -81,27 +81,6 @@ You can browse the protocol section by section online, or download the protocol 
 
 --- 
 
-::: {.column-page-inset}
-<div class="content-narrow">
-
-We welcome questions, comments, and suggestions to improve the protocol, and encourage more members of the herbarium community to join IHerbSpec.  
- 
-Please communicate about the protocol via [github.com/iherbspec/iherbspec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol) 
-
-or [Contact Us](contact.qmd) to get involved!
-
-</div>
-:::
-
----
-
-## 📌 Suggested Citation
-
-White DM, NI Ahlstrand, MW Austin, D Bastianelli, S Bazan, K Boughalmi, W Cardinal-McTeague, TLP Couvreur, F Durgante, OM Grace, JA Guzmán Q, K Hansen, M Hopkins, R Jackson, JA Kennedy, S Kothari, AK Lee, É Léveillé-Bourret, JE Meireles, BM Neto-Bradley, CO Nichodemus, NL Quinteros Casaverde, C Rodrigues-Vaz, M Schmull, PS Soltis, D Spalink, CC Vasconcelos, JL Viana, H Tuomisto, T Wells, J Cavender-Bares. 2025. *IHerbSpec Protocol v.1.XX* [https://doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
-
----
-
-
 ## 📥 Download IHerbSpec Protocol Files
 
 - [Protocol v1.01 (PDF)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpec%20Protocol%20v1.01.pdf)  
@@ -117,6 +96,25 @@ White DM, NI Ahlstrand, MW Austin, D Bastianelli, S Bazan, K Boughalmi, W Cardin
 ## 🔧 Visit the development repository: [github.com/IHerbSpec/IHerbSpec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol)
 
 ---
+
+## 👥 Team Science
+::: {.column-page-inset}
+<div class="content-narrow">
+
+This protocol reflects a team science approach. We welcome contributions to improve it and invite people interested in spectroscopy of herbarium specimens to join IHerbSpec.  
+
+Please share feedback or suggestions via [github.com/iherbspec/iherbspec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol)  
+
+or [Contact Us](contact.qmd) to get involved!
+
+</div>
+:::
+
+---
+
+## 📌 Suggested Citation
+
+White DM, NI Ahlstrand, MW Austin, D Bastianelli, S Bazan, K Boughalmi, W Cardinal-McTeague, TLP Couvreur, F Durgante, OM Grace, JA Guzmán Q, K Hansen, M Hopkins, R Jackson, JA Kennedy, S Kothari, AK Lee, É Léveillé-Bourret, JE Meireles, BM Neto-Bradley, CO Nichodemus, NL Quinteros Casaverde, C Rodrigues-Vaz, M Schmull, PS Soltis, D Spalink, CC Vasconcelos, JL Viana, H Tuomisto, T Wells, J Cavender-Bares. 2025. *IHerbSpec Protocol v.1.XX* [https://doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
 
 ## ©️ License
 

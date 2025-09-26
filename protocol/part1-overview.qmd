@@ -24,11 +24,11 @@ include-after-body:
 
 # 1.1 Purpose and Structure of the IHerbSpec Protocol
 
-This document outlines a “base” protocol for the spectroscopic measurement of herbarium plant tissues by defining clear minimum requirements and additional recommended practices that promote data quality, methodological consistency, reproducibility, and interoperability across projects and institutions. It is intended to support researchers collecting reflectance spectra for ecological and evolutionary analyses ([Cavender-Bares et al. 2025](references.qmd)).
+This document outlines a "base" protocol for the spectroscopic measurement of herbarium tissues. It defines clear minimum requirements and recommended practices that promote data quality, methodological transparency, and interoperability across projects and institutions. In addition to these foundations, the protocol has been expanded to incorporate broader discussions surrounding instrumentation, materials, and herbarium tissues to further guide best practices.
 
 The protocol specifies two categories of procedural elements:
 
-- **Minimum requirements** – essential components that must be met for a project to be considered aligned with the IHerbSpec Protocol.  
+- **Minimum requirements** – essential components to enable data harmonization that must be met for a project to be considered aligned with the IHerbSpec Protocol.  
 - **Recommended practices** – additions that enhance data quality and support broader utility, but are not mandatory.  
 
 The IHerbSpec Protocol is organized into modular parts:  
@@ -44,7 +44,7 @@ The IHerbSpec Protocol is organized into modular parts:
 - [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control  
 
 
-While consistency is central to integrating spectral datasets, the protocol is **not intended to prescribe a rigid workflow**. It is designed to accommodate a variety of project goals, instrumentation, and institutional capacities through methodological transparency and balancing standardization with the flexibility needed for future innovation and improvement.
+While consistency is central to aggregating spectral datasets, **the protocol is not intended to prescribe a rigid workflow**. The core requirements are designed to enable data harmonization through methodological consistency and transparency, while the overall structure preserves the flexibility needed for its broad adoption, continued innovation, and refinement.
 
 ---
 
