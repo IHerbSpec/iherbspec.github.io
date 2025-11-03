@@ -14,8 +14,8 @@ page-layout: full
 
 <div class="references">
 
-Cavender-Bares, J., D.M. White, N.I. Ahlstrand, M. Austin, D. Bastianelli, S. Bazan, K. Boughalmi, W. Cardinal-McTeague, E. Chacón-Madrigal, T.L.P. Couvreur, C. Davis, F.M. Durgante, O.M. Grace, J.A. Guzmán Q., K. Hansen, M.S. Hernández-Leal, M.J.G. Hopkins, R. Jackson, S. Kothari, A.K. Lee, É. Léveillé-Bourret, J. Pinto-Ledezma, N.L.Q. Casaverde, J.E. Meireles, C.O. Nichodemus, M. Schmull, D.E. Soltis, P.S. Soltis, H. Tuomisto, S. Ustin, C.C. Vasconcelos. **Next-generation specimen digitization: The international herbarium community goes spectral!** *EcoEvoRxiv* [preprint] (2025). 
-[https://doi.org/10.32942/X2V927](https://doi.org/10.32942/X2V927)
+Cavender-Bares, J., D.M. White, N.I. Ahlstrand, M. Austin, D. Bastianelli, S. Bazan, K. Boughalmi, W. Cardinal-McTeague, E. Chacón-Madrigal, T.L.P. Couvreur, C. Davis, F.M. Durgante, O.M. Grace, J.A. Guzmán Q., K. Hansen, M.S. Hernández-Leal, M.J.G. Hopkins, R. Jackson, S. Kothari, A.K. Lee, É. Léveillé-Bourret, J. Pinto-Ledezma, N.L.Q. Casaverde, J.E. Meireles, B. Neto-Bradley, C.O. Nichodemus, R.H. Ree, M. Schmull, D.E. Soltis, P.S. Soltis, H. Tuomisto, S. Ustin, C.C. Vasconcelos. **Next-generation specimen digitization: capturing reflectance spectra from the world's herbaria for modeling plant biology across time, space, and taxa**. *New Phytologist* (2025). 
+[https://doi.org/10.1111/nph.70645](https://doi.org/10.1111/nph.70645)
 
 ---
 
