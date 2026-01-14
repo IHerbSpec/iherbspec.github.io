@@ -114,7 +114,8 @@ or [Contact Us](contact.qmd) to get involved!
 
 ## 📌 Suggested Citation
 
-White DM, NI Ahlstrand, MW Austin, D Bastianelli, S Bazan, K Boughalmi, W Cardinal-McTeague, TLP Couvreur, F Durgante, OM Grace, JA Guzmán Q, K Hansen, M Hopkins, R Jackson, JA Kennedy, S Kothari, AK Lee, É Léveillé-Bourret, JE Meireles, BM Neto-Bradley, CO Nichodemus, NL Quinteros Casaverde, C Rodrigues-Vaz, M Schmull, PS Soltis, D Spalink, CC Vasconcelos, JL Viana, H Tuomisto, T Wells, J Cavender-Bares. 2025. *IHerbSpec Protocol v.1.XX* [https://doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
+
+IHerbSpec, 2025. Protocol for Spectral Digitization of Herbarium Specimens (v1.01). Zenodo. https://doi.org/10.5281/zenodo.17195920[https://doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
 
 ## ©️ License
 
