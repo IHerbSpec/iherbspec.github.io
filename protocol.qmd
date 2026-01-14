@@ -93,7 +93,7 @@ You can browse the protocol section by section online, or download the protocol 
 
 ---
 
-## 🔧 Visit the development repository: [github.com/IHerbSpec/IHerbSpec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol)
+## 🔧 Visit the GitHub development repository: [github.com/IHerbSpec/IHerbSpec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol)
 
 ---
 
@@ -103,7 +103,7 @@ You can browse the protocol section by section online, or download the protocol 
 
 This protocol reflects a team science approach. We welcome contributions to improve it and invite people interested in spectroscopy of herbarium specimens to join IHerbSpec.  
 
-Please share feedback or suggestions via [github.com/iherbspec/iherbspec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol)  
+Please share feedback or suggestions as issues on our GitHub repo [github.com/iherbspec/iherbspec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol)  
 
 or [Contact Us](contact.qmd) to get involved!
 
