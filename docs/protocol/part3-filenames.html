@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../images/NaturaSpec-IMG_4840.png" rel="icon" type="image/png">
+<link href="../images/IHerbSpecIcon-white-bgb.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text"><img src="images/IHerbSpecIcon-white-bgb.png" class="img-fluid"></span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iherbspec-protocol" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -117,6 +117,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../protocol/preface.html">
  <span class="dropdown-text">Preface</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/changes.html">
+ <span class="dropdown-text">Changes Since Last Version</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../protocol/part1-overview.html">
@@ -154,6 +158,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../protocol/appendix2.html">
  <span class="dropdown-text">Appendix II</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/tables.html">
+ <span class="dropdown-text">Downloads</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -180,11 +188,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#recommended-filename-conventions" id="toc-recommended-filename-conventions" class="nav-link active" data-scroll-target="#recommended-filename-conventions">Recommended Filename Conventions</a>
+  <li><a href="#part3" id="toc-part3" class="nav-link active" data-scroll-target="#part3">Overview</a></li>
+  <li><a href="#recommended-filename-conventions" id="toc-recommended-filename-conventions" class="nav-link" data-scroll-target="#recommended-filename-conventions">3.1 Recommended Filename Conventions</a>
   <ul class="collapse">
   <li><a href="#tbl-3-1" id="toc-tbl-3-1" class="nav-link" data-scroll-target="#tbl-3-1">Table 3.1: Full and Simple Filename Conventions with Different Measurement Target Classes</a></li>
   </ul></li>
-  <li><a href="#filename-components" id="toc-filename-components" class="nav-link" data-scroll-target="#filename-components">Filename Components</a>
+  <li><a href="#filename-components" id="toc-filename-components" class="nav-link" data-scroll-target="#filename-components">3.2 Filename Components</a>
   <ul class="collapse">
   <li><a href="#tbl-3-2" id="toc-tbl-3-2" class="nav-link" data-scroll-target="#tbl-3-2">Table 3.2: Filename Components and Corresponding Metadata Fields.</a></li>
   </ul></li>
@@ -225,20 +234,24 @@ ul.task-list li input[type="checkbox"] {
     overflow-x: auto;   /* allow scroll if still too wide */
   }
 </style>
+<section id="part3" class="level2">
+<h2 class="anchored" data-anchor-id="part3">Overview</h2>
 <p>The full and simple filename conventions specified in <a href="#tbl-3-1">Table 3.1</a> provide a consistent format for encoding key metadata into filenames, supporting traceability, metadata parsing, and long-term interoperability.</p>
 <p>Each filename follows a defined format, built from metadata-coded segments with standardized prefixes (see <a href="#tbl-3-2">Table 3.2</a>). These are <strong>recommended filename standards</strong> designed for reliable parsing regardless of segment order, <strong>corresponding to required metadata fields</strong> described in <a href="../protocol/part4-metadata.html">Part 4</a>. The spectrometer software will automatically append a measurement index (<code>IDX</code>) to the end of each filename—no additional text should be added after the <code>IDX</code>.</p>
 <p>Filename formats differ slightly depending on the type of target material (i.e., <code>targetClass</code>; see <a href="../protocol/part4-metadata.html#tbl-4-5">Table 4.5</a>). For white and black-background targets, the <code>projectId</code> (<code>PI</code>) and <code>sessionId</code> (<code>SI</code>) are key segments for traceability and the <code>SI</code> is also critical for linking to all associated tissue measurements via the tissue full filename. For tissues, the full filename convention also includes the minimum session-level, specimen-level, and tissue-level metadata needed for confident data aggregation.</p>
 <p>A simplified filename convention may be used during measurement sessions to streamline data collection. However, projects should convert all filenames to the full format before archiving or sharing. When using the simplified format for local files, projects should maintain consistent file organization and take precautions to prevent ambiguity.</p>
-<hr>
+</section>
 <section id="recommended-filename-conventions" class="level2">
-<h2 class="anchored" data-anchor-id="recommended-filename-conventions">Recommended Filename Conventions</h2>
-<section id="tbl-3-1" class="level3 table-narrow">
+<h2 class="anchored" data-anchor-id="recommended-filename-conventions">3.1 Recommended Filename Conventions</h2>
+<section id="tbl-3-1" class="level3">
 <h3 class="anchored" data-anchor-id="tbl-3-1">Table 3.1: Full and Simple Filename Conventions with Different Measurement Target Classes</h3>
+<p><strong>Download</strong> <a href="tables/Table3.1-filnameConventions.csv">Table3.1.csv</a></p>
+<p>Note: The filenames should have <strong>no blank spaces</strong>.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 36%">
-<col style="width: 23%">
-<col style="width: 39%">
+<col style="width: 22%">
+<col style="width: 11%">
+<col style="width: 66%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -251,63 +264,63 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>White target (<code>TCW</code>)</td>
 <td>Full</td>
-<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_TC&lt;targetClass&gt;_&lt;IDX&gt;</code><br>Example: <code>PIERYspec1_SN202406180932_TCW_0001</code></td>
+<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_TC&lt;targetClass&gt;_&lt;IDX&gt;</code> Example: <code>PIERYspec1_SN202406180932_TCW_0001</code></td>
 </tr>
 <tr class="even">
 <td>Black background target (<code>TCB</code>)</td>
 <td>Full</td>
-<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_TC&lt;targetClass&gt;_&lt;IDX&gt;</code><br>Example: <code>PIERYspec1_SN202406180932_TCB_0001</code></td>
+<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_TC&lt;targetClass&gt;_&lt;IDX&gt;</code> Example: <code>PIERYspec1_SN202406180932_TCB_0001</code></td>
 </tr>
 <tr class="odd">
 <td>White calibrated reflectance standard (<code>TCWC</code>)</td>
 <td>Full</td>
-<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_TC&lt;targetClass&gt;&lt;serialNumber&gt;_&lt;IDX&gt;</code><br>Example: <code>PIFagaceae_SN202506171532_TCWC7254_0000</code></td>
+<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;</code> <code>_TC&lt;targetClass&gt;&lt;serialNumber&gt;_&lt;IDX&gt;</code> Example: <code>PIFagaceae_SN202506171532_TCWC7254_0000</code></td>
 </tr>
 <tr class="even">
 <td>Black calibrated reflectance standard (<code>TCBC</code>)</td>
 <td>Full</td>
-<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_TC&lt;targetClass&gt;&lt;serialNumber&gt;_&lt;IDX&gt;</code><br>Example: <code>PIFagaceae_SN202506171532_TCBC7210_0000</code></td>
+<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;</code> <code>_TC&lt;targetClass&gt;&lt;serialNumber&gt;_&lt;IDX&gt;</code> Example: <code>PIFagaceae_SN202506171532_TCBC7210_0000</code></td>
 </tr>
 <tr class="odd">
 <td>Tissue target on black background (<code>BGB</code> + <code>TCAD</code>/<code>TCAB</code>)</td>
 <td>Full</td>
-<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_BG&lt;backgroundClass&gt;_HC&lt;herbariumCode&gt;_SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;_&lt;IDX&gt;</code><br>Example: <code>PIERYspec1_SN202406180932_BGB_HCGH_SI02022418_TCAD_TN1_001</code></td>
+<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_BG&lt;backgroundClass&gt;</code> <code>_HC&lt;herbariumCode&gt;_SI&lt;specimenId&gt;_TC&lt;targetClass&gt;</code> <code>_TN&lt;targetTissueId&gt;_&lt;IDX&gt;</code> Example: <code>PIERYspec1_SN202406180932_BGB_HCGH</code> <code>_SI02022418_TCAD_TN1_001</code></td>
 </tr>
 <tr class="even">
 <td>Tissue target on black background (<code>BGB</code> + <code>TCAD</code>/<code>TCAB</code>)</td>
 <td>Simple</td>
-<td><code>SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;_&lt;IDX&gt;</code><br>Example: <code>SI02022418_TCAD_TN1_0001</code></td>
+<td><code>SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;_&lt;IDX&gt;</code> Example: <code>SI02022418_TCAD_TN1_0001</code></td>
 </tr>
 <tr class="odd">
 <td>Tissue target on paper (<code>BGP</code> + <code>TCAD</code>/<code>TCAB</code>)</td>
 <td>Full</td>
-<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_BG&lt;backgroundClass&gt;_HC&lt;herbariumCode&gt;_SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;_&lt;IDX&gt;</code><br>Example: <code>PIERYspec1_SN202406180932_BGP_HCNEBC_SI00746092_TCAD_TN1_001</code></td>
+<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_BG&lt;backgroundClass&gt;</code> <code>_HC&lt;herbariumCode&gt;_SI&lt;specimenId&gt;_TC&lt;targetClass&gt;</code> <code>_TN&lt;targetTissueId&gt;_&lt;IDX&gt;</code> Example: <code>PIERYspec1_SN202406180932_BGP_HCNEBC</code> <code>_SI00746092_TCAD_TN1_001</code></td>
 </tr>
 <tr class="even">
 <td>Tissue target on paper (<code>BGP</code> + <code>TCAD</code>/<code>TCAB</code>)</td>
 <td>Simple</td>
-<td><code>SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;_&lt;IDX&gt;</code><br>Example: <code>SI00746092_TCAD_TN1_0001</code></td>
+<td><code>SI&lt;specimenId&gt;_TC&lt;targetClass&gt;</code> <code>_TN&lt;targetTissueId&gt;_&lt;IDX&gt;</code> Example: <code>SI00746092_TCAD_TN1_0001</code></td>
 </tr>
 <tr class="odd">
 <td>Paper target (<code>BGB</code> + <code>TCP</code>)</td>
 <td>Full</td>
-<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_BG&lt;backgroundClass&gt;_HC&lt;herbariumCode&gt;_SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;_&lt;IDX&gt;</code><br>Example: <code>PIERYspec1_SN202406180932_BGB_HCNEBC_SI00746092_TCP_TN1_001</code></td>
+<td><code>PI&lt;projectId&gt;_SN&lt;sessionId&gt;_BG&lt;backgroundClass&gt;</code> <code>_HC&lt;herbariumCode&gt;_SI&lt;specimenId&gt;_TC&lt;targetClass&gt;</code> <code>_TN&lt;targetTissueId&gt;_&lt;IDX&gt;</code> Example: <code>PIERYspec1_SN202406180932_BGB_HCNEBC</code> <code>_SI00746092_TCP_TN1_001</code></td>
 </tr>
 <tr class="even">
 <td>Paper target (<code>BGB</code> + <code>TCP</code>)</td>
 <td>Simple</td>
-<td><code>SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;_&lt;IDX&gt;</code><br>Example: <code>SI00746092_TCP_TN1_0001</code></td>
+<td><code>SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;_&lt;IDX&gt;</code> Example: <code>SI00746092_TCP_TN1_0001</code></td>
 </tr>
 </tbody>
 </table>
 </section>
-<hr>
 </section>
 <section id="filename-components" class="level2">
-<h2 class="anchored" data-anchor-id="filename-components">Filename Components</h2>
-<p><a href="#tbl-3-2">Table 3.2</a>, below, defines the components of filenames and their direct links to metadata fields. Each segment of the filename follows a specific format, with a standardized prefix that links directly to a <strong>required</strong> metadata field (see <a href="../protocol/part4-metadata.html">Part 4</a>. These components form the structured <strong>conventions</strong> shown in <a href="#tbl-3-1">Table 3.1</a> and enable automatic parsing and alignment between spectral files and metadata records.</p>
+<h2 class="anchored" data-anchor-id="filename-components">3.2 Filename Components</h2>
+<p><a href="#tbl-3-2">Table 3.2</a>, below, defines the components of filenames and their direct links to metadata fields. Each segment of the filename follows a specific format, with a standardized prefix that links directly to a <strong>required</strong> metadata field (see <a href="../protocol/part4-metadata.html">Part 4</a>). These components form the structured <strong>conventions</strong> shown in <a href="#tbl-3-1">Table 3.1</a> and enable automatic parsing and alignment between spectral files and metadata records.</p>
 <section id="tbl-3-2" class="level3 table-narrow">
 <h3 class="anchored" data-anchor-id="tbl-3-2">Table 3.2: Filename Components and Corresponding Metadata Fields.</h3>
+<p><strong>Download</strong> <a href="tables/Table3.2-FilenameComponents.csv">Table3.2.csv</a></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -369,30 +382,29 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
+<hr>
 </section>
-<section id="navigate-the-protocol" class="level1">
-<h1>Navigate the protocol</h1>
+<section id="navigate-the-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="navigate-the-protocol">Navigate the protocol</h2>
 <ul>
 <li>Proceed to <a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a></li>
 </ul>
 <p>Browse additional parts and appendices:</p>
 <ul>
-<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Overview<br>
-</li>
-<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow<br>
-</li>
-<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats<br>
-</li>
-<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing<br>
-</li>
-<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines<br>
-</li>
-<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement<br>
-</li>
+<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Protocol Overview</li>
+<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow</li>
+<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats</li>
+<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing</li>
+<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines</li>
+<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement</li>
 <li><a href="../protocol/references.html"><strong>References</strong></a></li>
-<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue<br>
-</li>
+<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue</li>
 <li><a href="../protocol/appendix2.html"><strong>Appendix II</strong></a> – Tissue Metadata for Quality Control</li>
+</ul>
+<p>Browse Home and Downloads</p>
+<ul>
+<li><a href="../protocol.html"><strong>Home - IHerbSpec Protocol</strong></a></li>
+<li><a href="tables.html"><strong>Downloads</strong></a></li>
 </ul>
 
 

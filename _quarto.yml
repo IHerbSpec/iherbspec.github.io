@@ -1,15 +1,33 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - index.qmd
+    - protocol.qmd
+    - protocol/changes.qmd
+    - protocol/preface.qmd
+    - protocol/part1-overview.qmd
+    - protocol/part2-workflow.qmd
+    - protocol/part3-filenames.qmd
+    - protocol/part4-metadata.qmd
+    - protocol/part5-instrumentation.qmd
+    - protocol/part6-guidelines.qmd
+    - protocol/references.qmd
+    - protocol/appendix1.qmd
+    - protocol/appendix2.qmd
+    - protocol/tables.qmd
+    - publications.qmd
+    - contact.qmd
+    # NOTE: intentionally omit protocol/index.qmd
 
 website:
   title: "IHerbSpec"
   site-url: https://iherbspec.github.io
-  favicon: images/NaturaSpec-IMG_4840.png
+  favicon: images/IHerbSpecIcon-white-bgb.png
   image: images/NaturaSpec-IMG_4840.png
   navbar:
     left:
-      - text: Home
+      - text: "![](images/IHerbSpecIcon-white-bgb.png)"
         href: index.qmd
       - text: IHerbSpec Protocol
         menu:
@@ -17,6 +35,8 @@ website:
             href: protocol.qmd
           - text: Preface
             href: protocol/preface.qmd
+          - text: Changes Since Last Version
+            href: protocol/changes.qmd  
           - text: Part 1 – Overview
             href: protocol/part1-overview.qmd
           - text: Part 2 – Workflow
@@ -35,6 +55,8 @@ website:
             href: protocol/appendix1.qmd
           - text: Appendix II
             href: protocol/appendix2.qmd
+          - text: Downloads
+            href: protocol/tables.qmd  
       - text: Publications
         href: publications.qmd
       - text: Contact Us
@@ -48,13 +70,17 @@ format:
     include-in-header: meta.html 
 
 metadata:
-  og:image: images/NaturaSpec-IMG_4840.png
+  og:image: images/IHerbSpecLogo-white-bgb.png
   og:title: "IHerbSpec"
-  og:description: "International Herbarium Spectral Scanning Protocol"
-  twitter:card: 
-  twitter:image: images/NaturaSpec-IMG_4840.png
+  og:description: "An international working group developing standards and tools for herbarium spectral digitization."
+  twitter:card: summary_large_image
+  twitter:image: images/IHerbSpecLogo-white-bgb.png
   twitter:title: "IHerbSpec"
-  twitter:description: "International Herbarium Spectral Scanning Protocol"
+  twitter:description: "International working group advancing standards for herbarium spectral digitization."
   
 crossref:
   fig-title: ""
+  
+execute:
+  freeze: true
+

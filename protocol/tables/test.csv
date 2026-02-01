@@ -1,0 +1,4 @@
+﻿Target type (targetClass),Filename Convention Type,Filename format and example
+White target (TCW),Full,PI<projectId>_SN<sessionId>_TC<targetClass>_<IDX>
+Black-background target (TCB),Full,PI<projectId>_SN<sessionId>_TC<targetClass>_<IDX>
+White calibrated reflectance standard (TCWC),Full,PI<project>_SN<session>_TC<target><serialNumber>_<IDX>

@@ -22,112 +22,136 @@ include-after-body:
 </style>
 
 
-# Abstract
+## Abstract {#preface}
 
-Reflectance spectroscopy is a powerful, broadly integrative tool for capturing plant phenotypes. But variation in instrumentation and measurement procedures introduces a high risk of data incompatibility and signal contamination. These challenges are amplified in herbarium specimens because they are subject to complex variation from age, preservation techniques, and mounting practices.  
+Reflectance spectroscopy is a powerful, broadly integrative tool for capturing plant phenotypes. But variation in instrumentation and measurement procedures introduces a high risk of data incompatibility and signal contamination across datasets. These challenges are amplified in herbarium specimens because they are subject to complex variation from age, preservation techniques, and mounting practices.  
 
 To support global data harmonization and scientific reproducibility, this document presents a standardized, interoperable protocol for the spectral measurement of herbarium tissues. It provides data-driven justification and community-informed guidance for measurement procedures and metadata fields, with the goal of improving data quality and enabling confident data aggregation across institutions.
 
----
+## IHerbSpec and Protocol Development
 
-# IHerbSpec and Protocol Development
+The International Herbarium Spectral Digitization Working Group (IHerbSpec) was established in December 2024 as a global consortium focused on advancing the use of reflectance spectroscopy of herbarium specimens for ecological and evolutionary studies. 
 
-The International Herbarium Spectral Digitization (**IHerbSpec**) Working Group was established in December 2024 as a global consortium focused on advancing the use of reflectance spectroscopy of herbarium specimens for ecological and evolutionary studies.  
 The group actively collaborates to identify common challenges, facilitate collaborations, and develop best practices.
 
 This protocol is one of the primary products of IHerbSpec’s initial collaborative phase. From December 2024 to June 2025, members convened virtually to share project-specific workflows and align measurement strategies. The protocol was developed through an open, collaborative process, with a majority of IHerbSpec members contributing to discussions and decisions and serving as authors. The effort culminated in an in-person workshop at the Harvard University Herbaria (May 1–3, 2025), where members reached consensus on key elements of the protocol, including:
 
-1. The minimum and recommended number of measurements for leaf tissues (see [Section 1.2.3: Strategy and number of tissue measurements](part1-overview.qmd#strategy-and-number-of-tissue-measurements)).  
-2. Tissue condition and contamination metadata (see [Section 1.2.6: Scoring metadata pertaining to tissue condition and contamination](part1-overview.qmd#scoring-metadata-pertaining-to-tissue-condition-and-contamination)).  
+1. The minimum and recommended number of measurements for leaf tissues (see [Strategy and number of tissue measurements](part1-overview.qmd#strategy-and-number-of-tissue-measurements)).
+2. Tissue condition and contamination metadata (see [Scoring metadata pertaining to tissue condition and contamination](part1-overview.qmd#scoring-metadata-pertaining-to-tissue-condition-and-contamination)).
 3. Tissue development stage metadata (see [Table 4.4](part4-metadata.qmd#tbl-4-4)).
 
 IHerbSpec will continue to refine and expand this protocol and welcomes inquiries from interested researchers or institutions wishing to ask questions, provide feedback, or explore opportunities for participation.
 
----
+## Authors
 
-# Authors
+- **Dawson M. White** — Harvard University Herbaria and Department of Organismic and Evolutionary Biology, Harvard University, USA
+- **Natalie I. Ahlstrand** — Natural History Museum of Denmark, University of Copenhagen, Denmark
+- **Matthew W. Austin** — Missouri Botanical Garden, USA
+- **Denis Bastianelli** — CIRAD / University of Montpellier, France
+- **Samantha Bazan** — CIRAD / University of Montpellier, France
+- **Khalil Boughalmi** — University of Montpellier, France
+- **Warren Cardinal-McTeague** — University of British Columbia, Canada
+- **Thomas L.P. Couvreur** — University of Montpellier, CIRAD, IRD, France
+- **Flavia Durgante** — Karlsruhe Institute of Technology / National Institute of Amazonian Research (INPA), Brazil
+- **Olwen M. Grace** — Royal Botanic Garden Edinburgh, UK
+- **J. Antonio Guzmán Q.** — Harvard University, USA
+- **Kimberly Hansen** — Field Museum of Natural History, USA
+- **Michael Hopkins** — National Institute of Amazonian Research (INPA), Brazil
+- **Rykkar Jackson** — University of British Columbia, Canada
+- **Jonathan A. Kennedy** — Harvard University, USA
+- **Shan Kothari** — University of Alberta, Canada
+- **Aaron K. Lee** — University of Minnesota, USA
+- **Étienne Léveillé-Bourret** — Université de Montréal, Canada
+- **José Eduardo Meireles** — University of Maine, USA
+- **Barbara M. Neto-Bradley** — University of Cambridge, UK
+- **Cornelius Onyedikachi Nichodemus** — University of Maine, USA
+- **Natalia L. Quinteros** Casaverde — NASA Goddard Space Flight Center, USA
+- **Carlos Rodrigues-Vaz** — Muséum National d'Histoire Naturelle, France
+- **Michaela Schmull** — Harvard University Herbaria, USA
+- **Pamela S. Soltis** — University of Florida, USA
+- **Daniel Spalink** — Texas A&M University, USA
+- **Caroline C. Vasconcelos** — National Institute of Amazonian Research (INPA), Brazil
+- **Jéssica Lira Viana** — Aarhus University, Denmark
+- **Hanna Tuomisto** — University of Turku, Finland
+- **Tom Wells** — Royal Botanic Gardens, Kew, UK
+- **Jeannine Cavender-Bares** — Harvard University, USA
 
-- **Dawson M. White** — Harvard University Herbaria and Department of Organismic and Evolutionary Biology, Harvard University, USA  
-- **Natalie I. Ahlstrand** — Natural History Museum of Denmark, University of Copenhagen, Denmark  
-- **Matthew W. Austin** — Missouri Botanical Garden, USA  
-- **Denis Bastianelli** — CIRAD / University of Montpellier, France  
-- **Samantha Bazan** — CIRAD / University of Montpellier, France  
-- **Khalil Boughalmi** — University of Montpellier, France  
-- **Warren Cardinal-McTeague** — University of British Columbia, Canada  
-- **Thomas L.P. Couvreur** — University of Montpellier, CIRAD, IRD, France  
-- **Flavia Durgante** — Karlsruhe Institute of Technology / National Institute of Amazonian Research (INPA), Brazil  
-- **Olwen M. Grace** — Royal Botanic Garden Edinburgh, UK  
-- **J. Antonio Guzmán Q.** — Harvard University, USA  
-- **Kimberly Hansen** — Field Museum of Natural History, USA  
-- **Michael Hopkins** — National Institute of Amazonian Research (INPA), Brazil  
-- **Rykkar Jackson** — University of British Columbia, Canada  
-- **Jonathan A. Kennedy** — Harvard University, USA  
-- **Shan Kothari** — University of Alberta, Canada  
-- **Aaron K. Lee** — University of Minnesota, USA  
-- **Étienne Léveillé-Bourret** — Université de Montréal, Canada  
-- **José Eduardo Meireles** — University of Maine, USA  
-- **Barbara M. Neto-Bradley** — University of Cambridge, UK  
-- **Cornelius Onyedikachi Nichodemus** — University of Maine, USA  
-- **Natalia L. Quinteros** Casaverde — NASA Goddard Space Flight Center, USA  
-- **Carlos Rodrigues-Vaz** — Muséum National d'Histoire Naturelle, France  
-- **Michaela Schmull** — Harvard University Herbaria, USA  
-- **Pamela S. Soltis** — University of Florida, USA  
-- **Daniel Spalink** — Texas A&M University, USA  
-- **Caroline C. Vasconcelos** — National Institute of Amazonian Research (INPA), Brazil  
-- **Jéssica Lira Viana** — Aarhus University, Denmark  
-- **Hanna Tuomisto** — University of Turku, Finland  
-- **Tom Wells** — Royal Botanic Gardens, Kew, UK  
-- **Jeannine Cavender-Bares** — Harvard University, USA  
+## Author Contributions
 
----
+All authors contributed intellectually to the development of the protocol, including reviewing, editing, and approving the final version. DMW organized and led protocol development, writing, and website management.
 
-# Acknowledgements
+- Intellectual leadership: Led by JCB with contributions from MWA, FD, JAK, JEM, JAGQ, MS, and DMW.
+- Draft writing: NIA, MWA, JCB, ELB, TLPC, FD, OMG, JAGQ, JAK, SK, DS, NLQC, DMW
+- Figures and tables: SB, FD, JAK, DMW
+- Appendix II examples: KB, SB, FD, AKL, CCV, CON, DMW
+- Metadata standardization: Led by JAK with contributions from MWA, JCB, ELB, FD, SK, JAGQ, PSS, DMW
+- Validation: MWA, CON, JLV, HT
+
+## Acknowledgements
 
 We gratefully acknowledge the staff, managers, and curators who steward biodiversity collections and make them accessible for scientific discovery. We thank Jorge M. Robles for artistic contributions to Figs. 2.1 and 6.1.
 
-Funding support came from the **US NSF Biology Integration Institute ASCEND (DBI-2021898)**, **Harvard University Herbaria**, **iDigBio (NSF DBI-2027654)**, **NSF grant DBI-1930007**, the **Canadian NSERC Discovery Grant**, and the **Missouri Botanical Garden’s Revolutionizing Species Identification project**.  
+**IHerbSpec has been supported by:** 
 
-Additional support:  
-- **ERC Horizon 2020 (grant 865787)** – TLPC and KB  
-- **Royal Botanic Garden Edinburgh** – Botanics Foundation and American Friends of the Botanic Garden  
-- **NYBG Visiting Scientist Travel Award** – CON  
-- **FAPEAM ‘Women in Science Program’ (SPECTRA POP project, 2024)** – FD, MH, CCV  
-- **BMBF grant 01LK2101D (Germany)** – FD, MH, CCV  
-- **Danish National Research Foundation grant DNRF179** – JLV, HT  
-- **SURA award 80NSSC22M0001** – NLQC  
+- US NSF Biology Integration Institute ASCEND (DBI-2021898) 
+- Harvard University Herbaria 
+- iDigBio (NSF DBI-2027654)
+- NSF grant DBI-1930007
+- Canadian NSERC Discovery Grant
+- The Missouri Botanical Garden’s Revolutionizing Species Identification project.
 
----
+**Individuals have received additional support from:** 
+ 
+- ERC Horizon 2020 (grant 865787; TLPC and KB)
+- Royal Botanic Garden Edinburgh – Botanics Foundation and American Friends of the Botanic Garden
+- NYBG Visiting Scientist Travel Award (CON)
+- FAPEAM ‘Women in Science Program’ (SPECTRA POP project, 2024; FD, MH, CCV)
+- BMBF grant 01LK2101D (FD, MH, CCV)
+- Danish National Research Foundation grant DNRF179 (JLV, HT)
+- SURA award 80NSSC22M0001 (NLQC)
 
-# Author Contributions
+## Suggested Citation
 
-All authors contributed intellectually to the development of the protocol, including reviewing, editing, and approving the final version. DMW organized and led protocol development, writing, and website management.  
-
-- Intellectual leadership: Led by JCB with contributions from MWA, FD, JAK, JEM, JAGQ, MS, and DMW.  
-- Draft writing: NIA, MWA, JCB, ELB, TLPC, FD, OMG, JAGQ, JAK, SK, DS, NLQC, DMW  
-- Figures and tables: SB, FD, JAK, DMW  
-- Appendix II examples: KB, SB, FD, AKL, CCV, CON, DMW  
-- Metadata standardization: Led by JAK with contributions from MWA, JCB, ELB, FD, SK, JAGQ, PSS, DMW  
-- Validation: MWA, CON, JLV, HT
-
----
-
-# Suggested Citation
-
-White DM, NI Ahlstrand, MW Austin, D Bastianelli, S Bazan, K Boughalmi, W Cardinal-McTeague, TLP Couvreur, F Durgante, OM Grace, JA Guzmán Q, K Hansen, M Hopkins, R Jackson, JA Kennedy, S Kothari, AK Lee, É Léveillé-Bourret, JE Meireles, BM Neto-Bradley, CO Nichodemus, NL Quinteros Casaverde, C Rodrigues-Vaz, M Schmull, PS Soltis, D Spalink, CC Vasconcelos, JL Viana, H Tuomisto, T Wells, J Cavender-Bares. 2025. *IHerbSpec Protocol v.1.01*. [https://doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
+IHerbSpec. 2025. *Protocol for the Spectral Digitization of Herbarium Specimens, v.{{< var protocol_version >}}*. [https://doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
 
 ---
 
-# Navigate the protocol
+
+## Navigate the protocol
+
+::: {.content-visible when-format="html"}
 - Proceed to [**Part 1**](part1-overview.qmd)
 
 Browse additional parts and appendices:
 
-- [**Part 1**](part1-overview.qmd) – Overview  
-- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow  
-- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats  
-- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing  
-- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
-- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement  
+- [**Part 1**](part1-overview.qmd) – Protocol Overview
+- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow
+- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats
+- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing
+- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines
+- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement
 - [**References**](references.qmd)
-- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue  
-- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control  
+- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue
+- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control
+
+Browse Home and Downloads
+
+- [**Home - IHerbSpec Protocol**](../protocol.html)
+- [**Downloads**](tables.html)
+:::
+
+::: {.content-visible when-format="pdf"}
+- Proceed to [**Part 1**](#part1)
+
+Browse additional parts and appendices:
+
+- [**Part 1**](#part1) – Protocol Overview
+- [**Part 2**](#part2) – Measurement and Metadata Workflow
+- [**Part 3**](#part3) – Filename Conventions and Formats
+- [**Part 4**](#part4) – Metadata and Databasing
+- [**Part 5**](#part5) – Instrumentation and Materials Guidelines
+- [**Part 6**](#part6) – Selecting Tissues for Spectral Measurement
+- [**References**](#references)
+- [**Appendix I**](#app1) – Number of Measurements per Tissue
+- [**Appendix II**](#app2) – Tissue Metadata for Quality Control
+:::

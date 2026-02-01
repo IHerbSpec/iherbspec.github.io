@@ -1,0 +1,19 @@
+Code,Full code,Description
+W,WhiteReference,White reference.
+WC,WhiteCalibratedReference,White calibrated reflectance standard (see Section 5.3).
+B,BlackBackground,"Black background material, recorded when used as background for other target tissue measurements."
+BC,BlackCalibratedReference,Black calibrated reflectance standard (see Section 5.3).
+P,Paper,"Herbarium sheet paper, recorded when used as background for other target tissue measurements."
+AB,LeafAbaxial,Abaxial leaf surface.
+AD,LeafAdaxial,Adaxial leaf surface.
+LF,Leaf,Leaf surface. Applied when the abaxial and adaxial side cannot be differentiated or when leaves are terete or otherwise not bifacial (e.g. Senecio rowleyanus).
+PT,Petal,Petal.
+IF,Inflorescence,Inflorescence.
+BR,Bract,Bract.
+FR,Fruit,"Fruit. The specific tissue (e.g. exocarp, mesocarp) can be described in tissueNotes."
+PSS,Photosynthetic-,Photosynthetic stem as in succulents like Cactus.
+,SucculentStem,
+OB,OuterBark,"Outer bark, rhytidome. Woody branch outer bark as in Hadlich et al. (2018)."
+IB,InnerBark,Phloem. Woody branch inner bark as in Hadlich et al. (2018).
+HS,HerbaceousStem,Herbaceous stem; can be photosynthetic as in PSS.
+WD,Wood,Wood.

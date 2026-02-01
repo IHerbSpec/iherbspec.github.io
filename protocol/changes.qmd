@@ -1,0 +1,36 @@
+---
+title: "Changes Since Last Version"
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      <img src="images/cc-by.svg"
+           alt="CC BY 4.0" 
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+    </div>
+---
+
+### Current Version: {{< var protocol_version >}}
+
+### Summary of changes since Version 1.01
+
+- Reorganized the protocol into a Quarto book structure to enable consistent rendering of a single, compiled PDF while preserving the web-based version of the protocol: 
+   -- Beginning with this release, versioned snapshots of the IHerbSpec Protocol will be generated **directly from the website source repository** and archived on Zenodo. This change streamlines version control, reduces duplication, and ensures that archived releases correspond exactly to the content presented on the website at the time of release. 
+   -- As part of this transition, the **legacy IHerbSpec-protocol GitHub repository will be deprecated**. It will remain available for reference and historical context, but future protocol updates, releases, and Zenodo archives will be managed exclusively through the main IHerbSpec website repository.
+   
+- Introduced **full title** for the protocol as "Protocol for the Spectral Digitization of Herbarium Specimens". The alternate title "IHerbSpec Protocol" is still used, but the full title is better for a citation that differentiates the author and title.
+
+- Updated **citation**: "IHerbSpec" as author along with full title above.
+
+- Added a Downloads section to the protocol, available in HTML, where users can easily access all tables. These tables are called from in `protocol/tables.qmd` and live in `protocol/tables/`.
+
+- Added this **“Changes Since Last Version”** section to document versioned updates transparently.
+
+- Added logo to homepage and icon to navbar.
+
+- Expanded **Part 5 - Instrumentation and Materials Guidelines** to include guidance on depositing spectral data and metadata in the **IHerbSpec Dataverse**.
+
+- **Section 5.3.2:** Added Fig. 5.1 and new text describing the spectral properties of background materials and their effects on measured leaf reflectance.
+
+
+---

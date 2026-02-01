@@ -1,0 +1,118 @@
+project:
+  type: book
+  output-dir: releases
+
+book:
+  title: "Protocol for the Spectral Digitization of Herbarium Specimens"
+  author: "Version {{< var protocol_version >}}"
+  image: 'images/IHerbSpecLogo-white-bgb.png'
+  chapters:
+    - index.qmd
+    - changes.qmd
+    - preface.qmd
+    - part1-overview.qmd
+    - part2-workflow.qmd
+    - part3-filenames.qmd
+    - part4-metadata.qmd
+    - part5-instrumentation.qmd
+    - part6-guidelines.qmd
+    - references.qmd
+    - appendix1.qmd
+    - appendix2.qmd
+
+number-sections: false
+
+format:
+  pdf:
+    toc: true
+    number-sections: false
+    colorlinks: true
+    fig-pos: "H"
+    tbl-pos: "H"
+    geometry:
+      - margin=1in
+    include-in-header:
+      text: |
+        \usepackage{float}
+        \floatplacement{figure}{H}
+        \floatplacement{table}{H}
+        
+        % Never let images exceed the text block
+        \usepackage{graphicx}
+        \setkeys{Gin}{width=\linewidth,keepaspectratio}
+        \usepackage{xurl}  % helps break long tokens
+        \usepackage{pdflscape}
+        
+        % Add logo above the title on the title page
+        \usepackage{titling}
+        \posttitle{%
+          \par\end{center}
+          \begin{center}
+          \vspace{1em}
+          \includegraphics[width=.35\textwidth]{images/IHerbSpecLogo-black-bgw.png}
+          \end{center}
+         }
+         
+        % --- Heading font control ---
+        \usepackage{titlesec}
+
+        % Chapter titles (book-level sections)
+        \titleformat{\chapter}
+          {\normalfont\Large\bfseries}
+          {\thechapter}{1em}{}
+          
+        % Reduce vertical spacing around chapter titles
+        \titlespacing*{\chapter}
+          {0pt}     % left
+          {0.5em}   % space before title
+          {1.0em}   % space after title
+
+        % Section titles (## headers)
+        \titleformat{\section}
+          {\normalfont\Large\bfseries}
+          {\thesection}{1em}{}
+
+        % Subsection titles (### headers)
+        \titleformat{\subsection}
+          {\normalfont\large\bfseries}
+          {\thesubsection}{1em}{}
+
+        % Subsubsection titles (#### headers, if any)
+        \titleformat{\subsubsection}
+          {\normalfont\normalsize\bfseries}
+          {\thesubsubsection}{1em}{}
+          
+        % --- TOC font control (KOMA-Script) ---
+        % Title "Table of Contents"
+        \setkomafont{disposition}{\normalfont\bfseries}
+
+          % TOC entries
+        \setkomafont{chapterentry}{\normalfont\bfseries}
+
+          % TOC page numbers (KOMA uses the same family; keep normal)
+        \setkomafont{chapterentrypagenumber}{\normalfont\bfseries}
+        
+        % --- Light border around images in PDF ---
+        \usepackage{xcolor}
+        \definecolor{figborder}{RGB}{224,224,224} % ~ #e0e0e0
+        \setlength{\fboxsep}{2pt}
+        \setlength{\fboxrule}{0.4pt}
+
+        % Save original includegraphics, then redefine with a border
+        \let\origincludegraphics\includegraphics
+        \renewcommand{\includegraphics}[2][]{%
+          \fcolorbox{figborder}{white}{\origincludegraphics[#1]{#2}}%
+        }
+        
+        % --- Hide automatic "Figure <num>:" label in captions (keep counter for refs) ---
+        \usepackage{caption}
+        \captionsetup[figure]{labelformat=empty}
+
+        
+crossref:
+  fig-title: ""
+  tbl-title: ""
+
+execute:
+  freeze: auto
+

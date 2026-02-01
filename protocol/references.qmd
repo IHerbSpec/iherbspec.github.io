@@ -13,7 +13,7 @@ title: "References"
 
 <div class="references">
 
-Cavender-Bares J, White DM, Ahlstrand NI, Austin M, Bastianelli D, Bazan S, Boughalmi K, Cardinal-McTeague W, Chacón-Madrigal E, Couvreur TLP, Davis C, Durgante FM, Grace OM, Q JAG, Hansen K, Hernández-Leal MS, Hopkins MJG, Jackson R, Kothari S, Lee AK, Léveillé-Bourret É, Pinto-Ledezma J, Casaverde NLQ, Meireles JE, Nichodemus CO, Schmull M, Soltis DE, Soltis PS, Tuomisto H, Ustin S, Vasconcelos CC. 2025. **NextGeneration specimen digitization: The international herbarium community goes spectral!** *EcoEvoRxiv* [preprint]. [https://doi.org/10.32942/X2V927](https://doi.org/10.32942/X2V927).  
+Cavender-Bares J, White DM, Ahlstrand NI, Austin M, Bastianelli D, Bazan S, Boughalmi K, Cardinal-McTeague W, Chacón-Madrigal E, Couvreur TLP, Davis C, Durgante FM, Grace OM, Q JAG, Hansen K, Hernández-Leal MS, Hopkins MJG, Jackson R, Kothari S, Lee AK, Léveillé-Bourret É, Pinto-Ledezma J, Casaverde NLQ, Meireles JE, Neto-Bradley B, Nichodemus CO, Ree RH, Schmull M, Soltis DE, Soltis PS, Tuomisto H, Ustin S, Vasconcelos CC. 2025. **Next-generation specimen digitization: capturing reflectance spectra from the world's herbaria for modeling plant biology across time, space, and taxa** *New Phytologist*. [https://doi.org/10.1111/nph.70645](https://doi.org/10.1111/nph.70645). 
 
 Durgante FM, Higuchi N, Almeida A, Vicentini A. 2013. **Species Spectral Signature: Discriminating closely related plant species in the Amazon with Near-Infrared Leaf-Spectroscopy**. *Forest Ecology and Management* 291:240–248. [https://doi.org/10.1016/j.foreco.2012.10.045](https://doi.org/10.1016/j.foreco.2012.10.045).  
 
@@ -31,16 +31,38 @@ White DM, Cavender-Bares J, Davis CC, Guzmán Q JA, Kothari S, Robles JM, Meirel
 
 ---
 
-# Navigate the protocol
+## Navigate the protocol
+
+::: {.content-visible when-format="html"}
+Browse additional parts and appendices:
+
+- [**Part 1**](part1-overview.qmd) – Protocol Overview
+- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow
+- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats
+- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing
+- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines
+- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement
+- [**References**](references.qmd)
+- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue
+- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control
+
+Browse Home and Downloads
+
+- [**Home - IHerbSpec Protocol**](../protocol.html)
+- [**Downloads**](tables.html)
+:::
+
+::: {.content-visible when-format="pdf"}
 
 Browse additional parts and appendices:
 
-- [**Part 1**](part1-overview.qmd) – Overview  
-- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow  
-- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats  
-- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing  
-- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
-- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement  
-- [**References**](references.qmd)
-- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue  
-- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control  
+- [**Part 1**](#part1) – Protocol Overview
+- [**Part 2**](#part2) – Measurement and Metadata Workflow
+- [**Part 3**](#part3) – Filename Conventions and Formats
+- [**Part 4**](#part4) – Metadata and Databasing
+- [**Part 5**](#part5) – Instrumentation and Materials Guidelines
+- [**Part 6**](#part6) – Selecting Tissues for Spectral Measurement
+- [**References**](#references)
+- [**Appendix I**](#app1) – Number of Measurements per Tissue
+- [**Appendix II**](#app2) – Tissue Metadata for Quality Control
+:::

@@ -1,0 +1,9 @@
+﻿Code,Metadata field (see Table 4.3),Description (see Table 4.3),Example
+PI,projectId,Unique identifier for the spectral measurement project.,"PIHUHcoca, PIFagales1"
+SN,sessionId,"A unique identifier generated from the date and time (24-hour format) when the measurement session begins, typically at equipment startup or the first measurement. Format: SNYYYYMMDDHHMM",SN202406180932
+BG,backgroundClass,"Enumerated code from Background Class Codes (Table 4.7) describing the background class under the target tissue. This field will be omitted for white and background target measurements (e.g., TCW, TCB, TCP).","BGB, BGP, BGO"
+HC,herbariumCode,Herbarium acronym or collection identifier.,"HCGH, HCINPA"
+SI,specimenId,"Specimen identification code: GUID, barcode (with preceding zeros), accession number, or collector name and number.","SI03774853, SIThorne24070"
+TC,targetClass,Enumerated code from Target Class Codes (Table 4.5) describing type of material or tissue being measured.,"TCAD, TCAB, TCW, TCP, TCB"
+TN,targetTissueId,"Number or character index tracking the measured tissue units (first unit = 1, second = 2, etc.). This field will be omitted for white or background target measurements (e.g., TCW, TCB, TCP). ","TN1, TN2"
+IDX,measurementIndex,"Measurement index number, automatically appended by the spectrometer software after the base filename. Unlike other components (e.g., HC, SI, PI), IDX is not included as a prefix, but is automatically appended during file generation.","0001, 0002"

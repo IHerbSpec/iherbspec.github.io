@@ -1,27 +1,66 @@
-/* css styles */
+/* ---------- Responsive tables (HTML only) ---------- */
 
-.full-width {
-  display: block;
+/* Wrapper for wide tables */
+.table-responsive {
   width: 100%;
-  height: auto;
-  margin: 0 auto 1em auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1.5rem;
 }
 
-.content-narrow {
-  max-width: 70ch;   /* ~70 characters per line */
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.125rem;  /* keep it nicely readable */
-  line-height: 1.6;
+/* Prevent tables from blowing up layout */
+.table-responsive table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
 }
 
-/* Quarto figure captions (covers both render paths) */
-.quarto-figure figcaption,
-.quarto-figure-caption,
-.figure .figure-caption {
-  font-size: 0.9rem;       /* bigger */
-  font-weight: 400;      /* clearer */
-  color: #333;           /* darker */
-  text-align: fill;    /*  */
-  margin-top: 0.1em;
+/* Slightly smaller font for dense tables */
+.table-responsive th,
+.table-responsive td {
+  font-size: 0.95rem;
+  vertical-align: top;
+}
+
+/* Allow long tokens (e.g., filenames) to wrap in HTML */
+.table-responsive td {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Optional: monospace columns behave better */
+.table-responsive code {
+  white-space: normal;
+}
+
+.table-small {
+  font-size: 70%;
+}
+
+/* constrain navbar icon size */
+.navbar-nav img {
+  height: 30px;
+  width: auto;
+  vertical-align: middle;
+}
+
+/* ================================
+   Global figure styling
+   ================================ */
+
+/* Light border around all figure images */
+figure img,
+.quarto-figure img {
+  border: 1px solid #e0e0e0;
+  padding: 2px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+/* Slight spacing polish for captions */
+figure figcaption,
+.quarto-figure figcaption {
+  margin-top: 0.4em;
+  font-size: 0.9em;
+  color: #555;
 }

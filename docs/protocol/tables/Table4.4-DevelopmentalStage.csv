@@ -1,0 +1,6 @@
+﻿Code,Description
+Young,"Actively developing tissue that is not yet fully expanded; may appear thinner, lighter in color, or more pliable than mature tissue."
+Mature,Fully developed and expanded tissue showing typical structural and color characteristics for the taxon; not visibly senescent.
+Old,"Senescent tissue showing visible signs of aging or decline, such as yellowing, darkening, curling, or drying."
+Uncertain,"The development stage has been assessed but cannot be confidently determined due to intermediate features, damage, or insufficient visual cues."
+NotScored,Developmental stage was not assessed or recorded for this tissue.

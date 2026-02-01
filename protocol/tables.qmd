@@ -1,0 +1,20 @@
+---
+title: "Download Spreadsheets and Tables"
+---
+
+IHerbSpec Metadata Spreadsheet
+- [IHerbSpec_metadata.csv](tables/IHerbSpec_metadata.csv)  
+- [IHerbSpec_metadata-examples.csv](tables/IHerbSpec_metadata-examples.csv)  
+
+Below are the CSV tables used in this protocol.
+
+- [Table 3.1 - Filename Conventions](tables/Table3.1-filnameConventions.csv)  
+- [Table 3.2 - Filename Components](tables/Table3.2-FilenameComponents.csv)  
+- [Table 4.1 - Session Metadata](tables/Table4.1-sessonMetadata.csv)  
+- [Tabe 4.2 - Specimen Metadata](tables/Table4.2-SpecimenMetadata.csv)  
+- [Table 4.3 -Tissue Metadata](tables/Table4.3-TissueMetadata.csv)  
+- [Table 4.4 - Developmental Stage](tables/Table4.4-DevelopmentalStage.csv)  
+- [Table 4.5 - Target Class Codes](tables/Table4.5-TargetClassCodes.csv)  
+- [Table 4.6 - Tissue Descriptor Codes](tables/Table4.6-TissueDescriptorCodes.csv)  
+- [Table 4.7 - Black and White Reference Class Codes](tables/Table4.7-BackgroundandWhiteRefClassCodes.csv)  
+- [Table A1: Example scoring of tissue conditions](tables/IHerbSpecProtocol_TableA1.csv)  

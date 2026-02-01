@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../images/NaturaSpec-IMG_4840.png" rel="icon" type="image/png">
+<link href="../images/IHerbSpecIcon-white-bgb.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text"><img src="images/IHerbSpecIcon-white-bgb.png" class="img-fluid"></span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iherbspec-protocol" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -117,6 +117,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../protocol/preface.html">
  <span class="dropdown-text">Preface</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/changes.html">
+ <span class="dropdown-text">Changes Since Last Version</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../protocol/part1-overview.html">
@@ -154,6 +158,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../protocol/appendix2.html">
  <span class="dropdown-text">Appendix II</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/tables.html">
+ <span class="dropdown-text">Downloads</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -180,9 +188,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sources-of-variation-in-herbarium-plant-tissues" id="toc-sources-of-variation-in-herbarium-plant-tissues" class="nav-link active" data-scroll-target="#sources-of-variation-in-herbarium-plant-tissues">6.1 Sources of Variation in Herbarium Plant Tissues</a></li>
-  <li><a href="#general-guidelines-for-tissue-selection" id="toc-general-guidelines-for-tissue-selection" class="nav-link" data-scroll-target="#general-guidelines-for-tissue-selection">6.2 General Guidelines for Tissue Selection</a></li>
-  <li><a href="#decision-tree-for-tissue-selection" id="toc-decision-tree-for-tissue-selection" class="nav-link" data-scroll-target="#decision-tree-for-tissue-selection">6.3 Decision tree for tissue selection</a></li>
+  <li><a href="#part6" id="toc-part6" class="nav-link active" data-scroll-target="#part6">6.1 Sources of Variation in Herbarium Plant Tissues</a></li>
+  <li><a href="#general-guidelines-for-tissue-selection" id="toc-general-guidelines-for-tissue-selection" class="nav-link" data-scroll-target="#general-guidelines-for-tissue-selection">General Guidelines for Tissue Selection</a></li>
+  <li><a href="#decision-tree-for-tissue-selection" id="toc-decision-tree-for-tissue-selection" class="nav-link" data-scroll-target="#decision-tree-for-tissue-selection">Decision tree for tissue selection</a></li>
   <li><a href="#navigate-the-protocol" id="toc-navigate-the-protocol" class="nav-link" data-scroll-target="#navigate-the-protocol">Navigate the protocol</a></li>
   </ul>
 </nav>
@@ -209,8 +217,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="sources-of-variation-in-herbarium-plant-tissues" class="level1">
-<h1>6.1 Sources of Variation in Herbarium Plant Tissues</h1>
+<section id="part6" class="level2">
+<h2 class="anchored" data-anchor-id="part6">6.1 Sources of Variation in Herbarium Plant Tissues</h2>
 <p>Spectral data from herbarium specimens are influenced by two major sources of variation.</p>
 <p>The first is the natural <strong>biological variation</strong> of phenotypes constructed through genotype-by-environment interactions that biologists seek to understand. This includes differences in developmental stage (e.g., young, mature, senescent), within-individual morphological variation (e.g., sun vs.&nbsp;shade leaves), and biotic influences such as herbivory or pathogens.</p>
 <p>The second source is <strong>herborization-related variation</strong>—herborization being defined as the process of preserving plant tissues in an herbarium, from the time of collection through long-term storage. This includes collection, pressing, drying, application of preservatives, and subsequent storage conditions. Each of these steps will affect the spectral data to some extent.</p>
@@ -219,10 +227,9 @@ ul.task-list li input[type="checkbox"] {
 <p>When available, contextual details from specimen labels—such as the use of ethanol or other treatments—should be captured in metadata. As it is rare to see such details, botanists should be encouraged to include preservation protocols on specimen labels.</p>
 <p>The metadata fields <code>hasGlue</code>, <code>hasNonGlueContamination</code>, <code>measurementFlags</code>, and <code>tissueNotes</code> (<a href="../protocol/part4-metadata.html#tbl-4-3">Table 4.3</a>), are designed to record the condition of the tissue within the target measurement area at the time of measurement. These fields are essential for downstream filtering and analysis of spectra.</p>
 <p>Examples of specimen tissue metadata records are provided in <a href="../protocol/appendix2.html">Appendix II</a>.</p>
-<hr>
 </section>
-<section id="general-guidelines-for-tissue-selection" class="level1">
-<h1>6.2 General Guidelines for Tissue Selection</h1>
+<section id="general-guidelines-for-tissue-selection" class="level2">
+<h2 class="anchored" data-anchor-id="general-guidelines-for-tissue-selection">General Guidelines for Tissue Selection</h2>
 <p><em>Note: Much of this text is tailored to measuring leaf tissues, but can generally be applied to other tissues.</em></p>
 <ol type="1">
 <li><strong>Quality over quantity.</strong>
@@ -279,53 +286,46 @@ Measuring taxa with naturally small tissues presents unique challenges, but seve
 <ul>
 <li>Center the probe on multiple areas of the small tissue and collect several measurements, then average the values to represent the tissue’s spectral profile.<br>
 </li>
-<li>Create a mosaic by arranging multiple small tissue units side by side to fill the measurement area. Avoid overlapping tissues, as stacking can alter light scattering and distort reflectance values (<a href="../protocol/appendix1.html#fig-a1">Fig. A1</a>).<br>
+<li>Create a mosaic by arranging multiple small tissue units side by side to fill the measurement area. Avoid overlapping tissues, as stacking can alter light scattering and distort reflectance values (<a href="../protocol/appendix1.html#fa1">Fig. A1</a>).<br>
 </li>
 <li>Consider optical setup with small measurement area: For projects in the instrument selection phase, Spectral Evolution offers a custom optical probe with a 2-mm measurement area compatible with their NaturaSpec and PSR spectroradiometers.<br>
 </li>
-<li>Avoid using narrow angle lenses as these might distort the spectrum (<a href="../protocol/appendix1.html#fig-a1">Fig. A1</a>).</li>
+<li>Avoid using narrow angle lenses as these might distort the spectrum (<a href="../protocol/appendix1.html#fa1">Fig. A1</a>).</li>
 </ul></li>
 <li><strong>Multiple individual plants within one herbarium sheet:</strong>
 <ul>
 <li>Each individual plant on a sheet should be demarcated with a unique <code>specimenId</code> ( <a href="../protocol/part4-metadata.html#tbl-4-2">Table 4.2</a>).</li>
 </ul></li>
 </ol>
-<hr>
 </section>
-<section id="decision-tree-for-tissue-selection" class="level1">
-<h1>6.3 Decision tree for tissue selection</h1>
-<div id="fig-6-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-6-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/Fig6.1-decisionTree_v1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-6-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-&nbsp;1: <strong>Fig. 6.1.</strong> Decision tree diagram for target tissue selection.
-</figcaption>
+<section id="decision-tree-for-tissue-selection" class="level2">
+<h2 class="anchored" data-anchor-id="decision-tree-for-tissue-selection">Decision tree for tissue selection</h2>
+<div id="f6-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/Fig6.1-decisionTree_v1.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Fig. 6.1.</strong> Decision tree diagram for target tissue selection.</figcaption>
 </figure>
 </div>
 <hr>
 </section>
-<section id="navigate-the-protocol" class="level1">
-<h1>Navigate the protocol</h1>
+<section id="navigate-the-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="navigate-the-protocol">Navigate the protocol</h2>
 <p>Browse additional parts and appendices:</p>
 <ul>
-<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Overview<br>
-</li>
-<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow<br>
-</li>
-<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats<br>
-</li>
-<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing<br>
-</li>
-<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines<br>
-</li>
-<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement<br>
-</li>
+<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Protocol Overview</li>
+<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow</li>
+<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats</li>
+<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing</li>
+<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines</li>
+<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement</li>
 <li><a href="../protocol/references.html"><strong>References</strong></a></li>
-<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue<br>
-</li>
+<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue</li>
 <li><a href="../protocol/appendix2.html"><strong>Appendix II</strong></a> – Tissue Metadata for Quality Control</li>
+</ul>
+<p>Browse Home and Downloads</p>
+<ul>
+<li><a href="../protocol.html"><strong>Home - IHerbSpec Protocol</strong></a></li>
+<li><a href="tables.html"><strong>Downloads</strong></a></li>
 </ul>
 
 

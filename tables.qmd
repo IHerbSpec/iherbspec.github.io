@@ -1,0 +1,9 @@
+---
+title: "Download tables"
+---
+
+Below are the CSV tables used in this protocol. Click to download.
+
+- [IHerbSpec_metadata.csv](tables/IHerbSpec_metadata.csv)
+- [IHerbSpecProtocol_TableA1.csv](tables/IHerbSpecProtocol_TableA1.csv)
+- [IHerbSpec_metadata-examples.csv](tables/IHerbSpec_metadata-examples.csv)

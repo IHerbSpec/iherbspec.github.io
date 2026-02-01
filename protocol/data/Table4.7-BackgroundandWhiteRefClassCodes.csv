@@ -1,5 +1,0 @@
-﻿Code,Full code,Description
-W,WhiteReference,White reference.
-B,BlackBackground,Black background. The protocol requires this material to be described in the backgroundDescription field (Table 4.3).
-P,PaperBackground,Herbarium sheet paper with or without glue present.
-O,OtherBackground,Other background that is not black or herbarium sheet paper. The protocol requires this material to be described in the backgroundDescription field (Table 4.3).

@@ -10,40 +10,46 @@ include-after-body:
     </div>
 ---
 
+## Overview {#part4}
+
 This section defines the metadata fields used to describe spectral reflectance measurements of herbarium specimens. This standardization supports interoperability, cross-project data aggregation, and future integration into biodiversity informatics platforms.
 
-Projects can download the **IHerbSpec Metadata Spreadsheet** (available at [https://iherbspec.github.io/protocol](../protocol.qmd#download-iherbspec-protocol-files)) as a foundation for organizing their metadata. This spreadsheet includes all **required** and optional but **recommended** fields defined the tables in [Section 4.1](#tbl-4-1). The controlled vocabularies necessary for enumerating certain fields are provided in [Section 4.2](part4-metadata.qmd#controlled-vocabularies). Finally, [Section 4.3](part4-metadata.qmd#guidelines-for-data-archiving-and-sharing) provides general guidelines for data and metadata storage and dissemination.
+Projects can download the **IHerbSpec Metadata Spreadsheet** (available at [doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)) as a foundation for organizing their metadata. This spreadsheet includes all **required** and optional but **recommended** fields defined in the tables in [Section 4.1](#tbl-4-1). The controlled vocabularies necessary for enumerating certain fields are provided in [Section 4.2](part4-metadata.qmd#controlled-vocabularies). Finally, [Section 4.3](part4-metadata.qmd#guidelines-for-data-archiving-and-sharing) provides general guidelines for data and metadata storage and dissemination.
 
 While metadata are expected to be disseminated in a flat file format (as in the IHerbSpec Metadata Spreadsheet), fields are presented here in logical groups—project, specimen, and tissue—to support conceptual understanding and integration with local databases.
 
----
+::: {.content-visible when-format="pdf"}
+Tables in Part 4 can be downloaded from [iherbspec.github.io/protocol](https://iherbspec.github.io/protocol).
+:::
 
-# 4.1 Metadata Tables
+## 4.1 Metadata Tables
 
 ### Table 4.1: Session Metadata {#tbl-4-1}
+
+::: {.content-visible when-format="html"}
+**Download** [Table4.1.csv](tables/Table4.1-sessonMetadata.csv) 
+:::
 
 Session metadata are those metadata usually associated globally with a continuous digitization project. These metadata can usually be captured once per project and automatically populated for each measurement instance.
 
 | Metadata Field | Filename Code ([Table 3.2](part3-filenames.qmd#tbl-3-2)) |  Status | Field Description | Data Type |
 |------------|--------|--------|-------------------|-----------|
-| `projectId` | `PI`  | Required | Unique identifier for the spectral measurement project. <br>Example: `HUHERYspec1`. | TEXT |
-| `sessionId` | `SN`  | Required | Unique identifier for a measurement session, generated as `YYYYMMDDHHMM`.<br>Example: `20240617132251`. | TEXT |
-| `instrumentModel` | -  | Required | Spectroradiometer model name.<br>Example: `SVC HR-1024i`. | TEXT |
-| `opticalSetupDescription` | -  | Required | Description of optical probe setup.<br>Example: `LC-RP contact probe with leaf clip removed`. | TEXT |
-| `measurementSettings` | -  | Required | Instrument settings for measurements.<br>Example: `2 seconds, high light setting`. | TEXT |
-| `whiteReferenceDescription` | -  | Required | Material of the white reference.<br>Example: `Spectralon SL Standard 99%`. | TEXT |
+| `projectId` | `PI`  | Required | Unique identifier for the spectral measurement project. <br> Example: `HUHERYspec1`. | TEXT |
+| `sessionId` | `SN`  | Required | Unique identifier for a measurement session, generated as `YYYYMMDDHHMM`.<br> Example: `20240617132251`. | TEXT |
+| `instrumentModel` | -  | Required | Spectroradiometer model name.<br> Example: `SVC HR-1024i`. | TEXT |
+| `opticalSetupDescription` | -  | Required | Description of optical probe setup.<br> Example: `LC-RP contact probe with leaf clip removed`. | TEXT |
+| `measurementSettings` | -  | Required | Instrument settings for measurements.<br> Example: `2 seconds, high light setting`. | TEXT |
+| `whiteReferenceDescription` | -  | Required | Material of the white reference.<br> Example: `Spectralon SL Standard 99%`. | TEXT |
 | `operator` | -  | Optional | Name(s) of person(s) conducting measurements. | TEXT |
-| `lightSourceType` | -  | Optional | Light source for optical setup.<br>Example: `tungsten halogen`. | TEXT |
-| `distanceTargetToSensor` | -  | Optional | Distance (mm) between target tissue and sensor face.<br>Example: `12`. | NUMERIC |
-| `lensFieldOfView` | -  | Optional | Angle (degrees) of sensor field of view.<br>Example: `22.5`. | NUMERIC |
-| `angleLightToSensor` | -  | Optional | Angle (degrees) of light source to sensor.<br>Example: `10`. | NUMERIC |
-| `measurementAreaDiameter` | -  | Optional | Diameter (mm) of illuminated tissue area.<br>Example: `6`. | NUMERIC |
+| `lightSourceType` | -  | Optional | Light source for optical setup.<br> Example: `tungsten halogen`. | TEXT |
+| `distanceTargetToSensor` | -  | Optional | Distance (mm) between target tissue and sensor face.<br> Example: `12`. | NUMERIC |
+| `lensFieldOfView` | -  | Optional | Angle (degrees) of sensor field of view.<br> Example: `22.5`. | NUMERIC |
+| `angleLightToSensor` | -  | Optional | Angle (degrees) of light source to sensor.<br> Example: `10`. | NUMERIC |
+| `measurementAreaDiameter` | -  | Optional | Diameter (mm) of illuminated tissue area.<br> Example: `6`. | NUMERIC |
 
----
 
-![**Fig. 4.1.** Schematic of Session Metadata fields related to optical setup (see [Table 4.1](#tbl-4-1)). `distanceTargetToSensor`, `fieldOfView`, `angleLightToSensor`, `measurementAreaDiameter`](images/fig4.1-optical_geometry_fig.png){#fig-4-1 fig-align="center" width="800px"}
+![**Fig. 4.1.** Schematic of Session Metadata fields related to optical setup (see [Table 4.1](#tbl-4-1)). `distanceTargetToSensor`, `fieldOfView`, `angleLightToSensor`, `measurementAreaDiameter`](images/fig4.1-optical_geometry_fig.png){#f4-1 fig-align="center"}
 
----
 
 ### Table 4.2: Specimen Metadata {#tbl-4-2}
 
@@ -51,23 +57,24 @@ Specimen metadata include identifiers and information about the physical specime
 
 Users should **avoid duplicating metadata that are already digitized, maintained, and available in herbarium or institutional platforms**, as these sources are better suited for future updates. Instead, users are encouraged to reference those records and supplement only missing required or recommended fields. Due to variation in the metadata recorded on institutional platforms, users should apply caution in the interpretation of presence or absence of determination information or any other recommended but optional fields.
 
+::: {.content-visible when-format="html"}
+**Download** [Table4.2.csv](tables/Table4.2-SpecimenMetadata.csv) 
+:::
 
 | Metadata Field | Filename Code ([Table 3.2](part3-filenames.qmd#tbl-3-2)) |  Status | Field Description | Data Type |
-|------------|-------|--------|--------|-------------------|-----------|
-| `herbariumCode` | `HC` | Required | Acronym for herbarium or collection (Index Herbariorum code).<br>Examples: `GH`, `P`, `US-Botany`. | TEXT |
-| `specimenId` | `SI` | Required | Identifier for specimen or record (catalog no., barcode, GUID, or collector+number).<br>Examples: `00238762`, `Thorne24070a`. | TEXT |
-| `scientificName` | - | Optional | Full scientific name at lowest confident rank.<br>Examples: *Quercus bicolor*, *Erythroxylum coca ipadu*. | TEXT |
-| `identificationQualifier` | - | Optional | Uncertainty in taxonomic ID (Darwin Core).<br>Examples: `cf.`, `aff.` | TEXT |
-| `identifiedBy` | - | Optional | Person/group who made the identification.<br>Example: `T. Plowman`. | TEXT |
-| `dateIdentified` | - | Optional | Date of identification.<br>Examples: `1999`, `2004-12-30`. | TEXT |
+|------------|-------|--------|--------------------------|-------|
+| `herbariumCode` | `HC` | Required | Acronym for herbarium or collection (Index Herbariorum code).<br> Examples: `GH`, `P`, `US-Botany`. | TEXT |
+| `specimenId` | `SI` | Required | Identifier for specimen or record (catalog no., barcode, GUID, or collector+number).<br> Examples: `00238762`, `Thorne24070a`. | TEXT |
+| `scientificName` | - | Optional | Full scientific name at lowest confident rank.<br> Examples: *Quercus bicolor*, *Erythroxylum coca ipadu*. | TEXT |
+| `identificationQualifier` | - | Optional | Uncertainty in taxonomic ID (Darwin Core).<br> Examples: `cf.`, `aff.` | TEXT |
+| `identifiedBy` | - | Optional | Person/group who made the identification.<br> Example: `T. Plowman`. | TEXT |
+| `dateIdentified` | - | Optional | Date of identification.<br> Examples: `1999`, `2004-12-30`. | TEXT |
 | `isTempControlled` | - | Optional | Whether storage has active temperature control. | BOOLEAN |
-| `annualTempMin` | - | Optional | Minimum annual storage temperature (°C).<br>Example: `18`. | TEXT |
-| `annualTempMax` | - | Optional | Maximum annual storage temperature (°C).<br>Example: `26`. | TEXT |
+| `annualTempMin` | - | Optional | Minimum annual storage temperature (°C).<br> Example: `18`. | TEXT |
+| `annualTempMax` | - | Optional | Maximum annual storage temperature (°C).<br> Example: `26`. | TEXT |
 | `isHumidityControlled` | - | Optional | Whether storage has active humidity control. | BOOLEAN |
-| `annualHumidityMin` | - | Optional | Minimum annual storage relative humidity (%).<br>Example: `20`. | TEXT |
-| `annualHumidityMax` | - | Optional | Maximum annual storage relative humidity (%).<br>Example: `60`. | TEXT |
-
-
+| `annualHumidityMin` | - | Optional | Minimum annual storage relative humidity (%).<br> Example: `20`. | TEXT |
+| `annualHumidityMax` | - | Optional | Maximum annual storage relative humidity (%).<br> Example: `60`. | TEXT |
 
 
 
@@ -75,36 +82,40 @@ Users should **avoid duplicating metadata that are already digitized, maintained
 
 Fields describing the type, condition, and position of the tissue measured. Includes **required** and **recommended** metadata for linking spectral measurements to individual tissue units. Note that timestamps for tissue measurement files are often captured within the file.
 
+::: {.content-visible when-format="html"}
+**Download** [Table4.3.csv](tables/Table4.3-TissueMetadata.csv) 
+:::
 
 | Metadata Field | Filename Code ([Table 3.2](part3-filenames.qmd#tbl-3-2)) |  Status   | Field Description          | Data Type |
-|-----------------------------|--------|--------|--------|----------|--------------------------------------------------------------------------------------------------------------------|-----------|
-| `backgroundClass`             | `BG` | Required | Enumerated abbreviated code from Background Class Codes [Table 4.7](#tbl-4-7) describing the type of background used behind target tissue. Both abbreviated codes and descriptive codes are accepted.<br>Examples: `BGW`, `BGB`, `BGP`. | ENUM<br>([Table 4.7](#tbl-4-7)) |
+|-----------------------------|--------|--------|-----------------------------|----------|
+| `backgroundClass`             | `BG` | Required | Enumerated abbreviated code from Background Class Codes [Table 4.7](#tbl-4-7) describing the type of background used behind target tissue. Both abbreviated codes and descriptive codes are accepted.<br> Examples: `BGW`, `BGB`, `BGP`. | ENUM<br> ([Table 4.7](#tbl-4-7)) |
 | `hasLowReflectanceBackground` | - | Required | True or False statement that the background (black or paper) has low reflectance as defined as less than 4% reflectance across the spectral range of the instrument. For a paper background, this would be scored `false`.       | BOOLEAN |
-| `backgroundDescription`       | - | Cond. Req. | Description of the black or other background material, including manufacturer and product information when available. Not required for paper backgrounds. Required field when tissue has black or other type (not paper) of background.<br>Example: `Musou IR Flock`  | TEXT |
-| `targetClass`                 | `TC` | Required | Free text or enumerated code from Target Class Codes ([Table 4.5](#tbl-4-5)) describing type of tissue or background being measured. Both abbreviated codes and full codes can be used.<br>Examples: `AD`, `perigynium`.       | TEXT or ENUM<br>([Table 4.5](#tbl-4-5)) |
-| `targetTissueId`              | `TN` | Optional | Character index tracking the measured tissue units when multiple tissues are measured from a single specimen (e.g., `loose1`, `1`, `2`). For compound or more complex structures, projects are encouraged to develop their own consistent naming convention.<br>Examples: `loose1`, `leaflet1`, `petal1`.           | TEXT |
-| `tissueDevelopmentalStage`    | - | Required | Tissue developmental stage as coded in Developmental Stage Class Codes [Table 4.4](#tbl-4-4).<br>Examples: `Mature`, `Uncertain`.         | ENUM<br>([Table 4.4](#tbl-4-4)) |
+| `backgroundDescription`       | - | Cond. Req. | Description of the black or other background material, including manufacturer and product information when available. Not required for paper backgrounds. Required field when tissue has black or other type (not paper) of background.<br> Example: `Musou IR Flock`  | TEXT |
+| `targetClass`                 | `TC` | Required | Free text or enumerated code from Target Class Codes ([Table 4.5](#tbl-4-5)) describing type of tissue or background being measured. Both abbreviated codes and full codes can be used.<br> Examples: `AD`, `perigynium`.       | TEXT or ENUM<br> ([Table 4.5](#tbl-4-5)) |
+| `targetTissueId`              | `TN` | Optional | Character index tracking the measured tissue units when multiple tissues are measured from a single specimen (e.g., `loose1`, `1`, `2`). For compound or more complex structures, projects are encouraged to develop their own consistent naming convention.<br> Examples: `loose1`, `leaflet1`, `petal1`.           | TEXT |
+| `tissueDevelopmentalStage`    | - | Required | Tissue developmental stage as coded in Developmental Stage Class Codes [Table 4.4](#tbl-4-4).<br> Examples: `Mature`, `Uncertain`.         | ENUM<br> ([Table 4.4](#tbl-4-4)) |
 | `hasBackgroundInMeasurement`  | - | Required | True or false values indicating that the target tissue does not cover the full measurement area and the background is part of the measurement.      | BOOLEAN |
-| `percentBackgroundInMeasurement` | - | Optional | Numeric estimate for the percentage of the measurement area that is not covered by the target tissue and is background material (black background or herbarium paper). It is recommended to describe the estimation method in the comment field.<br>Example: `25`.          | INTEGER |
-| `hasGlue`                     | - | Required | True/False/Uncertain: glue present in measurement area.                | ENUM<br>(true/false/uncertain) |
-| `hasNonGlueContamination`     | - | Required | True, false, or uncertain values indicating a contaminant other than glue is present in the measurement area. This includes foreign biotic or abiotic agents on the target tissue, such as fungus or preservatives.    | ENUM<br>(true/false/uncertain) |
-| `measurementFlags`            | - | Optional | SStandardized categorical descriptors of the condition of the tissue within the measurement area. Values are selected from the predefined Tissue Descriptor Codes [Table 4.6](#tbl-4-6). Multiple descriptors should be separated with a pipe character (`|`).<br>Example: `GoodPreservation|PathogenPresent`. | ENUM<br>(Table 4.6) |
-| `tissueNotes`               | - | Optional | Free-text field used to record additional observations on the condition of the specimen that may aid interpretation of spectral data. It can be used to clarify or elaborate on descriptors already included in measurementFlags, such as the conditions evidencing the quality of preservation (e.g., a MediumPreservation flag could be explained with the note, 'measurement area discolored and wrinkled'). Notes should specify whether the information applies to the measurement area, the tissue unit, or the specimen as a whole.<br>Examples: `mold in measurement area`, `formaldehyde preserved`.   | TEXT |
-| `tissueLocation`              | - | Optional | The location of the target tissue on the herbarium sheet. For mounted tissues, record as an `X,Y` coordinate in centimeters, with **`0,0` at the top-left corner of the sheet** (e.g., `17,29`; see Fig. 4.2). If the sheet has non-square angles, align it flush with the left-side ruler. For unmounted tissues, provide a descriptive note indicating location.<br>Examples: `17,29`, `envelope TCAD_TN1`.     | TEXT<br>(coordinates preferred) |
-| `comment`                    | - | Optional | Free-text field for recording any additional notes relevant to the measurement, including observations about the instrument, session, specimen, tissue, or data quality that are not captured elsewhere in the metadata.<br>Example: `Amazing specimen.`  | TEXT |
-| `measurementIndex`            | `IDX` | Required | The measurement number index appended to the base filename (Part 3, Table 3.2: IDX) to properly associate each row of metadata with its single, corresponding measurement file.<br>Example: `0001`.               | TEXT |
+| `percentBackgroundInMeasurement` | - | Optional | Numeric estimate for the percentage of the measurement area that is not covered by the target tissue and is background material (black background or herbarium paper). It is recommended to describe the estimation method in the comment field.<br> Example: `25`.          | INTEGER |
+| `hasGlue`                     | - | Required | true/false/uncertain: glue present in measurement area.                | ENUM (true/false/ uncertain) |
+| `hasNonGlueContamination`     | - | Required | True, false, or uncertain values indicating a contaminant other than glue is present in the measurement area. This includes foreign biotic or abiotic agents on the target tissue, such as fungus or preservatives.    | ENUM (true/false/ uncertain) |
+| `measurementFlags`            | - | Optional | Standardized categorical descriptors of the condition of the tissue within the measurement area. Values are selected from the predefined Tissue Descriptor Codes [Table 4.6](#tbl-4-6). Multiple descriptors should be separated with a pipe character (`|`).<br> Example: `GoodPreservation|PathogenPresent`. | ENUM<br> (Table 4.6) |
+| `tissueNotes`               | - | Optional | Free-text field used to record additional observations on the condition of the specimen that may aid interpretation of spectral data. It can be used to clarify or elaborate on descriptors already included in measurementFlags, such as the conditions evidencing the quality of preservation (e.g., a MediumPreservation flag could be explained with the note, 'measurement area discolored and wrinkled'). Notes should specify whether the information applies to the measurement area, the tissue unit, or the specimen as a whole.<br> Examples: `mold in measurement area`, `formaldehyde preserved`.   | TEXT |
+| `tissueLocation`              | - | Optional | The location of the target tissue on the herbarium sheet. For mounted tissues, record as an `X,Y` coordinate in centimeters, with **`0,0` at the top-left corner of the sheet** (e.g., `17,29`; see Fig. 4.2). If the sheet has non-square angles, align it flush with the left-side ruler. For unmounted tissues, provide a descriptive note indicating location.<br> Examples: `17,29`, `envelope TCAD_TN1`.     | TEXT<br> (coordinates preferred) |
+| `comment`                    | - | Optional | Free-text field for recording any additional notes relevant to the measurement, including observations about the instrument, session, specimen, tissue, or data quality that are not captured elsewhere in the metadata.<br> Example: `Amazing specimen.`  | TEXT |
+| `measurementIndex`            | `IDX` | Required | The measurement number index appended to the base filename (Part 3, Table 3.2: IDX) to properly associate each row of metadata with its single, corresponding measurement file.<br> Example: `0001`.               | TEXT |
 
----
+![**Fig. 4.2**: Diagram of coordinate system for scoring `tissueLocation` in [Table 4.3: Tissue Metadata](#tbl-4.3). Herbarium sheet is placed on top of the benchtop black background with centimeter rulers at top and left sides for '`x,y`' notation of measurement area (white dashed circles) in centimeters with `0,0` at the top left. Black background cards are placed under unglued portions of leaves. From left to right, tissue `TCAB_TN3` has the location `10,26`, tissue `TCAD_TN2` has location `17,16` and tissue `TCAD_TN1` is stored with a label in a glassine envelope inside the packet with location `envelope TCAD_TN1`. For reference, specimen NEBC_00651639 metadata fields are proposed in [Appendix II](appendix2.qmd). Specimen courtesy of the New England Botanical Society.](images/Fig4.2-coordinatesWh.png){#f4-2 fig-align="center"}
 
-![**Fig. 4.2**: Diagram of coordinate system for scoring `tissueLocation` in [Table 4.3: Tissue Metadata](#tbl-4.3). Herbarium sheet is placed on top of the benchtop black background with centimeter rulers at top and left sides for '`x,y`' notation of measurement area (white dashed circles) in centimeters with `0,0` at the top left. Black background cards are placed under unglued portions of leaves. From left to right, tissue `TCAB_TN3` has the location `10,26`, tissue `TCAD_TN2` has location `17,16` and tissue `TCAD_TN1` is stored with a label in a glassine envelope inside the packet with location `envelope TCAD_TN1`. For reference, specimen NEBC_00651639 metadata fields are proposed in [Appendix II](appendix2.qmd). Specimen courtesy of the New England Botanical Society.](images/Fig4.2-coordinatesWh.png){#fig-4-2 fig-align="center" width="800px"}
 
----
-
-# 4.2 Controlled Vocabularies
+## 4.2 Controlled Vocabularies
 
 ### Table 4.4: Developmental Stage Class Codes {#tbl-4-4}
 
 Available codes for enumerating the required `tissueDevelopmentalStage` metadata [Table 4.3](#tbl-4-3). Codes follow ‘CamelCase’ format with capitalized initial letters.
+
+::: {.content-visible when-format="html"}
+**Download** [Table4.4.csv](tables/Table4.4-DevelopmentalStage.csv) 
+:::
 
 | Code | Description |
 |------|-------------|
@@ -114,14 +125,17 @@ Available codes for enumerating the required `tissueDevelopmentalStage` metadata
 | `Uncertain` | The development stage has been assessed but cannot be confidently determined due to intermediate features, damage, or insufficient visual cues. |
 | `NotScored` | Developmental stage was not assessed or recorded for this tissue. |
 
----
 
 ### Table 4.5: Target Class Codes. {#tbl-4-5}
 
 Available codes for enumerating the required `targetClass` metadata [Table 4.3](#tbl-4-3). Either the abbreviated code or the full CamelCase-formatted code (with an initial capital letter) may be used.
 
+::: {.content-visible when-format="html"}
+**Download** [Table4.5.csv](tables/Table4.5-TargetClassCodes.csv) 
+:::
+
 | Code | Full code   | Description     |
-|------|----------------------------|-----------------------------------------------------------------------------|
+|------|----------------------------------|----------------------------------------------|
 | `W`    | `WhiteReference`             | White reference.               |
 | `WC`   | `WhiteCalibratedReference`   | White calibrated reflectance standard (see Section 5.3).      |
 | `B`    | `BlackBackground`            | Black background material, recorded when used as background for other target tissue measurements. |
@@ -140,10 +154,13 @@ Available codes for enumerating the required `targetClass` metadata [Table 4.3](
 | `HS`   | `HerbaceousStem`             | Herbaceous stem; can be photosynthetic as in PSS.            |
 | `WD`   | `Wood`        | Wood.           |
 
-
 ___
 
 ### Table 4.6: Tissue Descriptor Codes {#tbl-4-6}
+
+::: {.content-visible when-format="html"}
+**Download** [Table4.6.csv](tables/Table4.6-TissueDescriptorCodes.csv) 
+:::
 
 | Code | Description |
 |------|-------------|
@@ -163,11 +180,14 @@ ___
 | `BurnPresent` | Target measurement area contains burned tissue. |
 | `DebrisPresent` | Target measurement area contains non-specific material not described in other codes (e.g., dust, soil particles, insect parts, fibers, etc.) that may interfere with clean measurements. Can be elaborated in the tissueNotes field. |
 
----
 
 ### Table 4.7: Background and White Reference Class Codes {#tbl-4-7}
 
 Available codes for enumerating the required `tissueBackgroundClass` metadata [Table 4.3](#tbl-4-3). Either the abbreviated code or the full CamelCase with initial capital letter jformatted code may be used.
+
+::: {.content-visible when-format="html"}
+**Download** [Table4.7.csv](tables/Table4.7-BackgroundandWhiteRefClassCodes.csv) 
+:::
 
 | Code | Full code | Description |
 |------|-----------|-------------|
@@ -176,32 +196,66 @@ Available codes for enumerating the required `tissueBackgroundClass` metadata [T
 | `P`    | `PaperBackground` | Herbarium sheet paper. |
 | `O`    | `OtherBackground` | Other background material (must be described in metadata). |
 
+
+## 4.3 Guidelines for Data Archiving and Sharing
+
+- For each specimen, a copy of **all unprocessed spectral files and associated metadata should be archived** by the herbarium or institution that owns the specimen, or otherwise managed in accordance with institutional data storage practices. Wherever possible, these data should remain **co-located with specimen records** or stored in infrastructure (e.g., institutional servers, cloud services, or collection management systems) that supports long-term stewardship, identifier stability, and integration with specimen metadata.
+
+- In addition to institutional archiving, projects are strongly encouraged to **deposit unprocessed spectral data files and metadata in a persistent, open-access repository** that issues DOIs and supports versioning.  
+  The **IHerbSpec Dataverse** (<https://dataverse.harvard.edu/dataverse/iherbspec/>) is a community-curated, thematic repository designed specifically to serve herbarium spectral data and metadata. It provides free access, dataset-level versioning, rich metadata support, and curation aligned with the IHerbSpec Protocol. Datasets deposited in the IHerbSpec Dataverse can be linked to specimen records in primary digitization platforms (e.g., Symbiota, Specify, Tropicos) using stable identifiers and resource relationships, enabling integration across systems while allowing spectral data to be managed in infrastructure optimized for these data types.
+
+- The IHerbSpec Dataverse supports a **project-based data sharing model**, suitable for laboratory studies, collaborative research projects, and digitization efforts that span multiple collections. Datasets may include raw spectra, metadata spreadsheets, README documentation, processed spectra, and associated trait data. Metadata are reviewed prior to release to promote compliance with the IHerbSpec Protocol and to facilitate interoperability and reuse.
+
+- To enhance discoverability and specimen-level integration, datasets archived in external repositories (including the IHerbSpec Dataverse) may be linked to specimen records using standardized associations (e.g., Darwin Core Resource Relationship terms such as `isReferencedBy`). These links can be prepared in bulk and ingested by specimen portals, allowing users to search for specimens associated with spectral data while the files themselves remain hosted in the most appropriate repository.
+
+- To facilitate reuse and analysis, projects may also share **tabular data files** (e.g., `.csv`) containing samples in rows and spectral bands and metadata fields in columns. If processed spectra are included (e.g., interpolated, splice-corrected, continuum-removed), all applied processing steps should be clearly documented.
+
+- When projects include **additional trait data** alongside spectral measurements, contributors should ensure that trait definitions, units, and measurement methods are clearly documented and standardized where possible. Ongoing community efforts will be required to align spectral data with broader trait data standards and repositories.
+
+- Contributors should consider data governance needs, including **sensitive specimen information, traditional knowledge considerations, access restrictions, and long-term curation responsibilities**. The IHerbSpec community is actively developing governance, curation, and review practices to support responsible data sharing consistent with FAIR and CARE principles.
+
+- The IHerbSpec community is also working toward the development of **software tools to automatically validate metadata, filenames, and dataset structure** against the IHerbSpec Protocol during data submission, and to enable future parsing of bulk datasets into specimen-specific subsets for downstream integration and reuse.
+
+- See an example of spectral data and metadata sharing here:  
+  <https://doi.org/10.7910/DVN/LXPHBC>
 ---
 
-# 4.3 Guidelines for Data Archiving and Sharing
+## Navigate the protocol
 
-- For each specimen, a copy of **all unprocessed spectral files and metadata should be archived** in the digital repository of the herbarium or institution that owns the specimen, or otherwise in accordance with their data storage practices. This ensures that the data remain co-located with the physical specimen and integrated with institutional capabilities for managing specimen metadata.
-  
-- In addition, projects should **upload unprocessed, original format data files and metadata to a persistent, open-access repository** that issues DOIs and supports versioning, such as Dryad, Zenodo, or Harvard Dataverse. These platforms are preferred over tools like EcoSIS, which have shown reduced reliability and uncertain long-term support.
-  
-- To facilitate reuse, users may also choose to also share tabular data files (e.g., .csv) with samples in rows and columns for metadata fields and spectral band values. If processed spectra are included (e.g., interpolated, splice/jump-corrected, or continuum- removed), the applied processing steps should be clearly documented.
-  
-- See<br>Example of data and metadata sharing here: [https://doi.org/10.7910/DVN/LXPHBC](https://doi.org/10.7910/DVN/LXPHBC)
-
----
-
-# Navigate the protocol
+::: {.content-visible when-format="html"}
 - Proceed to [**Part 5**](part5-instrumentation.qmd)
 
 Browse additional parts and appendices:
 
-- [**Part 1**](part1-overview.qmd) – Overview  
-- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow  
-- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats  
-- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing  
-- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
-- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement  
+- [**Part 1**](part1-overview.qmd) – Protocol Overview
+- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow
+- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats
+- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing
+- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines
+- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement
 - [**References**](references.qmd)
-- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue  
-- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control  
+- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue
+- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control
+
+Browse Home and Downloads
+
+- [**Home - IHerbSpec Protocol**](../protocol.html)
+- [**Downloads**](tables.html)
+:::
+
+::: {.content-visible when-format="pdf"}
+- Proceed to [**Part 5**](#part5)
+
+Browse additional parts and appendices:
+
+- [**Part 1**](#part1) – Protocol Overview
+- [**Part 2**](#part2) – Measurement and Metadata Workflow
+- [**Part 3**](#part3) – Filename Conventions and Formats
+- [**Part 4**](#part4) – Metadata and Databasing
+- [**Part 5**](#part5) – Instrumentation and Materials Guidelines
+- [**Part 6**](#part6) – Selecting Tissues for Spectral Measurement
+- [**References**](#references)
+- [**Appendix I**](#app1) – Number of Measurements per Tissue
+- [**Appendix II**](#app2) – Tissue Metadata for Quality Control
+:::
 

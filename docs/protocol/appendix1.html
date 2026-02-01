@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../images/NaturaSpec-IMG_4840.png" rel="icon" type="image/png">
+<link href="../images/IHerbSpecIcon-white-bgb.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text"><img src="images/IHerbSpecIcon-white-bgb.png" class="img-fluid"></span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iherbspec-protocol" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -117,6 +117,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../protocol/preface.html">
  <span class="dropdown-text">Preface</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/changes.html">
+ <span class="dropdown-text">Changes Since Last Version</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../protocol/part1-overview.html">
@@ -154,6 +158,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../protocol/appendix2.html">
  <span class="dropdown-text">Appendix II</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/tables.html">
+ <span class="dropdown-text">Downloads</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -180,7 +188,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#navigate-the-protocol" id="toc-navigate-the-protocol" class="nav-link active" data-scroll-target="#navigate-the-protocol">Navigate the protocol</a></li>
+  <li><a href="#app1" id="toc-app1" class="nav-link active" data-scroll-target="#app1">Considerations</a></li>
+  <li><a href="#navigate-the-protocol" id="toc-navigate-the-protocol" class="nav-link" data-scroll-target="#navigate-the-protocol">Navigate the protocol</a></li>
   </ul>
 </nav>
     </div>
@@ -206,65 +215,54 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="app1" class="level2">
+<h2 class="anchored" data-anchor-id="app1">Considerations</h2>
 <p>Spectral measurements of plant tissues are highly sensitive to both instrument configuration and small spatial differences across target tissue. Changes in the optical probe geometry in relation to the tissue—such as tilting, poor contact with the leaf surface, partial coverage of the measurement area (Fig. A1), or micro-contaminants like debris—can introduce technical errors. In addition, leaf surface microtopography, anatomical variation, and alterations from herborization (e.g., drying distortion, discoloration, or degradation) all contribute to variation in reflectance spectra (Cavender-Bares et al.&nbsp;2025).</p>
-<div id="fig-a-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-a-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/figA1-spectra-errors.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-a-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-&nbsp;1: <strong>Fig. A1</strong>: Variability in spectral measurements due to instrument configuration and technical error. The following spectral measurements are shown: white calibration standard (red), black background (orange), standard adaxial measurement with black background (light green), standard adaxial measurement but with narrow-angle lens following recalibration (dark green), adaxial measurement where the tissue did not fully cover the optical field of view (i.e., <code>backgroundInMeasurement</code> = <code>TRUE</code>; blue), and a folded leaf (purple). All measurements were made of the same tissue using an SVC HR-1024i spectroradiometer.
-</figcaption>
+<div id="fa-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/figA1-spectra-errors.jpg" class="img-fluid figure-img"></p>
+<figcaption><strong>Fig. A1</strong>: Variability in spectral measurements due to instrument configuration and technical error. The following spectral measurements are shown: white calibration standard (red), black background (orange), standard adaxial measurement with black background (light green), standard adaxial measurement but with narrow-angle lens following recalibration (dark green), adaxial measurement where the tissue did not fully cover the optical field of view (i.e., <code>backgroundInMeasurement</code> = <code>TRUE</code>; blue), and a folded leaf (purple). All measurements were made of the same tissue using an SVC HR-1024i spectroradiometer.</figcaption>
 </figure>
 </div>
 <p>These considerations support the IHerbSpec Protocol requirement of collecting a minimum of three representative measurements per adaxial and abaxial leaf surface, when suitable tissues for both surfaces are available. Three measurements are necessary to calculate a mean spectrum and its variance. The protocol further recommends collecting five measurements per surface to achieve a more robust spectral characterization and to meet the threshold for improved performance in classification models. The protocol allows for users to make these minimum or higher measurements across one or many leaves. For other tissue types, at least three measurements are recommended, with more encouraged when feasible. Below, we elaborate justification for this recommendation.</p>
 <p>Several studies have demonstrated improved model performance when multiple measurements per individual specimen are averaged, including those by Durgante et al.&nbsp;(2013; Figs. A2, A3), Neto-Bradley et al.&nbsp;(2025), and S. Bazan et al.&nbsp;(Unpubl.). The IHerbSpec Protocol’s recommendation of five measurements is based on empirical evidence that model accuracy gains tend to stabilize beyond five to ten measurements per tissue (Fig. A2), although the optimal number may vary depending on tissue type, instrument sensitivity, and modeling goals. Beyond classification, IHerbSpec members are investigating how replicate measurements affect the accuracy and robustness of trait prediction models, evaluating both the benefits of averaging spectra and the variation in predicted trait values from unaveraged measurements of the same tissue.</p>
-<div id="fig-a-2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-a-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/FigA2-Durgante_2013_Fig-spectra.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-a-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-&nbsp;2: <strong>Fig. A2</strong>: Accuracy of taxonomic discrimination as a function of the number of averaged measurements per specimen. Three tissue class datasets are analyzed: combined adaxial and abaxial spectra (circles), abaxial only (squares), and adaxial only (triangles). Each point represents the average classification accuracy from 50 replicate linear discriminant analysis models, using randomized subsampling and test set validation. Error bars indicate 95% confidence intervals. The vertical gray line marks the minimum number of spectral measurements (n = 5), below which accuracy significantly decreases (Tukey test, P ≤ 0.05). Data were collected using an FT-NIR spectrometer (1000–2500 nm) from 10 species in Lecythidaceae, including eight <em>Eschweilera</em> and two <em>Corythophora</em> species. Accuracy increases notably between one and five spectra per specimen, after which performance stabilizes, indicating diminishing returns beyond five measurements. This figure is reproduced from Durgante et al.&nbsp;(2013) with permission from the publisher.
-</figcaption>
+<div id="fa-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/FigA2-Durgante_2013_Fig-spectra.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Fig. A2</strong>: Accuracy of taxonomic discrimination as a function of the number of averaged measurements per specimen. Three tissue class datasets are analyzed: combined adaxial and abaxial spectra (circles), abaxial only (squares), and adaxial only (triangles). Each point represents the average classification accuracy from 50 replicate linear discriminant analysis models, using randomized subsampling and test set validation. Error bars indicate 95% confidence intervals. The vertical gray line marks the minimum number of spectral measurements (n = 5), below which accuracy significantly decreases (Tukey test, P ≤ 0.05). Data were collected using an FT-NIR spectrometer (1000–2500 nm) from 10 species in Lecythidaceae, including eight <em>Eschweilera</em> and two <em>Corythophora</em> species. Accuracy increases notably between one and five spectra per specimen, after which performance stabilizes, indicating diminishing returns beyond five measurements. This figure is reproduced from Durgante et al.&nbsp;(2013) with permission from the publisher.</figcaption>
 </figure>
 </div>
-<div id="fig-a-3" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-a-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/FigA3-RMSvsNscans.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-a-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-&nbsp;3: <strong>Fig. A3</strong>: Spectral variability as a function of the number of measurements averaged per measurement. Here, a total of 100 spectral measurements were collected from a single Annona sp. leaf using an ASD LabSpec Pro spectrometer over a black background. Subsets of these measurements were then averaged in groups ranging from 2 to 40 to simulate different measurement strategies. The plot shows the root mean square (RMS) distance between replicate spectra as a function of the number of measurements averaged, illustrating that spectral variability decreases substantially as more measurements are combined. Notably, averaging fewer than five measurements did not adequately capture intra-tissue spectral variation. This analysis supported the required minimum of 10 measurements per specimen for the formal protocol currently implemented by teams at CIRAD and IRD in France (Mersni et al.&nbsp;2025).
-</figcaption>
+<div id="fa-3" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/FigA3-RMSvsNscans.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Fig. A3</strong>: Spectral variability as a function of the number of measurements averaged per measurement. Here, a total of 100 spectral measurements were collected from a single Annona sp. leaf using an ASD LabSpec Pro spectrometer over a black background. Subsets of these measurements were then averaged in groups ranging from 2 to 40 to simulate different measurement strategies. The plot shows the root mean square (RMS) distance between replicate spectra as a function of the number of measurements averaged, illustrating that spectral variability decreases substantially as more measurements are combined. Notably, averaging fewer than five measurements did not adequately capture intra-tissue spectral variation. This analysis supported the required minimum of 10 measurements per specimen for the formal protocol currently implemented by teams at CIRAD and IRD in France (Mersni et al.&nbsp;2025).</figcaption>
 </figure>
 </div>
 <p>Another important recommendation in the IHerbSpec Protocol is to measure both adaxial and abaxial leaf surfaces. These surfaces differ in anatomy and function due to evolutionary adaptations for light capture, gas exchange, and environmental stress. Such structural differences are consistently reflected in their spectral signatures (see <a href="../protocol/part1-overview.html">Fig. 1.1</a>), and we recommend measuring both surfaces—when suitable tissue is accessible—to capture this biologically meaningful variation.</p>
-<p>Within the context of a large-scale macroevolutionary project focusing on Annonaceae (ERC GLOBAL project), researchers aimed to measure spectra on one specimen per species with the intent to capture as much variation as possible for each specimen. In accordance with the protocol established at the Centre de Coopération Internationale en Recherche Agronomique pour le Développement (CIRAD), researchers decided to make 20 spectral measurements per specimen to develop their spectral library for 1700 Annonaceae species preserved in over 30 different herbaria.</p>
+<p>Within the context of a large-scale macroevolutionary project focusing on Annonaceae (ERC GLOBAL project; PI Thomas Couvreur), researchers aimed to measure spectra on one specimen per species with the intent to capture as much variation as possible for each specimen. In accordance with the protocol established at the Centre de Coopération Internationale en Recherche Agronomique pour le Développement (CIRAD), researchers decided to make 20 spectral measurements per specimen to develop their spectral library for 1700 Annonaceae species preserved in over 30 different herbaria.</p>
 <p>This decision was informed by preliminary experiments demonstrating that spectral stability improves with larger numbers of measurements (Fig. A3). The choice of 20 spectra was also appropriate because of variation in the number and size of leaves, allowing for multiple measurements of multiple leaves or single large leaves that filled an entire herbarium sheet. It also allowed for poor-quality spectra to be discarded based on downstream filtering criteria while still retaining a large number of measurements per specimen.</p>
 <p>Overall, given the sensitivity of spectral data, research projects are encouraged—when feasible—to collect more than five measurements per tissue, including across different tissue units within an individual. This enables further assessment of intra-individual spectral heterogeneity and its impact on downstream analyses.</p>
 <p>The marginal cost of additional measurements is relatively low across instruments, with a single measurement typically completed within 1 to 10 seconds. Nevertheless, determining the appropriate number of measurements remains a critical design consideration, particularly in large-scale digitization projects involving significant resource investment.</p>
 <hr>
-<section id="navigate-the-protocol" class="level1">
-<h1>Navigate the protocol</h1>
-<p>Browse additional parts and appendices below</p>
+</section>
+<section id="navigate-the-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="navigate-the-protocol">Navigate the protocol</h2>
+<p>Browse additional parts and appendices:</p>
 <ul>
-<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Overview<br>
-</li>
-<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow<br>
-</li>
-<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats<br>
-</li>
-<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing<br>
-</li>
-<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines<br>
-</li>
-<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement<br>
-</li>
+<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Protocol Overview</li>
+<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow</li>
+<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats</li>
+<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing</li>
+<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines</li>
+<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement</li>
 <li><a href="../protocol/references.html"><strong>References</strong></a></li>
-<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue<br>
-</li>
+<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue</li>
 <li><a href="../protocol/appendix2.html"><strong>Appendix II</strong></a> – Tissue Metadata for Quality Control</li>
+</ul>
+<p>Browse Home and Downloads</p>
+<ul>
+<li><a href="../protocol.html"><strong>Home - IHerbSpec Protocol</strong></a></li>
+<li><a href="tables.html"><strong>Downloads</strong></a></li>
 </ul>
 
 

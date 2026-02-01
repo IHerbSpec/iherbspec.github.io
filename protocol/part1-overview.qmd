@@ -22,65 +22,79 @@ include-after-body:
 </style>
 
 
-# 1.1 Purpose and Structure of the IHerbSpec Protocol
+## 1.1 Purpose and Structure of the IHerbSpec Protocol {#part1}
 
 This document outlines a "base" protocol for the spectroscopic measurement of herbarium tissues. It defines clear minimum requirements and recommended practices that promote data quality, methodological transparency, and interoperability across projects and institutions. In addition to these foundations, the protocol has been expanded to incorporate broader discussions surrounding instrumentation, materials, and herbarium tissues to further guide best practices.
 
 The protocol specifies two categories of procedural elements:
 
-- **Minimum requirements** – essential components to enable data harmonization that must be met for a project to be considered aligned with the IHerbSpec Protocol.  
-- **Recommended practices** – additions that enhance data quality and support broader utility, but are not mandatory.  
+- **Minimum requirements** – essential components to enable data harmonization that must be met for a project to be considered aligned with the IHerbSpec Protocol.
+- **Recommended practices** – additions that enhance data quality and support broader utility, but are not mandatory.
 
-The IHerbSpec Protocol is organized into modular parts:  
+The IHerbSpec Protocol is organized into modular parts:
 
-- [**Part 1**](part1-overview.qmd) – Overview  
-- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow  
-- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats  
-- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing  
-- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
+::: {.content-visible when-format="html"}
+- [**Part 1**](part1-overview.qmd) – Protocol Overview
+- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow
+- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats
+- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing
+- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines
 - [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement
-- [**References**](references.qmd)  
-- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue  
-- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control  
+- [**References**](references.qmd)
+- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue
+- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control
+:::
 
+::: {.content-visible when-format="pdf"}
+- [**Part 1**](#part1) – Protocol Overview
+- [**Part 2**](#part2) – Measurement and Metadata Workflow
+- [**Part 3**](#part3) – Filename Conventions and Formats
+- [**Part 4**](#part4) – Metadata and Databasing
+- [**Part 5**](#part5) – Instrumentation and Materials Guidelines
+- [**Part 6**](#part6) – Selecting Tissues for Spectral Measurement
+- [**References**](#references)
+- [**Appendix I**](#app1) – Number of Measurements per Tissue
+- [**Appendix II**](#app2) – Tissue Metadata for Quality Control
+:::
+ 
 
 While consistency is central to aggregating spectral datasets, **the protocol is not intended to prescribe a rigid workflow**. The core requirements are designed to enable data harmonization through methodological consistency and transparency, while the overall structure preserves the flexibility needed for its broad adoption, continued innovation, and refinement.
 
----
 
-# 1.2 Measurement and Metadata Overview
+## 1.2 Measurement and Metadata Overview
 
 **This section provides a quick conceptual guide** to the required and recommended components of the protocol with relevant notes on adaptability.
 
-## 1.2.1 Filename Conventions
+### 1.2.1 Filename Conventions
 
-To ensure key identifiability components for every unprocessed spectra file (white target, black target, calibrated reflectance standards, tissues), the IHerbSpec Protocol **strongly recommends** using the filename formats described in [Part 3](part3-filenames.qmd).
+To ensure key identifiability components for every unprocessed spectra file (white target, black target, calibrated reflectance standards, tissues), the IHerbSpec Protocol **strongly recommends** using the filename formats described in [Part 3](part3-filenames.qmd).  
 
 *Adaptability:* Projects may use simplified filenames (see [Table 3.1](part3-filenames.qmd#tbl-3-1)) during metadata scoring, then convert to the full format for permanent storage and distribution.
 
-## 1.2.2 White Reference and Background Measurements
+### 1.2.2 White Reference and Background Measurements
 
-- White-reference measurements are **required** at the start of each session and at regular intervals (e.g., every 20 minutes; check manufacturer guidance).  
-  - This measurement is not recorded as a unique file (see [Section 5.3](part5-instrumentation.qmd#instrumentation-and-materials-quality-control)).  
+- White-reference measurements are **required** at the start of each session and at regular intervals (e.g., every 20 minutes; check manufacturer guidance).
+  - This measurement is not recorded as a unique file (see [Section 5.3](part5-instrumentation.qmd#instrumentation-and-materials-quality-control)).
   - A *measurement session* is defined as the period between switching the instrument on and off.  
 
 - White, black, and/or gray calibrated reflectance standard target measurements are **recommended** to be taken at the beginning of each measurement session or at regular intervals (e.g. once per week) and be locally archived (see [Section 5.3](part5-instrumentation.qmd#instrumentation-and-materials-quality-control)).  
 
-- A single white target measurement is **required** at the beginning of each session to confirm instrument performance (see [Fig. 1.1](part1-overview.qmd#fig-1-1)).  
-  - It is **strongly recommended** to use the `sessionId` field in filenames in order to link the white-reference spectrum to every tissue measurement in the session (see [Table 4.1](part4-metadata.qmd#tbl-4-1)).  
+- A single white target measurement is **required** at the beginning of each session to confirm instrument performance (see [Fig. 1.1](part1-overview.qmd#f1-1)).
+  - It is **strongly recommended** to use the `sessionId` field in filenames in order to link the white-reference spectrum to every tissue measurement in the session (see [Table 4.1](part4-metadata.qmd#tbl-4-1)).
 
-- The protocol **requires projects to use a <4% reflective black surface whenever possible** as a background behind tissues during measurement ([Section 5.3](part5-instrumentation.qmd#instrumentation-and-materials-quality-control))   
-  - A black-background target measurement is **required** at the start of each session (see [Fig. 1.1](part1-overview.qmd#fig-1-1)).  
+- The protocol **requires projects to use a <4% reflective black surface whenever possible** as a background behind tissues during measurement ([Section 5.3](part5-instrumentation.qmd#instrumentation-and-materials-quality-control)). 
+  - A black-background target measurement is **required** at the start of each session (see [Fig. 1.1](part1-overview.qmd#f1-1)).
   - It is **strongly recommended** to use the `sessionId` field in filenames in order to link the black-background spectrum to every tissue measurement in the session (see [Table 4.1](part4-metadata.qmd#tbl-4-1)). 
 
-- If tissues are glued and must be measured against herbarium sheet paper as the background, then a **paper background target measurement** must be taken and linked to the corresponding tissue spectra ([Fig. 1.1](part1-overview.qmd#fig-1-1); [Part 3](part3-filenames.qmd)).
+- If tissues are glued and must be measured against herbarium sheet paper as the background, then a **paper background target measurement** must be taken and linked to the corresponding tissue spectra ([Fig. 1.1](part1-overview.qmd#f1-1); [Part 3](part3-filenames.qmd)).
 
-![**Fig. 1.1.** Influence of background on leaf spectral measurements. For a single *Rubus idaeus* loose leaf (see NEBC 02618198 in [Appendix II](appendix2.qmd)), the green adaxial surface and strongly glaucous abaxial leaf surface influence strong effects on the spectrum in the visible region (400–700 nm) regardless of paper or black backgrounds. However, the spectra in the near-infrared (700–1,100 nm) and shortwave infrared (1,100–2,500 nm) regions are instead clustered by the background material, revealing both biological and background contamination effects on reflectance spectra. The plot shows target measurements of the white reference, black background, and adaxial and abaxial leaf surfaces over black and paper (herbarium sheet) backgrounds. All measurements were made with an SVC HR-1024i spectroradiometer with the LC-RP Pro leaf clip.](images/Fig1.1-spectrabg.png){#fig-1-1 fig-align="center" width="800px"}
+![**Fig. 1.1.** Influence of background on leaf spectral measurements. For a single *Rubus idaeus* loose leaf (see NEBC 02618198 in [Appendix II](appendix2.qmd)), the green adaxial surface and strongly glaucous abaxial leaf surface are separated spectrally in the visible region (400–700 nm) regardless of paper or black backgrounds. However, the spectra in the near-infrared (700–1,100 nm) and shortwave infrared (1,100–2,500 nm) regions are different as they cluster by the background material, revealing both biological and background contamination effects on reflectance spectra. The plot shows target measurements of the white reference, black background, and adaxial and abaxial leaf surfaces over black and paper (herbarium sheet) backgrounds. All measurements were made with an SVC HR-1024i spectroradiometer with the LC-RP Pro leaf clip.](images/Fig1.1-spectrabg.png){#f1-1 fig-align="center" .fig-bordered}
 
-## 1.2.3 Strategy and Number of Tissue Measurements
+
+### 1.2.3 Strategy and Number of Tissue Measurements
 
 - **Tissue selection strategy**  
-  - Considerations and guidelines for selecting specimens and tissues for measurement are provided in [Part 6](part6-guidelines.qmd), including a decision tree diagram ([Fig. 6.1](part6-guidelines.qmd#fig-6-1)).
+  - Considerations and guidelines for selecting specimens and tissues for measurement are provided in [Part 6](part6-guidelines.qmd), including a decision tree diagram ([Fig. 6.1](part6-guidelines.qmd#f6-1)).
 
 - **The number of leaf tissue measurements per specimen**  
   - If both adaxial and abaxial leaf surfaces are accessible and suitable, **a minimum of three representative measurements per surface (six total) is required per specimen**. If only one surface is available or if the tissue class is `leaf` with undifferentiated abaxial/adaxial surfaces (see [Table 4.5](part4-metadata.qmd#tbl-4-5)), then a minimum of three representative measurements are required.  
@@ -93,25 +107,22 @@ To ensure key identifiability components for every unprocessed spectra file (whi
   - **No required minimum** is prescribed.  
   - **Recommended**: At least three representative measurements per specimen per tissue class, if feasible.  
 
----
 
-## 1.2.4 Measurement Technique
+### 1.2.4 Measurement Technique
 
 - Multiple measurements per tissue unit may be taken by targeting multiple suitable areas on the tissue or—taking care not to heat-damage the tissue—by targeting a small area and slightly rotating or shifting the optical probe between measurements.  
 - Avoid overlapping tissue layers, debris, or partial coverage of the probe aperture (Fig. A1).  
 - If a measurement appears affected by technical error, delete and repeat it.  
 
----
 
-## 1.2.5 Metadata Requirements and Flexibility
+### 1.2.5 Metadata Requirements and Flexibility
 
 - All required and recommended protocol metadata are available for use in the IHerbSpec Metadata Spreadsheet, which can be downloaded on the [protocol home page](https://iherbspec.github.io/protocol).  
-- The protocol recommends recording tissue metadata for every individual measurement because every measurement will generate a spectra data file. This means that **every tissue measurement will be recorded in a unique row in the metadata spreadsheet** (e.g., 10 measurements have 10 rows).  
+- The protocol recommends recording tissue metadata for every individual measurement because every measurement will generate a spectral data file. This means that **every tissue measurement will be recorded in a unique row in the metadata spreadsheet** (e.g., 10 measurements have 10 rows).  
 - All fields in Session metadata ([Table 4.1](part4-metadata.qmd#tbl-4-1)), Specimen Metadata ([Table 4.2](part4-metadata.qmd#tbl-4-2)), and Tissue Metadata ([Table 4.3](part4-metadata.qmd#tbl-4-3)) are marked as required or recommended in the field descriptions.  
 
----
 
-## 1.2.6 Scoring Metadata Pertaining to Tissue Condition and Contamination
+### 1.2.6 Scoring Metadata Pertaining to Tissue Condition and Contamination
 
 - To record key elements of tissue condition and contamination, these fields are required metadata (see [Section 6.1](part6-guidelines.qmd#sources-of-variation-in-herbarium-plant-tissues); field descriptions in [Table 4.3](part4-metadata.qmd#tbl-4-3)):  
   - `tissueDevelopmentalStage`  
@@ -122,29 +133,53 @@ To ensure key identifiability components for every unprocessed spectra file (whi
   - `measurementFlags` allows use of standardized tissue condition descriptors (see [Table 4.6](part4-metadata.qmd#tbl-4-6)) for preservation status, damage, or contamination (e.g., `GoodPreservation`|`GluePresent`).  
   - `tissueNotes` enables free-text documentation of additional tissue conditions or context inside or outside the measurement area.  
 
-*Adaptability:*  
+*Adaptability:*
+
 - `tissueDevelopmentalStage` may be coded as `notScored` if assessment is not possible (e.g., due to technician training or specimen condition; see [Table 4.4](part4-metadata.qmd#tbl-4-4)).  
 - `hasGlue` and `hasNonGlueContamination` may be marked `uncertain` if presence is not confidently determined.  
 
----
 
-## 1.2.7 Specimen and Tissue Annotation
+### 1.2.7 Specimen and Tissue Annotation
 
 - The IHerbSpec Protocol recommends annotating the location of measured tissues on the sheet using the `targetTissueId` field. Additional annotations to the herbarium sheet or packet are encouraged in accordance with herbarium policies (see [Section 5.4](part5-instrumentation.qmd#specimen-and-tissue-annotation)). 
 
 ---
 
-# Navigate the protocol
+## Navigate the protocol
+
+::: {.content-visible when-format="html"}
 - Proceed to [**Part 2**](part2-workflow.qmd)
 
 Browse additional parts and appendices:
 
-- [**Part 1**](part1-overview.qmd) – Overview  
-- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow  
-- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats  
-- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing  
-- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
-- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement  
+- [**Part 1**](part1-overview.qmd) – Protocol Overview
+- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow
+- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats
+- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing
+- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines
+- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement
 - [**References**](references.qmd)
-- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue  
-- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control  
+- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue
+- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control
+
+Browse Home and Downloads
+
+- [**Home - IHerbSpec Protocol**](../protocol.html)
+- [**Downloads**](tables.html)
+:::
+
+::: {.content-visible when-format="pdf"}
+- Proceed to [**Part 2**](#part2)
+
+Browse additional parts and appendices:
+
+- [**Part 1**](#part1) – Protocol Overview
+- [**Part 2**](#part2) – Measurement and Metadata Workflow
+- [**Part 3**](#part3) – Filename Conventions and Formats
+- [**Part 4**](#part4) – Metadata and Databasing
+- [**Part 5**](#part5) – Instrumentation and Materials Guidelines
+- [**Part 6**](#part6) – Selecting Tissues for Spectral Measurement
+- [**References**](#references)
+- [**Appendix I**](#app1) – Number of Measurements per Tissue
+- [**Appendix II**](#app2) – Tissue Metadata for Quality Control
+:::

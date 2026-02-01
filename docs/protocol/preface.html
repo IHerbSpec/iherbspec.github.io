@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../images/NaturaSpec-IMG_4840.png" rel="icon" type="image/png">
+<link href="../images/IHerbSpecIcon-white-bgb.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text"><img src="images/IHerbSpecIcon-white-bgb.png" class="img-fluid"></span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iherbspec-protocol" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -117,6 +117,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../protocol/preface.html">
  <span class="dropdown-text">Preface</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/changes.html">
+ <span class="dropdown-text">Changes Since Last Version</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../protocol/part1-overview.html">
@@ -154,6 +158,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../protocol/appendix2.html">
  <span class="dropdown-text">Appendix II</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/tables.html">
+ <span class="dropdown-text">Downloads</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -180,11 +188,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Abstract</a></li>
   <li><a href="#iherbspec-and-protocol-development" id="toc-iherbspec-and-protocol-development" class="nav-link" data-scroll-target="#iherbspec-and-protocol-development">IHerbSpec and Protocol Development</a></li>
   <li><a href="#authors" id="toc-authors" class="nav-link" data-scroll-target="#authors">Authors</a></li>
-  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
   <li><a href="#author-contributions" id="toc-author-contributions" class="nav-link" data-scroll-target="#author-contributions">Author Contributions</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
   <li><a href="#suggested-citation" id="toc-suggested-citation" class="nav-link" data-scroll-target="#suggested-citation">Suggested Citation</a></li>
   <li><a href="#navigate-the-protocol" id="toc-navigate-the-protocol" class="nav-link" data-scroll-target="#navigate-the-protocol">Navigate the protocol</a></li>
   </ul>
@@ -222,154 +230,120 @@ ul.task-list li input[type="checkbox"] {
     line-height: 1.7;
   }
 </style>
-<section id="abstract" class="level1">
-<h1>Abstract</h1>
-<p>Reflectance spectroscopy is a powerful, broadly integrative tool for capturing plant phenotypes. But variation in instrumentation and measurement procedures introduces a high risk of data incompatibility and signal contamination. These challenges are amplified in herbarium specimens because they are subject to complex variation from age, preservation techniques, and mounting practices.</p>
+<section id="preface" class="level2">
+<h2 class="anchored" data-anchor-id="preface">Abstract</h2>
+<p>Reflectance spectroscopy is a powerful, broadly integrative tool for capturing plant phenotypes. But variation in instrumentation and measurement procedures introduces a high risk of data incompatibility and signal contamination across datasets. These challenges are amplified in herbarium specimens because they are subject to complex variation from age, preservation techniques, and mounting practices.</p>
 <p>To support global data harmonization and scientific reproducibility, this document presents a standardized, interoperable protocol for the spectral measurement of herbarium tissues. It provides data-driven justification and community-informed guidance for measurement procedures and metadata fields, with the goal of improving data quality and enabling confident data aggregation across institutions.</p>
-<hr>
 </section>
-<section id="iherbspec-and-protocol-development" class="level1">
-<h1>IHerbSpec and Protocol Development</h1>
-<p>The International Herbarium Spectral Digitization (<strong>IHerbSpec</strong>) Working Group was established in December 2024 as a global consortium focused on advancing the use of reflectance spectroscopy of herbarium specimens for ecological and evolutionary studies.<br>
-The group actively collaborates to identify common challenges, facilitate collaborations, and develop best practices.</p>
-<p>This protocol is the outcome of IHerbSpec’s initial collaborative phase. From December 2024 to June 2025, members convened virtually to share project-specific workflows and align measurement strategies. The effort culminated in an in-person workshop at the Harvard University Herbaria (May 1–3, 2025), where members reached consensus on key elements of the protocol, including:</p>
+<section id="iherbspec-and-protocol-development" class="level2">
+<h2 class="anchored" data-anchor-id="iherbspec-and-protocol-development">IHerbSpec and Protocol Development</h2>
+<p>The International Herbarium Spectral Digitization Working Group (IHerbSpec) was established in December 2024 as a global consortium focused on advancing the use of reflectance spectroscopy of herbarium specimens for ecological and evolutionary studies.</p>
+<p>The group actively collaborates to identify common challenges, facilitate collaborations, and develop best practices.</p>
+<p>This protocol is one of the primary products of IHerbSpec’s initial collaborative phase. From December 2024 to June 2025, members convened virtually to share project-specific workflows and align measurement strategies. The protocol was developed through an open, collaborative process, with a majority of IHerbSpec members contributing to discussions and decisions and serving as authors. The effort culminated in an in-person workshop at the Harvard University Herbaria (May 1–3, 2025), where members reached consensus on key elements of the protocol, including:</p>
 <ol type="1">
-<li>The minimum and recommended number of measurements for leaf tissues (see <a href="../protocol/part1-overview.html#strategy-and-number-of-tissue-measurements">Section 1.2.3: Strategy and number of tissue measurements</a>).<br>
-</li>
-<li>Tissue condition and contamination metadata (see <a href="../protocol/part1-overview.html#scoring-metadata-pertaining-to-tissue-condition-and-contamination">Section 1.2.6: Scoring metadata pertaining to tissue condition and contamination</a>).<br>
-</li>
+<li>The minimum and recommended number of measurements for leaf tissues (see <a href="../protocol/part1-overview.html#strategy-and-number-of-tissue-measurements">Strategy and number of tissue measurements</a>).</li>
+<li>Tissue condition and contamination metadata (see <a href="../protocol/part1-overview.html#scoring-metadata-pertaining-to-tissue-condition-and-contamination">Scoring metadata pertaining to tissue condition and contamination</a>).</li>
 <li>Tissue development stage metadata (see <a href="../protocol/part4-metadata.html#tbl-4-4">Table 4.4</a>).</li>
 </ol>
 <p>IHerbSpec will continue to refine and expand this protocol and welcomes inquiries from interested researchers or institutions wishing to ask questions, provide feedback, or explore opportunities for participation.</p>
-<hr>
 </section>
-<section id="authors" class="level1">
-<h1>Authors</h1>
+<section id="authors" class="level2">
+<h2 class="anchored" data-anchor-id="authors">Authors</h2>
 <ul>
-<li><strong>Dawson M. White</strong> — Harvard University Herbaria and Department of Organismic and Evolutionary Biology, Harvard University, USA<br>
-</li>
-<li><strong>Natalie I. Ahlstrand</strong> — Natural History Museum of Denmark, University of Copenhagen, Denmark<br>
-</li>
-<li><strong>Matthew W. Austin</strong> — Missouri Botanical Garden, USA<br>
-</li>
-<li><strong>Denis Bastianelli</strong> — CIRAD / University of Montpellier, France<br>
-</li>
-<li><strong>Samantha Bazan</strong> — CIRAD / University of Montpellier, France<br>
-</li>
-<li><strong>Khalil Boughalmi</strong> — University of Montpellier, France<br>
-</li>
-<li><strong>Warren Cardinal-McTeague</strong> — University of British Columbia, Canada<br>
-</li>
-<li><strong>Thomas L.P. Couvreur</strong> — University of Montpellier, CIRAD, IRD, France<br>
-</li>
-<li><strong>Flavia Durgante</strong> — Karlsruhe Institute of Technology / National Institute of Amazonian Research (INPA), Brazil<br>
-</li>
-<li><strong>Olwen M. Grace</strong> — Royal Botanic Garden Edinburgh, UK<br>
-</li>
-<li><strong>J. Antonio Guzmán Q.</strong> — Harvard University, USA<br>
-</li>
-<li><strong>Kimberly Hansen</strong> — Field Museum of Natural History, USA<br>
-</li>
-<li><strong>Michael Hopkins</strong> — National Institute of Amazonian Research (INPA), Brazil<br>
-</li>
-<li><strong>Rykkar Jackson</strong> — University of British Columbia, Canada<br>
-</li>
-<li><strong>Jonathan A. Kennedy</strong> — Harvard University, USA<br>
-</li>
-<li><strong>Shan Kothari</strong> — University of Alberta, Canada<br>
-</li>
-<li><strong>Aaron K. Lee</strong> — University of Minnesota, USA<br>
-</li>
-<li><strong>Étienne Léveillé-Bourret</strong> — Université de Montréal, Canada<br>
-</li>
-<li><strong>José Eduardo Meireles</strong> — University of Maine, USA<br>
-</li>
-<li><strong>Barbara M. Neto-Bradley</strong> — University of Cambridge, UK<br>
-</li>
-<li><strong>Cornelius Onyedikachi Nichodemus</strong> — University of Maine, USA<br>
-</li>
-<li><strong>Natalia L. Quinteros</strong> Casaverde — NASA Goddard Space Flight Center, USA<br>
-</li>
-<li><strong>Carlos Rodrigues-Vaz</strong> — Muséum National d’Histoire Naturelle, France<br>
-</li>
-<li><strong>Michaela Schmull</strong> — Harvard University Herbaria, USA<br>
-</li>
-<li><strong>Pamela S. Soltis</strong> — University of Florida, USA<br>
-</li>
-<li><strong>Daniel Spalink</strong> — Texas A&amp;M University, USA<br>
-</li>
-<li><strong>Caroline C. Vasconcelos</strong> — National Institute of Amazonian Research (INPA), Brazil<br>
-</li>
-<li><strong>Jéssica Lira Viana</strong> — Aarhus University, Denmark<br>
-</li>
-<li><strong>Hanna Tuomisto</strong> — University of Turku, Finland<br>
-</li>
-<li><strong>Tom Wells</strong> — Royal Botanic Gardens, Kew, UK<br>
-</li>
+<li><strong>Dawson M. White</strong> — Harvard University Herbaria and Department of Organismic and Evolutionary Biology, Harvard University, USA</li>
+<li><strong>Natalie I. Ahlstrand</strong> — Natural History Museum of Denmark, University of Copenhagen, Denmark</li>
+<li><strong>Matthew W. Austin</strong> — Missouri Botanical Garden, USA</li>
+<li><strong>Denis Bastianelli</strong> — CIRAD / University of Montpellier, France</li>
+<li><strong>Samantha Bazan</strong> — CIRAD / University of Montpellier, France</li>
+<li><strong>Khalil Boughalmi</strong> — University of Montpellier, France</li>
+<li><strong>Warren Cardinal-McTeague</strong> — University of British Columbia, Canada</li>
+<li><strong>Thomas L.P. Couvreur</strong> — University of Montpellier, CIRAD, IRD, France</li>
+<li><strong>Flavia Durgante</strong> — Karlsruhe Institute of Technology / National Institute of Amazonian Research (INPA), Brazil</li>
+<li><strong>Olwen M. Grace</strong> — Royal Botanic Garden Edinburgh, UK</li>
+<li><strong>J. Antonio Guzmán Q.</strong> — Harvard University, USA</li>
+<li><strong>Kimberly Hansen</strong> — Field Museum of Natural History, USA</li>
+<li><strong>Michael Hopkins</strong> — National Institute of Amazonian Research (INPA), Brazil</li>
+<li><strong>Rykkar Jackson</strong> — University of British Columbia, Canada</li>
+<li><strong>Jonathan A. Kennedy</strong> — Harvard University, USA</li>
+<li><strong>Shan Kothari</strong> — University of Alberta, Canada</li>
+<li><strong>Aaron K. Lee</strong> — University of Minnesota, USA</li>
+<li><strong>Étienne Léveillé-Bourret</strong> — Université de Montréal, Canada</li>
+<li><strong>José Eduardo Meireles</strong> — University of Maine, USA</li>
+<li><strong>Barbara M. Neto-Bradley</strong> — University of Cambridge, UK</li>
+<li><strong>Cornelius Onyedikachi Nichodemus</strong> — University of Maine, USA</li>
+<li><strong>Natalia L. Quinteros</strong> Casaverde — NASA Goddard Space Flight Center, USA</li>
+<li><strong>Carlos Rodrigues-Vaz</strong> — Muséum National d’Histoire Naturelle, France</li>
+<li><strong>Michaela Schmull</strong> — Harvard University Herbaria, USA</li>
+<li><strong>Pamela S. Soltis</strong> — University of Florida, USA</li>
+<li><strong>Daniel Spalink</strong> — Texas A&amp;M University, USA</li>
+<li><strong>Caroline C. Vasconcelos</strong> — National Institute of Amazonian Research (INPA), Brazil</li>
+<li><strong>Jéssica Lira Viana</strong> — Aarhus University, Denmark</li>
+<li><strong>Hanna Tuomisto</strong> — University of Turku, Finland</li>
+<li><strong>Tom Wells</strong> — Royal Botanic Gardens, Kew, UK</li>
 <li><strong>Jeannine Cavender-Bares</strong> — Harvard University, USA</li>
 </ul>
-<hr>
 </section>
-<section id="acknowledgements" class="level1">
-<h1>Acknowledgements</h1>
-<p>We gratefully acknowledge the staff, managers, and curators who steward biodiversity collections and make them accessible for scientific discovery. We thank Jorge M. Robles for artistic contributions to Figs. 2.1 and 6.1.</p>
-<p>Funding support came from the <strong>US NSF Biology Integration Institute ASCEND (DBI-2021898)</strong>, <strong>Harvard University Herbaria</strong>, <strong>iDigBio (NSF DBI-2027654)</strong>, <strong>NSF grant DBI-1930007</strong>, the <strong>Canadian NSERC Discovery Grant</strong>, and the <strong>Missouri Botanical Garden’s Revolutionizing Species Identification project</strong>.</p>
-<p>Additional support:<br>
-- <strong>ERC Horizon 2020 (grant 865787)</strong> – TLPC and KB<br>
-- <strong>Royal Botanic Garden Edinburgh</strong> – Botanics Foundation and American Friends of the Botanic Garden<br>
-- <strong>NYBG Visiting Scientist Travel Award</strong> – CON<br>
-- <strong>FAPEAM ‘Women in Science Program’ (SPECTRA POP project, 2024)</strong> – FD, MH, CCV<br>
-- <strong>BMBF grant 01LK2101D (Germany)</strong> – FD, MH, CCV<br>
-- <strong>Danish National Research Foundation grant DNRF179</strong> – JLV, HT<br>
-- <strong>SURA award 80NSSC22M0001</strong> – NLQC</p>
-<hr>
-</section>
-<section id="author-contributions" class="level1">
-<h1>Author Contributions</h1>
+<section id="author-contributions" class="level2">
+<h2 class="anchored" data-anchor-id="author-contributions">Author Contributions</h2>
 <p>All authors contributed intellectually to the development of the protocol, including reviewing, editing, and approving the final version. DMW organized and led protocol development, writing, and website management.</p>
 <ul>
-<li>Intellectual leadership: Led by JCB with contributions from MWA, FD, JAK, JEM, JAGQ, MS, and DMW.<br>
-</li>
-<li>Draft writing: NIA, MWA, JCB, ELB, TLPC, FD, OMG, JAGQ, JAK, SK, DS, NLQC, DMW<br>
-</li>
-<li>Figures and tables: SB, FD, JAK, DMW<br>
-</li>
-<li>Appendix II examples: KB, SB, FD, AKL, CCV, CON, DMW<br>
-</li>
-<li>Metadata standardization: Led by JAK with contributions from MWA, JCB, ELB, FD, SK, JAGQ, PSS, DMW<br>
-</li>
+<li>Intellectual leadership: Led by JCB with contributions from MWA, FD, JAK, JEM, JAGQ, MS, and DMW.</li>
+<li>Draft writing: NIA, MWA, JCB, ELB, TLPC, FD, OMG, JAGQ, JAK, SK, DS, NLQC, DMW</li>
+<li>Figures and tables: SB, FD, JAK, DMW</li>
+<li>Appendix II examples: KB, SB, FD, AKL, CCV, CON, DMW</li>
+<li>Metadata standardization: Led by JAK with contributions from MWA, JCB, ELB, FD, SK, JAGQ, PSS, DMW</li>
 <li>Validation: MWA, CON, JLV, HT</li>
 </ul>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>We gratefully acknowledge the staff, managers, and curators who steward biodiversity collections and make them accessible for scientific discovery. We thank Jorge M. Robles for artistic contributions to Figs. 2.1 and 6.1.</p>
+<p><strong>IHerbSpec has been supported by:</strong></p>
+<ul>
+<li>US NSF Biology Integration Institute ASCEND (DBI-2021898)</li>
+<li>Harvard University Herbaria</li>
+<li>iDigBio (NSF DBI-2027654)</li>
+<li>NSF grant DBI-1930007</li>
+<li>Canadian NSERC Discovery Grant</li>
+<li>The Missouri Botanical Garden’s Revolutionizing Species Identification project.</li>
+</ul>
+<p><strong>Individuals have received additional support from:</strong></p>
+<ul>
+<li>ERC Horizon 2020 (grant 865787; TLPC and KB)</li>
+<li>Royal Botanic Garden Edinburgh – Botanics Foundation and American Friends of the Botanic Garden</li>
+<li>NYBG Visiting Scientist Travel Award (CON)</li>
+<li>FAPEAM ‘Women in Science Program’ (SPECTRA POP project, 2024; FD, MH, CCV)</li>
+<li>BMBF grant 01LK2101D (FD, MH, CCV)</li>
+<li>Danish National Research Foundation grant DNRF179 (JLV, HT)</li>
+<li>SURA award 80NSSC22M0001 (NLQC)</li>
+</ul>
+</section>
+<section id="suggested-citation" class="level2">
+<h2 class="anchored" data-anchor-id="suggested-citation">Suggested Citation</h2>
+<p>IHerbSpec. 2025. <em>Protocol for the Spectral Digitization of Herbarium Specimens, v.1.1</em>. <a href="https://doi.org/10.5281/zenodo.15849668">https://doi.org/10.5281/zenodo.15849668</a></p>
 <hr>
 </section>
-<section id="suggested-citation" class="level1">
-<h1>Suggested Citation</h1>
-<p>White DM, NI Ahlstrand, MW Austin, D Bastianelli, S Bazan, K Boughalmi, W Cardinal-McTeague, TLP Couvreur, F Durgante, OM Grace, JA Guzmán Q, K Hansen, M Hopkins, R Jackson, JA Kennedy, S Kothari, AK Lee, É Léveillé-Bourret, JE Meireles, BM Neto-Bradley, CO Nichodemus, NL Quinteros Casaverde, C Rodrigues-Vaz, M Schmull, PS Soltis, D Spalink, CC Vasconcelos, JL Viana, H Tuomisto, T Wells, J Cavender-Bares. 2025. <em>IHerbSpec Protocol v.1.01</em>. <a href="https://doi.org/10.5281/zenodo.15849668">https://doi.org/10.5281/zenodo.15849668</a></p>
-<hr>
-</section>
-<section id="navigate-the-protocol" class="level1">
-<h1>Navigate the protocol</h1>
+<section id="navigate-the-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="navigate-the-protocol">Navigate the protocol</h2>
 <ul>
 <li>Proceed to <a href="../protocol/part1-overview.html"><strong>Part 1</strong></a></li>
 </ul>
 <p>Browse additional parts and appendices:</p>
 <ul>
-<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Overview<br>
-</li>
-<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow<br>
-</li>
-<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats<br>
-</li>
-<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing<br>
-</li>
-<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines<br>
-</li>
-<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement<br>
-</li>
+<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Protocol Overview</li>
+<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow</li>
+<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats</li>
+<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing</li>
+<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines</li>
+<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement</li>
 <li><a href="../protocol/references.html"><strong>References</strong></a></li>
-<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue<br>
-</li>
+<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue</li>
 <li><a href="../protocol/appendix2.html"><strong>Appendix II</strong></a> – Tissue Metadata for Quality Control</li>
+</ul>
+<p>Browse Home and Downloads</p>
+<ul>
+<li><a href="../protocol.html"><strong>Home - IHerbSpec Protocol</strong></a></li>
+<li><a href="tables.html"><strong>Downloads</strong></a></li>
 </ul>
 
 

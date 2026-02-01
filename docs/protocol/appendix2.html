@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../images/NaturaSpec-IMG_4840.png" rel="icon" type="image/png">
+<link href="../images/IHerbSpecIcon-white-bgb.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text"><img src="images/IHerbSpecIcon-white-bgb.png" class="img-fluid"></span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iherbspec-protocol" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -117,6 +117,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../protocol/preface.html">
  <span class="dropdown-text">Preface</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/changes.html">
+ <span class="dropdown-text">Changes Since Last Version</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../protocol/part1-overview.html">
@@ -154,6 +158,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../protocol/appendix2.html">
  <span class="dropdown-text">Appendix II</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/tables.html">
+ <span class="dropdown-text">Downloads</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -180,7 +188,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tbl-a-1" id="toc-tbl-a-1" class="nav-link active" data-scroll-target="#tbl-a-1">Table A1: Select Metadata Fields and Scoring for Representative Specimens.</a></li>
+  <li><a href="#app2" id="toc-app2" class="nav-link active" data-scroll-target="#app2">Scoring metadata for tissue conditions</a>
+  <ul class="collapse">
+  <li><a href="#tbl-a-1" id="toc-tbl-a-1" class="nav-link" data-scroll-target="#tbl-a-1">Table A1: Examples for Scoring of Tissue Conditions.</a></li>
+  </ul></li>
   <li><a href="#navigate-the-protocol" id="toc-navigate-the-protocol" class="nav-link" data-scroll-target="#navigate-the-protocol">Navigate the protocol</a></li>
   </ul>
 </nav>
@@ -207,22 +218,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This appendix provides a brief discussion and examples of the IHerbSpec approach for recording metadata pertaining to sources of biological and herborization variation that affect spectral data. As explained in <a href="../protocol/part6-guidelines.html">Section 6.1</a> Sources of Variation, we aim to capture biological variation that is scientifically meaningful, but the degraded nature of herbarium specimens requires a careful assessment and annotation of tissue quality and sources of contamination. The Tissue Metadata fields of <code>developmentalStage</code>, <code>hasGlue</code>, <code>hasNonGlueContamination</code>, <code>measurementFlags</code>, and <code>tissueNotes</code> <a href="../protocol/part4-metadata.html#tbl-4-3">Table 4.3</a> are designed to support quality control of spectral data and enable downstream filtering.</p>
-<p>The codes for enumerating the developmentalStage fields are provided in <a href="../protocol/part4-metadata.html#tbl-4-4">Table 4.4</a>, and the codes for measurementFlags are described in <a href="../protocol/part4-metadata.html#tbl-4-6">Table 4.6</a>.</p>
+<p>This appendix provides a brief discussion and examples of the IHerbSpec approach for recording metadata pertaining to sources of biological and herborization variation that affect spectral data.</p>
+<section id="app2" class="level2">
+<h2 class="anchored" data-anchor-id="app2">Scoring metadata for tissue conditions</h2>
+<p>As explained in <a href="../protocol/part6-guidelines.html">Section 6.1</a> Sources of Variation, we aim to capture biological variation that is scientifically meaningful, but the degraded nature of herbarium specimens requires a careful assessment and annotation of tissue quality and sources of contamination. The Tissue Metadata fields of, <code>developmentalStage</code>, <code>hasGlue</code>, <code>hasNonGlueContamination</code>, <code>measurementFlags</code>, and <code>tissueNotes</code> <a href="../protocol/part4-metadata.html#tbl-4-3">Table 4.3</a> are designed to support quality control of spectral data and enable downstream filtering.</p>
+<p>The codes for enumerating the <code>developmentalStage</code> fields are provided in <a href="../protocol/part4-metadata.html#tbl-4-4">Table 4.4</a>, and the codes for <code>measurementFlags</code> are described in <a href="../protocol/part4-metadata.html#tbl-4-6">Table 4.6</a>.</p>
 <p>Technicians should also be aware that some taxa (e.g.&nbsp;Myrtaceae) or tropical collections in general may naturally exhibit discoloration or non-flat, deformed surfaces (e.g., <em>Gasteranthus atratus</em>). Such characteristics do not necessarily indicate tissue degradation and poor-quality spectral data. In addition, some taxa exhibit more pronounced discoloration during herborization as a result of their biology, and such discoloration should not be interpreted as evidence of poor preservation condition. Some traits also covary; for example, young leaves wilt and become discolored faster and are more challenging to press and dry flat, so they may more often be scored as moderately or poorly preserved.</p>
 <p>As a reminder, <strong><code>measurementFlags</code> pertain only to the measurement area</strong>, not the whole tissue unit (e.g., leaf). Since suitable measurement areas of tissues (see decision tree in <a href="../protocol/part6-guidelines.html">Fig. 6.1</a>) will not contain any contaminants, pathogens, or other damage, technicians should not be enumerating any codes in the <code>measurementFlags</code> field. This could differ in projects collecting measurements pertaining to extended uses of the specimen, e.g., symbionts, degradation, etc., that might be measuring tissue areas with these other features.</p>
 <p>The specimens and metadata examples in <a href="#tbl-a-1">Table A1</a> have been selected to guide consistent scoring of these fields during spectral measurement and promote metadata consistency across projects. Note that the images do not specify the exact measurement area corresponding to these metadata fields (as is done in the IHerbSpec Metadata Spreadsheet for specimen NEBC_00651639 shown in main text <a href="../protocol/part2-workflow.html">Fig. 2.2</a>).</p>
 <section id="tbl-a-1" class="level3">
-<h3 class="anchored" data-anchor-id="tbl-a-1">Table A1: Select Metadata Fields and Scoring for Representative Specimens.</h3>
-<p>This table provides example metadata records for herbarium specimens, illustrating how to score key fields related to tissue condition and contamination. The fields developmentalStage, hasGlue, hasNonGlueContamination, and measurementFlags refer specifically to the measurement area. Broader observations about the specimen or other tissues can be recorded in tissueNotes (see <a href="../protocol/part4-metadata.html#tbl-4-3">Table 4.3</a>). Linked specimen images are included, though they do not indicate the precise measurement area corresponding to each metadata record. This table can be downloaded on the <a href="../protocol.html">Protocol home page</a>.</p>
+<h3 class="anchored" data-anchor-id="tbl-a-1">Table A1: Examples for Scoring of Tissue Conditions.</h3>
+<p>This table provides example metadata records for herbarium specimens, illustrating how to score select Tissue Metadata <a href="../protocol/part4-metadata.html#tbl-4-3">Table 4.3</a> related to condition and contamination. The fields <code>developmentalStage</code>, <code>hasGlue</code>, <code>hasNonGlueContamination</code>, and <code>measurementFlags</code> refer specifically to the measurement area. Broader observations about the specimen or other tissues can be recorded in <code>tissueNotes</code> (see <a href="../protocol/part4-metadata.html#tbl-4-3">Table 4.3</a>). Linked specimen images are included, though they do not indicate the precise measurement area corresponding to each metadata record.</p>
+<p><strong>Download</strong> <a href="tables/IHerbSpecProtocol_TableA1.csv">TableA1.csv</a></p>
+<div class="table-responsive table-small">
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>herbariumCode_specimenID</th>
-<th><code>developmentalStage</code></th>
+<th><code>herbariumCode_specimenID</code></th>
+<th><code>developmental</code> <code>Stage</code></th>
 <th><code>hasGlue</code></th>
-<th><code>hasNonGlueContamination</code></th>
-<th><code>measurementFlags</code></th>
+<th><code>hasNonGlue</code> <code>Contamination</code></th>
+<th><code>measurement</code> <code>Flags</code></th>
 <th><code>tissueNotes</code></th>
 </tr>
 </thead>
@@ -637,28 +653,27 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<hr>
+</div>
 </section>
-<section id="navigate-the-protocol" class="level1">
-<h1>Navigate the protocol</h1>
-<p>Browse additional parts and appendices below</p>
+</section>
+<section id="navigate-the-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="navigate-the-protocol">Navigate the protocol</h2>
+<p>Browse additional parts and appendices:</p>
 <ul>
-<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Overview<br>
-</li>
-<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow<br>
-</li>
-<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats<br>
-</li>
-<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing<br>
-</li>
-<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines<br>
-</li>
-<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement<br>
-</li>
+<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Protocol Overview</li>
+<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow</li>
+<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats</li>
+<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing</li>
+<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines</li>
+<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement</li>
 <li><a href="../protocol/references.html"><strong>References</strong></a></li>
-<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue<br>
-</li>
+<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue</li>
 <li><a href="../protocol/appendix2.html"><strong>Appendix II</strong></a> – Tissue Metadata for Quality Control</li>
+</ul>
+<p>Browse Home and Downloads</p>
+<ul>
+<li><a href="../protocol.html"><strong>Home - IHerbSpec Protocol</strong></a></li>
+<li><a href="tables.html"><strong>Downloads</strong></a></li>
 </ul>
 
 

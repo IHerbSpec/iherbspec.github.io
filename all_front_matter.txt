@@ -1,0 +1,143 @@
+---- about.qmd ----
+title: "About"
+
+---- contact.qmd ----
+title: "Contact Us"
+
+---- index.qmd ----
+title: "Welcome to IHerbSpec"
+page-layout: full
+image: "images/NaturaSpec-IMG_4840.png"
+include-after-body:
+  - text: |
+      <div style="text-align:center; padding-bottom:2em;">
+        © 2025 IHerbSpec
+      </div>
+
+---- protocol.qmd ----
+title: "IHerbSpec Protocol"
+page-layout: full
+image: images/IHerbSpecIcon-white-bgb.png
+title-block-banner: "images/spectroscopy-setup.png"
+#title-block-style: none
+
+metadata:
+  og:title: "IHerbSpec Protocol"
+  og:description: "Community standards for spectral measurement and metadata documentation of herbarium specimens."
+  og:image: "https://iherbspec.github.io/images/IHerbSpecIcon-white-bgb.png"
+  twitter:card: "summary_large_image"
+  twitter:title: "IHerbSpec Protocol"
+  twitter:description: "Community standards for spectral measurement and metadata documentation of herbarium specimens."
+  twitter:image: "https://iherbspec.github.io/images/IHerbSpecIcon-white-bgb.png"
+
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      <img src="protocol/images/cc-by.svg"
+           alt="CC BY 4.0"
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+    </div>
+
+---- protocol/appendix1.qmd ----
+title: "Appendix I – Considerations Regarding the Number of Measurements per Specimen"
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:4em;">
+      CC BY 4.0 — <em>IHerbSpec Protocol</em>. 
+      DOI: <a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>
+    </div>
+
+---- protocol/appendix2.qmd ----
+title: "Appendix II – Representing Tissue Conditions in Metadata for Quality Control"
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      CC BY 4.0 — <em>IHerbSpec Protocol</em>. 
+      DOI: <a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>
+    </div>
+
+---- protocol/part1-overview.qmd ----
+title: "Part 1 – Overview"
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      <img src="images/cc-by.svg"
+           alt="CC BY 4.0" 
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+    </div>
+
+---- protocol/part2-workflow.qmd ----
+title: "Part 2 – Measurement and Metadata Workflow"
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      <img src="images/cc-by.svg"
+           alt="CC BY 4.0" 
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+    </div>
+
+---- protocol/part3-filenames.qmd ----
+title: "Part 3 – Filename Conventions and Formats"
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      <img src="images/cc-by.svg"
+           alt="CC BY 4.0" 
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+    </div>
+
+---- protocol/part4-metadata.qmd ----
+title: "Part 4 – Metadata and Databasing"
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      <img src="images/cc-by.svg"
+           alt="CC BY 4.0" 
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+    </div>
+
+---- protocol/part5-instrumentation.qmd ----
+title: "Part 5 – Instrumentation and Materials Guidelines"
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      <img src="images/cc-by.svg"
+           alt="CC BY 4.0" 
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+    </div>
+
+---- protocol/part6-guidelines.qmd ----
+title: "Part 6 – Selecting Tissues for Spectral Measurement"
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      <img src="images/cc-by.svg"
+           alt="CC BY 4.0" 
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+    </div>
+
+---- protocol/preface.qmd ----
+title: "Preface"
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      <img src="images/cc-by.svg"
+           alt="CC BY 4.0" 
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+    </div>
+
+---- protocol/references.qmd ----
+title: "References"
+
+---- publications.qmd ----
+title: "Working Group Contributions to Herbarium-based Spectral Research"
+page-layout: full
+

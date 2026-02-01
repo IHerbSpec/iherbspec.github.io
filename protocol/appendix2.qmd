@@ -8,9 +8,13 @@ include-after-body:
     </div>
 ---
 
-This appendix provides a brief discussion and examples of the IHerbSpec approach for recording metadata pertaining to sources of biological and herborization variation that affect spectral data. As explained in [Section 6.1](part6-guidelines.qmd) Sources of Variation, we aim to capture biological variation that is scientifically meaningful, but the degraded nature of herbarium specimens requires a careful assessment and annotation of tissue quality and sources of contamination. The Tissue Metadata fields of `developmentalStage`, `hasGlue`, `hasNonGlueContamination`, `measurementFlags`, and `tissueNotes` [Table 4.3](part4-metadata.qmd#tbl-4-3) are designed to support quality control of spectral data and enable downstream filtering. 
+This appendix provides a brief discussion and examples of the IHerbSpec approach for recording metadata pertaining to sources of biological and herborization variation that affect spectral data. 
 
-The codes for enumerating the developmentalStage fields are provided in [Table 4.4](part4-metadata.qmd#tbl-4-4), and the codes for measurementFlags are described in [Table 4.6](part4-metadata.qmd#tbl-4-6).
+## Scoring metadata for tissue conditions {#app2}
+
+As explained in [Section 6.1](part6-guidelines.qmd) Sources of Variation, we aim to capture biological variation that is scientifically meaningful, but the degraded nature of herbarium specimens requires a careful assessment and annotation of tissue quality and sources of contamination. The Tissue Metadata fields of, `developmentalStage`, `hasGlue`, `hasNonGlueContamination`, `measurementFlags`, and `tissueNotes` [Table 4.3](part4-metadata.qmd#tbl-4-3) are designed to support quality control of spectral data and enable downstream filtering. 
+
+The codes for enumerating the `developmentalStage` fields are provided in [Table 4.4](part4-metadata.qmd#tbl-4-4), and the codes for `measurementFlags` are described in [Table 4.6](part4-metadata.qmd#tbl-4-6).
 
 Technicians should also be aware that some taxa (e.g. Myrtaceae) or tropical collections in general may naturally exhibit discoloration or non-flat, deformed surfaces (e.g., *Gasteranthus atratus*). Such characteristics do not necessarily indicate tissue degradation and poor-quality spectral data. In addition, some taxa exhibit more pronounced discoloration during herborization as a result of their biology, and such discoloration should not be interpreted as evidence of poor preservation condition. Some traits also covary; for example, young leaves wilt and become discolored faster and are more challenging to press and dry flat, so they may more often be scored as moderately or poorly preserved. 
 
@@ -18,12 +22,22 @@ As a reminder, **`measurementFlags` pertain only to the measurement area**, not 
 
 The specimens and metadata examples in [Table A1](#tbl-a-1) have been selected to guide consistent scoring of these fields during spectral measurement and promote metadata consistency across projects. Note that the images do not specify the exact measurement area corresponding to these metadata fields (as is done in the IHerbSpec Metadata Spreadsheet for specimen NEBC_00651639 shown in main text [Fig. 2.2](part2-workflow.qmd)).
 
-### Table A1: Select Metadata Fields and Scoring for Representative Specimens.  {#tbl-a-1}
+### Table A1: Examples for Scoring of Tissue Conditions.  {#tbl-a-1}
 
-This table provides example metadata records for herbarium specimens, illustrating how to score key fields related to tissue condition and contamination. The fields developmentalStage, hasGlue, hasNonGlueContamination, and measurementFlags refer specifically to the measurement area. Broader observations about the specimen or other tissues can be recorded in tissueNotes (see [Table 4.3](part4-metadata.qmd#tbl-4-3)). Linked specimen images are included, though they do not indicate the precise measurement area corresponding to each metadata record. This table can be downloaded on the [Protocol home page](../protocol.qmd).
+This table provides example metadata records for herbarium specimens, illustrating how to score select Tissue Metadata [Table 4.3](part4-metadata.qmd#tbl-4-3) related to condition and contamination. The fields `developmentalStage`, `hasGlue`, `hasNonGlueContamination`, and `measurementFlags` refer specifically to the measurement area. Broader observations about the specimen or other tissues can be recorded in `tissueNotes` (see [Table 4.3](part4-metadata.qmd#tbl-4-3)). Linked specimen images are included, though they do not indicate the precise measurement area corresponding to each metadata record. 
 
-herbariumCode_specimenID | `developmentalStage` | `hasGlue` | `hasNonGlueContamination` | `measurementFlags` | `tissueNotes`
----------- | ---------- | ---------- | ---------- | ---------- | ----------
+::: {.content-visible when-format="pdf"}
+This table can be downloaded on the [iherbspec.github.io/protocol](https://iherbspec.github.io/protocol).
+:::
+
+::: {.content-visible when-format="html"}
+**Download** [TableA1.csv](tables/IHerbSpecProtocol_TableA1.csv) 
+:::
+
+<div class="table-responsive table-small">
+
+| `herbariumCode_specimenID` | `developmental` `Stage` | `hasGlue` | `hasNonGlue` `Contamination` | `measurement` `Flags` | `tissueNotes`
+|----------------|----------|----------|----------|--------------|-----------------|
 [A_00631088](https://kiki.huh.harvard.edu/databases/specimen_search.php?mode=details&id=794136) | `mature` | `TRUE` | `FALSE` | `MediumPreservation` | discolored
 [A_00672503](https://kiki.huh.harvard.edu/databases/specimen_search.php?mode=details&id=834226) | `mature` | `FALSE` | `TRUE` | `GoodPreservation`|PathogenPresent|FungusPresent | Small necrotic spots in measurement area
 [A_00746288](https://kiki.huh.harvard.edu/databases/specimen_search.php?mode=details&id=800877) | `mature` | `TRUE` | `FALSE` | `MediumPreservation` | Discolored. Glue on loose leaf in measurement area.
@@ -76,17 +90,40 @@ herbariumCode_specimenID | `developmentalStage` | `hasGlue` | `hasNonGlueContami
 [P_05198525](https://recolnat.fr/fr/specimens/963508d0-6708-40ac-a2a2-17854b64a1f8?fromExplore=`TRUE`) | `mature` | `FALSE` | `TRUE` | `PoorPreservation`|FungusPresent | Herbivory on sheet. 
 [P_05198660](https://recolnat.fr/fr/specimens/7a679ebb-c03a-4842-ae7c-d3ed7a932e05?fromExplore=`TRUE`) | `mature` | `FALSE` | `TRUE` | `MediumPreservation`|AlcoholPresent | discolored. 
 
----
+</div>
 
-# Navigate the protocol
-Browse additional parts and appendices below
+## Navigate the protocol
 
-- [**Part 1**](part1-overview.qmd) – Overview  
-- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow  
-- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats  
-- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing  
-- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
-- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement  
+::: {.content-visible when-format="html"}
+Browse additional parts and appendices:
+
+- [**Part 1**](part1-overview.qmd) – Protocol Overview
+- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow
+- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats
+- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing
+- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines
+- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement
 - [**References**](references.qmd)
-- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue  
-- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control  
+- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue
+- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control
+
+Browse Home and Downloads
+
+- [**Home - IHerbSpec Protocol**](../protocol.html)
+- [**Downloads**](tables.html)
+:::
+
+::: {.content-visible when-format="pdf"}
+
+Browse additional parts and appendices:
+
+- [**Part 1**](#part1) – Protocol Overview
+- [**Part 2**](#part2) – Measurement and Metadata Workflow
+- [**Part 3**](#part3) – Filename Conventions and Formats
+- [**Part 4**](#part4) – Metadata and Databasing
+- [**Part 5**](#part5) – Instrumentation and Materials Guidelines
+- [**Part 6**](#part6) – Selecting Tissues for Spectral Measurement
+- [**References**](#references)
+- [**Appendix I**](#app1) – Number of Measurements per Tissue
+- [**Appendix II**](#app2) – Tissue Metadata for Quality Control
+:::

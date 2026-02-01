@@ -1,13 +1,23 @@
 ---
-title: "."
+title: "IHerbSpec Protocol"
 page-layout: full
-image: images/NaturaSpec-IMG_4840.png
+image: images/IHerbSpecIcon-white-bgb.png
 title-block-banner: "images/spectroscopy-setup.png"
+
+metadata:
+  og:title: "IHerbSpec Protocol"
+  og:description: "Community standards for spectral measurement and metadata documentation of herbarium specimens."
+  og:image: "https://iherbspec.github.io/images/IHerbSpecIcon-white-bgb.png"
+  twitter:card: "summary_large_image"
+  twitter:title: "IHerbSpec Protocol"
+  twitter:description: "Community standards for spectral measurement and metadata documentation of herbarium specimens."
+  twitter:image: "https://iherbspec.github.io/images/IHerbSpecIcon-white-bgb.png"
+
 include-after-body:
   text: |
     <div style="text-align:center; padding-bottom:2em;">
       <img src="protocol/images/cc-by.svg"
-           alt="CC BY 4.0" 
+           alt="CC BY 4.0"
            style="height:20px; vertical-align:middle; margin-right:6px;">
       IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
     </div>
@@ -33,9 +43,13 @@ include-after-body:
 </style>
 
 
+## Protocol for the Spectral Digitization of Herbarium Specimens
 
-# The IHerbSpec Protocol
+**CURRENT VERSION: {{< var protocol_version >}}**
 
+Navigate to [Changes Since Last Version](protocol/changes.qmd)
+
+---
 
 Herbarium specimens are an unparalleled record of plant diversity that we can leverage via reflectance spectroscopy to illuminate plant biology across time, space, and taxa. 
 
@@ -52,6 +66,8 @@ You can browse the protocol section by section online, or download the protocol 
 
 - [Preface](protocol/preface.html)  
   *Frontmatter introducing the motivation, development history, and community collaboration behind the protocol, as well as author information and acknowledgements.*  
+
+- [Changes Since Last Version](protocol/changes.qmd)  
 
 - [Part 1: Overview](protocol/part1-overview.qmd)  
   *Defines the purpose, structure, and guiding principles of the protocol, including minimum requirements and recommended practices.*  
@@ -78,24 +94,30 @@ You can browse the protocol section by section online, or download the protocol 
   *Examples and scoring guidelines for recording tissue condition, contamination, and preservation status in metadata.*
   
 - [References](protocol/references.qmd)  
-
---- 
+ 
+- [Downloads](protocol/tables.qmd)  
+  *IHerbSpec Metadata Spreadsheet, example spreadsheets, and protocol tables*
 
 ## 📥 Download IHerbSpec Protocol Files
 
-- [Protocol v1.01 (PDF)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpec%20Protocol%20v1.01.pdf)  
-- [Protocol v1.01 (DOCX)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpec%20Protocol%20v1.01.docx)  
-- [Metadata Template (CSV)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/refs/heads/main/IHerbSpec_metadata.csv) *(Right-click and choose “Save Link As…” to download)*  
-- [Example Metadata (CSV)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/refs/heads/main/IHerbSpec_metadata-examples.csv) *(Right-click and choose “Save Link As…” to download)*  
-- [Table A1 Scoring Examples (CSV)](https://github.com/IHerbSpec/IHerbSpec-protocol/raw/main/IHerbSpecProtocol_TableA1.csv)  
+**Versioned releases of the IHerbSpec Protocol are archived on Zenodo:**  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15849668.svg)](https://doi.org/10.5281/zenodo.15849668)
 
-**The protocol is archived and version controlled at:**  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15849668.svg)](https://doi.org/10.5281/zenodo.15849668)
+Each archived release includes:
+- A compiled PDF of the full protocol (stable, citable snapshot)
+- Protocol source files (Quarto/Markdown and associated assets) for transparency and reproducibility
+- Metadata templates and controlled vocabularies (CSV files)
+- Optional rendered HTML files corresponding to the archived version
 
----
+The website presents the most current living version of the protocol, while Zenodo preserves fixed, citable versions for reference, reuse, and long-term archiving.
 
-## 🔧 Visit the GitHub development repository: [github.com/IHerbSpec/IHerbSpec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol)
+## 📌 Suggested Citation
 
----
+IHerbSpec, 2025. Protocol for Spectral Digitization of Herbarium Specimens, v.{{< var protocol_version >}}. Zenodo. [https://doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
+
+## ©️ License
+
+This protocol and all associated figures, tables, and supplementary materials are licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.  
+Users are free to share and adapt the material, provided attribution is given to "*IHerbSpec Protocol* (DOI: [10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668))"
 
 ## 👥 Team Science
 ::: {.column-page-inset}
@@ -103,29 +125,17 @@ You can browse the protocol section by section online, or download the protocol 
 
 This protocol reflects a team science approach. We welcome contributions to improve it and invite people interested in spectroscopy of herbarium specimens to join IHerbSpec.  
 
-Please share feedback or suggestions as issues on our GitHub repo [github.com/iherbspec/iherbspec-protocol](https://github.com/IHerbSpec/IHerbSpec-protocol)  
+Please [**Contact Us**](contact.qmd) if you are interested in joining the working group, por to share feedback or suggestions.
 
-or [Contact Us](contact.qmd) to get involved!
+You can also post comments or issues on our GitHub repo [github.com/IHerbSpec/iherbspec.github.io](https://github.com/IHerbSpec/iherbspec.github.io)
 
 </div>
 :::
 
 ---
 
-## 📌 Suggested Citation
-
-
-IHerbSpec, 2025. Protocol for Spectral Digitization of Herbarium Specimens (v1.01). Zenodo. https://doi.org/10.5281/zenodo.17195920[https://doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
-
-## ©️ License
-
-This protocol and all associated figures, tables, and supplementary materials are licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.  
-Users are free to share and adapt the material, provided attribution is given to *IHerbSpec Protocol* (DOI: [10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668))
-
----
-
-# Navigate the protocol
-- Proceed to [**Preface**](protocol/preface.qmd)
+## Navigate the protocol
+- Proceed to [**Preface**](protocol/preface.qmd)  
 
 Browse additional parts and appendices:
 
@@ -135,7 +145,12 @@ Browse additional parts and appendices:
 - [**Part 4**](protocol/part4-metadata.qmd) – Metadata and Databasing  
 - [**Part 5**](protocol/part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
 - [**Part 6**](protocol/part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement  
-- [**References**](protocol/references.qmd)
+- [**References**](protocol/references.qmd)  
 - [**Appendix I**](protocol/appendix1.qmd) – Number of Measurements per Tissue  
 - [**Appendix II**](protocol/appendix2.qmd) – Tissue Metadata for Quality Control  
+
+Browse Home and Downloads
+
+- [**Home - IHerbSpec Protocol**](protocol.html)  
+- [**Downloads**](protocol/tables.html)  
 

@@ -10,7 +10,7 @@ include-after-body:
     </div>
 ---
 
-# 6.1 Sources of Variation in Herbarium Plant Tissues
+## 6.1 Sources of Variation in Herbarium Plant Tissues {#part6}
 
 Spectral data from herbarium specimens are influenced by two major sources of variation.  
 
@@ -28,9 +28,8 @@ The metadata fields `hasGlue`, `hasNonGlueContamination`, `measurementFlags`, an
 
 Examples of specimen tissue metadata records are provided in [Appendix II](appendix2.qmd).  
 
----
 
-# 6.2 General Guidelines for Tissue Selection
+## General Guidelines for Tissue Selection
 
 *Note: Much of this text is tailored to measuring leaf tissues, but can generally be applied to other tissues.*  
 
@@ -66,32 +65,53 @@ Examples of specimen tissue metadata records are provided in [Appendix II](appen
 6. **Measuring small tissues:**  
    Measuring taxa with naturally small tissues presents unique challenges, but several strategies can help obtain representative spectral measurements with minimal error.  
    - Center the probe on multiple areas of the small tissue and collect several measurements, then average the values to represent the tissue’s spectral profile.  
-   - Create a mosaic by arranging multiple small tissue units side by side to fill the measurement area. Avoid overlapping tissues, as stacking can alter light scattering and distort reflectance values ([Fig. A1](appendix1.qmd#fig-a1)).  
+   - Create a mosaic by arranging multiple small tissue units side by side to fill the measurement area. Avoid overlapping tissues, as stacking can alter light scattering and distort reflectance values ([Fig. A1](appendix1.qmd#fa1)).  
    - Consider optical setup with small measurement area: For projects in the instrument selection phase, Spectral Evolution offers a custom optical probe with a 2-mm measurement area compatible with their NaturaSpec and PSR spectroradiometers.  
-   - Avoid using narrow angle lenses as these might distort the spectrum ([Fig. A1](appendix1.qmd#fig-a1)).  
+   - Avoid using narrow angle lenses as these might distort the spectrum ([Fig. A1](appendix1.qmd#fa1)).  
 
 7. **Multiple individual plants within one herbarium sheet:**  
    - Each individual plant on a sheet should be demarcated with a unique `specimenId` ( [Table 4.2](part4-metadata.qmd#tbl-4-2)).  
 
+
+## Decision tree for tissue selection
+
+![**Fig. 6.1.** Decision tree diagram for target tissue selection.](images/Fig6.1-decisionTree_v1.png){#f6-1 fig-align="center"}
+
 ---
 
-# 6.3 Decision tree for tissue selection
+## Navigate the protocol
 
-![**Fig. 6.1.** Decision tree diagram for target tissue selection.](images/Fig6.1-decisionTree_v1.png){#fig-6-1 fig-align="center" width="800px"}
+::: {.content-visible when-format="html"}
+Browse additional parts and appendices:
 
----
+- [**Part 1**](part1-overview.qmd) – Protocol Overview
+- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow
+- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats
+- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing
+- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines
+- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement
+- [**References**](references.qmd)
+- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue
+- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control
 
-# Navigate the protocol
+Browse Home and Downloads
+
+- [**Home - IHerbSpec Protocol**](../protocol.html)
+- [**Downloads**](tables.html)
+:::
+
+::: {.content-visible when-format="pdf"}
 
 Browse additional parts and appendices:
 
-- [**Part 1**](part1-overview.qmd) – Overview  
-- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow  
-- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats  
-- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing  
-- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
-- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement  
-- [**References**](references.qmd)
-- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue  
-- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control  
+- [**Part 1**](#part1) – Protocol Overview
+- [**Part 2**](#part2) – Measurement and Metadata Workflow
+- [**Part 3**](#part3) – Filename Conventions and Formats
+- [**Part 4**](#part4) – Metadata and Databasing
+- [**Part 5**](#part5) – Instrumentation and Materials Guidelines
+- [**Part 6**](#part6) – Selecting Tissues for Spectral Measurement
+- [**References**](#references)
+- [**Appendix I**](#app1) – Number of Measurements per Tissue
+- [**Appendix II**](#app2) – Tissue Metadata for Quality Control
+:::
 

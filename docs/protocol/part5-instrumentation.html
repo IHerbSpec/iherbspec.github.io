@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../images/NaturaSpec-IMG_4840.png" rel="icon" type="image/png">
+<link href="../images/IHerbSpecIcon-white-bgb.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text"><img src="images/IHerbSpecIcon-white-bgb.png" class="img-fluid"></span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iherbspec-protocol" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -117,6 +117,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../protocol/preface.html">
  <span class="dropdown-text">Preface</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/changes.html">
+ <span class="dropdown-text">Changes Since Last Version</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../protocol/part1-overview.html">
@@ -154,6 +158,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../protocol/appendix2.html">
  <span class="dropdown-text">Appendix II</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/tables.html">
+ <span class="dropdown-text">Downloads</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -180,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#precautions" id="toc-precautions" class="nav-link active" data-scroll-target="#precautions">5.1 Precautions</a></li>
+  <li><a href="#part5" id="toc-part5" class="nav-link active" data-scroll-target="#part5">5.1 Precautions</a></li>
   <li><a href="#spectra-data-files" id="toc-spectra-data-files" class="nav-link" data-scroll-target="#spectra-data-files">5.2 Spectra Data Files</a></li>
   <li><a href="#instrumentation-and-materials-quality-control" id="toc-instrumentation-and-materials-quality-control" class="nav-link" data-scroll-target="#instrumentation-and-materials-quality-control">5.3 Instrumentation and Materials Quality Control</a></li>
   <li><a href="#specimen-and-tissue-annotation" id="toc-specimen-and-tissue-annotation" class="nav-link" data-scroll-target="#specimen-and-tissue-annotation">5.4 Specimen and Tissue Annotation</a></li>
@@ -210,67 +218,67 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="precautions" class="level1">
-<h1>5.1 Precautions</h1>
-<ol type="1">
-<li><strong>Carefully handle backgrounds and white references (e.g., Spectralon®):</strong>
+<section id="part5" class="level2">
+<h2 class="anchored" data-anchor-id="part5">5.1 Precautions</h2>
+<p>5.1.1. <strong>Carefully handle backgrounds and white references (e.g., Spectralon®):</strong></p>
 <ul>
 <li>Use laboratory gloves to handle black backgrounds and white references and tweezers to handle herbarium tissues.<br>
 </li>
 <li>Avoid touching and dirtying the reflective surfaces.<br>
 </li>
 <li>Avoid blowing or cleaning backgrounds and reference standards with canned air, which can cause chemical contamination (other options, such as O2 Hurricane, avoid this contamination).</li>
-</ul></li>
-<li><strong>Avoid burning target tissues:</strong>
+</ul>
+<p>5.1.2. <strong>Avoid burning target tissues:</strong></p>
 <ul>
 <li>High light intensities in optical probes can burn tissues, especially thin leaves! Use low light intensity and minimum measurement duration based on manufacturer’s guidance to avoid this.<br>
 </li>
 <li>Avoid measuring tissues with glue on them, whenever possible.<br>
 </li>
-<li>Place a black background under the leaf or target tissue to avoid spectral contamination from the herbarium mounting paper whenever possible. Background surfaces, except for non-reflective black, will influence reflectance spectra (see <a href="../protocol/part1-overview.html#fig-1-1">Fig. 1.1</a>).</li>
-</ul></li>
-</ol>
-<hr>
+<li>Place a black background under the leaf or target tissue to avoid spectral contamination from the herbarium mounting paper whenever possible. Background surfaces, except for non-reflective black, will influence reflectance spectra (see <a href="../protocol/part1-overview.html#f1-1">Fig. 1.1</a>).</li>
+</ul>
 </section>
-<section id="spectra-data-files" class="level1">
-<h1>5.2 Spectra Data Files</h1>
-<ol type="1">
-<li><strong>Output unprocessed percent reflectance data to files, if possible.</strong>
+<section id="spectra-data-files" class="level2">
+<h2 class="anchored" data-anchor-id="spectra-data-files">5.2 Spectra Data Files</h2>
+<p>5.2.1. <strong>Output unprocessed percent reflectance data to files, if possible.</strong></p>
 <ul>
 <li>Percent reflectance should be present in the file at the wavelengths directly measured by the instrument.<br>
 </li>
 <li>If instruments and software output transformed data by default (e.g., Spectral Evolution PSR+ output is interpolated at 1 nm resolution), refer to user manuals to change settings to output percent reflectance values at measured wavelengths instead.</li>
-</ul></li>
-<li><strong>File formats differ among spectroradiometer manufacturers, models, and softwares.</strong>
+</ul>
+<p>5.2.2. <strong>File formats differ among spectroradiometer manufacturers, models, and softwares.</strong></p>
 <ul>
 <li>Make sure that files include percent reflectance values.</li>
-</ul></li>
-</ol>
-<hr>
+</ul>
 </section>
-<section id="instrumentation-and-materials-quality-control" class="level1">
-<h1>5.3 Instrumentation and Materials Quality Control</h1>
-<ol type="1">
-<li><p><strong>Instrument maintenance:</strong></p>
+<section id="instrumentation-and-materials-quality-control" class="level2">
+<h2 class="anchored" data-anchor-id="instrumentation-and-materials-quality-control">5.3 Instrumentation and Materials Quality Control</h2>
+<p>5.3.1. <strong>Instrument maintenance:</strong></p>
 <ul>
 <li>Follow manufacturer SOP for spectroradiometer maintenance. If possible, send the instrument to the manufacturer at regular intervals for maintenance (e.g., every two years).<br>
 </li>
-<li>Have fiber optic cables checked by the manufacturer annually and replace damaged fiber optic cables.</li>
-</ul></li>
-<li><p><strong>For background and white reference measurement requirements, see <a href="../protocol/part1-overview.html#white-reference-and-background-measurements">Section 1.2.2</a>.</strong></p>
+<li>Have fiber optic cables checked by the manufacturer annually and replace damaged fiber optic cables. You can test the integrity of the cables by shining a flashlight through one end of the fiberoptic and observing the light transmitted out the other side.</li>
+</ul>
+<p>5.3.2. <strong>For background and white reference measurement requirements, see <a href="../protocol/part1-overview.html#white-reference-and-background-measurements">Section 1.2.2</a>.</strong></p>
 <ul>
+<li>Background materials are not spectrally neutral and exhibit distinct reflectance profiles that can introduce systematic, wavelength-dependent biases into leaf spectral measurements (<a href="images/Fig-backgrounds_v2.jpg">Fig. 5.1</a>). These effects are especially pronounced in the near-infrared and shortwave infrared regions, underscoring the importance of consistent background selection and documentation for reproducible and comparable spectral data.</li>
 <li>White reference scans are typically not saved as a separate file, but the white reference digital numbers (raw sensor values) should be included in each target spectrum file (e.g., <code>.sig</code> format). These values are used by the instrument software to calculate reflectance from raw radiance.<br>
 </li>
-<li>Black background materials are required to have less than 4% reflectance across all wavelengths (see <a href="../protocol/part1-overview.html#fig-1-1">Fig. 1.1</a>; e.g., IR Flock Sheet from <a href="https://musoublackusa.com/products/ir-flock-sheet">Musou Black USA</a>).<br>
+<li>Black background materials are required to have &lt;4% reflectance across all wavelengths (see <a href="../protocol/part1-overview.html#f1-1">Fig. 1.1</a>; e.g., IR Flock Sheet from <a href="https://musoublackusa.com/products/ir-flock-sheet">Musou Black USA</a>).<br>
 </li>
-<li>If measuring leaves on herbarium paper on a benchtop, place a black mat under the herbarium sheets to prevent contaminating reflectance from the benchtop (see <a href="../protocol/part4-metadata.html#fig-4-2">Fig. 4.2</a>). Black felt (3–5 mm thick) is a practical and cost-effective choice for this purpose.</li>
-</ul></li>
-<li><p><strong>Target measurements of background material (black or paper) must be linked to tissue measurements using filename conventions (<a href="../protocol/part3-filenames.html">Part 3</a>).</strong></p>
+<li>If measuring leaves on herbarium paper on a benchtop, place a black mat under the herbarium sheets to prevent contaminating reflectance from the benchtop (see <a href="../protocol/part4-metadata.html#f4-2">Fig. 4.2</a>). Black felt (3–5 mm thick) is a practical and cost-effective choice for this purpose.</li>
+</ul>
+<div id="f5-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/Fig-backgrounds_v2.jpg" class="fig-bordered img-fluid figure-img"></p>
+<figcaption><strong>Fig. 5.1.</strong> Reflectance of different background materials and their effects on target tissue spectra. <strong>(A)</strong> Reflectance spectra of common background materials used in herbarium spectral measurements, including black (Musou IR Flock), dark grey, light grey (grey matte paint on canvas), white (Spectralon 99%), and three herbarium mounting paper types of different ages. Each background exhibits a distinct spectral profile across the visible–shortwave infrared range (400—2500 nm). <strong>(B)</strong> Differences between adaxial leaf spectra measured on black background (TCAD_BGB) with spectra of the same leaf surface measured on the other backgrounds (see legend). Deviations from zero indicate wavelength-dependent background-induced biases, which are greatest in the near-infrared (NIR; c.&nbsp;700—1100 nm) and shortwave infrared I regions (SWIR 1; 1100—2000 nm). <strong>(C)</strong> Reflectance spectra of leaf abaxial surface (TCAB) measured on different backgrounds, illustrating how background reflectance can influence absolute reflectance values across spectral regions. <strong>(D)</strong> Mean reflectance spectra of leaf adaxial surface (TCAD) measured on different backgrounds, showing similar background-dependent effects. All measurements were made with a Spectral Evolution NaturaSpec spectroradiometer using a handheld herbarium leaf probe.</figcaption>
+</figure>
+</div>
+<p>5.3.3. <strong>Target measurements of background material (black or paper) must be linked to tissue measurements using filename conventions (<a href="../protocol/part3-filenames.html">Part 3</a>).</strong></p>
 <ul>
 <li>This supports quality control of background conditions and enables development of spectral unmixing approaches to isolate tissue reflectance.</li>
-</ul></li>
-<li><p><strong>Wear gloves and carefully handle all tissues, white reference, black backgrounds, and calibrated reflectance standards to keep them clean (see <a href="#precautions">5.1 Precautions</a>).</strong></p></li>
-<li><p><strong>Calibrated reflectance standards:</strong></p>
+</ul>
+<p>5.3.4. <strong>Wear gloves and carefully handle all tissues, white reference, black backgrounds, and calibrated reflectance standards to keep them clean (see <a href="#precautions">5.1 Precautions</a>).</strong></p>
+<p>5.3.5. <strong>Calibrated reflectance standards:</strong></p>
 <ul>
 <li>Institutions should consider purchasing calibrated reflectance standards, such as Spectralon® Calibrated (SL Standard) Diffuse Reflectance Standards. These should be kept clean and separate from ‘working’ white references, and used for long-term assessment of instrument performance, optical drift, and the condition of reference materials (e.g., white references and black backgrounds).<br>
 </li>
@@ -279,19 +287,16 @@ ul.task-list li input[type="checkbox"] {
 <li>Reflectance standards are white (e.g., Spectralon® 99%) and black (e.g., Spectralon® 2%) at a minimum, and can also include gradations of gray.<br>
 </li>
 <li>It is recommended that standards be measured at regular intervals depending on the level of activity (e.g., once per session; consult spectroradiometer manufacturer), and archived with the filename conventions provided in <a href="../protocol/part3-filenames.html#tbl-3-1">Table 3.1</a>.</li>
-</ul></li>
-</ol>
-<hr>
+</ul>
 </section>
-<section id="specimen-and-tissue-annotation" class="level1">
-<h1>5.4 Specimen and Tissue Annotation</h1>
-<ol type="1">
-<li><p><strong>Metadata recommendation:</strong></p>
+<section id="specimen-and-tissue-annotation" class="level2">
+<h2 class="anchored" data-anchor-id="specimen-and-tissue-annotation">5.4 Specimen and Tissue Annotation</h2>
+<p>5.4.1. <strong>Metadata recommendation:</strong></p>
 <ul>
 <li>IHerbSpec recommends recording the <code>tissueLocation</code> metadata field (see <a href="../protocol/part4-metadata.html#tbl-4-3">Table 4.3</a>) to document the position of measured tissues on the specimen.</li>
-</ul></li>
-<li><p><strong>Consult with herbarium collections managers</strong> to define a suitable specimen annotation protocol that aligns with institutional policies.</p></li>
-<li><p><strong>Recommended specimen annotation practices:</strong></p>
+</ul>
+<p>5.4.2. <strong>Consult with herbarium collections managers</strong> to define a suitable specimen annotation protocol that aligns with institutional policies.</p>
+<p>5.4.3. <strong>Recommended specimen annotation practices:</strong></p>
 <ul>
 <li>Attach a project annotation label to the herbarium sheet (e.g., “Leaf spectral reflectance; DM White (2025)”).<br>
 </li>
@@ -305,35 +310,32 @@ ul.task-list li input[type="checkbox"] {
 </li>
 <li>Include a label inside the envelope indicating the <code>targetTissueClass</code> and <code>targetTissueId</code> (see <a href="../protocol/part4-metadata.html#tbl-4-3">Table 4.3</a>; e.g., “Tissue TN1”).<br>
 </li>
-<li>Store the envelope in the specimen packet or attach it to the herbarium sheet (see <a href="../protocol/part4-metadata.html#fig-4-2">Fig. 4.2</a>).</li>
+<li>Store the envelope in the specimen packet or attach it to the herbarium sheet (see <a href="../protocol/part4-metadata.html#f4-2">Fig. 4.2</a>).</li>
 </ol></li>
-</ul></li>
-</ol>
+</ul>
 <hr>
 </section>
-<section id="navigate-the-protocol" class="level1">
-<h1>Navigate the protocol</h1>
+<section id="navigate-the-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="navigate-the-protocol">Navigate the protocol</h2>
 <ul>
 <li>Proceed to <a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a></li>
 </ul>
 <p>Browse additional parts and appendices:</p>
 <ul>
-<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Overview<br>
-</li>
-<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow<br>
-</li>
-<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats<br>
-</li>
-<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing<br>
-</li>
-<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines<br>
-</li>
-<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement<br>
-</li>
+<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Protocol Overview</li>
+<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow</li>
+<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats</li>
+<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing</li>
+<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines</li>
+<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement</li>
 <li><a href="../protocol/references.html"><strong>References</strong></a></li>
-<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue<br>
-</li>
+<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue</li>
 <li><a href="../protocol/appendix2.html"><strong>Appendix II</strong></a> – Tissue Metadata for Quality Control</li>
+</ul>
+<p>Browse Home and Downloads</p>
+<ul>
+<li><a href="../protocol.html"><strong>Home - IHerbSpec Protocol</strong></a></li>
+<li><a href="tables.html"><strong>Downloads</strong></a></li>
 </ul>
 
 

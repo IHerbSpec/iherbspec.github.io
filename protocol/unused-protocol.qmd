@@ -1,0 +1,149 @@
+---
+title: "IHerbSpec Protocol"
+page-layout: full
+image: images/IHerbSpecIcon-white-bgb.png
+
+title-block-banner: "images/spectroscopy-setup.png"
+title-block-style: none
+
+metadata:
+  og:title: "IHerbSpec Protocol"
+  og:description: "Community standards for spectral measurement and metadata documentation of herbarium specimens."
+  og:image: "https://iherbspec.github.io/images/IHerbSpecIcon-white-bgb.png"
+  twitter:card: "summary_large_image"
+  twitter:title: "IHerbSpec Protocol"
+  twitter:description: "Community standards for spectral measurement and metadata documentation of herbarium specimens."
+  twitter:image: "https://iherbspec.github.io/images/IHerbSpecIcon-white-bgb.png"
+
+include-after-body:
+  text: |
+    <div style="text-align:center; padding-bottom:2em;">
+      <img src="protocol/images/cc-by.svg"
+           alt="CC BY 4.0"
+           style="height:20px; vertical-align:middle; margin-right:6px;">
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+    </div>
+---
+
+<!-- Page-only styles (won’t affect other pages) -->
+<style>
+  /* Center the big page title */
+  #title-block-header .title { text-align: center; }
+
+  /* Make page body text larger */
+  main#quarto-document-content { font-size: 1.125rem; line-height: 1.7; }
+
+  /* Center figure captions */
+  .quarto-figure figcaption { text-align: center; }
+  
+  /* Limit text width */
+  .content-narrow {
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+
+## The IHerbSpec Protocol for the Spectral Digitization of Herbarium Specimens
+
+::: {.content-visible when-format="html" .version-banner}
+Version {{< var protocol_version >}}
+:::
+
+Herbarium specimens are an unparalleled record of plant diversity that we can leverage via reflectance spectroscopy to illuminate plant biology across time, space, and taxa. 
+
+The **IHerbSpec Protocol** was developed to provide clear, community-driven standards for spectral measurement and metadata documentation—establishing best practices to minimize technical errors, maximize data quality, and promote transparency in accordance with the Findable, Accessible, Interoperable, and Reusable ([FAIR](https://doi.org/10.1038/sdata.2016.18)) principles.
+
+By following this protocol, researchers and collections can generate reproducible, interoperable data that support confident aggregation across institutions and unlock new insights in ecology, evolution, and biodiversity sciences.
+
+
+## 👀 Content
+
+You can browse the protocol section by section online, or download the protocol documents and metadata spreadsheets below.
+
+### Sections
+
+- [Preface](protocol/preface.html)  
+  *Frontmatter introducing the motivation, development history, and community collaboration behind the protocol, as well as author information and acknowledgements.*  
+
+- [Part 1: Protocol Overview](protocol/part1-overview.qmd)  
+  *Defines the purpose, structure, and guiding principles of the protocol, including minimum requirements and recommended practices.*  
+
+- [Part 2: Measurement and Metadata Workflow](protocol/part2-workflow.qmd)  
+  *Step-by-step workflow for spectral data collection, including setup, measurement sequence, quality control, and metadata entry.*  
+
+- [Part 3: Filename Conventions and Formats](protocol/part3-filenames.qmd)  
+  *Recommended file-naming rules that encode key metadata for traceability and long-term interoperability.*  
+
+- [Part 4: Metadata and Databasing](protocol/part4-metadata.qmd)  
+  *Definitions of metadata fields, controlled vocabularies, and guidelines for archiving and sharing spectral data.*  
+
+- [Part 5: Instrumentation and Materials Guidelines](protocol/part5-instrumentation.qmd)  
+  *Practical guidance for handling instruments, managing materials, and annotating specimens to ensure data quality.*  
+
+- [Part 6: Selecting Tissues for Spectral Measurement](protocol/part6-guidelines.qmd)  
+  *Guidelines for choosing appropriate tissues, understanding sources of variation, and applying decision rules for measurement.*  
+
+- [Appendix I: Number of Measurements per Tissue](protocol/appendix1.qmd)  
+  *Empirical justification for recommended numbers of replicate measurements and guidance on averaging strategies.*  
+
+- [Appendix II: Tissue Metadata for Quality Control](protocol/appendix2.qmd)  
+  *Examples and scoring guidelines for recording tissue condition, contamination, and preservation status in metadata.*
+  
+- [References](protocol/references.qmd)    
+
+
+## 📥 Download IHerbSpec Protocol Files
+
+**Versioned releases of the IHerbSpec Protocol are archived on Zenodo:**  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15849668.svg)](https://doi.org/10.5281/zenodo.15849668)
+
+Each archived release includes:
+- A compiled PDF of the full protocol (stable, citable snapshot)
+- Protocol source files (Quarto/Markdown and associated assets) for transparency and reproducibility
+- Metadata templates and controlled vocabularies (CSV files)
+- Optional rendered HTML files corresponding to the archived version
+
+The website presents the most current living version of the protocol, while Zenodo preserves fixed, citable versions for reference, reuse, and long-term archiving.
+
+---
+
+## 📌 Suggested Citation
+
+IHerbSpec, 2025. Protocol for Spectral Digitization of Herbarium Specimens, v.{{< var protocol_version >}}. Zenodo. https://doi.org/10.5281/zenodo.17195920[https://doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
+
+## ©️ License
+
+This protocol and all associated figures, tables, and supplementary materials are licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.  
+Users are free to share and adapt the material, provided attribution is given to *IHerbSpec Protocol* (DOI: [10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668))
+
+## 👥 Team Science
+::: {.column-page-inset}
+<div class="content-narrow">
+
+This protocol reflects a team science approach. We welcome contributions to improve it and invite people interested in spectroscopy of herbarium specimens to join IHerbSpec.  
+
+Please [**Contact Us**](contact.qmd) if you are interested in joining the working group, por to share feedback or suggestions.
+
+You can also post comments or issues on our GitHub repo [github.com/IHerbSpec/iherbspec.github.io](https://github.com/IHerbSpec/iherbspec.github.io)
+
+</div>
+:::
+
+---
+
+## Navigate the protocol
+- Proceed to [**Preface**](protocol/preface.qmd)
+
+Browse additional parts and appendices:
+
+- [**Part 1**](part1-overview.qmd) – Protocol Overview  
+- [**Part 2**](part2-workflow.qmd) – Measurement and Metadata Workflow  
+- [**Part 3**](part3-filenames.qmd) – Filename Conventions and Formats  
+- [**Part 4**](part4-metadata.qmd) – Metadata and Databasing  
+- [**Part 5**](part5-instrumentation.qmd) – Instrumentation and Materials Guidelines  
+- [**Part 6**](part6-guidelines.qmd) – Selecting Tissues for Spectral Measurement  
+- [**References**](references.qmd)
+- [**Appendix I**](appendix1.qmd) – Number of Measurements per Tissue  
+- [**Appendix II**](appendix2.qmd) – Tissue Metadata for Quality Control 
+

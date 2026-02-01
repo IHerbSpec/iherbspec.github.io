@@ -1,0 +1,14 @@
+﻿Field Name,Status,Field Description,Data Type
+projectId,Required,Unique identifier for the spectral measurement project. It is recommended that these identifiers be short and indicate something about location or institution. Example: HUHERYspec1,TEXT
+sessionId,Required,"A unique identifier for a given measurement session, generated as the datetime when starting the equipment or conducting the first measurement. The session ends when the instrument is turned off. The datetime should use the format YYYYMMDDHHMM, with hour in 24-hour format. Example: 20240617132251",TEXT
+instrumentModel,Required,Spectroradiometer instrument model name. Example: SVC HR-1024i ,TEXT
+opticalSetupDescription,Required,Description of optical probe including relevant instrument model. Example: LC-RP contact probe with leaf clip removed,TEXT
+measurementSettings,Required,"Description of the instrument settings used for making spectral measurements, such as duration, light settings, number of measurements, etc. Example: 2 seconds, high light setting",TEXT
+whiteReferenceDescription,Required,Description of the material of the white reference. Example: Spectralon SL Standard 99%,TEXT
+operator,Optional,The name(s) of the person or people who conducted the spectral measurements during the session. Use full names or initials consistently. Example: AB Cornejo Vargas,TEXT
+lightSourceType,Optional,Light source for optical setup.,TEXT
+,,Example: tungsten halogen,
+distanceTargetToSensor,Optional,Distance in millimeters between target tissue and the face of the fiber optic or sensor (Fig. 4.1). Example: 12,NUMERIC
+lensFieldOfView,Optional,Angle in degrees of the field of view of the sensor lens or fiber optic cable (Fig. 4.1). Example: 22.5,NUMERIC
+angleLightToSensor,Optional,Angle in degrees of the primary vector of the light source to the sensor (Fig. 4.1). Example: 10,NUMERIC
+measurementAreaDiameter,Optional,The diameter in millimeters of the illuminated area of the target tissue that is within the field of view of the sensor or fiber optic and measured (Fig. 4.1). Example: 6,NUMERIC

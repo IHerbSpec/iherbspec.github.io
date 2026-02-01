@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../images/NaturaSpec-IMG_4840.png" rel="icon" type="image/png">
+<link href="../images/IHerbSpecIcon-white-bgb.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text"><img src="images/IHerbSpecIcon-white-bgb.png" class="img-fluid"></span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iherbspec-protocol" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -117,6 +117,10 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../protocol/preface.html">
  <span class="dropdown-text">Preface</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/changes.html">
+ <span class="dropdown-text">Changes Since Last Version</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../protocol/part1-overview.html">
@@ -154,6 +158,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../protocol/appendix2.html">
  <span class="dropdown-text">Appendix II</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../protocol/tables.html">
+ <span class="dropdown-text">Downloads</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -180,7 +188,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#metadata-tables" id="toc-metadata-tables" class="nav-link active" data-scroll-target="#metadata-tables">4.1 Metadata Tables</a>
+  <li><a href="#part4" id="toc-part4" class="nav-link active" data-scroll-target="#part4">Overview</a></li>
+  <li><a href="#metadata-tables" id="toc-metadata-tables" class="nav-link" data-scroll-target="#metadata-tables">4.1 Metadata Tables</a>
   <ul class="collapse">
   <li><a href="#tbl-4-1" id="toc-tbl-4-1" class="nav-link" data-scroll-target="#tbl-4-1">Table 4.1: Session Metadata</a></li>
   <li><a href="#tbl-4-2" id="toc-tbl-4-2" class="nav-link" data-scroll-target="#tbl-4-2">Table 4.2: Specimen Metadata</a></li>
@@ -220,14 +229,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="part4" class="level2">
+<h2 class="anchored" data-anchor-id="part4">Overview</h2>
 <p>This section defines the metadata fields used to describe spectral reflectance measurements of herbarium specimens. This standardization supports interoperability, cross-project data aggregation, and future integration into biodiversity informatics platforms.</p>
-<p>Projects can download the <strong>IHerbSpec Metadata Spreadsheet</strong> (available at <a href="../protocol.html#download-iherbspec-protocol-files">https://iherbspec.github.io/protocol</a>) as a foundation for organizing their metadata. This spreadsheet includes all <strong>required</strong> and optional but <strong>recommended</strong> fields defined the tables in <a href="#tbl-4-1">Section 4.1</a>. The controlled vocabularies necessary for enumerating certain fields are provided in <a href="../protocol/part4-metadata.html#controlled-vocabularies">Section 4.2</a>. Finally, <a href="../protocol/part4-metadata.html#guidelines-for-data-archiving-and-sharing">Section 4.3</a> provides general guidelines for data and metadata storage and dissemination.</p>
+<p>Projects can download the <strong>IHerbSpec Metadata Spreadsheet</strong> (available at <a href="https://doi.org/10.5281/zenodo.15849668">doi.org/10.5281/zenodo.15849668</a>) as a foundation for organizing their metadata. This spreadsheet includes all <strong>required</strong> and optional but <strong>recommended</strong> fields defined in the tables in <a href="#tbl-4-1">Section 4.1</a>. The controlled vocabularies necessary for enumerating certain fields are provided in <a href="../protocol/part4-metadata.html#controlled-vocabularies">Section 4.2</a>. Finally, <a href="../protocol/part4-metadata.html#guidelines-for-data-archiving-and-sharing">Section 4.3</a> provides general guidelines for data and metadata storage and dissemination.</p>
 <p>While metadata are expected to be disseminated in a flat file format (as in the IHerbSpec Metadata Spreadsheet), fields are presented here in logical groups—project, specimen, and tissue—to support conceptual understanding and integration with local databases.</p>
-<hr>
-<section id="metadata-tables" class="level1">
-<h1>4.1 Metadata Tables</h1>
+</section>
+<section id="metadata-tables" class="level2">
+<h2 class="anchored" data-anchor-id="metadata-tables">4.1 Metadata Tables</h2>
 <section id="tbl-4-1" class="level3">
 <h3 class="anchored" data-anchor-id="tbl-4-1">Table 4.1: Session Metadata</h3>
+<p><strong>Download</strong> <a href="tables/Table4.1-sessonMetadata.csv">Table4.1.csv</a></p>
 <p>Session metadata are those metadata usually associated globally with a continuous digitization project. These metadata can usually be captured once per project and automatically populated for each measurement instance.</p>
 <table class="caption-top table">
 <thead>
@@ -244,42 +256,42 @@ ul.task-list li input[type="checkbox"] {
 <td><code>projectId</code></td>
 <td><code>PI</code></td>
 <td>Required</td>
-<td>Unique identifier for the spectral measurement project. <br>Example: <code>HUHERYspec1</code>.</td>
+<td>Unique identifier for the spectral measurement project. <br> Example: <code>HUHERYspec1</code>.</td>
 <td>TEXT</td>
 </tr>
 <tr class="even">
 <td><code>sessionId</code></td>
 <td><code>SN</code></td>
 <td>Required</td>
-<td>Unique identifier for a measurement session, generated as <code>YYYYMMDDHHMM</code>.<br>Example: <code>20240617132251</code>.</td>
+<td>Unique identifier for a measurement session, generated as <code>YYYYMMDDHHMM</code>.<br> Example: <code>20240617132251</code>.</td>
 <td>TEXT</td>
 </tr>
 <tr class="odd">
 <td><code>instrumentModel</code></td>
 <td>-</td>
 <td>Required</td>
-<td>Spectroradiometer model name.<br>Example: <code>SVC HR-1024i</code>.</td>
+<td>Spectroradiometer model name.<br> Example: <code>SVC HR-1024i</code>.</td>
 <td>TEXT</td>
 </tr>
 <tr class="even">
 <td><code>opticalSetupDescription</code></td>
 <td>-</td>
 <td>Required</td>
-<td>Description of optical probe setup.<br>Example: <code>LC-RP contact probe with leaf clip removed</code>.</td>
+<td>Description of optical probe setup.<br> Example: <code>LC-RP contact probe with leaf clip removed</code>.</td>
 <td>TEXT</td>
 </tr>
 <tr class="odd">
 <td><code>measurementSettings</code></td>
 <td>-</td>
 <td>Required</td>
-<td>Instrument settings for measurements.<br>Example: <code>2 seconds, high light setting</code>.</td>
+<td>Instrument settings for measurements.<br> Example: <code>2 seconds, high light setting</code>.</td>
 <td>TEXT</td>
 </tr>
 <tr class="even">
 <td><code>whiteReferenceDescription</code></td>
 <td>-</td>
 <td>Required</td>
-<td>Material of the white reference.<br>Example: <code>Spectralon SL Standard 99%</code>.</td>
+<td>Material of the white reference.<br> Example: <code>Spectralon SL Standard 99%</code>.</td>
 <td>TEXT</td>
 </tr>
 <tr class="odd">
@@ -293,56 +305,51 @@ ul.task-list li input[type="checkbox"] {
 <td><code>lightSourceType</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Light source for optical setup.<br>Example: <code>tungsten halogen</code>.</td>
+<td>Light source for optical setup.<br> Example: <code>tungsten halogen</code>.</td>
 <td>TEXT</td>
 </tr>
 <tr class="odd">
 <td><code>distanceTargetToSensor</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Distance (mm) between target tissue and sensor face.<br>Example: <code>12</code>.</td>
+<td>Distance (mm) between target tissue and sensor face.<br> Example: <code>12</code>.</td>
 <td>NUMERIC</td>
 </tr>
 <tr class="even">
 <td><code>lensFieldOfView</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Angle (degrees) of sensor field of view.<br>Example: <code>22.5</code>.</td>
+<td>Angle (degrees) of sensor field of view.<br> Example: <code>22.5</code>.</td>
 <td>NUMERIC</td>
 </tr>
 <tr class="odd">
 <td><code>angleLightToSensor</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Angle (degrees) of light source to sensor.<br>Example: <code>10</code>.</td>
+<td>Angle (degrees) of light source to sensor.<br> Example: <code>10</code>.</td>
 <td>NUMERIC</td>
 </tr>
 <tr class="even">
 <td><code>measurementAreaDiameter</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Diameter (mm) of illuminated tissue area.<br>Example: <code>6</code>.</td>
+<td>Diameter (mm) of illuminated tissue area.<br> Example: <code>6</code>.</td>
 <td>NUMERIC</td>
 </tr>
 </tbody>
 </table>
-<hr>
-<div id="fig-4-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-4-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/fig4.1-optical_geometry_fig.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-4-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-&nbsp;1: <strong>Fig. 4.1.</strong> Schematic of Session Metadata fields related to optical setup (see <a href="#tbl-4-1">Table 4.1</a>). <code>distanceTargetToSensor</code>, <code>fieldOfView</code>, <code>angleLightToSensor</code>, <code>measurementAreaDiameter</code>
-</figcaption>
+<div id="f4-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/fig4.1-optical_geometry_fig.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Fig. 4.1.</strong> Schematic of Session Metadata fields related to optical setup (see <a href="#tbl-4-1">Table 4.1</a>). <code>distanceTargetToSensor</code>, <code>fieldOfView</code>, <code>angleLightToSensor</code>, <code>measurementAreaDiameter</code></figcaption>
 </figure>
 </div>
-<hr>
 </section>
 <section id="tbl-4-2" class="level3">
 <h3 class="anchored" data-anchor-id="tbl-4-2">Table 4.2: Specimen Metadata</h3>
 <p>Specimen metadata include identifiers and information about the physical specimen, with priority given to <strong>required</strong> fields needed to link spectral measurements to existing digital records (e.g., <code>specimenId</code>). Optional fields related to taxonomic determination and specimen storage environment are included to support integrative research, quality control, and downstream analysis.</p>
 <p>Users should <strong>avoid duplicating metadata that are already digitized, maintained, and available in herbarium or institutional platforms</strong>, as these sources are better suited for future updates. Instead, users are encouraged to reference those records and supplement only missing required or recommended fields. Due to variation in the metadata recorded on institutional platforms, users should apply caution in the interpretation of presence or absence of determination information or any other recommended but optional fields.</p>
+<p><strong>Download</strong> <a href="tables/Table4.2-SpecimenMetadata.csv">Table4.2.csv</a></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -351,7 +358,6 @@ ul.task-list li input[type="checkbox"] {
 <th>Status</th>
 <th>Field Description</th>
 <th>Data Type</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -359,49 +365,43 @@ ul.task-list li input[type="checkbox"] {
 <td><code>herbariumCode</code></td>
 <td><code>HC</code></td>
 <td>Required</td>
-<td>Acronym for herbarium or collection (Index Herbariorum code).<br>Examples: <code>GH</code>, <code>P</code>, <code>US-Botany</code>.</td>
+<td>Acronym for herbarium or collection (Index Herbariorum code).<br> Examples: <code>GH</code>, <code>P</code>, <code>US-Botany</code>.</td>
 <td>TEXT</td>
-<td></td>
 </tr>
 <tr class="even">
 <td><code>specimenId</code></td>
 <td><code>SI</code></td>
 <td>Required</td>
-<td>Identifier for specimen or record (catalog no., barcode, GUID, or collector+number).<br>Examples: <code>00238762</code>, <code>Thorne24070a</code>.</td>
+<td>Identifier for specimen or record (catalog no., barcode, GUID, or collector+number).<br> Examples: <code>00238762</code>, <code>Thorne24070a</code>.</td>
 <td>TEXT</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td><code>scientificName</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Full scientific name at lowest confident rank.<br>Examples: <em>Quercus bicolor</em>, <em>Erythroxylum coca ipadu</em>.</td>
+<td>Full scientific name at lowest confident rank.<br> Examples: <em>Quercus bicolor</em>, <em>Erythroxylum coca ipadu</em>.</td>
 <td>TEXT</td>
-<td></td>
 </tr>
 <tr class="even">
 <td><code>identificationQualifier</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Uncertainty in taxonomic ID (Darwin Core).<br>Examples: <code>cf.</code>, <code>aff.</code></td>
+<td>Uncertainty in taxonomic ID (Darwin Core).<br> Examples: <code>cf.</code>, <code>aff.</code></td>
 <td>TEXT</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td><code>identifiedBy</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Person/group who made the identification.<br>Example: <code>T. Plowman</code>.</td>
+<td>Person/group who made the identification.<br> Example: <code>T. Plowman</code>.</td>
 <td>TEXT</td>
-<td></td>
 </tr>
 <tr class="even">
 <td><code>dateIdentified</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Date of identification.<br>Examples: <code>1999</code>, <code>2004-12-30</code>.</td>
+<td>Date of identification.<br> Examples: <code>1999</code>, <code>2004-12-30</code>.</td>
 <td>TEXT</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td><code>isTempControlled</code></td>
@@ -409,23 +409,20 @@ ul.task-list li input[type="checkbox"] {
 <td>Optional</td>
 <td>Whether storage has active temperature control.</td>
 <td>BOOLEAN</td>
-<td></td>
 </tr>
 <tr class="even">
 <td><code>annualTempMin</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Minimum annual storage temperature (°C).<br>Example: <code>18</code>.</td>
+<td>Minimum annual storage temperature (°C).<br> Example: <code>18</code>.</td>
 <td>TEXT</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td><code>annualTempMax</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Maximum annual storage temperature (°C).<br>Example: <code>26</code>.</td>
+<td>Maximum annual storage temperature (°C).<br> Example: <code>26</code>.</td>
 <td>TEXT</td>
-<td></td>
 </tr>
 <tr class="even">
 <td><code>isHumidityControlled</code></td>
@@ -433,23 +430,20 @@ ul.task-list li input[type="checkbox"] {
 <td>Optional</td>
 <td>Whether storage has active humidity control.</td>
 <td>BOOLEAN</td>
-<td></td>
 </tr>
 <tr class="odd">
 <td><code>annualHumidityMin</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Minimum annual storage relative humidity (%).<br>Example: <code>20</code>.</td>
+<td>Minimum annual storage relative humidity (%).<br> Example: <code>20</code>.</td>
 <td>TEXT</td>
-<td></td>
 </tr>
 <tr class="even">
 <td><code>annualHumidityMax</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Maximum annual storage relative humidity (%).<br>Example: <code>60</code>.</td>
+<td>Maximum annual storage relative humidity (%).<br> Example: <code>60</code>.</td>
 <td>TEXT</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -457,6 +451,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="tbl-4-3" class="level3">
 <h3 class="anchored" data-anchor-id="tbl-4-3">Table 4.3: Tissue Metadata</h3>
 <p>Fields describing the type, condition, and position of the tissue measured. Includes <strong>required</strong> and <strong>recommended</strong> metadata for linking spectral measurements to individual tissue units. Note that timestamps for tissue measurement files are often captured within the file.</p>
+<p><strong>Download</strong> <a href="tables/Table4.3-TissueMetadata.csv">Table4.3.csv</a></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -465,8 +460,6 @@ ul.task-list li input[type="checkbox"] {
 <th>Status</th>
 <th>Field Description</th>
 <th>Data Type</th>
-<th></th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -474,10 +467,8 @@ ul.task-list li input[type="checkbox"] {
 <td><code>backgroundClass</code></td>
 <td><code>BG</code></td>
 <td>Required</td>
-<td>Enumerated abbreviated code from Background Class Codes <a href="#tbl-4-7">Table 4.7</a> describing the type of background used behind target tissue. Both abbreviated codes and descriptive codes are accepted.<br>Examples: <code>BGW</code>, <code>BGB</code>, <code>BGP</code>.</td>
-<td>ENUM<br>(<a href="#tbl-4-7">Table 4.7</a>)</td>
-<td></td>
-<td></td>
+<td>Enumerated abbreviated code from Background Class Codes <a href="#tbl-4-7">Table 4.7</a> describing the type of background used behind target tissue. Both abbreviated codes and descriptive codes are accepted.<br> Examples: <code>BGW</code>, <code>BGB</code>, <code>BGP</code>.</td>
+<td>ENUM<br> (<a href="#tbl-4-7">Table 4.7</a>)</td>
 </tr>
 <tr class="even">
 <td><code>hasLowReflectanceBackground</code></td>
@@ -485,44 +476,34 @@ ul.task-list li input[type="checkbox"] {
 <td>Required</td>
 <td>True or False statement that the background (black or paper) has low reflectance as defined as less than 4% reflectance across the spectral range of the instrument. For a paper background, this would be scored <code>false</code>.</td>
 <td>BOOLEAN</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
 <td><code>backgroundDescription</code></td>
 <td>-</td>
 <td>Cond. Req.</td>
-<td>Description of the black or other background material, including manufacturer and product information when available. Not required for paper backgrounds. Required field when tissue has black or other type (not paper) of background.<br>Example: <code>Musou IR Flock</code></td>
+<td>Description of the black or other background material, including manufacturer and product information when available. Not required for paper backgrounds. Required field when tissue has black or other type (not paper) of background.<br> Example: <code>Musou IR Flock</code></td>
 <td>TEXT</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="even">
 <td><code>targetClass</code></td>
 <td><code>TC</code></td>
 <td>Required</td>
-<td>Free text or enumerated code from Target Class Codes (<a href="#tbl-4-5">Table 4.5</a>) describing type of tissue or background being measured. Both abbreviated codes and full codes can be used.<br>Examples: <code>AD</code>, <code>perigynium</code>.</td>
-<td>TEXT or ENUM<br>(<a href="#tbl-4-5">Table 4.5</a>)</td>
-<td></td>
-<td></td>
+<td>Free text or enumerated code from Target Class Codes (<a href="#tbl-4-5">Table 4.5</a>) describing type of tissue or background being measured. Both abbreviated codes and full codes can be used.<br> Examples: <code>AD</code>, <code>perigynium</code>.</td>
+<td>TEXT or ENUM<br> (<a href="#tbl-4-5">Table 4.5</a>)</td>
 </tr>
 <tr class="odd">
 <td><code>targetTissueId</code></td>
 <td><code>TN</code></td>
 <td>Optional</td>
-<td>Character index tracking the measured tissue units when multiple tissues are measured from a single specimen (e.g., <code>loose1</code>, <code>1</code>, <code>2</code>). For compound or more complex structures, projects are encouraged to develop their own consistent naming convention.<br>Examples: <code>loose1</code>, <code>leaflet1</code>, <code>petal1</code>.</td>
+<td>Character index tracking the measured tissue units when multiple tissues are measured from a single specimen (e.g., <code>loose1</code>, <code>1</code>, <code>2</code>). For compound or more complex structures, projects are encouraged to develop their own consistent naming convention.<br> Examples: <code>loose1</code>, <code>leaflet1</code>, <code>petal1</code>.</td>
 <td>TEXT</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="even">
 <td><code>tissueDevelopmentalStage</code></td>
 <td>-</td>
 <td>Required</td>
-<td>Tissue developmental stage as coded in Developmental Stage Class Codes <a href="#tbl-4-4">Table 4.4</a>.<br>Examples: <code>Mature</code>, <code>Uncertain</code>.</td>
-<td>ENUM<br>(<a href="#tbl-4-4">Table 4.4</a>)</td>
-<td></td>
-<td></td>
+<td>Tissue developmental stage as coded in Developmental Stage Class Codes <a href="#tbl-4-4">Table 4.4</a>.<br> Examples: <code>Mature</code>, <code>Uncertain</code>.</td>
+<td>ENUM<br> (<a href="#tbl-4-4">Table 4.4</a>)</td>
 </tr>
 <tr class="odd">
 <td><code>hasBackgroundInMeasurement</code></td>
@@ -530,102 +511,79 @@ ul.task-list li input[type="checkbox"] {
 <td>Required</td>
 <td>True or false values indicating that the target tissue does not cover the full measurement area and the background is part of the measurement.</td>
 <td>BOOLEAN</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="even">
 <td><code>percentBackgroundInMeasurement</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Numeric estimate for the percentage of the measurement area that is not covered by the target tissue and is background material (black background or herbarium paper). It is recommended to describe the estimation method in the comment field.<br>Example: <code>25</code>.</td>
+<td>Numeric estimate for the percentage of the measurement area that is not covered by the target tissue and is background material (black background or herbarium paper). It is recommended to describe the estimation method in the comment field.<br> Example: <code>25</code>.</td>
 <td>INTEGER</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
 <td><code>hasGlue</code></td>
 <td>-</td>
 <td>Required</td>
-<td>True/False/Uncertain: glue present in measurement area.</td>
-<td>ENUM<br>(true/false/uncertain)</td>
-<td></td>
-<td></td>
+<td>true/false/uncertain: glue present in measurement area.</td>
+<td>ENUM (true/false/ uncertain)</td>
 </tr>
 <tr class="even">
 <td><code>hasNonGlueContamination</code></td>
 <td>-</td>
 <td>Required</td>
 <td>True, false, or uncertain values indicating a contaminant other than glue is present in the measurement area. This includes foreign biotic or abiotic agents on the target tissue, such as fungus or preservatives.</td>
-<td>ENUM<br>(true/false/uncertain)</td>
-<td></td>
-<td></td>
+<td>ENUM (true/false/ uncertain)</td>
 </tr>
 <tr class="odd">
 <td><code>measurementFlags</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>SStandardized categorical descriptors of the condition of the tissue within the measurement area. Values are selected from the predefined Tissue Descriptor Codes <a href="#tbl-4-6">Table 4.6</a>. Multiple descriptors should be separated with a pipe character (<code>|</code>).<br>Example: <code>GoodPreservation|PathogenPresent</code>.</td>
-<td>ENUM<br>(Table 4.6)</td>
-<td></td>
-<td></td>
+<td>Standardized categorical descriptors of the condition of the tissue within the measurement area. Values are selected from the predefined Tissue Descriptor Codes <a href="#tbl-4-6">Table 4.6</a>. Multiple descriptors should be separated with a pipe character (<code>|</code>).<br> Example: <code>GoodPreservation|PathogenPresent</code>.</td>
+<td>ENUM<br> (Table 4.6)</td>
 </tr>
 <tr class="even">
 <td><code>tissueNotes</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Free-text field used to record additional observations on the condition of the specimen that may aid interpretation of spectral data. It can be used to clarify or elaborate on descriptors already included in measurementFlags, such as the conditions evidencing the quality of preservation (e.g., a MediumPreservation flag could be explained with the note, ‘measurement area discolored and wrinkled’). Notes should specify whether the information applies to the measurement area, the tissue unit, or the specimen as a whole.<br>Examples: <code>mold in measurement area</code>, <code>formaldehyde preserved</code>.</td>
+<td>Free-text field used to record additional observations on the condition of the specimen that may aid interpretation of spectral data. It can be used to clarify or elaborate on descriptors already included in measurementFlags, such as the conditions evidencing the quality of preservation (e.g., a MediumPreservation flag could be explained with the note, ‘measurement area discolored and wrinkled’). Notes should specify whether the information applies to the measurement area, the tissue unit, or the specimen as a whole.<br> Examples: <code>mold in measurement area</code>, <code>formaldehyde preserved</code>.</td>
 <td>TEXT</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
 <td><code>tissueLocation</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>The location of the target tissue on the herbarium sheet. For mounted tissues, record as an <code>X,Y</code> coordinate in centimeters, with <strong><code>0,0</code> at the top-left corner of the sheet</strong> (e.g., <code>17,29</code>; see Fig. 4.2). If the sheet has non-square angles, align it flush with the left-side ruler. For unmounted tissues, provide a descriptive note indicating location.<br>Examples: <code>17,29</code>, <code>envelope TCAD_TN1</code>.</td>
-<td>TEXT<br>(coordinates preferred)</td>
-<td></td>
-<td></td>
+<td>The location of the target tissue on the herbarium sheet. For mounted tissues, record as an <code>X,Y</code> coordinate in centimeters, with <strong><code>0,0</code> at the top-left corner of the sheet</strong> (e.g., <code>17,29</code>; see Fig. 4.2). If the sheet has non-square angles, align it flush with the left-side ruler. For unmounted tissues, provide a descriptive note indicating location.<br> Examples: <code>17,29</code>, <code>envelope TCAD_TN1</code>.</td>
+<td>TEXT<br> (coordinates preferred)</td>
 </tr>
 <tr class="even">
 <td><code>comment</code></td>
 <td>-</td>
 <td>Optional</td>
-<td>Free-text field for recording any additional notes relevant to the measurement, including observations about the instrument, session, specimen, tissue, or data quality that are not captured elsewhere in the metadata.<br>Example: <code>Amazing specimen.</code></td>
+<td>Free-text field for recording any additional notes relevant to the measurement, including observations about the instrument, session, specimen, tissue, or data quality that are not captured elsewhere in the metadata.<br> Example: <code>Amazing specimen.</code></td>
 <td>TEXT</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
 <td><code>measurementIndex</code></td>
 <td><code>IDX</code></td>
 <td>Required</td>
-<td>The measurement number index appended to the base filename (Part 3, Table 3.2: IDX) to properly associate each row of metadata with its single, corresponding measurement file.<br>Example: <code>0001</code>.</td>
+<td>The measurement number index appended to the base filename (Part 3, Table 3.2: IDX) to properly associate each row of metadata with its single, corresponding measurement file.<br> Example: <code>0001</code>.</td>
 <td>TEXT</td>
-<td></td>
-<td></td>
 </tr>
 </tbody>
 </table>
-<hr>
-<div id="fig-4-2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-4-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/Fig4.2-coordinatesWh.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-4-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-&nbsp;2: <strong>Fig. 4.2</strong>: Diagram of coordinate system for scoring <code>tissueLocation</code> in <a href="#tbl-4.3">Table 4.3: Tissue Metadata</a>. Herbarium sheet is placed on top of the benchtop black background with centimeter rulers at top and left sides for ‘<code>x,y</code>’ notation of measurement area (white dashed circles) in centimeters with <code>0,0</code> at the top left. Black background cards are placed under unglued portions of leaves. From left to right, tissue <code>TCAB_TN3</code> has the location <code>10,26</code>, tissue <code>TCAD_TN2</code> has location <code>17,16</code> and tissue <code>TCAD_TN1</code> is stored with a label in a glassine envelope inside the packet with location <code>envelope TCAD_TN1</code>. For reference, specimen NEBC_00651639 metadata fields are proposed in <a href="../protocol/appendix2.html">Appendix II</a>. Specimen courtesy of the New England Botanical Society.
-</figcaption>
+<div id="f4-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/Fig4.2-coordinatesWh.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Fig. 4.2</strong>: Diagram of coordinate system for scoring <code>tissueLocation</code> in <a href="#tbl-4.3">Table 4.3: Tissue Metadata</a>. Herbarium sheet is placed on top of the benchtop black background with centimeter rulers at top and left sides for ‘<code>x,y</code>’ notation of measurement area (white dashed circles) in centimeters with <code>0,0</code> at the top left. Black background cards are placed under unglued portions of leaves. From left to right, tissue <code>TCAB_TN3</code> has the location <code>10,26</code>, tissue <code>TCAD_TN2</code> has location <code>17,16</code> and tissue <code>TCAD_TN1</code> is stored with a label in a glassine envelope inside the packet with location <code>envelope TCAD_TN1</code>. For reference, specimen NEBC_00651639 metadata fields are proposed in <a href="../protocol/appendix2.html">Appendix II</a>. Specimen courtesy of the New England Botanical Society.</figcaption>
 </figure>
 </div>
-<hr>
 </section>
 </section>
-<section id="controlled-vocabularies" class="level1">
-<h1>4.2 Controlled Vocabularies</h1>
+<section id="controlled-vocabularies" class="level2">
+<h2 class="anchored" data-anchor-id="controlled-vocabularies">4.2 Controlled Vocabularies</h2>
 <section id="tbl-4-4" class="level3">
 <h3 class="anchored" data-anchor-id="tbl-4-4">Table 4.4: Developmental Stage Class Codes</h3>
 <p>Available codes for enumerating the required <code>tissueDevelopmentalStage</code> metadata <a href="#tbl-4-3">Table 4.3</a>. Codes follow ‘CamelCase’ format with capitalized initial letters.</p>
+<p><strong>Download</strong> <a href="tables/Table4.4-DevelopmentalStage.csv">Table4.4.csv</a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 31%">
@@ -660,11 +618,11 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<hr>
 </section>
 <section id="tbl-4-5" class="level3">
 <h3 class="anchored" data-anchor-id="tbl-4-5">Table 4.5: Target Class Codes.</h3>
 <p>Available codes for enumerating the required <code>targetClass</code> metadata <a href="#tbl-4-3">Table 4.3</a>. Either the abbreviated code or the full CamelCase-formatted code (with an initial capital letter) may be used.</p>
+<p><strong>Download</strong> <a href="tables/Table4.5-TargetClassCodes.csv">Table4.5.csv</a></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -765,6 +723,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="tbl-4-6" class="level3">
 <h3 class="anchored" data-anchor-id="tbl-4-6">Table 4.6: Tissue Descriptor Codes</h3>
+<p><strong>Download</strong> <a href="tables/Table4.6-TissueDescriptorCodes.csv">Table4.6.csv</a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 31%">
@@ -839,11 +798,11 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<hr>
 </section>
 <section id="tbl-4-7" class="level3">
 <h3 class="anchored" data-anchor-id="tbl-4-7">Table 4.7: Background and White Reference Class Codes</h3>
 <p>Available codes for enumerating the required <code>tissueBackgroundClass</code> metadata <a href="#tbl-4-3">Table 4.3</a>. Either the abbreviated code or the full CamelCase with initial capital letter jformatted code may be used.</p>
+<p><strong>Download</strong> <a href="tables/Table4.7-BackgroundandWhiteRefClassCodes.csv">Table4.7.csv</a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -880,42 +839,45 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<hr>
 </section>
 </section>
-<section id="guidelines-for-data-archiving-and-sharing" class="level1">
-<h1>4.3 Guidelines for Data Archiving and Sharing</h1>
+<section id="guidelines-for-data-archiving-and-sharing" class="level2">
+<h2 class="anchored" data-anchor-id="guidelines-for-data-archiving-and-sharing">4.3 Guidelines for Data Archiving and Sharing</h2>
 <ul>
-<li><p>For each specimen, a copy of <strong>all unprocessed spectral files and metadata should be archived</strong> in the digital repository of the herbarium or institution that owns the specimen, or otherwise in accordance with their data storage practices. This ensures that the data remain co-located with the physical specimen and integrated with institutional capabilities for managing specimen metadata.</p></li>
-<li><p>In addition, projects should <strong>upload unprocessed, original format data files and metadata to a persistent, open-access repository</strong> that issues DOIs and supports versioning, such as Dryad, Zenodo, or Harvard Dataverse. These platforms are preferred over tools like EcoSIS, which have shown reduced reliability and uncertain long-term support.</p></li>
-<li><p>To facilitate reuse, users may also choose to also share tabular data files (e.g., .csv) with samples in rows and columns for metadata fields and spectral band values. If processed spectra are included (e.g., interpolated, splice/jump-corrected, or continuum- removed), the applied processing steps should be clearly documented.</p></li>
-<li><p>See<br>Example of data and metadata sharing here: <a href="https://doi.org/10.7910/DVN/LXPHBC">https://doi.org/10.7910/DVN/LXPHBC</a></p></li>
+<li><p>For each specimen, a copy of <strong>all unprocessed spectral files and associated metadata should be archived</strong> by the herbarium or institution that owns the specimen, or otherwise managed in accordance with institutional data storage practices. Wherever possible, these data should remain <strong>co-located with specimen records</strong> or stored in infrastructure (e.g., institutional servers, cloud services, or collection management systems) that supports long-term stewardship, identifier stability, and integration with specimen metadata.</p></li>
+<li><p>In addition to institutional archiving, projects are strongly encouraged to <strong>deposit unprocessed spectral data files and metadata in a persistent, open-access repository</strong> that issues DOIs and supports versioning.<br>
+The <strong>IHerbSpec Dataverse</strong> (<a href="https://dataverse.harvard.edu/dataverse/iherbspec/" class="uri">https://dataverse.harvard.edu/dataverse/iherbspec/</a>) is a community-curated, thematic repository designed specifically to serve herbarium spectral data and metadata. It provides free access, dataset-level versioning, rich metadata support, and curation aligned with the IHerbSpec Protocol. Datasets deposited in the IHerbSpec Dataverse can be linked to specimen records in primary digitization platforms (e.g., Symbiota, Specify, Tropicos) using stable identifiers and resource relationships, enabling integration across systems while allowing spectral data to be managed in infrastructure optimized for these data types.</p></li>
+<li><p>The IHerbSpec Dataverse supports a <strong>project-based data sharing model</strong>, suitable for laboratory studies, collaborative research projects, and digitization efforts that span multiple collections. Datasets may include raw spectra, metadata spreadsheets, README documentation, processed spectra, and associated trait data. Metadata are reviewed prior to release to promote compliance with the IHerbSpec Protocol and to facilitate interoperability and reuse.</p></li>
+<li><p>To enhance discoverability and specimen-level integration, datasets archived in external repositories (including the IHerbSpec Dataverse) may be linked to specimen records using standardized associations (e.g., Darwin Core Resource Relationship terms such as <code>isReferencedBy</code>). These links can be prepared in bulk and ingested by specimen portals, allowing users to search for specimens associated with spectral data while the files themselves remain hosted in the most appropriate repository.</p></li>
+<li><p>To facilitate reuse and analysis, projects may also share <strong>tabular data files</strong> (e.g., <code>.csv</code>) containing samples in rows and spectral bands and metadata fields in columns. If processed spectra are included (e.g., interpolated, splice-corrected, continuum-removed), all applied processing steps should be clearly documented.</p></li>
+<li><p>When projects include <strong>additional trait data</strong> alongside spectral measurements, contributors should ensure that trait definitions, units, and measurement methods are clearly documented and standardized where possible. Ongoing community efforts will be required to align spectral data with broader trait data standards and repositories.</p></li>
+<li><p>Contributors should consider data governance needs, including <strong>sensitive specimen information, traditional knowledge considerations, access restrictions, and long-term curation responsibilities</strong>. The IHerbSpec community is actively developing governance, curation, and review practices to support responsible data sharing consistent with FAIR and CARE principles.</p></li>
+<li><p>The IHerbSpec community is also working toward the development of <strong>software tools to automatically validate metadata, filenames, and dataset structure</strong> against the IHerbSpec Protocol during data submission, and to enable future parsing of bulk datasets into specimen-specific subsets for downstream integration and reuse.</p></li>
+<li><p>See an example of spectral data and metadata sharing here:<br>
+<a href="https://doi.org/10.7910/DVN/LXPHBC" class="uri">https://doi.org/10.7910/DVN/LXPHBC</a> —</p></li>
 </ul>
-<hr>
 </section>
-<section id="navigate-the-protocol" class="level1">
-<h1>Navigate the protocol</h1>
+<section id="navigate-the-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="navigate-the-protocol">Navigate the protocol</h2>
 <ul>
 <li>Proceed to <a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a></li>
 </ul>
 <p>Browse additional parts and appendices:</p>
 <ul>
-<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Overview<br>
-</li>
-<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow<br>
-</li>
-<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats<br>
-</li>
-<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing<br>
-</li>
-<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines<br>
-</li>
-<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement<br>
-</li>
+<li><a href="../protocol/part1-overview.html"><strong>Part 1</strong></a> – Protocol Overview</li>
+<li><a href="../protocol/part2-workflow.html"><strong>Part 2</strong></a> – Measurement and Metadata Workflow</li>
+<li><a href="../protocol/part3-filenames.html"><strong>Part 3</strong></a> – Filename Conventions and Formats</li>
+<li><a href="../protocol/part4-metadata.html"><strong>Part 4</strong></a> – Metadata and Databasing</li>
+<li><a href="../protocol/part5-instrumentation.html"><strong>Part 5</strong></a> – Instrumentation and Materials Guidelines</li>
+<li><a href="../protocol/part6-guidelines.html"><strong>Part 6</strong></a> – Selecting Tissues for Spectral Measurement</li>
 <li><a href="../protocol/references.html"><strong>References</strong></a></li>
-<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue<br>
-</li>
+<li><a href="../protocol/appendix1.html"><strong>Appendix I</strong></a> – Number of Measurements per Tissue</li>
 <li><a href="../protocol/appendix2.html"><strong>Appendix II</strong></a> – Tissue Metadata for Quality Control</li>
+</ul>
+<p>Browse Home and Downloads</p>
+<ul>
+<li><a href="../protocol.html"><strong>Home - IHerbSpec Protocol</strong></a></li>
+<li><a href="tables.html"><strong>Downloads</strong></a></li>
 </ul>
 
 
