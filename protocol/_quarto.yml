@@ -24,6 +24,7 @@ number-sections: false
 
 format:
   pdf:
+    fig-dpi: 200
     toc: true
     number-sections: false
     colorlinks: true

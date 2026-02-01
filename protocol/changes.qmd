@@ -12,6 +12,10 @@ include-after-body:
 
 ### Current Version: {{< var protocol_version >}}
 
+### Summary of changes since Version 1.1
+
+- changed some images from large png to small jpg to reduce pdf size.
+
 ### Summary of changes since Version 1.01
 
 - Reorganized the protocol into a Quarto book structure to enable consistent rendering of a single, compiled PDF while preserving the web-based version of the protocol: 
@@ -32,5 +36,8 @@ include-after-body:
 
 - **Section 5.3.2:** Added Fig. 5.1 and new text describing the spectral properties of background materials and their effects on measured leaf reflectance.
 
+### Summary of changes since Version 1.0
+
+- Added license
 
 ---
