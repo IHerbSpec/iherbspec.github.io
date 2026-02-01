@@ -6,14 +6,15 @@ include-after-body:
       <img src="images/cc-by.svg"
            alt="CC BY 4.0" 
            style="height:20px; vertical-align:middle; margin-right:6px;">
-      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.18451589">10.5281/zenodo.18451589</a>)
     </div>
 ---
 
 ### Current Version: {{< var protocol_version >}}
 
-### Summary of changes since Version 1.1
+### Summary of changes since Version 1.1, v1.11, and v1.12
 
+- Generated new concept DOI from Zenodo: [10.5281/zenodo.18451589](https://doi.org/10.5281/zenodo.18451589)
 - changed some images from large png to small jpg to reduce pdf size.
 
 ### Summary of changes since Version 1.01

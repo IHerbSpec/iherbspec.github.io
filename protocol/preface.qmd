@@ -6,7 +6,7 @@ include-after-body:
       <img src="images/cc-by.svg"
            alt="CC BY 4.0" 
            style="height:20px; vertical-align:middle; margin-right:6px;">
-      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.18451589">10.5281/zenodo.18451589</a>)
     </div>
 ---
 
@@ -112,7 +112,7 @@ We gratefully acknowledge the staff, managers, and curators who steward biodiver
 
 ## Suggested Citation
 
-IHerbSpec. 2025. *Protocol for the Spectral Digitization of Herbarium Specimens, v.{{< var protocol_version >}}*. [https://doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
+IHerbSpec. 2026. *Protocol for the Spectral Digitization of Herbarium Specimens, v.{{< var protocol_version >}}*. [https://doi.org/10.5281/zenodo.18451589](https://doi.org/10.5281/zenodo.18451589)
 
 ---
 

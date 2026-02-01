@@ -19,7 +19,7 @@ include-after-body:
       <img src="protocol/images/cc-by.svg"
            alt="CC BY 4.0"
            style="height:20px; vertical-align:middle; margin-right:6px;">
-      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.18451589">10.5281/zenodo.18451589</a>)
     </div>
 ---
 
@@ -100,7 +100,7 @@ You can browse the protocol section by section online, or download the protocol 
 
 ## 📥 Download IHerbSpec Protocol Files
 
-**Versioned releases of the IHerbSpec Protocol are archived on Zenodo:**  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15849668.svg)](https://doi.org/10.5281/zenodo.15849668)
+**Versioned releases of the IHerbSpec Protocol are archived on Zenodo:**  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18451589.svg)](https://doi.org/10.5281/zenodo.18451589)
 
 Each archived release includes:
 - A compiled PDF of the full protocol (stable, citable snapshot)
@@ -112,12 +112,12 @@ The website presents the most current living version of the protocol, while Zeno
 
 ## 📌 Suggested Citation
 
-IHerbSpec, 2025. Protocol for Spectral Digitization of Herbarium Specimens, v.{{< var protocol_version >}}. Zenodo. [https://doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)
+IHerbSpec, 2026. Protocol for Spectral Digitization of Herbarium Specimens, v.{{< var protocol_version >}}. Zenodo. [https://doi.org/10.5281/zenodo.18451589](https://doi.org/10.5281/zenodo.18451589)
 
 ## ©️ License
 
 This protocol and all associated figures, tables, and supplementary materials are licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.  
-Users are free to share and adapt the material, provided attribution is given to "*IHerbSpec Protocol* (DOI: [10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668))"
+Users are free to share and adapt the material, provided attribution is given to "*IHerbSpec Protocol* (DOI: [10.5281/zenodo.18451589](https://doi.org/10.5281/zenodo.18451589))"
 
 ## 👥 Team Science
 ::: {.column-page-inset}

@@ -6,7 +6,7 @@ include-after-body:
       <img src="images/cc-by.svg"
            alt="CC BY 4.0" 
            style="height:20px; vertical-align:middle; margin-right:6px;">
-      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.15849668">10.5281/zenodo.15849668</a>)
+      IHerbSpec Protocol (<a href="https://doi.org/10.5281/zenodo.18451589">10.5281/zenodo.18451589</a>)
     </div>
 ---
 
@@ -14,7 +14,7 @@ include-after-body:
 
 This section defines the metadata fields used to describe spectral reflectance measurements of herbarium specimens. This standardization supports interoperability, cross-project data aggregation, and future integration into biodiversity informatics platforms.
 
-Projects can download the **IHerbSpec Metadata Spreadsheet** (available at [doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668)) as a foundation for organizing their metadata. This spreadsheet includes all **required** and optional but **recommended** fields defined in the tables in [Section 4.1](#tbl-4-1). The controlled vocabularies necessary for enumerating certain fields are provided in [Section 4.2](part4-metadata.qmd#controlled-vocabularies). Finally, [Section 4.3](part4-metadata.qmd#guidelines-for-data-archiving-and-sharing) provides general guidelines for data and metadata storage and dissemination.
+Projects can download the **IHerbSpec Metadata Spreadsheet** (available at [doi.org/10.5281/zenodo.18451589](https://doi.org/10.5281/zenodo.18451589)) as a foundation for organizing their metadata. This spreadsheet includes all **required** and optional but **recommended** fields defined in the tables in [Section 4.1](#tbl-4-1). The controlled vocabularies necessary for enumerating certain fields are provided in [Section 4.2](part4-metadata.qmd#controlled-vocabularies). Finally, [Section 4.3](part4-metadata.qmd#guidelines-for-data-archiving-and-sharing) provides general guidelines for data and metadata storage and dissemination.
 
 While metadata are expected to be disseminated in a flat file format (as in the IHerbSpec Metadata Spreadsheet), fields are presented here in logical groups—project, specimen, and tissue—to support conceptual understanding and integration with local databases.
 

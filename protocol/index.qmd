@@ -9,7 +9,7 @@ version: "{{< var protocol_version >}}"
 
 This PDF is a compiled and citable version of the **Protocol for the Spectral Digitization of Herbarium Specimens** published by **IHerbSpec**, aka the "IHerbSpec Protocol". It is a single document for offline use, printing, and long-term reference that represents the latest compiled and versioned release of the protocol.
 
-This versioned release is archived on Zenodo [doi.org/10.5281/zenodo.15849668](https://doi.org/10.5281/zenodo.15849668).
+This versioned release is archived on Zenodo [doi.org/10.5281/zenodo.18451589](https://doi.org/10.5281/zenodo.18451589).
 
 The IHerbSpec Protocol is maintained as a living standard on the project website, [iherbspec.github.io](https://iherbspec.github.io/protocol.html), where the most current version is always active and may include minor updates or clarifications made since this archived release.
 
