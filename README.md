@@ -30,7 +30,7 @@ Future sections may include tutorials, projects, datasets, and additional commun
 
 ---
 
-## 📘 The IHerbSpec Protocol: Living Standard and Archival Releases
+## 📘 Guide to the code and deployment of the IHerbSpec Protocol: 
 
 The **IHerbSpec Protocol** is a community-developed standard that defines best practices for the spectral digitization of herbarium specimens, including measurement procedures, metadata requirements, and data management guidance.
 
@@ -45,11 +45,18 @@ This web version represents the most current state of the protocol and may inclu
 At defined milestones, the protocol is **versioned and archived** as a citable release on **Zenodo** (https://doi.org/10.5281/zenodo.18451589). Each release:
 
 - is generated directly from the source code in this repository using Quarto,
-- includes a **compiled PDF** of the protocol for offline use and long-term reference,
-- includes a **snapshot of the rendered website**, and
-- is assigned a **version-specific DOI**, while sharing a stable **concept DOI** across all releases.
+- includes a **compiled PDF** of the protocol for offline use and long-term reference (rendered at iherbspec.github.io/protocol/releases/*pdf),
+- includes **snapshots of the rendered website** as html files that can be navigated via the file iherbspec.github.io/docs/index.html, and
+- is assigned a version-specific DOI, while sharing a stable **concept DOI (10.5281/zenodo.18451589)** across all releases.
 
 This model ensures both **currency** (via the living website) and **reproducibility and citability** (via archived releases).
+
+### Customization and IHerbSpec community contributions
+Herbaria and research groups may adapt the IHerbSpec Protocol for local workflows by cloning this repository and editing the Quarto source files. Customized versions can be rendered locally as institution-specific HTML websites and/or PDF documents, enabling local implementation while preserving transparency, version control, and clear attribution to the original IHerbSpec Protocol.
+
+Members of the IHerbSpec working group are encouraged to contribute to the ongoing development of the protocol through the project’s GitHub repository. Proposed changes, additions, or clarifications can be submitted as issues or pull requests and are reviewed through an open, community-based process prior to inclusion in official, versioned releases of the IHerbSpec Protocol. 
+
+All reuse and adaptation of the protocol are permitted under the Creative Commons Attribution 4.0 (CC BY 4.0) license, provided appropriate attribution is given.
 
 ---
 
@@ -59,7 +66,7 @@ When citing the protocol, please cite the **Zenodo archive**. https://doi.org/10
 
 **Recommended citation (use the stable DOI):**
 
-IHerbSpec. 2026. *Protocol for the Spectral Digitization of Herbarium Specimens*. Zenodo. https://doi.org/10.5281/zenodo.18451589
+IHerbSpec. 2026. *Protocol for the Spectral Digitization of Herbarium Specimens*, v1.2. Zenodo. https://doi.org/10.5281/zenodo.18451589
 
 ---
 
