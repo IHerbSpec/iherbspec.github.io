@@ -82,12 +82,9 @@ This license permits reuse, distribution, and adaptation of the material for any
 
 ## 📬 Contact Us
 
-For questions, feedback, or collaboration inquiries, please contact:
+For questions, feedback, or collaboration inquiries, please:
 
-- **J. Antonio Guzmán Q.** (https://github.com/Antguz)
-- **Dawson M. White** (https://github.com/Erythroxylum)
-
-Or open an issue on GitHub:
-https://github.com/IHerbSpec/iherbspec.github.io/issues
+- send us a message via the website: [Contact Us](https://iherbspec.github.io/contact.html) 
+- start a discussion at [https://github.com/IHerbSpec/iherbspec.github.io/issues](https://github.com/IHerbSpec/iherbspec.github.io/discussions)
 
 We welcome participation from researchers, collections professionals, and institutions interested in spectral digitization and herbarium-based research.
