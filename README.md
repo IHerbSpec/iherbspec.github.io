@@ -52,9 +52,9 @@ At defined milestones, the protocol is **versioned and archived** as a citable r
 This model ensures both **currency** (via the living website) and **reproducibility and citability** (via archived releases).
 
 ### Customization and IHerbSpec community contributions
-Herbaria and research groups may adapt the IHerbSpec Protocol for local workflows by cloning this repository and editing the Quarto source files. Customized versions can be rendered locally as institution-specific HTML websites and/or PDF documents, enabling local implementation while preserving transparency, version control, and clear attribution to the original IHerbSpec Protocol.
+Herbaria and research groups may adapt the IHerbSpec Protocol for local workflows by cloning this repository and editing the Quarto source files. Customized versions can be rendered locally as institution-specific HTML websites and/or PDF documents with clear attribution to the original IHerbSpec Protocol (see license).
 
-Members of the IHerbSpec working group are encouraged to contribute to the ongoing development of the protocol through the project’s GitHub repository. Proposed changes, additions, or clarifications can be submitted as issues or pull requests and are reviewed through an open, community-based process prior to inclusion in official, versioned releases of the IHerbSpec Protocol. 
+Members of the IHerbSpec working group are encouraged to contribute to the  development of the protocol through the **Discussions** or **Issues tools** in this GitHub repository.
 
 All reuse and adaptation of the protocol are permitted under the Creative Commons Attribution 4.0 (CC BY 4.0) license, provided appropriate attribution is given.
 
