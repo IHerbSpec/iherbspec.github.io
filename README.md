@@ -85,6 +85,6 @@ This license permits reuse, distribution, and adaptation of the material for any
 For questions, feedback, or collaboration inquiries, please:
 
 - send us a message via the website: [Contact Us](https://iherbspec.github.io/contact.html) 
-- start a discussion at [https://github.com/IHerbSpec/iherbspec.github.io/issues](https://github.com/IHerbSpec/iherbspec.github.io/discussions)
+- start a [Discussion](https://github.com/IHerbSpec/iherbspec.github.io/discussions)
 
 We welcome participation from researchers, collections professionals, and institutions interested in spectral digitization and herbarium-based research.
