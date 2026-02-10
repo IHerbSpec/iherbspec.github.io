@@ -53,7 +53,7 @@ This model ensures both **currency** (via the living website) and **reproducibil
 ### Customization and IHerbSpec community contributions
 Herbaria and research groups may adapt the IHerbSpec Protocol for local workflows by cloning this repository and editing the Quarto source files. Customized versions can be rendered locally as institution-specific HTML websites and/or PDF documents with clear attribution to the original IHerbSpec Protocol (CC BY 4.0).
 
-Members of the IHerbSpec working group are encouraged to contribute to the development of the protocol through [Discussions](https://github.com/IHerbSpec/iherbspec.github.io/discussions) or [Issues tools](https://github.com/IHerbSpec/iherbspec.github.io/issues) or via the [IHerbSpec-Protocol Google Group](https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-protocol).
+Members of the IHerbSpec working group are encouraged to contribute to the development of the protocol through [Discussions](https://github.com/IHerbSpec/iherbspec.github.io/discussions) or [Issues](https://github.com/IHerbSpec/iherbspec.github.io/issues) tools or via the [IHerbSpec-Protocol Google Group](https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-protocol).
 
 ## 📖 How to Cite the IHerbSpec Protocol
 
