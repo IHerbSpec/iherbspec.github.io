@@ -114,20 +114,42 @@ The website presents the most current living version of the protocol, while Zeno
 
 IHerbSpec, 2026. Protocol for Spectral Digitization of Herbarium Specimens, v.{{< var protocol_version >}}. Zenodo. [https://doi.org/10.5281/zenodo.18451589](https://doi.org/10.5281/zenodo.18451589)
 
+[Download BibTeX](bibtex/IHerbSpec-Protocol-1.2.bib) (or right click and "Save Link As...")
+
 ## ©️ License
 
 This protocol and all associated figures, tables, and supplementary materials are licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.  
 Users are free to share and adapt the material, provided attribution is given to "*IHerbSpec Protocol* (DOI: [10.5281/zenodo.18451589](https://doi.org/10.5281/zenodo.18451589))"
 
-## 👥 Team Science
+## 👥 Get Involved
 ::: {.column-page-inset}
 <div class="content-narrow">
 
-This protocol reflects a team science approach. We welcome contributions to improve it and invite people interested in spectroscopy of herbarium specimens to join IHerbSpec.  
+This protocol reflects a team science approach. We welcome comments and invite people interested in spectroscopy and preserved plants and fungi to join IHerbSpec and  contribute to our activities.  
 
-Please [**Contact Us**](contact.qmd) if you are interested in joining the working group, por to share feedback or suggestions.
+### Join the IHerbSpec community
 
-You can also post comments or issues on our GitHub repo [github.com/IHerbSpec/iherbspec.github.io](https://github.com/IHerbSpec/iherbspec.github.io)
+To get announcements and participate in our activities, [Contact Us](https://iherbspec.github.io/contact) or join our **IHerbSpec-all** Google Group by following these instructions:
+
+1) Visit [groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-all](https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-all), 
+2) click *Ask to join group*, and (optionally) send a brief message to introduce yourself.
+3) To participate in protocol discussions, repeat steps 1 and 2 for the Protocol group also: [groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-protocol](https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-protocol)  
+
+### Questions and Discussion Forums
+
+IHerbSpec maintains multiple **public communication channels** to support dialogue, transparency, and discovery across the community. You can browse previously discussed topics and ask questions through the following forums:
+
+- **IHerbSpec-Protocol Google Group**
+  - Public protocol discussion, clarification, and governance
+  - [https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-protocol](https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-protocol)
+
+- **GitHub Discussions**
+  - Public Q&A and ideas related to IHerbSpec and the IHerbSpec Protocol
+  - [https://github.com/IHerbSpec/iherbspec.github.io/discussions](https://github.com/IHerbSpec/iherbspec.github.io/discussions)
+
+- **GitHub Issues**
+  - Concrete, actionable proposed edits or technical tasks related to the website or protocol source  
+  - [https://github.com/IHerbSpec/iherbspec.github.io/issues](https://github.com/IHerbSpec/iherbspec.github.io/issues)
 
 </div>
 :::
