@@ -15,8 +15,10 @@ include-after-body:
 ### Summary of changes since Version 1.2
 
 - Added table to Overview section of Part 4 and added clarification text about excluding filename code prefixes as prepends to metadata values.
-- Added text on communications channels (google group and github discussions) to protocol.qmd in the Team Science section.
+- Added text on communications channels (google group and github discussions) to protocol.qmd in the Team Science section and contact.qmd.
 - Added bibtex download to protocol.qmd
+- changed wording about "minimum 3, recommended 5 or more" in Part 2, step 5.
+
 
 ### Summary of changes since Version 1.1, v1.11, and v1.12
 

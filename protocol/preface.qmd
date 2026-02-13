@@ -44,7 +44,7 @@ IHerbSpec will continue to refine and expand this protocol and welcomes inquirie
 
 ## Authors
 
-- **Dawson M. White** — Harvard University Herbaria and Department of Organismic and Evolutionary Biology, Harvard University, USA
+- **Dawson M. White** — Harvard University Herbaria, USA
 - **Natalie I. Ahlstrand** — Natural History Museum of Denmark, University of Copenhagen, Denmark
 - **Matthew W. Austin** — Missouri Botanical Garden, USA
 - **Denis Bastianelli** — CIRAD / University of Montpellier, France
@@ -80,7 +80,7 @@ IHerbSpec will continue to refine and expand this protocol and welcomes inquirie
 
 All authors contributed intellectually to the development of the protocol, including reviewing, editing, and approving the final version. DMW organized and led protocol development, writing, and website management.
 
-- Intellectual leadership: Led by JCB with contributions from MWA, FD, JAK, JEM, JAGQ, MS, and DMW.
+- Intellectual leadership: Led by JCB with contributions from MWA, FD, JAK, JEM, JAGQ, MS, and DMW
 - Draft writing: NIA, MWA, JCB, ELB, TLPC, FD, OMG, JAGQ, JAK, SK, DS, NLQC, DMW
 - Figures and tables: SB, FD, JAK, DMW
 - Appendix II examples: KB, SB, FD, AKL, CCV, CON, DMW

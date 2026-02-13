@@ -1,0 +1,11 @@
+/* Remove spacing above and below paragraphs (eg 1.1.) */
+p {
+  margin-top: 0.0 !important;
+  margin-bottom: 0.15rem !important;
+}
+
+/* Edit spacing within bulleted sections */
+ul {
+    margin-top: 0.0;
+    margin-bottom: 0.5rem;
+}

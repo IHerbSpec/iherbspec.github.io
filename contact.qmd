@@ -28,11 +28,20 @@ title: "Contact Us"
 ::: {.column-page-inset}
 <div class="content-narrow">
 
-We welcome comments, suggestions, and revisions to improve the protocol, and encourage more members of the herbarium community to join the **IHerbSpec Working Group**.  
+We welcome comments, suggestions, and revisions to improve the protocol, and encourage more members of the herbarium community to join **IHerbSpec**.  
 
 To get in touch, please use the form below. Your message will be delivered securely to the working group coordinators.  
 
-If you prefer, you can also reach out via the contact details on our [GitHub repository](https://github.com/IHerbSpec/iherbspec.github.io).
+You may also engage with IHerbSpec through our public communication channels:
+
+- **GitHub Discussions** (questions, ideas, and public dialogue):  
+  https://github.com/IHerbSpec/iherbspec.github.io/discussions  
+
+- **IHerbSpec-all Google Group** (announcements and community updates):  
+  https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-all  
+
+- **IHerbSpec-Protocol Google Group** (protocol discussion and governance):  
+  https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-protocol
 
 </div>
 :::

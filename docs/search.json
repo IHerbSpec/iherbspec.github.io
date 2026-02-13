@@ -130,49 +130,49 @@
     "href": "protocol/part2-workflow.html#step-1.-instrument-setup-and-connection",
     "title": "Part 2 – Measurement and Metadata Workflow",
     "section": "Step 1. Instrument Setup and Connection",
-    "text": "Step 1. Instrument Setup and Connection\n1.1. Plug in and turn on the instrument and light source.\n- Allow &gt;15 minutes or follow manufacturer SOPs for lamp warm-up and sensor cool-down.\n1.2. Set up the computer and software, and connect the instrument following project SOPs."
+    "text": "Step 1. Instrument Setup and Connection\n1.1. Plug in and turn on the instrument and light source.\n\nAllow &gt;15 minutes or follow manufacturer SOPs for lamp warm-up and sensor cool-down.\n\n1.2. Set up the computer and software, and connect the instrument following project SOPs."
   },
   {
     "objectID": "protocol/part2-workflow.html#step-2.-prepare-bench-and-specimens",
     "href": "protocol/part2-workflow.html#step-2.-prepare-bench-and-specimens",
     "title": "Part 2 – Measurement and Metadata Workflow",
     "section": "Step 2. Prepare Bench and Specimens",
-    "text": "Step 2. Prepare Bench and Specimens\n2.1. Select specimens and tissues for measurement (see Part 6; Fig. 6.1).\n2.2. Optionally, prepare filenames (see Part 3) in a separate document for copy–paste entry.\n2.3. Prepare bench with the following materials (see Fig. 2.2):\n- Required: white reference, black background\n- Recommended: benchtop black background, rulers for tissue coordinates, tweezers, laboratory gloves (see Part 5), annotation labels, archival envelopes (see Section 5.4)."
+    "text": "Step 2. Prepare Bench and Specimens\n2.1. Select specimens and tissues for measurement (see Part 6; Fig. 6.1).\n2.2. Optionally, prepare filenames (see Part 3) in a separate document for copy–paste entry.\n2.3. Prepare bench with the following materials (see Fig. 2.2):\n\nRequired: white reference, black background\n\nRecommended: benchtop black background, rulers for tissue coordinates, tweezers, laboratory gloves (see Part 5), annotation labels, archival envelopes (see Section 5.4)."
   },
   {
     "objectID": "protocol/part2-workflow.html#step-3.-start-session-and-score-session-metadata",
     "href": "protocol/part2-workflow.html#step-3.-start-session-and-score-session-metadata",
     "title": "Part 2 – Measurement and Metadata Workflow",
     "section": "Step 3. Start Session and Score Session Metadata",
-    "text": "Step 3. Start Session and Score Session Metadata\n3.1. Score Session Metadata (see Table 4.1):\n- Record sessionId datetime in the format YYYYMMDDHHMM (e.g., 202507011351).\n- Score required fields: projectID, sessionId, instrumentModel, opticalSetupDescription, measurementSettings, whiteReferenceDescription.\n- Score recommended fields: operator, lightSourceType, distanceTargetToSensor, lensFieldOfView, angleLightToSensor, measurementAreaDiameter.\n3.2. Create a storage folder for spectral data named with the sessionId (e.g., 202507011351) and set it as the destination folder for saving measurement files."
+    "text": "Step 3. Start Session and Score Session Metadata\n3.1. Score Session Metadata (see Table 4.1):\n\nRecord sessionId datetime in the format YYYYMMDDHHMM (e.g., 202507011351).\n\nScore required fields: projectID, sessionId, instrumentModel, opticalSetupDescription, measurementSettings, whiteReferenceDescription.\n\nScore recommended fields: operator, lightSourceType, distanceTargetToSensor, lensFieldOfView, angleLightToSensor, measurementAreaDiameter.\n\n3.2. Create a storage folder for spectral data named with the sessionId (e.g., 202507011351) and set it as the destination folder for saving measurement files."
   },
   {
     "objectID": "protocol/part2-workflow.html#step-4.-collect-white-and-black-session-measurements",
     "href": "protocol/part2-workflow.html#step-4.-collect-white-and-black-session-measurements",
     "title": "Part 2 – Measurement and Metadata Workflow",
     "section": "Step 4. Collect White and Black Session Measurements",
-    "text": "Step 4. Collect White and Black Session Measurements\n4.1. Take a white reference.\n4.2. Set simple filename for white target (see Table 3.1):\n- PI&lt;projectId&gt;_SN&lt;sessionId&gt;_TCW\n- Example: PIHUHcoca_SN202507011351_TCW\n4.3. Take one white target measurement.\n4.4. Set simple filename for black target:\n- PI&lt;projectId&gt;_SN&lt;sessionId&gt;_TCB\n- Example: PIHUHcoca_SN202507011351_TCB\n4.5. Take one black target measurement.\n4.6. Optionally, take target measurements of each calibrated reflectance standard (see Section 5.3) using filename conventions (Table 3.1):\n- PI&lt;projectId&gt;_SN&lt;sessionId&gt;_TC&lt;targetClass&gt;&lt;serial number&gt; - Example: PIHUHcoca_SN202507011351_TCCW379902"
+    "text": "Step 4. Collect White and Black Session Measurements\n4.1. Take a white reference.\n4.2. Set simple filename for white target (see Table 3.1):\n\nPI&lt;projectId&gt;_SN&lt;sessionId&gt;_TCW\n\nExample: PIHUHcoca_SN202507011351_TCW\n\n\n4.3. Take 1 white target measurement.\n4.4. Set simple filename for black target:\n\nPI&lt;projectId&gt;_SN&lt;sessionId&gt;_TCB\n\nExample: PIHUHcoca_SN202507011351_TCB\n\n\n4.5. Take 1 black target measurement.\n4.6. Optionally, take target measurements of each calibrated reflectance standard (see Section 5.3) using filename conventions (Table 3.1):\n\nPI&lt;projectId&gt;_SN&lt;sessionId&gt;_TC&lt;targetClass&gt;&lt;serial number&gt;\n\nExample: PIHUHcoca_SN202507011351_TCCW379902"
   },
   {
     "objectID": "protocol/part2-workflow.html#step-5.-tissue-measurement-sequence",
     "href": "protocol/part2-workflow.html#step-5.-tissue-measurement-sequence",
     "title": "Part 2 – Measurement and Metadata Workflow",
     "section": "Step 5. Tissue Measurement Sequence",
-    "text": "Step 5. Tissue Measurement Sequence\n5.1. Take white reference at regular intervals (e.g., every 20 min.; see Section 1.2.2).\n5.2. Determine if tissue is suitable for measurement (see Part 6). If not, skip to the next specimen.\n5.3. Place specimen on benchtop black background with a ruler grid (recommended; see Fig. 4.2).\n5.4. Place black background behind target tissue (required whenever possible; see Fig. 2.2).\n5.5. Adaxial (AD) surface available:\n- Filename: SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;\n- Example: SI02022418_TCAD_TN1\n- Take 3–5 adaxial measurements.\n5.6. Abaxial (AB) surface available:\n- Filename: SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;\n- Example: SI02022418_TCAB_TN1\n- Take 3–5 abaxial measurements.\n5.7. If tissue measured on herbarium paper:\n- Filename: SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;\n- Example: SI00746092_TCP_TN1\n- Take 1 paper measurement.\n5.8. Additional tissues (optional):\n- Select other tissue units with new targetTissueIds (recommended) and/or additional targetClass values (see Table 4.5).\n- Repeat tissue measurement steps."
+    "text": "Step 5. Tissue Measurement Sequence\n5.1. Take white reference at regular intervals (e.g., every 20 min.; see Section 1.2.2).\n5.2. Determine if tissue is suitable for measurement (see Part 6). If not, skip to the next specimen.\n5.3. Place specimen on benchtop black background with a ruler grid (recommended; see Fig. 4.2).\n5.4. Place black background behind target tissue (required whenever possible; see Fig. 2.2).\n5.5. Adaxial (AD) surface available:\n\nFilename: SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;\n\nExample: SI02022418_TCAD_TN1\n\nTake at least 3 adaxial measurements; 5 are recommended.\nConfirm on-screen quality before proceeding.\n\n5.6. Abaxial (AB) surface available:\n\nFilename: SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;\n\nExample: SI02022418_TCAB_TN1\n\nTake at least 3 abaxial measurements; 5 are recommended.\nConfirm on-screen quality before proceeding.\n\n5.7. If tissue measured on herbarium paper:\n\nFilename: SI&lt;specimenId&gt;_TC&lt;targetClass&gt;_TN&lt;targetTissueId&gt;\n\nExample: SI00746092_TCP_TN1\n\nTake 1 paper measurement.\n\n5.8. Additional tissues (optional):\n\nSelect other tissue units with new targetTissueIds (recommended) and/or additional targetClass values (see Table 4.5).\nRepeat tissue measurement steps."
   },
   {
     "objectID": "protocol/part2-workflow.html#step-6.-quality-assessment-quality-control",
     "href": "protocol/part2-workflow.html#step-6.-quality-assessment-quality-control",
     "title": "Part 2 – Measurement and Metadata Workflow",
     "section": "Step 6. Quality Assessment, Quality Control",
-    "text": "Step 6. Quality Assessment, Quality Control\n6.1. Visually review each spectrum.\n6.2. Delete and repeat any measurement that appears anomalous.\n6.3. If unsure, take additional measurements.\n6.4. Check for and fix any filename errors before proceeding."
+    "text": "Step 6. Quality Assessment, Quality Control\n6.1. Review all spectra collected for the specimen before moving to the next specimen.\n6.2. Delete and repeat any measurement that appears anomalous.\n6.3. If quality is uncertain, take additional measurements.\n6.4. Confirm filenames and targetClass / targetTissueId values are correct before proceeding."
   },
   {
     "objectID": "protocol/part2-workflow.html#step-7.-score-specimen-and-tissue-metadata",
     "href": "protocol/part2-workflow.html#step-7.-score-specimen-and-tissue-metadata",
     "title": "Part 2 – Measurement and Metadata Workflow",
     "section": "Step 7. Score Specimen and Tissue Metadata",
-    "text": "Step 7. Score Specimen and Tissue Metadata\n7.1. Score Specimen Metadata for every measurement (see Table 4.2):\n- Required: herbariumCode, specimenId\n- Recommended: scientificName, identificationQualifier, identifiedBy, dateIdentified, isTempControlled, annualTempMin, annualTempMax, isHumidityControlled, annualHumidityMin, annualHumidityMax\n7.2. Score Tissue Metadata for every measurement (see Table 4.3):\n- Required: backgroundClass, hasLowReflectanceBackground, targetClass, tissueDevelopmentalStage, hasBackgroundInMeasurement, hasGlue, hasNonGlueContamination, measurementIndex\n- Recommended: backgroundDescription, targetTissueId, percentBackgroundInMeasurement, measurementFlags, tissueNotes, tissueLocation, comment"
+    "text": "Step 7. Score Specimen and Tissue Metadata\n7.1. Score Specimen Metadata for every measurement (see Table 4.2):\n\nRequired: herbariumCode, specimenId\n\nRecommended: scientificName, identificationQualifier, identifiedBy, dateIdentified, isTempControlled, annualTempMin, annualTempMax, isHumidityControlled, annualHumidityMin, annualHumidityMax\n\n7.2. Score Tissue Metadata for every measurement (see Table 4.3):\n\nRequired: backgroundClass, hasLowReflectanceBackground, targetClass, tissueDevelopmentalStage, hasBackgroundInMeasurement, hasGlue, hasNonGlueContamination, measurementIndex\n\nRecommended: backgroundDescription, targetTissueId, percentBackgroundInMeasurement, measurementFlags, tissueNotes, tissueLocation, comment"
   },
   {
     "objectID": "protocol/part2-workflow.html#step-8.-specimen-and-tissue-annotation",
@@ -228,7 +228,7 @@
     "href": "protocol/preface.html#author-contributions",
     "title": "Preface",
     "section": "Author Contributions",
-    "text": "Author Contributions\nAll authors contributed intellectually to the development of the protocol, including reviewing, editing, and approving the final version. DMW organized and led protocol development, writing, and website management.\n\nIntellectual leadership: Led by JCB with contributions from MWA, FD, JAK, JEM, JAGQ, MS, and DMW.\nDraft writing: NIA, MWA, JCB, ELB, TLPC, FD, OMG, JAGQ, JAK, SK, DS, NLQC, DMW\nFigures and tables: SB, FD, JAK, DMW\nAppendix II examples: KB, SB, FD, AKL, CCV, CON, DMW\nMetadata standardization: Led by JAK with contributions from MWA, JCB, ELB, FD, SK, JAGQ, PSS, DMW\nValidation: MWA, CON, JLV, HT"
+    "text": "Author Contributions\nAll authors contributed intellectually to the development of the protocol, including reviewing, editing, and approving the final version. DMW organized and led protocol development, writing, and website management.\n\nIntellectual leadership: Led by JCB with contributions from MWA, FD, JAK, JEM, JAGQ, MS, and DMW\nDraft writing: NIA, MWA, JCB, ELB, TLPC, FD, OMG, JAGQ, JAK, SK, DS, NLQC, DMW\nFigures and tables: SB, FD, JAK, DMW\nAppendix II examples: KB, SB, FD, AKL, CCV, CON, DMW\nMetadata standardization: Led by JAK with contributions from MWA, JCB, ELB, FD, SK, JAGQ, PSS, DMW\nValidation: MWA, CON, JLV, HT"
   },
   {
     "objectID": "protocol/preface.html#acknowledgements",

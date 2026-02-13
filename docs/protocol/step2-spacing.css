@@ -1,0 +1,10 @@
+/* Remove extra spacing before nested bullet list under a numbered step */
+p {
+  margin-top: 0.0 !important;
+  margin-bottom: 0.15rem !important;
+}
+
+ul {
+    margin-top: 0.0;
+    margin-bottom: 0.5rem;
+}

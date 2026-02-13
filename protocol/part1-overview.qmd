@@ -101,7 +101,7 @@ To ensure key identifiability components for every unprocessed spectra file (whi
     - Representative measurements should be free of technical errors and generally reproducible (see Section 6.2; [Appendix I](appendix1.qmd)).  
   - Five or more representative measurements per available and suitable leaf tissue class (adaxial, abaxial, or leaf) are recommended (see [Appendix I](appendix1.qmd) for discussion).
 
-  *Adaptability:* Projects may choose to collect measurements from a single leaf or from multiple leaves to capture tissue- versus specimen-level variability. The different tissue units are recommended to be distinguished using the `targetTissueId` field and be identifiable via annotation labels and/or their location on the specimen (see [Table 4.3](part4-metadata.qmd#tbl-4-3)).
+  *Adaptability:* Projects may choose to collect measurements from a single leaf or from multiple leaves to capture tissue- versus specimen-level variability. IHerbSpec recommends distinguishing different tissue units using the `targetTissueId` field and be identifiable via annotation labels and/or their location on the specimen (see [Table 4.3](part4-metadata.qmd#tbl-4-3)).
 
 - **Other tissue classes**  
   - **No required minimum** is prescribed.  
