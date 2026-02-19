@@ -34,14 +34,11 @@ To get in touch, please use the form below. Your message will be delivered secur
 
 You may also engage with IHerbSpec through our public communication channels:
 
-- **GitHub Discussions** (questions, ideas, and public dialogue):  
-  https://github.com/IHerbSpec/iherbspec.github.io/discussions  
+- **GitHub Discussions** (questions, ideas, and public dialogue):  [https://github.com/IHerbSpec/iherbspec.github.io/discussions](https://github.com/IHerbSpec/iherbspec.github.io/discussions)  
 
-- **IHerbSpec-all Google Group** (announcements and community updates):  
-  https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-all  
+- **IHerbSpec-all Google Group** (announcements and community updates):   [https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-all](https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-all)  
 
-- **IHerbSpec-Protocol Google Group** (protocol discussion and governance):  
-  https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-protocol
+- **IHerbSpec-Protocol Google Group** (protocol discussion and governance):  [https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-protocol](https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-protocol)
 
 </div>
 :::
