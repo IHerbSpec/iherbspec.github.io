@@ -119,7 +119,7 @@ To ensure key identifiability components for every unprocessed spectra file (whi
 
 - All required and recommended protocol metadata are available for use in the IHerbSpec Metadata Spreadsheet, which can be downloaded on the [protocol home page](https://iherbspec.github.io/protocol).  
 - The protocol recommends recording tissue metadata for every individual measurement because every measurement will generate a spectral data file. This means that **every tissue measurement will be recorded in a unique row in the metadata spreadsheet** (e.g., 10 measurements have 10 rows).  
-- All fields in Session metadata ([Table 4.1](part4-metadata.qmd#tbl-4-1)), Specimen Metadata ([Table 4.2](part4-metadata.qmd#tbl-4-2)), and Tissue Metadata ([Table 4.3](part4-metadata.qmd#tbl-4-3)) are marked as required or recommended in the field descriptions.  
+- All fields in session metadata ([Table 4.1](part4-metadata.qmd#tbl-4-1)), specimen metadata ([Table 4.2](part4-metadata.qmd#tbl-4-2)), and tissue metadata ([Table 4.3](part4-metadata.qmd#tbl-4-3)) are marked as required or recommended in the field descriptions.  
 
 
 ### 1.2.6 Scoring Metadata Pertaining to Tissue Condition and Contamination

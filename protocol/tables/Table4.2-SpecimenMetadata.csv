@@ -6,10 +6,8 @@ identificationQualifier,Optional,"A brief phrase or standard term indicating pro
 identifiedBy,Optional,"The person, group, or organization that assigned the taxonomic information in the scientificName field. If no determination author is present, this field may be left blank. Example: T. Plowman",TEXT
 dateIdentified,Optional,"The date on which the current taxonomic identification of the specimen was made . If no determination date is present, this field may be left blank. Examples: '1999', '2004-12-30', '2010-06-09'",TEXT
 isTempControlled,Optional,Room where the specimen is stored at home institution has active heating and air conditioning installations to maintain set temperatures.,BOOLEAN
-,,,(true/false)
 annualTempMin,Optional,"The estimated minimum temperature in degrees celsius (ºC) experienced in the specimen’s storage environment over a typical year. Examples: '18', '18ºC'",TEXT
 annualTempMax,Optional,"The estimated maximum temperature in degrees celsius (ºC) experienced in the specimen’s storage environment over a typical year. Examples: '26', '32ºC'",TEXT
 isHumidityControlled,Optional,Room where the specimen is stored at home institution has active humidity conditioning installations to maintain set humidity.,BOOLEAN
-,,,(true/false)
 annualHumidityMin,Optional,"The estimated minimum relative humidity (%) experienced in the specimen’s storage environment in a typical year. Examples: '20', '50%'",TEXT
 annualHumidityMax,Optional,"The estimated maximum relative humidity (%) experienced in the specimen’s storage environment in a typical year. Examples: '60', '100%'",TEXT
