@@ -188,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#app1" id="toc-app1" class="nav-link active" data-scroll-target="#app1">Considerations</a></li>
+  <li><a href="#app1" id="toc-app1" class="nav-link active" data-scroll-target="#app1">Three quality measurements for a mean and variance</a></li>
   <li><a href="#evidence-based-justification-for-minimum-and-recommended-measurements-per-specimen" id="toc-evidence-based-justification-for-minimum-and-recommended-measurements-per-specimen" class="nav-link" data-scroll-target="#evidence-based-justification-for-minimum-and-recommended-measurements-per-specimen">Evidence-based justification for minimum and recommended measurements per specimen</a></li>
   <li><a href="#navigate-the-protocol" id="toc-navigate-the-protocol" class="nav-link" data-scroll-target="#navigate-the-protocol">Navigate the protocol</a></li>
   </ul>
@@ -217,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <section id="app1" class="level2">
-<h2 class="anchored" data-anchor-id="app1">Considerations</h2>
+<h2 class="anchored" data-anchor-id="app1">Three quality measurements for a mean and variance</h2>
 <p>Spectral measurements of plant tissues are highly sensitive to both instrument configuration and small spatial differences across target tissue. Changes in the optical probe geometry in relation to the tissue—such as tilting, poor contact with the leaf surface, partial coverage of the measurement area (Fig. A1), or micro-contaminants like debris—can introduce technical errors. In addition, leaf surface microtopography, anatomical variation, and alterations from herborization (e.g., drying distortion, discoloration, or degradation) all contribute to variation in reflectance spectra (Cavender-Bares et al.&nbsp;2025).</p>
 <div id="fa-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -239,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fa-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/FigA3-RMSvsNscans.png" class="img-fluid figure-img"></p>
-<figcaption><strong>Fig. A3</strong>: Spectral variability as a function of the number of measurements averaged per measurement. Here, a total of 100 spectral measurements were collected from a single Annona sp. leaf using an ASD LabSpec Pro spectrometer over a black background. Subsets of these measurements were then averaged in groups ranging from 2 to 40 to simulate different measurement strategies. The plot shows the root mean square (RMS) distance between replicate spectra as a function of the number of measurements averaged, illustrating that spectral variability decreases substantially as more measurements are combined. Notably, averaging fewer than five measurements did not adequately capture intra-tissue spectral variation. This analysis supported the required minimum of 10 measurements per specimen for the formal protocol currently implemented by teams at CIRAD and IRD in France (Mersni et al.&nbsp;2025).</figcaption>
+<figcaption><strong>Fig. A3</strong>: Spectral variability as a function of the number of measurements averaged per subset. Here, a total of 100 spectral measurements were collected from a single Annona sp. leaf using an ASD LabSpec Pro spectrometer with handheld probe over a black background. For each subset size (n = 2–40), repeated random subsets of n spectra were drawn from the full dataset and averaged to simulate alternative measurement strategies. The root mean square (RMS) distance among replicate subset-averaged spectra was then calculated. RMS values decline sharply as the number of measurements averaged increases, indicating improved stability of the estimated mean spectrum. Averaging fewer than five measurements resulted in substantially higher variability among replicate means, whereas gains diminished beyond approximately 10–20 measurements. This analysis supported the required minimum of 10 measurements per specimen for the formal protocol currently implemented by teams at CIRAD and IRD in France (Mersni et al.&nbsp;2025).</figcaption>
 </figure>
 </div>
 <p>Another important recommendation in the IHerbSpec Protocol is to measure both adaxial and abaxial leaf surfaces. These surfaces differ in anatomy and function due to evolutionary adaptations for light capture, gas exchange, and environmental stress. Such structural differences are consistently reflected in their spectral signatures (see <a href="../protocol/part1-overview.html">Fig. 1.1</a>), and we recommend measuring both surfaces—when suitable tissue is accessible—to capture this biologically meaningful variation.</p>
