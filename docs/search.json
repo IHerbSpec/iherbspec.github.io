@@ -284,7 +284,7 @@
     "href": "protocol.html#download-iherbspec-protocol-files",
     "title": "IHerbSpec Protocol",
     "section": "📥 Download IHerbSpec Protocol Files",
-    "text": "📥 Download IHerbSpec Protocol Files\nVersioned releases of the IHerbSpec Protocol are archived on Zenodo: \nEach archived release includes: - A compiled PDF of the full protocol (stable, citable snapshot) - Protocol source files (Quarto/Markdown and associated assets) for transparency and reproducibility - Metadata templates and controlled vocabularies (CSV files) - Optional rendered HTML files corresponding to the archived version\nThe website presents the most current living version of the protocol, while Zenodo preserves fixed, citable versions for reference, reuse, and long-term archiving."
+    "text": "📥 Download IHerbSpec Protocol Files\nVersioned releases of the IHerbSpec Protocol are archived on Zenodo: \nEach archived release includes:\n\nA compiled PDF of the full protocol (stable, citable snapshot)\nProtocol source files (Quarto/Markdown and associated assets) for transparency and reproducibility\nMetadata templates and controlled vocabularies (CSV files)\nOptional rendered HTML files corresponding to the archived version\n\nThe website presents the most current living version of the protocol, while Zenodo preserves fixed, citable versions for reference, reuse, and long-term archiving."
   },
   {
     "objectID": "protocol.html#suggested-citation",
