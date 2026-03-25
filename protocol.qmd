@@ -62,8 +62,6 @@ By following this protocol, researchers and collections can generate reproducibl
 
 You can browse the protocol section by section online, or download the protocol documents and metadata spreadsheets below.
 
-### Sections
-
 - [Preface](protocol/preface.html)  
   *Frontmatter introducing the motivation, development history, and community collaboration behind the protocol, as well as author information and acknowledgements.*  
 
@@ -102,11 +100,12 @@ You can browse the protocol section by section online, or download the protocol 
 
 **Versioned releases of the IHerbSpec Protocol are archived on Zenodo:**  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18451589.svg)](https://doi.org/10.5281/zenodo.18451589)
 
+
 Each archived release includes:
 
 - A compiled PDF of the full protocol (stable, citable snapshot)
-- Protocol source files (Quarto/Markdown and associated assets) for transparency and reproducibility
-- Metadata templates and controlled vocabularies (CSV files)
+- Protocol source files (Quarto/Markdown) and figures
+- Metadata templates and controlled vocabularies tables (CSV files)
 - Optional rendered HTML files corresponding to the archived version
 
 The website presents the most current living version of the protocol, while Zenodo preserves fixed, citable versions for reference, reuse, and long-term archiving.
