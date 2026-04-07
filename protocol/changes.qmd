@@ -14,6 +14,7 @@ include-after-body:
 
 ### Summary of changes since Version 1.2
 
+- Modified part4-metadata.qmd line 36 to clarify the filename columns are in the spreadsheet but not in the metadata tables.
 - Added table to Overview section of Part 4 and added clarification text about excluding filename code prefixes as prepends to metadata values.
 - Added text on communications channels (google group and github discussions) to protocol.qmd in the Team Science section and contact.qmd.
 - Added bibtex download to protocol.qmd

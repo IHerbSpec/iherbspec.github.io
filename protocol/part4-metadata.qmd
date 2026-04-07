@@ -31,9 +31,11 @@ Tables in Part 4 can be downloaded from [iherbspec.github.io/protocol](https://i
 
 ## 4.1 Metadata Tables {#section4-1}
 
-The three tables below describe the session, specimen, and tissue metadata fields. The “Filename Code” column (e.g., `PI`, `SN`, `SI`, `TC`) indicates the prefix used in filenames for reference (see [Part 3](part3-filenames.qmd)). 
+The three tables below describe the session, specimen, and tissue metadata fields. 
 
-When entering metadata values, the filename code *should not* be prepended to the value (e.g., HUHERYspec1, not PIHUHERYspec1).
+The [IHerbSpec Metadata Spreadsheet](tables/IHerbSpec_metadata.csv) also includes the “Filename” and "simpleFilename" columns. These have been populated with required filename codes as prefixes (e.g., `PI`, `SN`, `SI`, `TC`) separated by underscores (see [Part 3](part3-filenames.qmd)).
+
+When entering metadata values, the filename code *should not* be prepended to the value (e.g., `HUHERYspec1`, not `PIHUHERYspec1`).
 
 ### Table 4.1: Session Metadata {#tbl-4-1}
 
