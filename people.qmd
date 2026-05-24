@@ -1,8 +1,6 @@
 ---
-title: "People"
+title: "IHerbSpec Members"
 ---
-
-## IHerbSpec people
 
 | Name | Institution |
 |---|---|
