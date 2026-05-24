@@ -8,7 +8,7 @@ title: "IHerbSpec Members"
 | Matt Austin | Missouri Botanical Garden |
 | Anthony Baniaga | University of California, Los Angeles |
 | Chris Baraloto | International Center for Tropical Botany, Florida International University |
-| Samantha Bazan | Curator of ALF Herbarium, CIRAD |
+| Samantha Bazan | ALF Herbarium, CIRAD |
 | Billur Bektaş | ETH Zurich |
 | Rustin Bielski | University of Montana |
 | Giovanna Bishop | University of Montana |
@@ -61,3 +61,11 @@ title: "IHerbSpec Members"
 | Dawson White | Harvard University |
 | Ya Yang | University of Minnesota |
 | Meredith Zettlemoyer | University of Montana |
+
+
+
+::: {.text-center}
+![](images/IHerbSpec%20Meeting%20MOBOT%20002.jpg){fig-align="center" width="95%"}
+
+*Participants at the 2026 IHerbSpec Meeting at the Missouri Botanical Garden.*
+:::
