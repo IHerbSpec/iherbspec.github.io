@@ -5,7 +5,7 @@ image: images/NaturaSpec-IMG_4840.png
 include-after-body:
   text: |
     <div style="text-align:center; padding-bottom:2em;">
-      © 2025 IHerbSpec
+      © 2026 IHerbSpec
     </div>
 ---
 

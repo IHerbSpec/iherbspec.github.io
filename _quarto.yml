@@ -17,6 +17,7 @@ project:
     - protocol/appendix2.qmd
     - protocol/tables.qmd
     - publications.qmd
+    - people.qmd
     - contact.qmd
     # NOTE: intentionally omit protocol/index.qmd
 
@@ -59,6 +60,8 @@ website:
             href: protocol/tables.qmd  
       - text: Publications
         href: publications.qmd
+      - text: People
+        href: people.qmd
       - text: Contact Us
         href: contact.qmd
 

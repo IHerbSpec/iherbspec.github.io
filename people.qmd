@@ -1,0 +1,65 @@
+---
+title: "People"
+---
+
+## IHerbSpec people
+
+| Name | Institution |
+|---|---|
+| Natalie Iwanycki Ahlstrand | Natural History Museum Denmark |
+| Matt Austin | Missouri Botanical Garden |
+| Anthony Baniaga | University of California, Los Angeles |
+| Chris Baraloto | International Center for Tropical Botany, Florida International University |
+| Samantha Bazan | Curator of ALF Herbarium, CIRAD |
+| Billur Bektaş | ETH Zurich |
+| Rustin Bielski | University of Montana |
+| Giovanna Bishop | University of Montana |
+| Khalil Boughalmi | Université de Montpellier |
+| Sam Brockington | University of Cambridge |
+| Jedediah Brodie | University of Montana |
+| Warren Cardinal-McTeague | University of British Columbia |
+| Alison Carranza | Yale University |
+| Jeannine Cavender-Bares | Harvard University |
+| Eduardo Chacón | Universidad Costa Rica |
+| Flavia Costa | Instituto Nacional de Pesquisas da Amazônia |
+| Thomas L.P. Couvreur | PhD, DR2, Institut de Recherche pour le Développement (IRD) |
+| Freddie Draper | University of Liverpool |
+| Flávia Durgante | Instituto Nacional de Pesquisas da Amazônia |
+| Paul Fine | University of California |
+| Riley Fortier | Missouri Botanical Garden |
+| Ryan Fuller | Missouri Botanical Garden |
+| Olwen Grace | Royal Botanic Gardens, Edinburgh |
+| Antonio Guzmán | Harvard University |
+| Kimberly Hansen | Field Museum |
+| Mariana Hernández-Leal | Harvard University |
+| Andrew Hipp | Morton Arboretum |
+| Michael Hopkins | Instituto Nacional de Pesquisas da Amazônia |
+| Rykkar Jackson | University of British Columbia |
+| Kevin Karbstein | University of Florida |
+| Jonathan Kennedy | Harvard University |
+| Shan Kothari | University of Alberta |
+| Geneviève Lajoie | Université de Montréal |
+| Aaron Lee | University of Minnesota |
+| Étienne Léveillé-Bourret | Université de Montréal |
+| Jessica Lira Viana | Aarhus University |
+| Dudu Meireles | University of Maine |
+| Thomas Murphy | International Center for Tropical Botany, Florida International University |
+| Andre Naranjo | Florida International University |
+| Barbara Neto-Bradley | University of Cambridge |
+| Cornelius Nichodemus | University of Maine |
+| Molly Nepokroeff | Denver Botanic Gardens |
+| Natalia Quinteros-Casaverde | NASA |
+| Rick Ree | Field Museum |
+| Alexánder Rodríguez | Museo Nacional de Costa Rica (CR) |
+| Fabian Schneider | Aarhus University |
+| Ricardo A. Segovia Cortés | Chile Digital Herbaria Project |
+| Pam Soltis | University of Florida |
+| Doug Soltis | University of Florida |
+| Daniel Spalink | University of Wisconsin |
+| Claire Teakle | University of Liverpool |
+| Hanna Tuomisto | Aarhus University |
+| Caroline Vasconcelos | Instituto Nacional de Pesquisas da Amazônia |
+| Tom Wells | Royal Botanic Gardens, Kew |
+| Dawson White | Harvard University |
+| Ya Yang | University of Minnesota |
+| Meredith Zettlemoyer | University of Montana |
