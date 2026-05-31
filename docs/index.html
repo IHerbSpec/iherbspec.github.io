@@ -212,23 +212,87 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="images/NaturaSpec-IMG_4840.png" class="full-width img-fluid"></p>
-<!-- Page-only styles (won’t affect other pages) -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/NaturaSpec-IMG_4840.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
+</div>
 <style>
-  /* Center the big page title */
-  #title-block-header .title { text-align: center; }
+  #title-block-header .title { 
+    text-align: center; 
+  }
 
-  /* Make homepage body text larger */
-  main#quarto-document-content { font-size: 1.125rem; line-height: 1.7; }
+  main#quarto-document-content { 
+    font-size: 1.125rem; 
+    line-height: 1.7; 
+  }
 
-  /* Center figure captions */
-  .quarto-figure figcaption { text-align: center; }
+  .quarto-figure figcaption { 
+    text-align: center; 
+  }
   
-  /* new: limit the descriptive text width */
   .content-narrow {
-    max-width: 70ch;       /* ~70 characters per line (ideal) */
+    max-width: 70ch;
     margin-left: auto;
-    margin-right: auto;    /* centers the block */
+    margin-right: auto;
+  }
+
+  .explore-section {
+    text-align: center;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+
+  .explore-section h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .explore-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .explore-card {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    padding: 1.25rem;
+    background: #fafafa;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  }
+
+  .explore-card:hover {
+    background: #f3f3f3;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+  }
+
+  .explore-card-title {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .explore-card-description {
+    display: block;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 900px) {
+    .explore-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .explore-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 <hr>
@@ -237,22 +301,26 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/IHerbSpecLogo-white-bgb.png" class="img-fluid" width="260"></p>
 </div><div class="column" style="width:65%;">
 <div class="content-narrow">
-<p>The International Herbarium Spectral Digitization Working Group (IHerbSpec) is a global consortium advancing the collection and use of reflectance spectra from herbarium specimens to advance integrative plant biology and biodiversity science.</p>
-<p>Our activities focus on enabling global data harmonization through standardized and transparent measurement, metadata, and data-management practices, while advancing collaborative team science that connects institutions, disciplines, and communities.</p>
+<p>The International Herbarium Spectral Digitization Working Group (IHerbSpec) is a global consortium advancing the collection and application of reflectance spectra from herbarium specimens to support integrative plant biology and biodiversity science.</p>
+<p>Through the development of shared standards, protocols, and data-management practices, we facilitate the harmonization of spectral datasets while fostering collaborative research that connects institutions, disciplines, and communities worldwide.</p>
 </div>
 </div>
 </div>
-<hr>
-<p><strong>Explore:</strong></p>
-<ul>
-<li><p><a href="./protocol.html">IHerbSpec Protocol</a></p></li>
-<li><p><a href="./publications.html">Selected Publications</a></p></li>
-<li><p><a href="./contact.html">Contact Us</a></p></li>
-</ul>
+<div class="explore-section">
+<h2 class="anchored">
+Explore
+</h2>
+<div class="explore-grid">
+<p><a class="explore-card" href="protocol.html"> <span class="explore-card-title">Protocol</span> <span class="explore-card-description">Standards, workflows, metadata, and best practices for herbarium spectral measurements.</span> </a></p>
+<p><a class="explore-card" href="publications.html"> <span class="explore-card-title">Publications</span> <span class="explore-card-description">Selected publications related to herbarium spectroscopy and spectral data applications.</span> </a></p>
+<p><a class="explore-card" href="people.html"> <span class="explore-card-title">People</span> <span class="explore-card-description">Members and collaborators contributing to the IHerbSpec community.</span> </a></p>
+<p><a class="explore-card" href="contact.html"> <span class="explore-card-title">Contact</span> <span class="explore-card-description">Get in touch with the IHerbSpec working group.</span> </a></p>
+</div>
+</div>
 <hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/IHerbSpec.jpeg" class="img-fluid figure-img"></p>
+<p><img src="images/IHerbSpec.jpeg" class="img-fluid figure-img" style="width:90.0%"></p>
 <figcaption>Participants in the inaugural IHerbSpec workshop, Harvard University Herbaria, May 2025.</figcaption>
 </figure>
 </div>
