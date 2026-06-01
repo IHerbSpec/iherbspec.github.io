@@ -122,17 +122,17 @@ Through the development of shared standards, protocols, and data-management prac
 
 <a class="explore-card" href="publications.html">
   <span class="explore-card-title">Publications</span>
-  <span class="explore-card-description">Selected publications related to herbarium spectroscopy and spectral data applications.</span>
+  <span class="explore-card-description">Selected publications from IHerbSpec members on herbarium spectroscopy and spectral data applications.</span>
 </a>
 
 <a class="explore-card" href="people.html">
   <span class="explore-card-title">People</span>
-  <span class="explore-card-description">Members and collaborators contributing to the IHerbSpec community.</span>
+  <span class="explore-card-description">A list of IHerbSpec members.</span>
 </a>
 
 <a class="explore-card" href="contact.html">
   <span class="explore-card-title">Contact</span>
-  <span class="explore-card-description">Get in touch with the IHerbSpec working group.</span>
+  <span class="explore-card-description">Connect with the working group.</span>
 </a>
 
 </div>
