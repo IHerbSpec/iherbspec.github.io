@@ -2,24 +2,9 @@
 
 This tutorial explains the basic Git commands needed to download, edit, save, and upload changes to the IHerbSpec website repository.
 
-## Common workflow
-
-Most edits follow this sequence:
-
-```bash
-cd path/to/directory/iherbspec.github.io
-git pull
-git status
-# edit files
-quarto render
-git status
-git diff
-git add .
-git commit -m "Describe the edit"
-git push
-```
-
 ## Dependencies
+
+To interact with this repo, you need Git and Quarto.
 
 ### Git
 
@@ -106,11 +91,26 @@ ls
 
 ## Editing the repo: Pull, edit, commit, push 
 
+#### Common workflow
+
+Most edits follow this sequence:
+
+```bash
+cd path/to/directory/iherbspec.github.io
+git pull
+git status
+# edit files
+quarto render
+git status
+git diff
+git add .
+git commit -m "Describe the edit"
+git push
+```
+
 ### 4. Pull the latest version
 
-This is step 1 once you have the repo cloned locally. This is the step you will start at each time you want to edit the files on the repo. 
-
-Before editing, first thing to do is update your local copy:
+Assuming you are in the iherbspec.github.io repo directory, update your local copy:
 
 ```bash
 git pull
@@ -263,7 +263,7 @@ git push
 Note: This workflow assumes you have write access to the IHerbSpec repository and are permitted to push directly to the `main` branch.
 
 
-## 12. If something seems wrong
+## Troubleshooting
 
 Check status first:
 
@@ -271,8 +271,8 @@ Check status first:
 git status
 ```
 
-Make sure you did 'quarto render' so that the program renders the new html files to be pushed to the repo and deployed on the website. This is what Dawson mostly forgets to do.
+Make sure you did **quarto render** so that the program renders the new html files to be pushed to the repo and deployed on the website. This is what Dawson mostly forgets to do.
 
 If unsure, do not commit or push yet. Ask for help and share the output of `git status`.
 
-### Next up is editing-the-protocol-and-website.md
+### Next up is 2-editing-the-protocol-and-website.md
