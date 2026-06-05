@@ -207,6 +207,8 @@ Send the committed changes to GitHub:
 git push
 ```
 
+Note: This workflow assumes you have write access to the IHerbSpec repository and are permitted to push directly to the `main` branch.
+
 ## 11. Common workflow
 
 Most edits follow this sequence:
@@ -236,4 +238,4 @@ Make sure you did 'quarto render' so that the program renders the new html files
 
 If unsure, do not commit or push yet. Ask for help and share the output of `git status`.
 
-### Next up is editing-the-protocol.md
+### Next up is editing-the-protocol-and-website.md
