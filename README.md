@@ -24,28 +24,10 @@ The protocol is maintained as a **living document** on the IHerbSpec website:
 This web version represents the most current state of the protocol and may include incremental updates, clarifications, or expansions developed through ongoing community collaboration.
 
 ### Versioned archival releases
-At defined milestones, the protocol is **versioned and archived** as a citable release on **Zenodo** (https://doi.org/10.5281/zenodo.18451589). Each release:
-
-- is generated directly from the source code in this repository using Quarto,
-- includes a **compiled PDF** of the protocol for offline use and long-term reference (rendered at iherbspec.github.io/protocol/releases/*pdf),
-- includes **snapshots of the rendered website** as html files that can be navigated via the file iherbspec.github.io/docs/index.html, and
-- is assigned a version-specific DOI, while sharing a stable **concept DOI (10.5281/zenodo.18451589)** across all releases.
-
-This model ensures both **currency** (via the living website) and **reproducibility and citability** (via archived releases).
-
-### Customization and IHerbSpec community contributions
-Herbaria and research groups may adapt the IHerbSpec Protocol for local workflows by cloning this repository and editing the Quarto source files. Customized versions can be rendered locally as institution-specific HTML websites and/or PDF documents with clear attribution to the original IHerbSpec Protocol (CC BY 4.0).
-
-Members of the IHerbSpec working group are encouraged to contribute to the development of the protocol through [Discussions](https://github.com/IHerbSpec/iherbspec.github.io/discussions) or [Issues](https://github.com/IHerbSpec/iherbspec.github.io/issues) tools or via the [IHerbSpec-Protocol Google Group](https://groups.google.com/u/4/a/g.harvard.edu/g/iherbspec-protocol).
-
-## 📖 How to Cite the IHerbSpec Protocol
-
-When citing the protocol, please cite the **Zenodo archive**. https://doi.org/10.5281/zenodo.18451589
+At defined milestones, the protocol source files and a rendered pdf is **versioned and archived** as a citable release on **Zenodo** (https://doi.org/10.5281/zenodo.18451589).
 
 **Recommended citation (use the stable DOI):**
-
 IHerbSpec. 2026. *Protocol for the Spectral Digitization of Herbarium Specimens*, v1.2. Zenodo. https://doi.org/10.5281/zenodo.18451589
-
 
 ## 📄 License
 
@@ -54,7 +36,6 @@ The IHerbSpec Protocol and website content are released under the **Creative Com
 This license permits reuse, distribution, and adaptation of the material for any purpose, provided that appropriate credit is given to IHerbSpec and the protocol is cited.
 
 🔗 https://creativecommons.org/licenses/by/4.0/
-
 
 ## 📬 Contact Us or Get Involved
 
@@ -91,3 +72,7 @@ IHerbSpec maintains multiple **public communication channels** to support dialog
   Concrete, actionable proposed edits or technical tasks related to the website or protocol source  
   https://github.com/IHerbSpec/iherbspec.github.io/issues
 
+### Customization and IHerbSpec community contributions
+Herbaria and research groups may adapt the IHerbSpec Protocol for local workflows by cloning this repository and editing the Quarto source files. Customized versions can be rendered locally as institution-specific HTML websites and/or PDF documents with clear attribution to the original IHerbSpec Protocol (CC BY 4.0).
+
+Members of the IHerbSpec working group are encouraged to contribute to the development of the protocol through the communication channels described above.
