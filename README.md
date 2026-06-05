@@ -4,7 +4,6 @@ This repository contains the source files for the official website of **IHerbSpe
 
 🌐 Live site: https://iherbspec.github.io
 
-
 ## 🌿 About IHerbSpec
 
 IHerbSpec is an international working group developing **community standards**, **tools**, and **collaborations** to advance the use of reflectance spectroscopy in herbarium-based research. Our goal is to enable high-quality, interoperable, and scalable digitization of spectral data from preserved plant specimens for use in ecology, evolution, systematics, and conservation.
@@ -12,22 +11,6 @@ IHerbSpec is an international working group developing **community standards**, 
 The working group includes participants representing biodiversity collections and academic institutions worldwide.
 
 To get involved, see the **Contact Us** section below.
-
-
-## 📄 Website Sections
-
-The website includes:
-
-- **IHerbSpec Protocol**  
-  Standardized procedures for spectral measurement and metadata documentation  
-  https://iherbspec.github.io/protocol
-
-- **Publications**  
-  Key scientific outputs related to herbarium spectroscopy  
-  https://iherbspec.github.io/publications
-
-Future sections may include tutorials, projects, datasets, and additional community resources.
-
 
 ## 📘 Guide to the code and deployment of the IHerbSpec Protocol: 
 

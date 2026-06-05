@@ -20,7 +20,7 @@ title: "IHerbSpec Members"
 | Jeannine Cavender-Bares | Harvard University |
 | Eduardo Chacón | Universidad Costa Rica |
 | Flavia Costa | Instituto Nacional de Pesquisas da Amazônia |
-| Thomas L.P. Couvreur | PhD, DR2, Institut de Recherche pour le Développement (IRD) |
+| Thomas Couvreur | Institut de Recherche pour le Développement (IRD) |
 | Freddie Draper | University of Liverpool |
 | Flávia Durgante | Instituto Nacional de Pesquisas da Amazônia |
 | Paul Fine | University of California |
