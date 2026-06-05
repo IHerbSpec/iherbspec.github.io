@@ -16,13 +16,13 @@ Check where you are:
 pwd
 ```
 
-Potentially navigate to your home folder for easiest access to github repo.
+Suggestion to navigate to your home folder to work from there.
 
 ```bash
-pwd
+cd 
 ```
 
-This is where the repo will live and you will go to edit the files.
+Otherwise, navigate to the directory where you want the cloned repo to live and you will go to edit the files.
 
 
 ## 2. Clone the repository
