@@ -2,12 +2,67 @@
 
 This tutorial explains the basic Git commands needed to download, edit, save, and upload changes to the IHerbSpec website repository.
 
-## 1. Start in your home directory
+## Common workflow
+
+Most edits follow this sequence:
+
+```bash
+cd path/to/directory/iherbspec.github.io
+git pull
+git status
+# edit files
+quarto render
+git status
+git diff
+git add .
+git commit -m "Describe the edit"
+git push
+```
+
+## Dependencies
+
+### Git
+
+Git is used to track changes and synchronize files with GitHub.
+
+To check whether Git is already installed:
+
+```bash
+git --version
+```
+
+If Git is installed, a version number will be displayed.
+
+Installation instructions:
+
+https://git-scm.com/downloads
+
+
+### Quarto
+
+Quarto is used to render the website from source files.
+
+To check whether Quarto is already installed:
+
+```bash
+quarto --version
+```
+
+If Quarto is installed, a version number will be displayed.
+
+Installation instructions:
+
+https://quarto.org/docs/get-started/
+
+
+## Cloning the iherbspec.github.io repository
+
+### 1. Start in your home directory
 
 Open Terminal and go to your home directory:
 
 ```bash
-cd ~
+cd 
 ```
 
 Check where you are:
@@ -25,7 +80,7 @@ cd
 Otherwise, navigate to the directory where you want the cloned repo to live and you will go to edit the files.
 
 
-## 2. Clone the repository
+### 2. Clone the repository
 
 Clone the IHerbSpec website repository from GitHub:
 
@@ -39,13 +94,9 @@ This creates a new folder called:
 iherbspec.github.io
 ```
 
-## 3. Enter the repository
+### 3. Enter the repository
 
-Move into the repository folder:
-
-```bash
-cd ~/iherbspec.github.io
-```
+Go to finder, two-finger click on directory and click 'Open in Terminal'
 
 Check what files are there:
 
@@ -53,7 +104,9 @@ Check what files are there:
 ls
 ```
 
-## 4. Pull the latest version
+## Editing the repo: Pull, edit, commit, push 
+
+### 4. Pull the latest version
 
 This is step 1 once you have the repo cloned locally. This is the step you will start at each time you want to edit the files on the repo. 
 
@@ -66,7 +119,7 @@ git pull
 This will update any external changes to your local files and prevent incompatibilities.
 
 
-## 5. Navigate repository folders and files
+### 5. Navigate repository folders and files
 
 You can work with the files just like any other folder on your computer.
 
@@ -105,7 +158,7 @@ After saving your edits, return to the Terminal to review, commit, and push your
 Again, SAVE your edits!
 
 
-## 7. Check the repository status
+### 7. Check the repository status
 
 Before making edits, you can check whether anything has already changed:
 
@@ -140,7 +193,7 @@ git diff
 ```
 
 
-## 8. Render the website
+### 8. Render the website
 
 After saving edits to `.qmd` files, render the website so the HTML files in `docs/` are updated:
 
@@ -174,7 +227,7 @@ If Quarto reports an error, read the message carefully. Common causes include br
 
 
 
-## 9. Stage changes
+### 9. Stage changes
 
 To stage one file:
 
@@ -188,7 +241,7 @@ To stage all changed files:
 git add .
 ```
 
-## 10. Commit changes
+### 10. Commit changes
 
 A commit saves a snapshot of the staged changes:
 
@@ -199,7 +252,7 @@ git commit -m "Update protocol text"
 Use a short message describing what changed.
 
 
-## 10. Push changes to GitHub
+### 11. Push changes to GitHub
 
 Send the committed changes to GitHub:
 
@@ -209,22 +262,6 @@ git push
 
 Note: This workflow assumes you have write access to the IHerbSpec repository and are permitted to push directly to the `main` branch.
 
-## 11. Common workflow
-
-Most edits follow this sequence:
-
-```bash
-cd ~/iherbspec.github.io
-git pull
-git status
-# edit files
-quarto render
-git status
-git diff
-git add .
-git commit -m "Describe the edit"
-git push
-```
 
 ## 12. If something seems wrong
 
