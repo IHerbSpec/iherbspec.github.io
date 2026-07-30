@@ -249,7 +249,7 @@ Through the development of shared standards, protocols, and data-management prac
 
 [![](images/nsf.png){.logo-nsf fig-alt="National Science Foundation"}](https://www.nsf.gov/)
 
-[![](images/rspd-artwork-ascend.sized.webp){.logo-ascend fig-alt="ASCEND Biology Integration Institute"}](https://www.ascendbii.org/)
+[![](images/rspd-artwork-ascend.sized.webp){.logo-ascend fig-alt="ASCEND Biology Integration Institute"}](https://www.spectralbiology.org/)
 
 :::
 
