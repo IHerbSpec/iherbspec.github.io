@@ -17,7 +17,7 @@ This section defines the metadata fields used to describe spectral reflectance m
 | Section | Section Title | Description |
 |---------|-----------------|------------------------------------------------------------|
 | [4.1](part4-metadata.qmd#section4-1) | Metadata Tables | Defines the core metadata tables used in the IHerbSpec Protocol, including session ([Table 4.1](part4-metadata.qmd#tbl-4-1)), specimen ([Table 4.2](part4-metadata.qmd#tbl-4-2)), and tissue ([Table 4.3](part4-metadata.qmd#tbl-4-3)) metadata. |
-| [4.2](part4-metadata.qmd#section4-2) | Controlled Vocabularies | Defines the controlled vocabularies to be applied in metadata fields. Includes Developmental Stage Class Codes ([Table 4.4](#tbl-4-4)), Target Class Codes ([Table 4.5](#tbl-4-5)), Tissue Descriptor Codes ([Table 4.6](#tbl-4-6)), and Background and White Reference Class Codes ([Table 4.7](#tbl-4-7)) |
+| [4.2](part4-metadata.qmd#section4-2) | Controlled Vocabularies | Defines the controlled vocabularies to be applied in metadata fields. Includes Developmental Stage Class Codes ([Table 4.4](#tbl-4-4)), Target Class Codes ([Table 4.5](#tbl-4-5)), Tissue Descriptor Codes ([Table 4.6](#tbl-4-6)), Background and White Reference Class Codes ([Table 4.7](#tbl-4-7)), and Specimen Identifier Class Codes ([Table 4.8](#tbl-4-8)). |
 | [4.3](part4-metadata.qmd#section4-3) | Guidelines for Data Archiving and Sharing | Guidance on archiving, sharing, and publishing spectral data and metadata, including recommended repositories, formats, and interoperability considerations. |
 
 
@@ -66,7 +66,7 @@ Session metadata describe the digitization environment and can generally be capt
 
 ### Table 4.2: Specimen Metadata {#tbl-4-2}
 
-Specimen metadata include identifiers and information about the physical specimen, with priority given to **required** fields needed to link spectral measurements to existing digital records (e.g., `specimenId`). Optional fields related to taxonomic determination and specimen storage environment are included to support integrative research, quality control, and downstream analysis. 
+Specimen metadata include identifiers and information about the physical specimen, with priority given to **required** fields needed to link spectral measurements to existing digital records. The `specimenId` field records the identifier used for this linkage, while `specimenIdClass` records the type of identifier using controlled vocabulary codes [Table 4.8](#tbl-4-8) or concise free text when necessary. Optional fields related to taxonomic determination and specimen storage environment are included to support integrative research, quality control, and downstream analysis.
 
 Users should **avoid duplicating metadata that are already digitized, maintained, and available in herbarium or institutional platforms**, as these sources are better suited for future updates. Instead, users are encouraged to reference those records and supplement only missing required or recommended fields. Due to variation in the metadata recorded on institutional platforms, users should apply caution in the interpretation of presence or absence of determination information or any other recommended but optional fields.
 
@@ -77,7 +77,8 @@ Users should **avoid duplicating metadata that are already digitized, maintained
 | Metadata Field | Filename Code ([Table 3.2](part3-filenames.qmd#tbl-3-2)) |  Status | Field Description | Data Type |
 |------------|-------|--------|--------------------------|-------|
 | `herbariumCode` | `HC` | Required | Acronym for herbarium or collection (Index Herbariorum code).<br> Examples: `GH`, `P`, `US-Botany` | TEXT |
-| `specimenId` | `SI` | Required | Identifier for specimen or record (catalog no., barcode, GUID, or collector+number).<br> Examples: `00238762`, `Thorne24070a` | TEXT |
+| `specimenId` | `SI` | Required | Identifier used to link the spectral/trait metadata record to the physical specimen or to the institution’s specimen record. This field should contain the identifier most appropriate for that collection, such as a GUID, GBIF occurrence ID, barcode, catalog number, accession number, or collector name and number.<br> Examples: `00238762`, `Thorne24070a` | TEXT |
+| `specimenIdClass` | - | Required | Class code describing the type of identifier provided in `specimenId`. Use an enumerated code from [Table 4.8](#tbl-4-8) when possible; otherwise, provide a concise text description of the identifier class.<br> Examples: `BarcodeID`, `UUID`, `CollectorNameAndNumber` | ENUM<br> ([Table 4.8](#tbl-4-8))<br> or TEXT |
 | `scientificName` | - | Optional | Full scientific name at lowest confident rank.<br> Examples: *Quercus bicolor*, *Erythroxylum coca ipadu*. | TEXT |
 | `identificationQualifier` | - | Optional | Uncertainty in taxonomic ID (Darwin Core).<br> Examples: `cf.`, `aff.` | TEXT |
 | `identifiedBy` | - | Optional | Person/group who made the identification.<br> Example: `T. Plowman` | TEXT |
@@ -104,7 +105,7 @@ Fields describing the type, condition, and position of the tissue measured. Incl
 | `backgroundClass`             | `BG` | Required | Enumerated abbreviated code from Background Class Codes [Table 4.7](#tbl-4-7) describing the type of background used behind target tissue. Both abbreviated codes and descriptive codes are accepted.<br> Examples: `BGW`, `BGB`, `BGP` | ENUM<br> ([Table 4.7](#tbl-4-7)) |
 | `hasLowReflectanceBackground` | - | Required | True or False statement that the background (black or paper) has low reflectance as defined as less than 4% reflectance across the spectral range of the instrument. For a paper background, this would be scored `false`       | BOOLEAN |
 | `backgroundDescription`       | - | Cond. Req. | Description of the black or other background material, including manufacturer and product information when available. Not required for paper backgrounds. Required field when tissue has black or other type (not paper) of background.<br> Example: `Musou IR Flock`  | TEXT |
-| `targetClass`                 | `TC` | Required | Free text or enumerated code from Target Class Codes ([Table 4.5](#tbl-4-5)) describing type of tissue or background being measured. Both abbreviated codes and full codes can be used.<br> Examples: `AD`, `perigynium`       | TEXT or ENUM<br> ([Table 4.5](#tbl-4-5)) |
+| `targetClass`                 | `TC` | Required | Free text or enumerated code from Target Class Codes ([Table 4.5](#tbl-4-5)) describing type of tissue or background being measured. Both abbreviated codes and full codes can be used.<br> Examples: `AD`, `perigynium`       | ENUM<br> ([Table 4.5](#tbl-4-5))<br> or TEXT |
 | `targetTissueId`              | `TN` | Optional | Character index tracking the measured tissue units when multiple tissues are measured from a single specimen (e.g., `loose1`, `1`, `2`). For compound or more complex structures, projects are encouraged to develop their own consistent naming convention.<br> Examples: `loose1`, `leaflet1`, `petal1`           | TEXT |
 | `tissueDevelopmentalStage`    | - | Required | Tissue developmental stage as coded in Developmental Stage Class Codes [Table 4.4](#tbl-4-4).<br> Examples: `Mature`, `Uncertain`         | ENUM<br> ([Table 4.4](#tbl-4-4)) |
 | `hasBackgroundInMeasurement`  | - | Required | True or false values indicating that the target tissue does not cover the full measurement area and the background is part of the measurement.      | BOOLEAN |
@@ -196,7 +197,7 @@ ___
 
 ### Table 4.7: Background and White Reference Class Codes {#tbl-4-7}
 
-Available codes for enumerating the required `tissueBackgroundClass` metadata [Table 4.3](#tbl-4-3). Either the abbreviated code or the full CamelCase with initial capital letter jformatted code may be used.
+Available codes for enumerating the required `tissueBackgroundClass` metadata ([Table 4.3](#tbl-4-3)). Either the abbreviated code or the full CamelCase with initial capital letter jformatted code may be used.
 
 ::: {.content-visible when-format="html"}
 **Download** [Table4.7.csv](tables/Table4.7-BackgroundandWhiteRefClassCodes.csv) 
@@ -208,6 +209,21 @@ Available codes for enumerating the required `tissueBackgroundClass` metadata [T
 | `B`    | `BlackBackground` | Black background (<4% reflectance). |
 | `P`    | `PaperBackground` | Herbarium sheet paper. |
 | `O`    | `OtherBackground` | Other background material (must be described in metadata). |
+
+### Table 4.8: Specimen Identifier Class Codes {#tbl-4-8}
+
+Available codes for the required `specimenIdClass` metadata field ([Table 4.2](#tbl-4-2)). Use these codes when possible; otherwise, provide a concise free-text class using CamelCase format.
+
+| Code | Guidance | Definition |
+|---|---|------------------|
+| `UUID` | Recommended | A universally unique identifier assigned to the specimen, specimen fragment, or related Darwin Core occurrence record. UUIDs are 32-digit identifiers constructed according to the RFC 9562 standard; they may also be referred to as GUIDs. UUIDs should be persistent, preserved in institutional databases, and intended for long-term use. It is also permissible to format a UUID as a resolvable URL. Examples for `specimenId` entry: `7783cd80-2e3e-49cb-bb9b-95f1c7d2141f`, `https://data.huh.harvard.edu/7783cd80-2e3e-49cb-bb9b-95f1c7d2141f` |
+| `BarcodeId` | Recommended | A specimen barcode number or identifier assigned by the specimen’s home institution to identify and track the physical specimen. Barcode identifiers should be stable, preserved in institutional databases, and intended for long-term use. They are expected to be the most frequently used identifier class because they can often be entered efficiently and accurately using a barcode scanner. Example for `specimenId` entry: `00679514` |
+| `PersistentId` | Accepted | Any persistent, externally meaningful identifier that does not conform to the UUID standard. These identifiers should be preserved in institutional, aggregator, or repository databases and intended for long-term use. URI form is recommended to ensure uniqueness. This class may include GUIDs that are not UUIDs, Darwin Core `occurrenceID` values, ARKs, URNs, or GBIF identifiers when the GBIF occurrence record is the intended external linkage target. Examples for `specimenId` entry: `urn:catalog:MO:Tropicos:105059003`, `http://n2t.net/ark:/65665/3e637e7c9-8454-4785-98cb-3fed71df7654`, `B7C40E4A06465C9795AF9DF1B6BD342C.mc.31640B656ECDBCBE6579AD770ED363DB`, `5085584305` |
+| `CatalogNumber` | Accepted | Any identifier apart from the specimen barcode used by the specimen’s home institution to catalog and locate the physical specimen, including internal reference numbers (IRN). Example for `specimenId` entry: `2032448` |
+| `CollectorNameAndNumber` | Accepted | The concatenated collector name and number assigned to the specimen. Recommended format for `specimenId` entry is collector last name, or concatenated collector last names, with each name beginning with a capital letter, followed by capitalized first-name initials, an underscore, and the collector number or code. Examples for `specimenId` entry: `BouffordDE_123`, `RodriguezSmithE_1999-23` |
+| `AccessionNumber` | Accepted | Any identifier related to the accessioning of the physical specimen. |
+| `TransientId` | Discouraged | An identifier that uniquely identifies a specimen only within a single spectral dataset. This identifier cannot be used to link specimen data with other datasets or databases. |
+| `LocalDatabaseId` | Discouraged | An identifier used for the specimen within an institutional or personal database. This identifier may not be externally resolvable or intended for long-term persistence. |
 
 
 ## 4.3 Guidelines for Data Archiving and Sharing {#section4-3}

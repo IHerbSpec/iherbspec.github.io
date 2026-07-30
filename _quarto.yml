@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - images/**
   render:
     - index.qmd
     - protocol.qmd
@@ -60,6 +62,8 @@ website:
             href: protocol/tables.qmd  
       - text: Publications
         href: publications.qmd
+      - text: HERBSHARE
+        href: https://herbshare.org
       - text: People
         href: people.qmd
       - text: Contact Us

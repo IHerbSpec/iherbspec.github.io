@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Changes Since Last Version – IHerbSpec</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -40,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-45431c2918bd31147ddb3fa7038bb99f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a14e3238c51140e99ccc48519b6ed9ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -172,6 +169,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="https://herbshare.org"> 
+<span class="menu-text">HERBSHARE</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
@@ -195,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#current-version-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c207661722070726f746f636f6c5f76657273696f6e203e7d7d" id="toc-current-version-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c207661722070726f746f636f6c5f76657273696f6e203e7d7d" class="nav-link active" data-scroll-target="#current-version-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c207661722070726f746f636f6c5f76657273696f6e203e7d7d">Current Version: 1.2.1</a></li>
+  <li><a href="#current-version" id="toc-current-version" class="nav-link active" data-scroll-target="#current-version">Current Version: 1.2.1</a></li>
   <li><a href="#summary-of-changes-since-version-1.2" id="toc-summary-of-changes-since-version-1.2" class="nav-link" data-scroll-target="#summary-of-changes-since-version-1.2">Summary of changes since Version 1.2</a></li>
   <li><a href="#summary-of-changes-since-version-1.1-v1.11-and-v1.12" id="toc-summary-of-changes-since-version-1.1-v1.11-and-v1.12" class="nav-link" data-scroll-target="#summary-of-changes-since-version-1.1-v1.11-and-v1.12">Summary of changes since Version 1.1, v1.11, and v1.12</a></li>
   <li><a href="#summary-of-changes-since-version-1.01" id="toc-summary-of-changes-since-version-1.01" class="nav-link" data-scroll-target="#summary-of-changes-since-version-1.01">Summary of changes since Version 1.01</a></li>
@@ -225,12 +226,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="current-version-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c207661722070726f746f636f6c5f76657273696f6e203e7d7d" class="level3">
-<h3 class="anchored" data-anchor-id="current-version-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c207661722070726f746f636f6c5f76657273696f6e203e7d7d">Current Version: 1.2.1</h3>
+<section id="current-version" class="level3">
+<h3 class="anchored" data-anchor-id="current-version">Current Version: 1.2.1</h3>
 </section>
 <section id="summary-of-changes-since-version-1.2" class="level3">
 <h3 class="anchored" data-anchor-id="summary-of-changes-since-version-1.2">Summary of changes since Version 1.2</h3>
 <ul>
+<li>New metadata changes below are included in the live Version 1.2.1 website in preparation for the formal Version 1.3 release. Version 1.3 will be archived and assigned a DOI, and should be cited as the stable protocol version containing these updates once released.
+<ul>
+<li>Added required specimen metadata field <code>specimenIdClass</code> to Part 4, Table 4.2. This field records the type of identifier provided in <code>specimenId</code> and is defined as <code>ENUM or TEXT</code>.</li>
+<li>Added Table 4.8: Specimen Identifier Class Codes, a controlled vocabulary for <code>specimenIdClass</code>. Codes include <code>UUID</code>, <code>BarcodeId</code>, <code>PersistentId</code>, <code>CatalogNumber</code>, <code>CollectorNameAndNumber</code>, <code>AccessionNumber</code>, <code>TransientId</code>, and <code>LocalDatabaseId</code>.</li>
+</ul></li>
 <li>Modified part4-metadata.qmd line 36 to clarify the filename columns are in the spreadsheet but not in the metadata tables.</li>
 <li>Added table to Overview section of Part 4 and added clarification text about excluding filename code prefixes as prepends to metadata values.</li>
 <li>Added text on communications channels (google group and github discussions) to protocol.qmd in the Team Science section and contact.qmd.</li>
@@ -248,7 +254,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="summary-of-changes-since-version-1.01" class="level3">
 <h3 class="anchored" data-anchor-id="summary-of-changes-since-version-1.01">Summary of changes since Version 1.01</h3>
 <ul>
-<li><p>Reorganized the protocol into a Quarto book structure to enable consistent rendering of a single, compiled PDF while preserving the web-based version of the protocol: – Beginning with this release, versioned snapshots of the IHerbSpec Protocol will be generated <strong>directly from the website source repository</strong> and archived on Zenodo. This change streamlines version control, reduces duplication, and ensures that archived releases correspond exactly to the content presented on the website at the time of release. – As part of this transition, the <strong>legacy IHerbSpec-protocol GitHub repository will be deprecated</strong>. It will remain available for reference and historical context, but future protocol updates, releases, and Zenodo archives will be managed exclusively through the main IHerbSpec website repository.</p></li>
+<li><p>Reorganized the protocol into a Quarto book structure to enable consistent rendering of a single, compiled PDF while preserving the web-based version of the protocol:</p>
+<ul>
+<li>Beginning with this release, versioned snapshots of the IHerbSpec Protocol will be generated <strong>directly from the website source repository</strong> and archived on Zenodo. This change streamlines version control, reduces duplication, and ensures that archived releases correspond exactly to the content presented on the website at the time of release.</li>
+<li>As part of this transition, the <strong>legacy IHerbSpec-protocol GitHub repository will be deprecated</strong>. It will remain available for reference and historical context, but future protocol updates, releases, and Zenodo archives will be managed exclusively through the main IHerbSpec website repository.</li>
+</ul></li>
 <li><p>Introduced <strong>full title</strong> for the protocol as “Protocol for the Spectral Digitization of Herbarium Specimens”. The alternate title “IHerbSpec Protocol” is still used, but the full title is better for a citation that differentiates the author and title.</p></li>
 <li><p>Updated <strong>citation</strong>: “IHerbSpec” as author along with full title above.</p></li>
 <li><p>Added a Downloads section to the protocol, available in HTML, where users can easily access all tables. These tables are called from in <code>protocol/tables.qmd</code> and live in <code>protocol/tables/</code>.</p></li>
@@ -320,14 +330,13 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

@@ -14,6 +14,9 @@ include-after-body:
 
 ### Summary of changes since Version 1.2
 
+- New metadata changes below are included in the live Version 1.2.1 website in preparation for the formal Version 1.3 release. Version 1.3 will be archived and assigned a DOI, and should be cited as the stable protocol version containing these updates once released.
+    - Added required specimen metadata field `specimenIdClass` to Part 4, Table 4.2. This field records the type of identifier provided in `specimenId` and is defined as `ENUM or TEXT`.
+    - Added Table 4.8: Specimen Identifier Class Codes, a controlled vocabulary for `specimenIdClass`. Codes include `UUID`, `BarcodeId`, `PersistentId`, `CatalogNumber`, `CollectorNameAndNumber`, `AccessionNumber`, `TransientId`, and `LocalDatabaseId`.
 - Modified part4-metadata.qmd line 36 to clarify the filename columns are in the spreadsheet but not in the metadata tables.
 - Added table to Overview section of Part 4 and added clarification text about excluding filename code prefixes as prepends to metadata values.
 - Added text on communications channels (google group and github discussions) to protocol.qmd in the Team Science section and contact.qmd.
@@ -29,8 +32,8 @@ include-after-body:
 ### Summary of changes since Version 1.01
 
 - Reorganized the protocol into a Quarto book structure to enable consistent rendering of a single, compiled PDF while preserving the web-based version of the protocol: 
-   -- Beginning with this release, versioned snapshots of the IHerbSpec Protocol will be generated **directly from the website source repository** and archived on Zenodo. This change streamlines version control, reduces duplication, and ensures that archived releases correspond exactly to the content presented on the website at the time of release. 
-   -- As part of this transition, the **legacy IHerbSpec-protocol GitHub repository will be deprecated**. It will remain available for reference and historical context, but future protocol updates, releases, and Zenodo archives will be managed exclusively through the main IHerbSpec website repository.
+    - Beginning with this release, versioned snapshots of the IHerbSpec Protocol will be generated **directly from the website source repository** and archived on Zenodo. This change streamlines version control, reduces duplication, and ensures that archived releases correspond exactly to the content presented on the website at the time of release. 
+    - As part of this transition, the **legacy IHerbSpec-protocol GitHub repository will be deprecated**. It will remain available for reference and historical context, but future protocol updates, releases, and Zenodo archives will be managed exclusively through the main IHerbSpec website repository.
    
 - Introduced **full title** for the protocol as "Protocol for the Spectral Digitization of Herbarium Specimens". The alternate title "IHerbSpec Protocol" is still used, but the full title is better for a citation that differentiates the author and title.
 

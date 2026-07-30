@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Part 4 – Metadata and Databasing – IHerbSpec</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -40,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-45431c2918bd31147ddb3fa7038bb99f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a14e3238c51140e99ccc48519b6ed9ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -172,6 +169,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="https://herbshare.org"> 
+<span class="menu-text">HERBSHARE</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../people.html"> 
 <span class="menu-text">People</span></a>
   </li>  
@@ -208,6 +209,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#tbl-4-5" id="toc-tbl-4-5" class="nav-link" data-scroll-target="#tbl-4-5">Table 4.5: Target Class Codes</a></li>
   <li><a href="#tbl-4-6" id="toc-tbl-4-6" class="nav-link" data-scroll-target="#tbl-4-6">Table 4.6: Tissue Descriptor Codes</a></li>
   <li><a href="#tbl-4-7" id="toc-tbl-4-7" class="nav-link" data-scroll-target="#tbl-4-7">Table 4.7: Background and White Reference Class Codes</a></li>
+  <li><a href="#tbl-4-8" id="toc-tbl-4-8" class="nav-link" data-scroll-target="#tbl-4-8">Table 4.8: Specimen Identifier Class Codes</a></li>
   </ul></li>
   <li><a href="#section4-3" id="toc-section4-3" class="nav-link" data-scroll-target="#section4-3">4.3 Guidelines for Data Archiving and Sharing</a></li>
   <li><a href="#navigate-the-protocol" id="toc-navigate-the-protocol" class="nav-link" data-scroll-target="#navigate-the-protocol">Navigate the protocol</a></li>
@@ -256,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td><a href="../protocol/part4-metadata.html#section4-2">4.2</a></td>
 <td>Controlled Vocabularies</td>
-<td>Defines the controlled vocabularies to be applied in metadata fields. Includes Developmental Stage Class Codes (<a href="#tbl-4-4">Table 4.4</a>), Target Class Codes (<a href="#tbl-4-5">Table 4.5</a>), Tissue Descriptor Codes (<a href="#tbl-4-6">Table 4.6</a>), and Background and White Reference Class Codes (<a href="#tbl-4-7">Table 4.7</a>)</td>
+<td>Defines the controlled vocabularies to be applied in metadata fields. Includes Developmental Stage Class Codes (<a href="#tbl-4-4">Table 4.4</a>), Target Class Codes (<a href="#tbl-4-5">Table 4.5</a>), Tissue Descriptor Codes (<a href="#tbl-4-6">Table 4.6</a>), Background and White Reference Class Codes (<a href="#tbl-4-7">Table 4.7</a>), and Specimen Identifier Class Codes (<a href="#tbl-4-8">Table 4.8</a>).</td>
 </tr>
 <tr class="odd">
 <td><a href="../protocol/part4-metadata.html#section4-3">4.3</a></td>
@@ -383,7 +385,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="tbl-4-2" class="level3">
 <h3 class="anchored" data-anchor-id="tbl-4-2">Table 4.2: Specimen Metadata</h3>
-<p>Specimen metadata include identifiers and information about the physical specimen, with priority given to <strong>required</strong> fields needed to link spectral measurements to existing digital records (e.g., <code>specimenId</code>). Optional fields related to taxonomic determination and specimen storage environment are included to support integrative research, quality control, and downstream analysis.</p>
+<p>Specimen metadata include identifiers and information about the physical specimen, with priority given to <strong>required</strong> fields needed to link spectral measurements to existing digital records. The <code>specimenId</code> field records the identifier used for this linkage, while <code>specimenIdClass</code> records the type of identifier using controlled vocabulary codes <a href="#tbl-4-8">Table 4.8</a> or concise free text when necessary. Optional fields related to taxonomic determination and specimen storage environment are included to support integrative research, quality control, and downstream analysis.</p>
 <p>Users should <strong>avoid duplicating metadata that are already digitized, maintained, and available in herbarium or institutional platforms</strong>, as these sources are better suited for future updates. Instead, users are encouraged to reference those records and supplement only missing required or recommended fields. Due to variation in the metadata recorded on institutional platforms, users should apply caution in the interpretation of presence or absence of determination information or any other recommended but optional fields.</p>
 <p><strong>Download</strong> <a href="tables/Table4.2-SpecimenMetadata.csv">Table4.2.csv</a></p>
 <table class="caption-top table">
@@ -408,73 +410,80 @@ ul.task-list li input[type="checkbox"] {
 <td><code>specimenId</code></td>
 <td><code>SI</code></td>
 <td>Required</td>
-<td>Identifier for specimen or record (catalog no., barcode, GUID, or collector+number).<br> Examples: <code>00238762</code>, <code>Thorne24070a</code></td>
+<td>Identifier used to link the spectral/trait metadata record to the physical specimen or to the institution’s specimen record. This field should contain the identifier most appropriate for that collection, such as a GUID, GBIF occurrence ID, barcode, catalog number, accession number, or collector name and number.<br> Examples: <code>00238762</code>, <code>Thorne24070a</code></td>
 <td>TEXT</td>
 </tr>
 <tr class="odd">
+<td><code>specimenIdClass</code></td>
+<td>-</td>
+<td>Required</td>
+<td>Class code describing the type of identifier provided in <code>specimenId</code>. Use an enumerated code from <a href="#tbl-4-8">Table 4.8</a> when possible; otherwise, provide a concise text description of the identifier class.<br> Examples: <code>BarcodeID</code>, <code>UUID</code>, <code>CollectorNameAndNumber</code></td>
+<td>ENUM<br> (<a href="#tbl-4-8">Table 4.8</a>)<br> or TEXT</td>
+</tr>
+<tr class="even">
 <td><code>scientificName</code></td>
 <td>-</td>
 <td>Optional</td>
 <td>Full scientific name at lowest confident rank.<br> Examples: <em>Quercus bicolor</em>, <em>Erythroxylum coca ipadu</em>.</td>
 <td>TEXT</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>identificationQualifier</code></td>
 <td>-</td>
 <td>Optional</td>
 <td>Uncertainty in taxonomic ID (Darwin Core).<br> Examples: <code>cf.</code>, <code>aff.</code></td>
 <td>TEXT</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>identifiedBy</code></td>
 <td>-</td>
 <td>Optional</td>
 <td>Person/group who made the identification.<br> Example: <code>T. Plowman</code></td>
 <td>TEXT</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>dateIdentified</code></td>
 <td>-</td>
 <td>Optional</td>
 <td>Date of identification.<br> Examples: <code>1999</code>, <code>2004-12-30</code></td>
 <td>TEXT</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>isTempControlled</code></td>
 <td>-</td>
 <td>Optional</td>
 <td>Whether storage has active temperature control.</td>
 <td>BOOLEAN</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>annualTempMin</code></td>
 <td>-</td>
 <td>Optional</td>
 <td>Minimum annual storage temperature (°C).<br> Example: <code>18</code></td>
 <td>TEXT</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>annualTempMax</code></td>
 <td>-</td>
 <td>Optional</td>
 <td>Maximum annual storage temperature (°C).<br> Example: <code>26</code></td>
 <td>TEXT</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>isHumidityControlled</code></td>
 <td>-</td>
 <td>Optional</td>
 <td>Whether storage has active humidity control.</td>
 <td>BOOLEAN</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>annualHumidityMin</code></td>
 <td>-</td>
 <td>Optional</td>
 <td>Minimum annual storage relative humidity (%).<br> Example: <code>20</code></td>
 <td>TEXT</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>annualHumidityMax</code></td>
 <td>-</td>
 <td>Optional</td>
@@ -525,7 +534,7 @@ ul.task-list li input[type="checkbox"] {
 <td><code>TC</code></td>
 <td>Required</td>
 <td>Free text or enumerated code from Target Class Codes (<a href="#tbl-4-5">Table 4.5</a>) describing type of tissue or background being measured. Both abbreviated codes and full codes can be used.<br> Examples: <code>AD</code>, <code>perigynium</code></td>
-<td>TEXT or ENUM<br> (<a href="#tbl-4-5">Table 4.5</a>)</td>
+<td>ENUM<br> (<a href="#tbl-4-5">Table 4.5</a>)<br> or TEXT</td>
 </tr>
 <tr class="odd">
 <td><code>targetTissueId</code></td>
@@ -837,7 +846,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="tbl-4-7" class="level3">
 <h3 class="anchored" data-anchor-id="tbl-4-7">Table 4.7: Background and White Reference Class Codes</h3>
-<p>Available codes for enumerating the required <code>tissueBackgroundClass</code> metadata <a href="#tbl-4-3">Table 4.3</a>. Either the abbreviated code or the full CamelCase with initial capital letter jformatted code may be used.</p>
+<p>Available codes for enumerating the required <code>tissueBackgroundClass</code> metadata (<a href="#tbl-4-3">Table 4.3</a>). Either the abbreviated code or the full CamelCase with initial capital letter jformatted code may be used.</p>
 <p><strong>Download</strong> <a href="tables/Table4.7-BackgroundandWhiteRefClassCodes.csv">Table4.7.csv</a></p>
 <table class="caption-top table">
 <colgroup>
@@ -872,6 +881,66 @@ ul.task-list li input[type="checkbox"] {
 <td><code>O</code></td>
 <td><code>OtherBackground</code></td>
 <td>Other background material (must be described in metadata).</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tbl-4-8" class="level3">
+<h3 class="anchored" data-anchor-id="tbl-4-8">Table 4.8: Specimen Identifier Class Codes</h3>
+<p>Available codes for the required <code>specimenIdClass</code> metadata field (<a href="#tbl-4-2">Table 4.2</a>). Use these codes when possible; otherwise, provide a concise free-text class using CamelCase format.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Guidance</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>UUID</code></td>
+<td>Recommended</td>
+<td>A universally unique identifier assigned to the specimen, specimen fragment, or related Darwin Core occurrence record. UUIDs are 32-digit identifiers constructed according to the RFC 9562 standard; they may also be referred to as GUIDs. UUIDs should be persistent, preserved in institutional databases, and intended for long-term use. It is also permissible to format a UUID as a resolvable URL. Examples for <code>specimenId</code> entry: <code>7783cd80-2e3e-49cb-bb9b-95f1c7d2141f</code>, <code>https://data.huh.harvard.edu/7783cd80-2e3e-49cb-bb9b-95f1c7d2141f</code></td>
+</tr>
+<tr class="even">
+<td><code>BarcodeId</code></td>
+<td>Recommended</td>
+<td>A specimen barcode number or identifier assigned by the specimen’s home institution to identify and track the physical specimen. Barcode identifiers should be stable, preserved in institutional databases, and intended for long-term use. They are expected to be the most frequently used identifier class because they can often be entered efficiently and accurately using a barcode scanner. Example for <code>specimenId</code> entry: <code>00679514</code></td>
+</tr>
+<tr class="odd">
+<td><code>PersistentId</code></td>
+<td>Accepted</td>
+<td>Any persistent, externally meaningful identifier that does not conform to the UUID standard. These identifiers should be preserved in institutional, aggregator, or repository databases and intended for long-term use. URI form is recommended to ensure uniqueness. This class may include GUIDs that are not UUIDs, Darwin Core <code>occurrenceID</code> values, ARKs, URNs, or GBIF identifiers when the GBIF occurrence record is the intended external linkage target. Examples for <code>specimenId</code> entry: <code>urn:catalog:MO:Tropicos:105059003</code>, <code>http://n2t.net/ark:/65665/3e637e7c9-8454-4785-98cb-3fed71df7654</code>, <code>B7C40E4A06465C9795AF9DF1B6BD342C.mc.31640B656ECDBCBE6579AD770ED363DB</code>, <code>5085584305</code></td>
+</tr>
+<tr class="even">
+<td><code>CatalogNumber</code></td>
+<td>Accepted</td>
+<td>Any identifier apart from the specimen barcode used by the specimen’s home institution to catalog and locate the physical specimen, including internal reference numbers (IRN). Example for <code>specimenId</code> entry: <code>2032448</code></td>
+</tr>
+<tr class="odd">
+<td><code>CollectorNameAndNumber</code></td>
+<td>Accepted</td>
+<td>The concatenated collector name and number assigned to the specimen. Recommended format for <code>specimenId</code> entry is collector last name, or concatenated collector last names, with each name beginning with a capital letter, followed by capitalized first-name initials, an underscore, and the collector number or code. Examples for <code>specimenId</code> entry: <code>BouffordDE_123</code>, <code>RodriguezSmithE_1999-23</code></td>
+</tr>
+<tr class="even">
+<td><code>AccessionNumber</code></td>
+<td>Accepted</td>
+<td>Any identifier related to the accessioning of the physical specimen.</td>
+</tr>
+<tr class="odd">
+<td><code>TransientId</code></td>
+<td>Discouraged</td>
+<td>An identifier that uniquely identifies a specimen only within a single spectral dataset. This identifier cannot be used to link specimen data with other datasets or databases.</td>
+</tr>
+<tr class="even">
+<td><code>LocalDatabaseId</code></td>
+<td>Discouraged</td>
+<td>An identifier used for the specimen within an institutional or personal database. This identifier may not be externally resolvable or intended for long-term persistence.</td>
 </tr>
 </tbody>
 </table>
@@ -972,14 +1041,13 @@ The <strong>IHerbSpec Dataverse</strong> (<a href="https://dataverse.harvard.edu
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

@@ -76,8 +76,83 @@ include-after-body:
     font-size: 0.95rem;
     line-height: 1.4;
   }
+  
+  .herbshare-section {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  }
 
-  @media (max-width: 900px) {
+.herbshare-label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  }
+
+.herbshare-section a {
+  font-weight: 600;
+  }
+   
+ .support-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.support-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #666;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.support-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+}
+
+.support-grid p {
+  width: 220px;
+  height: 100px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.support-grid a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.support-grid img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.support-grid img.logo-huh {
+  max-width: 90%;
+  max-height: 100px;
+}
+
+.support-grid img.logo-nsf {
+  max-width: 90%;
+  max-height: 100px;
+}
+
+.support-grid img.logo-ascend {
+  max-width: 90%;
+  max-height: 120px;
+}
+  
+    @media (max-width: 900px) {
     .explore-grid {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -111,7 +186,7 @@ Through the development of shared standards, protocols, and data-management prac
 
 <div class="explore-section">
 
-<h2>Explore</h2>
+<h2>Explore IHerbSpec website</h2>
 
 <div class="explore-grid">
 
@@ -139,6 +214,43 @@ Through the development of shared standards, protocols, and data-management prac
 
 </div>
 
+<div class="explore-section">
+
+<h2>Navigate to HERBSHARE</h2>
+
+<div style="display:flex; justify-content:center;">
+
+<a class="explore-card" href="https://herbshare.org">
+  <span class="explore-card-title">HERBSHARE</span>
+  <span class="explore-card-description">
+    The herbarium spectral data and analysis portal →
+  </span>
+</a>
+
+</div>
+
+</div>
+
 ---
 
 ![Participants in the inaugural IHerbSpec workshop, Harvard University Herbaria, May 2025.](images/IHerbSpec.jpeg){fig-align="center" width="90%"}
+
+---
+
+</div>
+
+::: {.support-section}
+
+<div class="support-title">IHerbSpec is supported by</div>
+
+::: {.support-grid}
+
+[![](images/Huh_logo1.gif){.logo-huh fig-alt="Harvard University Herbaria"}](https://huh.harvard.edu/)
+
+[![](images/nsf.png){.logo-nsf fig-alt="National Science Foundation"}](https://www.nsf.gov/)
+
+[![](images/rspd-artwork-ascend.sized.webp){.logo-ascend fig-alt="ASCEND Biology Integration Institute"}](https://www.ascendbii.org/)
+
+:::
+
+:::
