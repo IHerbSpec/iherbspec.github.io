@@ -14,8 +14,7 @@ page-layout: full
 
 <div class="references">
 
-White, D. M., F. Durgante, M. Austin, J. A. Guzmán Q., J. Kennedy, C. Nichodemus, N. Ahlstrand, C. Baraloto, B. Bektaş, K. Boughalmi, W. Cardinal-McTeague, T. L. P. Couvreur, R. Fortier, R. Fuller, O. Grace, R. Jackson, K. Karbstein, S. Kothari, A. Lee, J. Lira Viana, E. Martinez-Victoria, J. E. Meireles, T. Murphy, C. Rodriguez Vaz, D. Spalink, H. Tuomisto, C. Vasconcelos, J. Cavender-Bares. **A Protocol for Standardizing Measurements and Enabling Global Harmonization of
-Herbarium Leaf Reflectance Spectra**. *EcoEvoRxiv* (2026). [https://doi.org/10.32942/X2SD4D](https://doi.org/10.32942/X2SD4D)
+Lee, A. K., L. Vander Esch, J. Oong, B. Fredericksen, J. Ramirez-Lerma, J. A. Guzmán, D. White, T. Whitfeld, J. E. Meireles, et al. **Robust estimation of key leaf traits from reflectance spectroscopy of herbarium specimens**. *Methods in Ecology and Evolution* (2026). [https://doi.org/10.1111/2041-210X.70353](https://doi.org/10.1111/2041-210X.70353)
 
 ---
 

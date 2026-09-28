@@ -12,13 +12,14 @@ title: "IHerbSpec Members"
 | Billur Bektaş | ETH Zurich |
 | Rustin Bielski | University of Montana |
 | Giovanna Bishop | University of Montana |
-| Khalil Boughalmi | Université de Montpellier |
+| Khalil Boughalmi | Geneva Botanical Garden & University of Geneva |
 | Sam Brockington | University of Cambridge |
 | Jedediah Brodie | University of Montana |
 | Warren Cardinal-McTeague | University of British Columbia |
 | Alison Carranza | Yale University |
 | Jeannine Cavender-Bares | Harvard University |
 | Eduardo Chacón | Universidad Costa Rica |
+| Nicholas Chang | University of Minnesota |
 | Flavia Costa | Instituto Nacional de Pesquisas da Amazônia |
 | Thomas Couvreur | Institut de Recherche pour le Développement (IRD) |
 | Freddie Draper | University of Liverpool |
@@ -26,7 +27,7 @@ title: "IHerbSpec Members"
 | Paul Fine | University of California |
 | Riley Fortier | Missouri Botanical Garden |
 | Ryan Fuller | Missouri Botanical Garden |
-| Olwen Grace | Royal Botanic Gardens, Edinburgh |
+| Olwen Grace | Royal Botanic Garden Edinburgh |
 | Antonio Guzmán | Harvard University |
 | Kimberly Hansen | Field Museum |
 | Mariana Hernández-Leal | Harvard University |
@@ -46,9 +47,11 @@ title: "IHerbSpec Members"
 | Barbara Neto-Bradley | University of Cambridge |
 | Cornelius Nichodemus | University of Maine |
 | Molly Nepokroeff | Denver Botanic Gardens |
+| Milo Phillips | Royal Botanic Garden Edinburgh |
 | Natalia Quinteros-Casaverde | NASA |
 | Rick Ree | Field Museum |
 | Alexánder Rodríguez | Museo Nacional de Costa Rica (CR) |
+| Michaela Schmull | Harvard University Herbaria |
 | Fabian Schneider | Aarhus University |
 | Ricardo A. Segovia Cortés | Chile Digital Herbaria Project |
 | Pam Soltis | University of Florida |
@@ -59,6 +62,7 @@ title: "IHerbSpec Members"
 | Caroline Vasconcelos | Instituto Nacional de Pesquisas da Amazônia |
 | Tom Wells | Royal Botanic Gardens, Kew |
 | Dawson White | Harvard University |
+| David Williamson | University Museum, Norwegian University of Science and Technology |
 | Ya Yang | University of Minnesota |
 | Meredith Zettlemoyer | University of Montana |
 
