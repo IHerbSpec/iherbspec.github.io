@@ -46,8 +46,8 @@
 /* Table 4.3: keep field descriptions readable */
 #tbl-4-3 td:nth-child(4),
 #tbl-4-3 th:nth-child(4) {
-  min-width: 450px;
-  max-width: 650px;
+  min-width: 250px;
+  max-width: 450px;
   white-space: normal;
   overflow-wrap: anywhere;
 }

@@ -61,7 +61,7 @@ title: "IHerbSpec Members"
 | Hanna Tuomisto | Aarhus University |
 | Caroline Vasconcelos | Instituto Nacional de Pesquisas da Amazônia |
 | Tom Wells | Royal Botanic Gardens, Kew |
-| Dawson White | Harvard University |
+| Dawson White | Texas A&M University |
 | David Williamson | University Museum, Norwegian University of Science and Technology |
 | Ya Yang | University of Minnesota |
 | Meredith Zettlemoyer | University of Montana |
