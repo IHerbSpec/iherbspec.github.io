@@ -12,7 +12,7 @@ include-after-body:
 
 ## Overview {#part4}
 
-This section defines the metadata fields used to describe spectral reflectance measurements of herbarium specimens. This standardization supports interoperability, cross-project data aggregation, and future integration into biodiversity informatics platforms.
+This section defines the metadata fields used to describe spectral reflectance measurements. These fields and controlled vocabularies have been carefully designed to  support data interoperability.
 
 | Section | Section Title | Description |
 |---------|-----------------|------------------------------------------------------------|
@@ -21,7 +21,7 @@ This section defines the metadata fields used to describe spectral reflectance m
 | [4.3](part4-metadata.qmd#section4-3) | Guidelines for Data Archiving and Sharing | Guidance on archiving, sharing, and publishing spectral data and metadata, including recommended repositories, formats, and interoperability considerations. |
 
 
-Projects can download the [IHerbSpec Metadata Spreadsheet](tables/IHerbSpec_metadata.csv) as a foundation for organizing their metadata. This spreadsheet includes all **required** and optional but **recommended** fields defined in the tables below. 
+Projects can download the [IHerbSpec Metadata Spreadsheet](tables/IHerbSpec_metadata.csv) as a foundation for organizing their metadata. This spreadsheet includes all **required** and **optional** fields defined in the tables below. 
 
 While metadata are expected to be disseminated in a flat file format (as in the IHerbSpec Metadata Spreadsheet), fields are presented here in logical groups—project, specimen, and tissue—to support conceptual understanding and integration with local databases.
 
