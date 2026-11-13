@@ -268,7 +268,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>5.3.2. <strong>For background and white reference measurement requirements, see <a href="../protocol/part1-overview.html#white-reference-and-background-measurements">Section 1.2.2</a>.</strong></p>
 <ul>
-<li>Background materials are not spectrally neutral and exhibit distinct reflectance profiles that can introduce systematic, wavelength-dependent biases into leaf spectral measurements (<a href="images/Fig-backgrounds_v2.jpg">Fig. 5.1</a>). These effects are especially pronounced in the near-infrared and shortwave infrared regions, underscoring the importance of consistent background selection and documentation for reproducible and comparable spectral data.</li>
+<li>Background materials are not spectrally neutral and exhibit distinct reflectance profiles that can introduce systematic, wavelength-dependent biases into leaf spectral measurements (<a href="images/Fig-backgrounds_v2.png">Fig. 5.1</a>). These effects are especially pronounced in the near-infrared and shortwave infrared regions, underscoring the importance of consistent background selection and documentation for reproducible and comparable spectral data.</li>
 <li>White reference scans are typically not saved as a separate file, but the white reference digital numbers (raw sensor values) should be included in each target spectrum file (e.g., <code>.sig</code> format). These values are used by the instrument software to calculate reflectance from raw radiance.<br>
 </li>
 <li>Black background materials are required to have &lt;4% reflectance across all wavelengths (see <a href="../protocol/part1-overview.html#f1-1">Fig. 1.1</a>; e.g., IR Flock Sheet from <a href="https://musoublackusa.com/products/ir-flock-sheet">Musou Black USA</a>).<br>
@@ -277,7 +277,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <div id="f5-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="images/Fig-backgrounds_v2.jpg" class="fig-bordered img-fluid figure-img"></p>
+<p><img src="images/Fig-backgrounds_v2.png" class="fig-bordered img-fluid figure-img"></p>
 <figcaption><strong>Fig. 5.1.</strong> Reflectance of different background materials and their effects on target tissue spectra. <strong>(A)</strong> Reflectance spectra of common background materials used in herbarium spectral measurements, including black (Musou IR Flock), dark grey, light grey (grey matte paint on canvas), white (Spectralon 99%), and three herbarium mounting paper types of different ages. Each background exhibits a distinct spectral profile across the visible–shortwave infrared range (400—2500 nm). <strong>(B)</strong> Differences between adaxial leaf spectra measured on black background (TCAD_BGB) with spectra of the same leaf surface measured on the other backgrounds (see legend). Deviations from zero indicate wavelength-dependent background-induced biases, which are greatest in the near-infrared (NIR; c.&nbsp;700—1100 nm) and shortwave infrared I regions (SWIR 1; 1100—2000 nm). <strong>(C)</strong> Reflectance spectra of leaf abaxial surface (TCAB) measured on different backgrounds, illustrating how background reflectance can influence absolute reflectance values across spectral regions. <strong>(D)</strong> Mean reflectance spectra of leaf adaxial surface (TCAD) measured on different backgrounds, showing similar background-dependent effects. All measurements were made with a Spectral Evolution NaturaSpec spectroradiometer using a handheld herbarium leaf probe.</figcaption>
 </figure>
 </div>

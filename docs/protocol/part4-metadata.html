@@ -892,11 +892,6 @@ ul.task-list li input[type="checkbox"] {
 <p>Available codes for the required <code>specimenIdClass</code> metadata field (<a href="#tbl-4-2">Table 4.2</a>). Use these codes when possible; otherwise, provide a concise free-text class using CamelCase format.</p>
 <div class="table-responsive table-small">
 <table class="caption-top table">
-<colgroup>
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 75%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>Code</th>
@@ -908,12 +903,12 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td><code>UUID</code></td>
 <td>Recommended</td>
-<td>A universally unique identifier assigned to the specimen, specimen fragment, or related Darwin Core occurrence record. UUIDs are 32-digit identifiers constructed according to the RFC 9562 standard; they may also be referred to as GUIDs. UUIDs should be persistent, preserved in institutional databases, and intended for long-term use. It is also permissible to format a UUID as a resolvable URL. Examples for <code>specimenId</code> entry: <code>7783cd80-2e3e-49cb-bb9b-95f1c7d2141f</code>, <code>https://data.huh.harvard.edu/7783cd80-2e3e-49cb-bb9b-95f1c7d2141f</code></td>
+<td>A universally unique identifier assigned to the specimen, specimen fragment, or related Darwin Core occurrence record. UUIDs are 32-digit identifiers constructed according to the <a href="https://www.rfc-editor.org/info/rfc9562/">RFC 9562 standard</a>; they may also be referred to as GUIDs. UUIDs should be persistent, preserved in institutional databases, and intended for long-term use. It is also permissible to format a UUID as a resolvable URL. Examples for <code>specimenId</code> entry: <code>7783cd80-2e3e-49cb-bb9b-95f1c7d2141f</code>, <code>https://data.huh.harvard.edu/7783cd80-2e3e-49cb-bb9b-95f1c7d2141f</code></td>
 </tr>
 <tr class="even">
 <td><code>BarcodeId</code></td>
 <td>Recommended</td>
-<td>A specimen barcode number or identifier assigned by the specimen’s home institution to identify and track the physical specimen. Barcode identifiers should be stable, preserved in institutional databases, and intended for long-term use. They are expected to be the most frequently used identifier class because they can often be entered efficiently and accurately using a barcode scanner. Example for <code>specimenId</code> entry: <code>00679514</code></td>
+<td>A specimen barcode number or identifier assigned by the specimen’s home institution to identify and track the physical specimen. Barcode identifiers should be stable, preserved in institutional databases, and intended for long-term use. They are <strong>expected to be the most frequently used identifier class</strong> because they can often be entered efficiently and accurately using a barcode scanner. Example for <code>specimenId</code> entry: <code>00679514</code></td>
 </tr>
 <tr class="odd">
 <td><code>PersistentId</code></td>
